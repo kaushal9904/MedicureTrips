@@ -1,10 +1,29 @@
 // Prerenders every React Router route to real static HTML so crawlers,
 // link-preview bots, and slow connections get actual content instead of
 // an empty <div id="root"></div> shell. Runs after `vite build`.
-import { chromium } from 'playwright';
+import { chromium } from 'playwright-core';
 import { preview } from 'vite';
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
+
+// Vercel's build container has no root/apt access, so the regular desktop
+// Chromium build (downloaded by plain `playwright`) fails to launch there —
+// it's missing OS shared libraries (e.g. libnspr4.so) that only `apt-get
+// install` could provide. @sparticuz/chromium ships a Chromium build
+// compiled specifically for restricted serverless/CI Linux containers, so
+// we use that whenever we're not on a developer's own machine.
+async function launchBrowser() {
+  if (process.env.VERCEL || process.env.CI) {
+    const chromiumServerless = (await import('@sparticuz/chromium')).default;
+    return chromium.launch({
+      args: chromiumServerless.args,
+      executablePath: await chromiumServerless.executablePath(),
+      headless: true,
+    });
+  }
+  // Local dev: use the developer's own installed Google Chrome.
+  return chromium.launch({ channel: 'chrome' });
+}
 
 const routes = [
   '/',
@@ -48,7 +67,7 @@ async function run() {
   const server = await preview({ preview: { port: 4174, strictPort: true } });
   const base = `http://localhost:4174`;
 
-  const browser = await chromium.launch();
+  const browser = await launchBrowser();
   const page = await browser.newPage();
 
   let ok = 0;
