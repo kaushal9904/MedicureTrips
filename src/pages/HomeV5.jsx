@@ -508,7 +508,7 @@ const HomeV5 = () => {
               { icon: 'fa-location-dot', title: 'Visit Us', info: '123 Vision Street, Eye Care Tower, New York, NY 10001', link: '/contact-us', linkText: 'Get Directions' },
               { icon: 'fa-phone', title: 'Call Us', info: '9958192249', link: 'tel:9958192249', linkText: 'Call Now' },
               { icon: 'fa-clock', title: 'Working Hours', info: 'Mon-Fri: 8:00 AM - 6:00 PM\nSat: 9:00 AM - 4:00 PM\nSun: Emergency Only', link: null, linkText: '' },
-              { icon: 'fa-envelope', title: 'Email Us', info: 'eye@hospil.com\nappointment@hospil.com', link: 'mailto:eye@hospil.com', linkText: 'Send Email' },
+              { icon: 'fa-envelope', title: 'Email Us', info: 'shivammehra20244@gmail.com', link: 'mailto:shivammehra20244@gmail.com', linkText: 'Send Email' },
             ].map((item, i) => (
               <div key={i} className="col-lg-3 col-md-6">
                 <div className="cs_contact_card cs_white_bg cs_radius_20 text-center">

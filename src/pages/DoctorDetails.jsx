@@ -131,7 +131,7 @@ const DoctorDetails = () => {
                   <h3 className="cs_widget_title cs_fs_20 cs_semibold cs_primary_color cs_mb_20">Direct Contact</h3>
                   <ul className="cs_visiting_hours cs_mp_0">
                     <li><a href="tel:9958192249">9958192249</a></li>
-                    <li><a href="mailto:info@medicuretrip.com">info@medicuretrip.com</a></li>
+                    <li><a href="mailto:shivammehra20244@gmail.com">shivammehra20244@gmail.com</a></li>
                   </ul>
                 </div>
                 <div className="cs_sidebar_widget cs_gray2_bg cs_radius_20">

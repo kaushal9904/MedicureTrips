@@ -70,7 +70,7 @@ export default function Footer() {
                   <li>
                     <img src="/assets/img/icons/emain.svg" alt="Email" className="cs_contact_icon" />
                     <div>
-                      <a href="mailto:info@medicuretrip.com" aria-label="Send mail" className="cs_fs_20 cs_bold cs_white_color cs_mb_6">info@medicuretrip.com</a>
+                      <a href="mailto:shivammehra20244@gmail.com" aria-label="Send mail" className="cs_fs_20 cs_bold cs_white_color cs_mb_6">shivammehra20244@gmail.com</a>
                       <p className="mb-0">Reply Within 2-4 Hours</p>
                     </div>
                   </li>

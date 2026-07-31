@@ -152,7 +152,7 @@ const PrivacyPolicy = () => {
                     <li><strong>Right to Data Portability:</strong> Request your data in a structured, machine-readable format.</li>
                     <li><strong>Right to Lodge a Complaint:</strong> File a complaint with the relevant data protection authority if you believe your rights have been violated.</li>
                   </ul>
-                  <p className="cs_fs_16">To exercise any of these rights, please contact our Data Protection Officer at <a href="mailto:privacy@hospil.com" className="cs_accent_color">privacy@hospil.com</a>.</p>
+                  <p className="cs_fs_16">To exercise any of these rights, please contact our Data Protection Officer at <a href="mailto:shivammehra20244@gmail.com" className="cs_accent_color">shivammehra20244@gmail.com</a>.</p>
                 </div>
 
                 <div id="changes" className="cs_policy_section cs_mb_30">
@@ -163,7 +163,7 @@ const PrivacyPolicy = () => {
 
                 <div className="cs_privacy_contact cs_accent_bg_light cs_radius_10 cs_p_24">
                   <h4 className="cs_fs_18 cs_semibold cs_mb_8">Questions About This Policy?</h4>
-                  <p className="cs_fs_16 mb-0">Contact our Data Protection Officer at <a href="mailto:privacy@hospil.com" className="cs_accent_color cs_semibold">privacy@hospil.com</a> or call <a href="tel:9958192249" className="cs_accent_color cs_semibold">9958192249</a>.</p>
+                  <p className="cs_fs_16 mb-0">Contact our Data Protection Officer at <a href="mailto:shivammehra20244@gmail.com" className="cs_accent_color cs_semibold">shivammehra20244@gmail.com</a> or call <a href="tel:9958192249" className="cs_accent_color cs_semibold">9958192249</a>.</p>
                 </div>
               </div>
             </div>

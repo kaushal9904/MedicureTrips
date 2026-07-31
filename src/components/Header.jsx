@@ -98,7 +98,7 @@ export default function Header({ isShop }) {
               <ul className="cs_contact_list cs_mp_0">
                 <li className="cs_contact_item cs_fs_14 cs_white_color">
                   <span className="cs_contact_text">Send mail:
-                    <a href="mailto:info@medicuretrip.com" aria-label="Send email">info@medicuretrip.com</a>
+                    <a href="mailto:shivammehra20244@gmail.com" aria-label="Send email">shivammehra20244@gmail.com</a>
                   </span>
                 </li>
                 <li className="cs_contact_item cs_fs_14 cs_white_color">

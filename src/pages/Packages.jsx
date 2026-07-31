@@ -167,7 +167,7 @@ const Packages = () => {
             <i className="fas fa-envelope"></i>
             <div>
               <span>Email Us</span>
-              <a href="mailto:info@medicuretrip.com">info@medicuretrip.com</a>
+              <a href="mailto:shivammehra20244@gmail.com">shivammehra20244@gmail.com</a>
             </div>
           </div>
         </div>

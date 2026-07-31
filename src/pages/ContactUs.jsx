@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const contactFeatures = [
   { title: 'Call Us', icon: '/assets/img/icons/phone.svg', text: '9958192249', sub: 'Monday - Sunday (All Day)', color: 'cs_color_1', link: 'tel:9958192249' },
   { title: 'Visit Us', icon: '/assets/img/icons/location-pin.svg', text: null, sub: 'Delhi, India', color: 'cs_color_2' },
-  { title: 'Email Us', icon: '/assets/img/icons/emain.svg', text: 'info@medicuretrip.com', sub: '24h response', color: 'cs_color_3', link: 'mailto:info@medicuretrip.com' },
+  { title: 'Email Us', icon: '/assets/img/icons/emain.svg', text: 'shivammehra20244@gmail.com', sub: '24h response', color: 'cs_color_3', link: 'mailto:shivammehra20244@gmail.com' },
   { title: 'Free Consultation', icon: '/assets/img/icons/calendar.svg', text: '9958192249', sub: 'Monday - Sunday (All Day)', color: 'cs_color_4', link: 'tel:9958192249' },
 ];
 

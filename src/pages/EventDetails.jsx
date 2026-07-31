@@ -131,7 +131,7 @@ const EventDetails = () => {
                   <h3 className="cs_fs_28 cs_semibold cs_mb_12">How to Register</h3>
                   <p className="cs_mb_16">Registration is free and open to all. You can register online through our website or walk in on the day of the event. Early registration is recommended to secure your preferred time slot for specialist consultations. For group registrations of 10 or more, please contact our community health coordinator.</p>
 
-                  <p className="cs_mb_24">For more information, please call our events hotline or email us at events@hospil.com. We look forward to seeing you there!</p>
+                  <p className="cs_mb_24">For more information, please call our events hotline or email us at shivammehra20244@gmail.com. We look forward to seeing you there!</p>
                 </div>
 
                 {/* Share */}

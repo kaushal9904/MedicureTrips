@@ -87,7 +87,7 @@ const PatientResource = () => {
                   </div>
                   <div className="cs_support_text">
                     <h4 className="cs_fs_18 cs_semibold cs_mb_4">Email Support</h4>
-                    <a href="mailto:patientsupport@hospil.com" className="cs_primary_color">patientsupport@hospil.com</a>
+                    <a href="mailto:shivammehra20244@gmail.com" className="cs_primary_color">shivammehra20244@gmail.com</a>
                   </div>
                 </div>
                 <div className="cs_support_item">

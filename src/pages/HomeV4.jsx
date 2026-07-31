@@ -121,7 +121,7 @@ const HomeV4 = () => {
           </ul>
           <div className="cs_side_header_contact cs_mt_24">
             <p className="cs_fs_14"><i className="fa-solid fa-phone cs_accent_color"></i> 9958192249</p>
-            <p className="cs_fs_14"><i className="fa-solid fa-envelope cs_accent_color"></i> dental@hospil.com</p>
+            <p className="cs_fs_14"><i className="fa-solid fa-envelope cs_accent_color"></i> shivammehra20244@gmail.com</p>
           </div>
         </div>
       </div>

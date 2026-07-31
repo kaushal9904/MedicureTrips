@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Preloader from './components/Preloader'
 import ScrollToTop from './components/ScrollToTop'
 import useSiteAnimations from './hooks/useSiteAnimations'
+import routeMeta, { defaultMeta } from './routeMeta'
 import Home from './pages/Home'
 import HomeV2 from './pages/HomeV2'
 import HomeV3 from './pages/HomeV3'
@@ -49,6 +50,18 @@ function App() {
 
   // Initialize all site animations, re-run on route change
   useSiteAnimations([location.pathname])
+
+  useEffect(() => {
+    const meta = routeMeta[location.pathname] || defaultMeta
+    document.title = meta.title
+    let descTag = document.querySelector('meta[name="description"]')
+    if (!descTag) {
+      descTag = document.createElement('meta')
+      descTag.setAttribute('name', 'description')
+      document.head.appendChild(descTag)
+    }
+    descTag.setAttribute('content', meta.description)
+  }, [location.pathname])
 
   return (
     <>

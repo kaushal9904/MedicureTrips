@@ -165,7 +165,7 @@ const TermCondition = () => {
                   <div className="cs_contact_info_box cs_gray2_bg cs_radius_10 cs_p_20 cs_mt_12">
                     <p className="cs_fs_16 mb-4"><strong>Hospil Healthcare Center – Legal Department</strong></p>
                     <p className="cs_fs_16 mb-4"><i className="fa-solid fa-location-dot cs_accent_color cs_me_8"></i> 58 Blue Spruce Lane, Baltimore, MD 2321</p>
-                    <p className="cs_fs_16 mb-4"><i className="fa-solid fa-envelope cs_accent_color cs_me_8"></i> <a href="mailto:legal@hospil.com" className="cs_accent_color">legal@hospil.com</a></p>
+                    <p className="cs_fs_16 mb-4"><i className="fa-solid fa-envelope cs_accent_color cs_me_8"></i> <a href="mailto:shivammehra20244@gmail.com" className="cs_accent_color">shivammehra20244@gmail.com</a></p>
                     <p className="cs_fs_16 mb-0"><i className="fa-solid fa-phone cs_accent_color cs_me_8"></i> <a href="tel:9958192249" className="cs_accent_color">9958192249</a></p>
                   </div>
                 </div>

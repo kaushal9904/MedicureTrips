@@ -86,7 +86,7 @@ const Location = () => {
                   </div>
                   <div>
                     <h4 className="cs_fs_18 cs_semibold cs_mb_4">Email</h4>
-                    <a href="mailto:care@hospil.com" className="mb-0">care@hospil.com</a>
+                    <a href="mailto:shivammehra20244@gmail.com" className="mb-0">shivammehra20244@gmail.com</a>
                   </div>
                 </div>
               </div>
