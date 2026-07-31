@@ -67,7 +67,7 @@ const faqs = [
     id: 10,
     category: 'services',
     question: 'Do you provide home healthcare services?',
-    answer: 'Yes, Hospil offers home healthcare services including nurse visits, physiotherapy sessions, post-surgical care, elder care, and diagnostic sample collection. Our home care team consists of trained nurses and therapists who follow the same quality standards as our hospital services.',
+    answer: 'Yes, Medicure Trip offers home healthcare services including nurse visits, physiotherapy sessions, post-surgical care, elder care, and diagnostic sample collection. Our home care team consists of trained nurses and therapists who follow the same quality standards as our hospital services.',
   },
 ];
 

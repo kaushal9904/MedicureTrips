@@ -97,7 +97,7 @@ const Facilities = () => {
               <div className="col-lg-6">
                 <div className="cs_cta_text">
                   <h2 className="cs_cta_title cs_fs_40 cs_semibold cs_mb_10">Experience World-Class Healthcare</h2>
-                  <p className="cs_cta_subtitle cs_mb_30">Schedule a visit to our facility and see firsthand the advanced technology and compassionate care that sets Hospil apart.</p>
+                  <p className="cs_cta_subtitle cs_mb_30">Schedule a visit to our facility and see firsthand the advanced technology and compassionate care that sets Medicure Trip apart.</p>
                   <Link to="/appointment.html" aria-label="Book a Visit" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                     <span>Book a Visit</span>

@@ -71,7 +71,7 @@ const HomeV5 = () => {
   ];
 
   const testimonials = [
-    { quote: 'After years of wearing thick glasses, LASIK at Hospil gave me perfect vision. The procedure was quick, painless, and the results are incredible. I wish I had done it sooner!', author: 'Jennifer Collins', role: 'LASIK Patient', avatar: '/assets/img/avatar_9.webp' },
+    { quote: 'After years of wearing thick glasses, LASIK at Medicure Trip gave me perfect vision. The procedure was quick, painless, and the results are incredible. I wish I had done it sooner!', author: 'Jennifer Collins', role: 'LASIK Patient', avatar: '/assets/img/avatar_9.webp' },
     { quote: 'The cataract surgery was seamless. Dr. Foster explained everything clearly and the recovery was faster than expected. My vision is better than it has been in years!', author: 'Robert Mitchell', role: 'Cataract Surgery Patient', avatar: '/assets/img/avatar_10.webp' },
     { quote: 'As a parent, finding a good pediatric ophthalmologist for my daughter was crucial. Dr. Lee is amazing with children and caught a vision issue early that could have caused problems later.', author: 'Maria Santos', role: 'Parent', avatar: '/assets/img/avatar_11.webp' },
   ];
@@ -183,7 +183,7 @@ const HomeV5 = () => {
               {[1, 2, 3, 4].map((i) => (
                 <SwiperSlide key={i}>
                   <div className="cs_partner_item">
-                    <img src={`/assets/img/partner_v5_${i}.webp`} alt={`Partner ${i}`} />
+                    <img src={`/assets/img/partner_logo_${i}.svg`} alt={`Partner ${i}`} />
                   </div>
                 </SwiperSlide>
               ))}

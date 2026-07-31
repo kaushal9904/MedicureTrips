@@ -15,6 +15,7 @@ import AboutUs from './pages/AboutUs'
 import Services from './pages/Services'
 import ServiceDetails from './pages/ServiceDetails'
 import Doctors from './pages/Doctors'
+import OurDoctors from './pages/OurDoctors'
 import DoctorDetails from './pages/DoctorDetails'
 import ContactUs from './pages/ContactUs'
 import Blog from './pages/Blog'
@@ -78,6 +79,7 @@ function App() {
         <Route path="/services.html" element={<Services />} />
         <Route path="/service-details.html" element={<ServiceDetails />} />
         <Route path="/doctors.html" element={<Doctors />} />
+        <Route path="/our-doctors.html" element={<OurDoctors />} />
         <Route path="/doctor-details.html" element={<DoctorDetails />} />
         <Route path="/contact-us.html" element={<ContactUs />} />
         <Route path="/blog.html" element={<Blog />} />

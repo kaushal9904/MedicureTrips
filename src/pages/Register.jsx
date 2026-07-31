@@ -34,7 +34,7 @@ const Register = () => {
               {/* Logo */}
               <div className="cs_login_logo cs_mb_30 cs_center_column text-center">
                 <Link to="/" aria-label="Go to homepage">
-                  <img src="/assets/img/logo.svg" alt="Hospil Logo" className="cs_login_logo_img" />
+                  <img src="/assets/img/logo.svg" alt="Medicure Trip Logo" className="cs_login_logo_img" />
                 </Link>
                 <h2 className="cs_fs_28 cs_semibold cs_mt_16 mb-0">Create Account</h2>
                 <p className="cs_fs_16 cs_secondary_color cs_mt_8 mb-0">Register to access all features</p>

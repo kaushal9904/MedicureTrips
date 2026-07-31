@@ -5,8 +5,8 @@ const eventDetail = {
   date: 'March 15, 2026',
   time: '09:00 AM - 04:00 PM',
   title: 'Annual Health Awareness Camp',
-  location: 'Hospil Main Campus, Baltimore, MD 2321',
-  organizer: 'Hospil Community Health Department',
+  location: 'Medicure Trip Main Campus, Baltimore, MD 2321',
+  organizer: 'Medicure Trip Community Health Department',
 };
 
 const relatedEvents = [
@@ -22,7 +22,7 @@ const relatedEvents = [
     img: '/assets/img/event_img_3.webp',
     date: 'April 18, 2026',
     title: 'Maternity & Parenting Workshop',
-    location: 'Hospil Auditorium',
+    location: 'Medicure Trip Auditorium',
   },
   {
     id: 3,

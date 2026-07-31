@@ -12,6 +12,7 @@ const routeMeta = {
   '/service-details.html': { title: `Treatment Details | ${SITE}`, description: DEFAULT_DESC },
   '/doctors.html': { title: `Partner Hospitals | ${SITE}`, description: "Our qualified panel of partner hospitals in India — Artemis, Marengo Asia, Medanta, Fortis, BLK, and Max Hospital." },
   '/doctor-details.html': { title: `Hospital Details | ${SITE}`, description: DEFAULT_DESC },
+  '/our-doctors.html': { title: `Our Doctors | ${SITE}`, description: "Meet our network of specialist doctors across cardiology, neurosurgery, organ transplant, orthopedics, urology, and oncology at our partner hospitals in India." },
   '/contact-us.html': { title: `Contact Us | ${SITE}`, description: "Get in touch with Medicure Trip for a free consultation. We're available Monday to Sunday to help plan your medical journey to India." },
   '/blog.html': { title: `Blog | ${SITE}`, description: DEFAULT_DESC },
   '/blog-sidebar.html': { title: `Blog | ${SITE}`, description: DEFAULT_DESC },
@@ -39,6 +40,6 @@ const routeMeta = {
   '/error-404.html': { title: `Page Not Found | ${SITE}`, description: DEFAULT_DESC },
 };
 
-export const defaultMeta = { title: `${SITE} - Medical Tourism in India`, description: DEFAULT_DESC };
+export const defaultMeta = { title: `Page Not Found | ${SITE}`, description: DEFAULT_DESC };
 
 export default routeMeta;

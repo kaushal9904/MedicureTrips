@@ -7971,6 +7971,8 @@ label {
 
 .cs_doctor_filter {
   padding: 24px;
+  position: relative;
+  z-index: 5;
 }
 .cs_doctor_filter .cs_filter_input img {
   filter: brightness(0) saturate(100%) invert(14%) sepia(22%) saturate(842%) hue-rotate(175deg) brightness(91%) contrast(93%);
@@ -8512,6 +8514,58 @@ label {
   background-color: var(--white-color);
   border-radius: 50%;
   transition: transform 0.25s ease;
+}
+
+/*==========================================
+ Pricing Card (cs_pricing_card / HomeV3 + Pricing page)
+============================================*/
+.cs_pricing_card {
+  position: relative;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: var(--white-color);
+  border: 1px solid var(--gray7-color);
+  transition: all 0.35s ease;
+}
+.cs_pricing_card.cs_pricing_card_featured {
+  border-color: var(--accent-color);
+  box-shadow: 0 20px 40px rgba(34, 65, 143, 0.12);
+}
+.cs_pricing_card .cs_pricing_badge {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  top: -16px;
+  left: 32px;
+  padding: 6px 18px;
+  font-size: 14px;
+}
+.cs_pricing_card .cs_pricing_header {
+  margin-bottom: 24px;
+}
+.cs_pricing_card .cs_pricing_title {
+  margin-bottom: 12px;
+}
+.cs_pricing_card .cs_pricing_price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.cs_pricing_card .cs_pricing_period {
+  color: var(--secondary-color);
+}
+.cs_pricing_card .cs_pricing_features {
+  list-style: none;
+  margin: 24px 0 32px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.cs_pricing_card .cs_pricing_features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /*==========================================

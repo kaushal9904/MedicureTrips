@@ -30,7 +30,7 @@ const Appointment = () => {
             <div className="col-lg-6">
               <div className="cs_appointment_content">
                 <div className="cs_section_heading_style_1 cs_mb_24">
-                  <h2 className="cs_section_title cs_fs_40 cs_semibold cs_mb_6">Why book with Hospil?</h2>
+                  <h2 className="cs_section_title cs_fs_40 cs_semibold cs_mb_6">Why book with Medicure Trip?</h2>
                   <p className="cs_section_desc mb-0">Instant confirmation • Video consult or in-person • Free follow-up within 7 days</p>
                 </div>
                 <ul className="cs_appountment_features cs_mb_58 cs_mb_lg_30 cs_mp_0">

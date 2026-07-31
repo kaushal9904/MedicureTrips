@@ -45,12 +45,12 @@ const HomeV3 = () => {
   const tickerItems = ['Every Sniffle Monitored', 'Every Smile Celebrated', 'Gentle Care', 'Happy Kids', 'Expert Pediatricians', 'Safe Environment'];
 
   const partners = [
-    { name: 'Partner 1', img: '/assets/img/partner_1.webp' },
-    { name: 'Partner 2', img: '/assets/img/partner_2.webp' },
-    { name: 'Partner 3', img: '/assets/img/partner_3.webp' },
-    { name: 'Partner 4', img: '/assets/img/partner_4.webp' },
-    { name: 'Partner 5', img: '/assets/img/partner_5.webp' },
-    { name: 'Partner 6', img: '/assets/img/partner_6.webp' },
+    { name: 'Partner 1', img: '/assets/img/partner_logo_1.svg' },
+    { name: 'Partner 2', img: '/assets/img/partner_logo_2.svg' },
+    { name: 'Partner 3', img: '/assets/img/partner_logo_3.svg' },
+    { name: 'Partner 4', img: '/assets/img/partner_logo_4.svg' },
+    { name: 'Partner 5', img: '/assets/img/partner_logo_5.svg' },
+    { name: 'Partner 6', img: '/assets/img/partner_logo_6.svg' },
   ];
 
   const tabs = [
@@ -297,7 +297,7 @@ const HomeV3 = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="cs_service_tab_img cs_radius_20">
-                        <img src={`/assets/img/service_tab_${i + 1}.webp`} alt={tab.title} />
+                        <img src={`/assets/img/service_img_${i + 1}.webp`} alt={tab.title} />
                       </div>
                     </div>
                   </div>

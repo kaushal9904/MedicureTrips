@@ -78,7 +78,7 @@ const blogPosts = [
     month: 'Apr',
     category: 'Cardiology',
     duration: '5 min read',
-    title: 'When To Keep Your Child Home vs Bring to Hospil Sick Bay',
+    title: 'When To Keep Your Child Home vs Bring to Medicure Trip Sick Bay',
     author: 'Admin',
   },
   {

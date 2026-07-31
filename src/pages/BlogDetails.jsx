@@ -145,7 +145,7 @@ const BlogDetails = () => {
                   </li>
                 </ul>
 
-                <h2>Why Choose Hospil for Stroke Care?</h2>
+                <h2>Why Choose Medicure Trip for Stroke Care?</h2>
                 <p>Our dedicated Stroke Center is equipped with cutting-edge technology and a team of specialists ready to act at a moment&rsquo;s notice. We offer:</p>
                 <ul className="cs_blog_check_list cs_mp_0 cs_mb_48 cs_mb_lg_24">
                   <li>
@@ -248,7 +248,7 @@ const BlogDetails = () => {
                 {/* Search */}
                 <div className="cs_sidebar_widget cs_gray2_bg cs_radius_20">
                   <h3 className="cs_widget_title cs_fs_20 cs_semibold cs_mb_12">Search</h3>
-                  <form action="#" className="cs_search_form position-relative">
+                  <form className="cs_search_form position-relative" onSubmit={e => e.preventDefault()}>
                     <input type="search" name="search" placeholder="Search articles here..." />
                     <button type="submit" aria-label="Search">
                       <img src="/assets/img/icons/search.svg" alt="Search icon" />
@@ -294,7 +294,7 @@ const BlogDetails = () => {
                 {/* Promo Widget */}
                 <div className="cs_sidebar_widget cs_promo_widget cs_radius_20 cs_bg_filed text-center" style={{ backgroundImage: "url('/assets/img/team_img_21.webp')" }}>
                   <h3 className="cs_widget_title cs_fs_20 cs_semibold cs_white_color cs_mb_24">Ask Our Experts</h3>
-                  <p className="cs_promo_desc cs_white_color cs_mb_12">Have a health concern? Get personalized advice from Hospil specialists.</p>
+                  <p className="cs_promo_desc cs_white_color cs_mb_12">Have a health concern? Get personalized advice from Medicure Trip specialists.</p>
                   <Link to="/appointment.html" aria-label="Book consultation" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                     <span>Book Consultation</span>

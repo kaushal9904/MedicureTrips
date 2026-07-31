@@ -67,7 +67,7 @@ const HomeV4 = () => {
             <div className="col-lg-6">
               <div className="cs_hero_content">
                 <div className="cs_hero_subtitle cs_accent_color cs_fs_14">// DENTAL CARE CENTER</div>
-                <h1 className="cs_hero_title cs_fs_96 cs_bold">Advanced Dental Care at Hospil</h1>
+                <h1 className="cs_hero_title cs_fs_96 cs_bold">Advanced Dental Care at Medicure Trip</h1>
                 <p className="cs_hero_desc cs_fs_18">Your trusted partner in comprehensive dental health. From routine cleanings to complete smile makeovers, we deliver excellence in dental care.</p>
                 <div className="cs_hero_btns">
                   <Link to="/appointment.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
@@ -250,7 +250,7 @@ const HomeV4 = () => {
                   </div>
                   <div className="col-lg-6">
                     <div className="cs_service_img cs_radius_20">
-                      <img src={`/assets/img/service_v4_${i + 1}.webp`} alt={service.title} />
+                      <img src={`/assets/img/dental_service_img_${i + 1}.webp`} alt={service.title} />
                     </div>
                   </div>
                 </div>

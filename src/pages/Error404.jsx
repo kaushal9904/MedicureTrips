@@ -11,7 +11,7 @@ const Error404 = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      window.location.href = `https://www.google.com/search?q=site:hospil.com+${encodeURIComponent(searchQuery)}`;
+      window.location.href = `https://www.google.com/search?q=site:medicuretrip.com+${encodeURIComponent(searchQuery)}`;
     }
   };
 

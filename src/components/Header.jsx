@@ -28,7 +28,8 @@ export default function Header({ isShop }) {
       { label: 'Service Details', path: '/service-details.html' },
     ]},
     { label: 'Pages', path: '#', children: [
-      { label: 'Our Doctors', path: '/doctors.html' },
+      { label: 'Our Doctors', path: '/our-doctors.html' },
+      { label: 'Partner Hospitals', path: '/doctors.html' },
       { label: 'Doctor Details', path: '/doctor-details.html' },
       { label: 'Account Login', path: '/login.html' },
       { label: 'Account Register', path: '/register.html' },
@@ -65,14 +66,11 @@ export default function Header({ isShop }) {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link to="/" aria-label="Home page" className="cs_site_brand">
-                  <img src="/assets/img/logo.svg" alt="Hospil Logo" />
+                  <img src="/assets/img/logo.svg" alt="Medicure Trip Logo" />
                 </Link>
               </div>
               <div className="cs_main_header_right">
                 <div className="cs_header_btns_wrapper">
-                  <button type="button" aria-label="Search" className="cs_search_btn">
-                    <img src="/assets/img/icons/search.svg" alt="Search icon" />
-                  </button>
                   <Link to="/login.html" aria-label="Login" className="cs_header_icon_btn">
                     <img src="/assets/img/icons/user.svg" alt="User icon" />
                   </Link>
@@ -140,7 +138,7 @@ export default function Header({ isShop }) {
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
               <Link to="/" aria-label="Home page" className="cs_site_brand">
-                <img src="/assets/img/logo.svg" alt="Hospil Logo" />
+                <img src="/assets/img/logo.svg" alt="Medicure Trip Logo" />
               </Link>
             </div>
             <div className="cs_main_header_center">

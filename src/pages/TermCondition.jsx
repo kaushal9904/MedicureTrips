@@ -66,23 +66,23 @@ const TermCondition = () => {
                 </div>
 
                 <div className="cs_terms_intro cs_mb_30">
-                  <p className="cs_fs_16">These Terms and Conditions govern your use of the services, website, and digital platforms provided by Hospil Healthcare Center. By accessing or using our services, you agree to be bound by these terms.</p>
+                  <p className="cs_fs_16">These Terms and Conditions govern your use of the services, website, and digital platforms provided by Medicure Trip. By accessing or using our services, you agree to be bound by these terms.</p>
                 </div>
 
                 <div id="acceptance" className="cs_policy_section cs_mb_30">
                   <h3 className="cs_fs_24 cs_semibold cs_mb_16">1. Acceptance of Terms</h3>
-                  <p className="cs_fs_16 cs_mb_12">By accessing or using any service provided by Hospil Healthcare Center — including our website, mobile application, patient portal, telehealth platform, or in-person services — you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
+                  <p className="cs_fs_16 cs_mb_12">By accessing or using any service provided by Medicure Trip — including our website, mobile application, patient portal, telehealth platform, or in-person services — you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</p>
                   <p className="cs_fs_16">If you are accepting these terms on behalf of a minor or another individual, you represent that you have the legal authority to do so. If you do not agree with any part of these terms, you must immediately discontinue use of our services.</p>
                 </div>
 
                 <div id="medical-services" className="cs_policy_section cs_mb_30">
                   <h3 className="cs_fs_24 cs_semibold cs_mb_16">2. Medical Services & Use</h3>
-                  <p className="cs_fs_16 cs_mb_12">Hospil Healthcare Center provides a range of medical services including consultations, diagnostics, treatments, surgical procedures, pharmacy services, and wellness programs. All services are delivered by qualified, licensed medical professionals in accordance with applicable healthcare regulations.</p>
+                  <p className="cs_fs_16 cs_mb_12">Medicure Trip provides a range of medical services including consultations, diagnostics, treatments, surgical procedures, pharmacy services, and wellness programs. All services are delivered by qualified, licensed medical professionals in accordance with applicable healthcare regulations.</p>
                   <ul className="cs_policy_list cs_mb_12">
                     <li>Services are subject to availability and may be modified without prior notice.</li>
                     <li>Medical advice provided through our platforms does not replace an in-person consultation for emergency conditions.</li>
                     <li>Patients are responsible for providing accurate and complete medical history information.</li>
-                    <li>Hospil reserves the right to decline service in cases of medical contraindications or inappropriate use.</li>
+                    <li>Medicure Trip reserves the right to decline service in cases of medical contraindications or inappropriate use.</li>
                     <li>All medical records are maintained in compliance with applicable healthcare data regulations.</li>
                   </ul>
                 </div>
@@ -93,7 +93,7 @@ const TermCondition = () => {
                     <span className="cs_fs_14 cs_semibold">Important: Telehealth services are not a substitute for emergency care. If you are experiencing a medical emergency, please call 911 or visit your nearest emergency department immediately.</span>
                   </div>
                   <h3 className="cs_fs_24 cs_semibold cs_mb_16">3. Telehealth & Online Consultations</h3>
-                  <p className="cs_fs_16 cs_mb_12">Hospil offers telehealth consultation services for non-emergency medical conditions. By using our telehealth platform, you acknowledge and agree to the following:</p>
+                  <p className="cs_fs_16 cs_mb_12">Medicure Trip offers telehealth consultation services for non-emergency medical conditions. By using our telehealth platform, you acknowledge and agree to the following:</p>
                   <ul className="cs_policy_list cs_mb_12">
                     <li>Telehealth consultations are conducted via secure, HIPAA-compliant video and messaging platforms.</li>
                     <li>Technical requirements include a stable internet connection, compatible device, and a private environment.</li>
@@ -143,12 +143,12 @@ const TermCondition = () => {
                 <div id="liability" className="cs_policy_section cs_mb_30">
                   <div className="cs_info_note cs_accent_bg_light cs_radius_10 cs_p_20 cs_mb_16">
                     <i className="fa-solid fa-circle-info cs_accent_color cs_me_8"></i>
-                    <span className="cs_fs_14">This section outlines the limits of Hospil Healthcare Center's liability. Please read carefully to understand your rights and our obligations.</span>
+                    <span className="cs_fs_14">This section outlines the limits of Medicure Trip's liability. Please read carefully to understand your rights and our obligations.</span>
                   </div>
                   <h3 className="cs_fs_24 cs_semibold cs_mb_16">7. Limitation of Liability</h3>
                   <p className="cs_fs_16 cs_mb_12">While we strive to provide the highest standard of care, certain limitations apply:</p>
                   <ul className="cs_policy_list cs_mb_12">
-                    <li>Hospil Healthcare Center shall not be liable for any indirect, incidental, consequential, or punitive damages arising from use of our services.</li>
+                    <li>Medicure Trip shall not be liable for any indirect, incidental, consequential, or punitive damages arising from use of our services.</li>
                     <li>Our liability for medical malpractice claims is limited to the extent permitted by applicable law.</li>
                     <li>We are not responsible for outcomes resulting from incomplete or inaccurate patient-provided information.</li>
                     <li>Third-party services, products, or links accessed through our platforms are not under our control or endorsement.</li>
@@ -159,11 +159,11 @@ const TermCondition = () => {
 
                 <div id="modifications" className="cs_policy_section cs_mb_30">
                   <h3 className="cs_fs_24 cs_semibold cs_mb_16">8. Modifications & Contact</h3>
-                  <p className="cs_fs_16 cs_mb_12">Hospil Healthcare Center reserves the right to modify these Terms and Conditions at any time. Changes will be effective immediately upon posting on this page with an updated "Last Updated" date. Material changes will be communicated to registered patients via email or through a notice on our website.</p>
+                  <p className="cs_fs_16 cs_mb_12">Medicure Trip reserves the right to modify these Terms and Conditions at any time. Changes will be effective immediately upon posting on this page with an updated "Last Updated" date. Material changes will be communicated to registered patients via email or through a notice on our website.</p>
                   <p className="cs_fs_16 cs_mb_12">Your continued use of our services after any modifications constitutes acceptance of the revised terms. We encourage you to review these terms periodically.</p>
                   <p className="cs_fs_16">For questions, concerns, or requests related to these Terms and Conditions, please contact:</p>
                   <div className="cs_contact_info_box cs_gray2_bg cs_radius_10 cs_p_20 cs_mt_12">
-                    <p className="cs_fs_16 mb-4"><strong>Hospil Healthcare Center – Legal Department</strong></p>
+                    <p className="cs_fs_16 mb-4"><strong>Medicure Trip – Legal Department</strong></p>
                     <p className="cs_fs_16 mb-4"><i className="fa-solid fa-location-dot cs_accent_color cs_me_8"></i> 58 Blue Spruce Lane, Baltimore, MD 2321</p>
                     <p className="cs_fs_16 mb-4"><i className="fa-solid fa-envelope cs_accent_color cs_me_8"></i> <a href="mailto:shivammehra20244@gmail.com" className="cs_accent_color">shivammehra20244@gmail.com</a></p>
                     <p className="cs_fs_16 mb-0"><i className="fa-solid fa-phone cs_accent_color cs_me_8"></i> <a href="tel:9958192249" className="cs_accent_color">9958192249</a></p>

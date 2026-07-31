@@ -66,12 +66,12 @@ const PrivacyPolicy = () => {
                 </div>
 
                 <div className="cs_privacy_intro cs_mb_30">
-                  <p className="cs_fs_16">At Hospil Healthcare Center, your privacy is of utmost importance to us. This Privacy Policy outlines how we collect, use, protect, and handle your personal information when you use our services, website, and digital platforms.</p>
+                  <p className="cs_fs_16">At Medicure Trip, your privacy is of utmost importance to us. This Privacy Policy outlines how we collect, use, protect, and handle your personal information when you use our services, website, and digital platforms.</p>
                 </div>
 
                 <div id="acceptance" className="cs_policy_section cs_mb_30">
                   <h3 className="cs_fs_24 cs_semibold cs_mb_16">1. Acceptance of This Policy</h3>
-                  <p className="cs_fs_16 cs_mb_12">By accessing or using our services, website, mobile application, or any digital platform operated by Hospil Healthcare Center, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy.</p>
+                  <p className="cs_fs_16 cs_mb_12">By accessing or using our services, website, mobile application, or any digital platform operated by Medicure Trip, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy.</p>
                   <p className="cs_fs_16">If you do not agree with any part of this policy, we advise you to discontinue use of our services immediately. Your continued use of our services constitutes ongoing acceptance of our privacy practices.</p>
                 </div>
 

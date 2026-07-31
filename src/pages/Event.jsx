@@ -7,7 +7,7 @@ const events = [
     date: 'March 15, 2026',
     time: '09:00 AM - 04:00 PM',
     title: 'Annual Health Awareness Camp',
-    location: 'Hospil Main Campus, Baltimore',
+    location: 'Medicure Trip Main Campus, Baltimore',
     description: 'Join us for a full-day health screening event featuring free blood pressure checks, blood sugar tests, BMI assessments, and consultations with our specialists across multiple departments.',
   },
   {
@@ -25,7 +25,7 @@ const events = [
     date: 'April 18, 2026',
     time: '11:00 AM - 05:00 PM',
     title: 'Maternity & Parenting Workshop',
-    location: 'Hospil Auditorium',
+    location: 'Medicure Trip Auditorium',
     description: 'A hands-on workshop for expecting and new parents covering prenatal nutrition, labor preparation, newborn care basics, and breastfeeding techniques led by our obstetricians and pediatric nurses.',
   },
   {
@@ -52,7 +52,7 @@ const events = [
     date: 'June 10, 2026',
     time: '10:00 AM - 04:00 PM',
     title: 'Mental Health Awareness Week',
-    location: 'Hospil Wellness Center',
+    location: 'Medicure Trip Wellness Center',
     description: 'A week-long series of events focused on mental well-being featuring stress management workshops, mindfulness sessions, expert panel discussions, and free counseling consultations for all attendees.',
   },
 ];
