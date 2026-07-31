@@ -1,0 +1,10 @@
+/* Reset default Vite styles - Hospil uses its own style.css */
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
