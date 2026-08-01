@@ -2,18 +2,18 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const allDoctors = [
-  { name: 'Dr. A. V. Gurava Reddy', type: 'Orthopedic Surgeon', hospital: 'KIMS Hospitals, Hyderabad', focus: 'Joint Replacement', img: '/assets/img/team_img_1.webp' },
-  { name: 'Dr. Aditya Gupta', type: 'Neurosurgeon', hospital: 'Artemis Hospital, Gurugram', focus: 'Brain Tumor, Deep Brain Stimulation', img: '/assets/img/team_img_2.webp' },
-  { name: 'Dr. Ajay Kaul', type: 'Cardiac Surgeon', hospital: 'Fortis Memorial Research Institute, Gurugram', focus: 'Heart Bypass Surgery, Valve Surgery', img: '/assets/img/team_img_3.webp' },
-  { name: 'Dr. Ajitabh Srivastava', type: 'Transplant Surgeon', hospital: 'Apollo Hospitals, New Delhi', focus: 'Liver Transplant', img: '/assets/img/team_img_4.webp' },
-  { name: 'Dr. Alok Ranjan', type: 'Neurosurgeon', hospital: 'Medanta – The Medicity, Gurugram', focus: 'Spine Surgery', img: '/assets/img/team_img_5.webp' },
-  { name: 'Dr. Amal Roy Chaudhoory', type: 'Radiation Oncologist', hospital: 'Fortis Memorial Research Institute, Gurugram', focus: 'IMRT, VMAT, Thoracic & GI Radiation Oncology', img: '/assets/img/team_img_6.webp' },
-  { name: 'Dr. Amit Verma', type: 'Medical Oncologist', hospital: 'Artemis Hospital, Gurugram', focus: 'Immunotherapy, Targeted Therapy', img: '/assets/img/team_img_7.webp' },
-  { name: 'Dr. Anil Mandhani', type: 'Transplant Surgeon', hospital: 'Fortis Memorial Research Institute, Gurugram', focus: 'Kidney Transplant', img: '/assets/img/team_img_8.webp' },
-  { name: 'Dr. Arun Saroha', type: 'Neurosurgeon', hospital: 'Max Super Speciality Hospital, New Delhi', focus: 'Brain & Spine Surgery', img: '/assets/img/team_img_9.webp' },
-  { name: 'Dr. Arvinder Singh Soin', type: 'Transplant Surgeon', hospital: 'Medanta – The Medicity, Gurugram', focus: 'Liver Transplant', img: '/assets/img/team_img_10.webp' },
-  { name: 'Dr. Ashish Sabharwal', type: 'Urologist', hospital: 'BLK-Max Super Speciality Hospital, New Delhi', focus: 'Laser Urology, Robotic Urology', img: '/assets/img/team_img_11.webp' },
-  { name: 'Dr. Ashok Kumar Vaid', type: 'Medical Oncologist', hospital: 'Medanta – The Medicity, Gurugram', focus: 'Immunotherapy, Targeted Therapy', img: '/assets/img/team_img_12.webp' },
+  { name: 'Dr. A. V. Gurava Reddy', type: 'Orthopedic Surgeon', hospital: 'KIMS Hospitals, Hyderabad', focus: 'Joint Replacement', img: '/images/Dr. A. V. Gurava Reddy.jpg' },
+  { name: 'Dr. Aditya Gupta', type: 'Neurosurgeon', hospital: 'Artemis Hospital, Gurugram', focus: 'Brain Tumor, Deep Brain Stimulation', img: '/images/Dr. Aditya Gupta.jpg' },
+  { name: 'Dr. Ajay Kaul', type: 'Cardiac Surgeon', hospital: 'Fortis Memorial Research Institute, Gurugram', focus: 'Heart Bypass Surgery, Valve Surgery', img: '/images/Dr. Ajay Kaul.jpg' },
+  { name: 'Dr. Ajitabh Srivastava', type: 'Transplant Surgeon', hospital: 'Apollo Hospitals, New Delhi', focus: 'Liver Transplant', img: '/images/Dr. Ajitabh Srivastava.jpg' },
+  { name: 'Dr. Alok Ranjan', type: 'Neurosurgeon', hospital: 'Medanta – The Medicity, Gurugram', focus: 'Spine Surgery', img: '/images/Dr Alok Ranjan.jpg' },
+  { name: 'Dr. Amal Roy Chaudhoory', type: 'Radiation Oncologist', hospital: 'Fortis Memorial Research Institute, Gurugram', focus: 'IMRT, VMAT, Thoracic & GI Radiation Oncology', img: '/images/Dr. Amal Roy Chaudhoory.jpg' },
+  { name: 'Dr. Amit Verma', type: 'Medical Oncologist', hospital: 'Artemis Hospital, Gurugram', focus: 'Immunotherapy, Targeted Therapy', img: '/images/Dr. Amit Verma.jpg' },
+  { name: 'Dr. Anil Mandhani', type: 'Transplant Surgeon', hospital: 'Fortis Memorial Research Institute, Gurugram', focus: 'Kidney Transplant', img: '/images/Dr. Anil Mandhani.jpg' },
+  { name: 'Dr. Arun Saroha', type: 'Neurosurgeon', hospital: 'Max Super Speciality Hospital, New Delhi', focus: 'Brain & Spine Surgery', img: '/images/Dr. Arun Saroha.jpg' },
+  { name: 'Dr. Arvinder Singh Soin', type: 'Transplant Surgeon', hospital: 'Medanta – The Medicity, Gurugram', focus: 'Liver Transplant', img: '/images/Dr. Arvinder Singh Soin.jpg' },
+  { name: 'Dr. Ashish Sabharwal', type: 'Urologist', hospital: 'BLK-Max Super Speciality Hospital, New Delhi', focus: 'Laser Urology, Robotic Urology', img: '/images/Dr. Ashish Sabharwal.jpg' },
+  { name: 'Dr. Ashok Kumar Vaid', type: 'Medical Oncologist', hospital: 'Medanta – The Medicity, Gurugram', focus: 'Immunotherapy, Targeted Therapy', img: '/images/Dr. Ashok Kumar Vaid.jpg' },
 ];
 
 const doctorTypes = [...new Set(allDoctors.map(d => d.type))];
@@ -34,20 +34,6 @@ const OurDoctors = () => {
 
   return (
     <main>
-      {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
-        <div className="container">
-          <div className="cs_page_header_in">
-            <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">Our Doctors</h1>
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb cs_breadcrumb mb-0">
-                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
-                <li className="breadcrumb-item active" aria-current="page">Our Doctors</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </section>
 
       {/* Doctors Section */}
       <section className="cs_team_section_5">

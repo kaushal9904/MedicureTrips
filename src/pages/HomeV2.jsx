@@ -101,9 +101,6 @@ const HomeV2 = () => {
                 <div className="cs_hero_img_1 cs_radius_20">
                   <img src="/images/Healing 1 422x650_.jpg" alt="Healthcare Center" />
                 </div>
-                <div className="cs_hero_img_2 cs_radius_20">
-                  <img src="/assets/img/hero_img_3.webp" alt="Medical Staff" />
-                </div>
                 <div className="cs_hero_badge cs_accent_bg cs_white_color cs_radius_20">
                   <div className="cs_hero_badge_number cs_fs_40 cs_bold">15+</div>
                   <div className="cs_hero_badge_text">Years of Excellence</div>
@@ -254,9 +251,6 @@ const HomeV2 = () => {
                       <img src={service.icon} alt={service.title} />
                     </div>
                     <h3 className="cs_service_title cs_fs_24 cs_medium mb-0">{service.title}</h3>
-                  </div>
-                  <div className="cs_service_toggle_icon">
-                    <i className={`fa-solid fa-chevron-${activeService === i ? 'up' : 'down'}`}></i>
                   </div>
                 </div>
                 <div className="cs_service_toggle_content">

@@ -2,15 +2,15 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const services = [
-  { title: 'Organ Transplant', desc: 'Life-saving organ transplants with precision and compassionate care.', tags: ['Kidney & liver transplant', 'Post-op transplant care'], img: '/assets/img/service_img_21.webp' },
-  { title: 'Cardiology', desc: 'Heart care that combines expertise, technology, and heartfelt compassion.', tags: ['Bypass & angioplasty', 'Valve replacement'], img: '/assets/img/service_img_22.webp' },
-  { title: 'Neuro Surgery', desc: 'Advanced neurosurgical interventions for optimal brain and spinal health.', tags: ['Brain tumor surgery', 'Stroke management'], img: '/assets/img/service_img_23.webp' },
-  { title: 'Spine Surgery', desc: 'Tailored spine surgeries ensuring relief and improved quality of life.', tags: ['Minimally invasive surgery', 'Disc replacement'], img: '/assets/img/service_img_24.webp' },
-  { title: 'Orthopedic', desc: 'Orthopedic excellence, restoring mobility and enhancing musculoskeletal health.', tags: ['Joint replacement', 'Sports injury care'], img: '/assets/img/service_img_25.webp' },
-  { title: 'Urology', desc: 'Comprehensive urological care for optimal kidney and urinary health.', tags: ['Kidney stone treatment', 'Prostate care'], img: '/assets/img/service_img_26.webp' },
-  { title: 'ENT', desc: 'Expert ENT treatments promoting ear, nose, and throat well-being.', tags: ['Sinus surgery', 'Hearing care'], img: '/assets/img/service_img_27.webp' },
-  { title: 'Plastic Surgery', desc: 'Transformative plastic surgery, enhancing beauty and boosting confidence.', tags: ['Cosmetic surgery', 'Reconstructive surgery'], img: '/assets/img/service_img_28.webp' },
-  { title: 'Cancer', desc: 'Holistic cancer care with advanced treatments and compassionate support.', tags: ['Chemotherapy', 'Immunotherapy'], img: '/assets/img/service_img_29.webp' },
+  { title: 'Organ Transplant', desc: 'Life-saving organ transplants with precision and compassionate care.', tags: ['Kidney & liver transplant', 'Post-op transplant care'], img: '/images/Organ Transplant.jpg' },
+  { title: 'Cardiology', desc: 'Heart care that combines expertise, technology, and heartfelt compassion.', tags: ['Bypass & angioplasty', 'Valve replacement'], img: '/images/Cardiology.jpg' },
+  { title: 'Neuro Surgery', desc: 'Advanced neurosurgical interventions for optimal brain and spinal health.', tags: ['Brain tumor surgery', 'Stroke management'], img: '/images/Neuro Surgery.jpg' },
+  { title: 'Spine Surgery', desc: 'Tailored spine surgeries ensuring relief and improved quality of life.', tags: ['Minimally invasive surgery', 'Disc replacement'], img: '/images/Spine Surgery.jpg' },
+  { title: 'Orthopedic', desc: 'Orthopedic excellence, restoring mobility and enhancing musculoskeletal health.', tags: ['Joint replacement', 'Sports injury care'], img: '/images/Orthopedic.jpg' },
+  { title: 'Urology', desc: 'Comprehensive urological care for optimal kidney and urinary health.', tags: ['Kidney stone treatment', 'Prostate care'], img: '/images/Urology.jpg' },
+  { title: 'ENT', desc: 'Expert ENT treatments promoting ear, nose, and throat well-being.', tags: ['Sinus surgery', 'Hearing care'], img: '/images/ENT.jpg' },
+  { title: 'Plastic Surgery', desc: 'Transformative plastic surgery, enhancing beauty and boosting confidence.', tags: ['Cosmetic surgery', 'Reconstructive surgery'], img: '/images/Plastic Surgery.jpg' },
+  { title: 'Cancer', desc: 'Holistic cancer care with advanced treatments and compassionate support.', tags: ['Chemotherapy', 'Immunotherapy'], img: '/images/Cancer.jpg' },
 ];
 
 const Services = () => {
@@ -25,7 +25,12 @@ const Services = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
+      <section className="cs_page_header_style_1 cs_page_header_video position-relative">
+        <div className="cs_page_header_video_bg">
+          <video autoPlay muted loop playsInline>
+            <source src="/images/Services Main Banner.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div className="container">
           <div className="cs_page_header_in">
             <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">Services</h1>
@@ -97,7 +102,7 @@ const Services = () => {
               </div>
               <div className="col-lg-6">
                 <div className="cs_cta_img">
-                  <img src="/assets/img/cta_img_2.webp" alt="Doctors Team" />
+                  <img src="/images/Personalized Treatment 1061x647.jpg" alt="Personalized Treatment" />
                 </div>
               </div>
             </div>

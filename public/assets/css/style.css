@@ -2056,6 +2056,9 @@ label {
   display: block;
   width: 100%;
 }
+.cs_footer_style_1.cs_primary_bg {
+  background-color: #E4DDCD;
+}
 .cs_footer_style_1 .cs_footer_main, .cs_footer_style_3 .cs_footer_main, .cs_footer_style_2 .cs_footer_main {
   padding: 120px 0;
 }
@@ -2202,6 +2205,20 @@ label {
 }
 .cs_footer_style_1 .cs_footer_bottom_nav li a:hover, .cs_footer_style_3 .cs_footer_bottom_nav li a:hover, .cs_footer_style_2 .cs_footer_bottom_nav li a:hover {
   color: var(--white-color);
+}
+.cs_footer_style_1 .cs_white_color,
+.cs_footer_style_1 .cs_text_widget p,
+.cs_footer_style_1 .cs_footer_widget_nav a,
+.cs_footer_style_1 .cs_footer_contact p,
+.cs_footer_style_1 .cs_footer_contact a,
+.cs_footer_style_1 .cs_footer_contact span,
+.cs_footer_style_1 .cs_footer_copyright,
+.cs_footer_style_1 .cs_footer_bottom_nav li,
+.cs_footer_style_1 .cs_footer_bottom_nav a {
+  color: #000000;
+}
+.cs_footer_style_1 .cs_newsletter_title.cs_white_color {
+  color: #ffffff;
 }
 @media (max-width: 1199px) {
   .cs_footer_style_1 .cs_social_btns_style_1 a, .cs_footer_style_3 .cs_social_btns_style_1 a, .cs_footer_style_2 .cs_social_btns_style_1 a {
@@ -3514,15 +3531,15 @@ label {
 }
 
 .cs_hero_style_2 {
-  height: 100vh;
-  max-height: 898px;
-  padding: 200px 0 0;
+  min-height: 100vh;
+  max-height: none;
+  padding: 200px 0 60px;
 }
 .cs_hero_style_2 .cs_hero_content {
-  display: grid;
-  gap: 30px;
-  align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
 }
 .cs_hero_style_2 .cs_hero_text {
   width: min(100%, 850px);
@@ -5230,6 +5247,31 @@ label {
   padding: 12px 17px;
   position: relative;
 }
+.cs_service_toggle_header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 30px;
+  cursor: pointer;
+}
+.cs_service_toggle_left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cs_service_toggle_left .cs_service_icon {
+  width: 44px;
+  height: 44px;
+  flex: none;
+}
+.cs_service_toggle_left .cs_service_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cs_service_toggle_content {
+  padding: 0 30px 30px;
+}
 .cs_service_card_1 .cs_service_icon::before {
   content: "";
   position: absolute;
@@ -6426,6 +6468,7 @@ label {
   display: block;
   position: relative;
   overflow: hidden;
+  aspect-ratio: 636 / 375;
 }
 .cs_post_style_3 .cs_post_img img {
   width: 100%;
@@ -7796,7 +7839,7 @@ label {
   transition: opacity 0.4s ease;
 }
 .cs_team_style_2 .cs_team_info::before {
-  background: linear-gradient(180deg, rgba(221, 215, 249, 0) 50%, #ddd7f9 87%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 87%);
 }
 .cs_team_style_2 .cs_team_info::after {
   opacity: 0;
@@ -7806,14 +7849,10 @@ label {
   position: relative;
   z-index: 1;
 }
-.cs_team_style_2 .cs_team_title {
-  color: var(--primary-color);
-}
 .cs_team_style_2 .cs_team_title a:hover {
   text-decoration: underline;
 }
 .cs_team_style_2 .cs_team_subtitle {
-  color: var(--secondary-color);
   transition: all 0.4s ease;
 }
 .cs_team_style_2 .cs_btn_style_1 {
@@ -9170,6 +9209,10 @@ label {
   width: 100%;
   height: 100%;
   padding: 24px 24px 40px;
+}
+.cs_testimonial_style_2 .cs_testimonial_img {
+  width: 100%;
+  height: 100%;
 }
 .cs_testimonial_style_2 .cs_rating {
   width: 124px;

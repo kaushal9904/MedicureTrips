@@ -24,10 +24,9 @@ import "swiper/css/pagination";
 const ASSETS = {
   // Hero slider
   heroVideoSlide1: "/images/Home Page Ban-1 16x9.mp4",
-  heroVideoSlide2: "/images/banner-2.mp4",
-  // Slide 3 had no uploaded replacement — still points at the old
-  // theme asset. Swap this path once you have a file for it.
-  heroBgSlide3: "/assets/img/hero_bg_3.webp",
+  heroVideoSlide2: "/images/Home Banner 2.mp4",
+  aboutSectionVideo: "/images/banner-2.mp4",
+  heroVideoSlide3: "/images/Home Banner 3.mp4",
 
   // Technology / "Why choose Medicure Trip" section
   whyChooseVideo: "/images/1031x1023 Why choose Medicure Trip.mp4",
@@ -418,12 +417,11 @@ const Home = () => {
 
             <SwiperSlide>
               <div className="cs_hero_style_1 position-relative">
-                {/* No replacement file was uploaded for this slide — still
-                    using the original theme background image. */}
-                <div
-                  className="cs_hero_parallax_bg cs_bg_filed"
-                  style={{ backgroundImage: `url('${ASSETS.heroBgSlide3}')` }}
-                ></div>
+                <div className="cs_hero_parallax_bg cs_hero_video_bg">
+                  <video autoPlay muted loop playsInline>
+                    <source src={ASSETS.heroVideoSlide3} type="video/mp4" />
+                  </video>
+                </div>
                 <div className="container">
                   <div className="cs_hero_content_wrapper">
                     <div className="cs_hero_content">
@@ -612,7 +610,7 @@ const Home = () => {
                   className="cs_radius_20"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 >
-                  <source src={ASSETS.heroVideoSlide2} type="video/mp4" />
+                  <source src={ASSETS.aboutSectionVideo} type="video/mp4" />
                 </video>
                 <div className="cs_about_rating cs_accent_bg cs_radius_20">
                   <p className="cs_rating_text cs_white_color">
@@ -663,6 +661,7 @@ const Home = () => {
                         <i className="fa-solid fa-arrow-right"></i>
                       </span>
                     </Link>
+                    {/* Disabled per request, keep entry for future re-enable:
                     <div className="cs_trusted_by">
                       <div className="cs_avatar_wrapper">
                         <div className="cs_avatar cs_center cs_radius_50">
@@ -679,6 +678,7 @@ const Home = () => {
                         Trusted by 10k+ Patients
                       </p>
                     </div>
+                    */}
                   </div>
                   <div className="cs_funfact_style_1">
                     <div className="cs_funfact_item">
@@ -1287,7 +1287,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonial Section */}
+      {/* Testimonial Section — disabled per request
       <section className="cs_testimonial_section_1 cs_gray4_bg">
         <div className="container">
           <div className="row cs_gap_y_30">
@@ -1414,6 +1414,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Blog Section */}
       <section className="cs_blog_section_1">
@@ -1470,7 +1471,7 @@ const Home = () => {
                     <div className="cs_post_author_read">
                       <div className="cs_post_author">
                         <span className="cs_author_icon cs_center cs_radius_50">
-                          <img src="/assets/img/favico.svg" alt="Author icon" />
+                          <img src="/assets/img/favicon.webp" alt="Author icon" />
                         </span>
                         <span className="cs_author_title">By Admin</span>
                       </div>

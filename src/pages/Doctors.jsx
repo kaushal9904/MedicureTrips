@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 const allDoctors = [
-  { name: 'Artemis Hospital', specialty: 'Cardiology · NABH & JCI Accredited', img: '/assets/img/team_img_8.webp' },
-  { name: 'Marengo Asia Hospital', specialty: 'Neuro Surgery · NABH & JCI Accredited', img: '/assets/img/team_img_6.webp' },
-  { name: 'Medanta Hospital', specialty: 'Organ Transplant · NABH & JCI Accredited', img: '/assets/img/team_img_5.webp' },
-  { name: 'Fortis Hospital', specialty: 'Orthopedic · NABH & JCI Accredited', img: '/assets/img/team_img_7.webp' },
-  { name: 'BLK Hospital', specialty: 'Urology & ENT · NABH & JCI Accredited', img: '/assets/img/team_img_13.webp' },
-  { name: 'Max Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/assets/img/team_img_14.webp' },
+  { name: 'Artemis Hospital', specialty: 'Cardiology · NABH & JCI Accredited', img: '/images/Artemis Hospital468x525.jpg' },
+  { name: 'Marengo Asia Hospital', specialty: 'Neuro Surgery · NABH & JCI Accredited', img: '/images/Marengo Asia Hospital 468x525.jpeg' },
+  { name: 'Medanta Hospital', specialty: 'Organ Transplant · NABH & JCI Accredited', img: '/images/Medanta Hospital 468x525 4.jpg' },
+  { name: 'Fortis Hospital', specialty: 'Orthopedic · NABH & JCI Accredited', img: '/images/Fortis Hospital 468x525 3_.jpg' },
+  { name: 'BLK Hospital', specialty: 'Urology & ENT · NABH & JCI Accredited', img: '/images/BLK Hospital 468x525 4.jpeg' },
+  { name: 'Max Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/images/Max Hospital 468x525 2_.jpg' },
 ];
 
 const departments = ['Organ Transplant', 'Cardiology', 'Neuro Surgery', 'Spine Surgery', 'Orthopedic', 'Urology', 'ENT', 'Plastic Surgery', 'Cancer'];
@@ -30,20 +30,6 @@ const Doctors = () => {
 
   return (
     <main>
-      {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
-        <div className="container">
-          <div className="cs_page_header_in">
-            <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">Partner Hospitals</h1>
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb cs_breadcrumb mb-0">
-                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
-                <li className="breadcrumb-item active" aria-current="page">Partner Hospitals</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </section>
 
       {/* Doctors Section */}
       <section className="cs_team_section_5">

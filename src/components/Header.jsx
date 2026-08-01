@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+
+const LANG_CODES = { en: 'ENG', es: 'SPA', fr: 'FRA', de: 'DEU', ar: 'ARA', bn: 'BEN' }
 
 export default function Header({ isShop }) {
+  const { t, i18n } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
-  const [lang, setLang] = useState('Eng')
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY >= 10)
@@ -15,22 +18,19 @@ export default function Header({ isShop }) {
   }, [])
 
   const navItems = [
-    { label: 'Home', path: '/', children: [
-      { label: 'General Hospital', path: '/' },
-      { label: 'Healthcare Center', path: '/home-v2.html' },
-      { label: 'Child Care', path: '/home-v3.html' },
-      { label: 'Dental Care', path: '/home-v4.html' },
-      { label: 'Eye Care', path: '/home-v5.html' },
+    { label: t('nav.home'), path: '/', children: [
+      { label: t('nav.homeChildren.generalHospital'), path: '/' },
+      { label: t('nav.homeChildren.healthcareCenter'), path: '/home-v2.html' },
+      { label: t('nav.homeChildren.childCare'), path: '/home-v3.html' },
+      { label: t('nav.homeChildren.dentalCare'), path: '/home-v4.html' },
+      { label: t('nav.homeChildren.eyeCare'), path: '/home-v5.html' },
     ]},
-    { label: 'About', path: '/about-us.html' },
-    { label: 'Services', path: '/services.html', children: [
-      { label: 'Our Services', path: '/services.html' },
-      { label: 'Service Details', path: '/service-details.html' },
-    ]},
-    { label: 'Pages', path: '#', children: [
-      { label: 'Our Doctors', path: '/our-doctors.html' },
-      { label: 'Partner Hospitals', path: '/doctors.html' },
-      { label: 'Our Packages', path: '/packages.html' },
+    { label: t('nav.about'), path: '/about-us.html' },
+    { label: t('nav.services'), path: '/services.html' },
+    { label: t('nav.pages'), path: '#', children: [
+      { label: t('nav.pagesChildren.ourDoctors'), path: '/our-doctors.html' },
+      { label: t('nav.pagesChildren.partnerHospitals'), path: '/doctors.html' },
+      { label: t('nav.pagesChildren.ourPackages'), path: '/packages.html' },
       /* Disabled per request, keep entries for future re-enable:
       { label: 'Doctor Details', path: '/doctor-details.html' },
       { label: 'Account Login', path: '/login.html' },
@@ -46,14 +46,16 @@ export default function Header({ isShop }) {
       { label: '404 Error', path: '/error-404.html' },
       */
     ]},
-    { label: 'Blog', path: '/blog.html' },
-    { label: 'Contact', path: '/contact-us.html' },
+    { label: t('nav.blog'), path: '/blog.html' },
+    { label: t('nav.contact'), path: '/contact-us.html' },
+    /* Disabled per request, keep entry for future re-enable:
     { label: 'Shop', path: '/shop.html', children: [
       { label: 'Medical Shop', path: '/shop.html' },
       { label: 'Shop Details', path: '/shop-details.html' },
       { label: 'Shopping Cart', path: '/cart.html' },
       { label: 'Checkout', path: '/checkout.html' },
     ]},
+    */
   ]
 
   if (isShop) {
@@ -93,12 +95,12 @@ export default function Header({ isShop }) {
             <div className="cs_top_header_left">
               <ul className="cs_contact_list cs_mp_0">
                 <li className="cs_contact_item cs_fs_14 cs_white_color">
-                  <span className="cs_contact_text">Send mail:
+                  <span className="cs_contact_text">{t('topbar.sendMail')}
                     <a href="mailto:shivammehra20244@gmail.com" aria-label="Send email">shivammehra20244@gmail.com</a>
                   </span>
                 </li>
                 <li className="cs_contact_item cs_fs_14 cs_white_color">
-                  <span className="cs_contact_text">Call us:
+                  <span className="cs_contact_text">{t('topbar.callUs')}
                     <a href="tel:9958192249" aria-label="Call us">9958192249</a>
                   </span>
                 </li>
@@ -108,22 +110,22 @@ export default function Header({ isShop }) {
               <ul className="cs_contact_list cs_mp_0">
                 <li className="cs_contact_item cs_fs_14 cs_white_color">
                   <Link to="/location.html" aria-label="Go to location page">
-                    <span>Location</span>
+                    <span>{t('topbar.location')}</span>
                   </Link>
                 </li>
                 <li className="cs_language_select cs_fs_14 cs_white_color position-relative">
                   <span className="cs_language_switcher" onClick={() => setLangOpen(!langOpen)}>
                     <img src="/assets/img/icons/global.svg" alt="Language icon" />
-                    <span className="cs_contact_icon">Lang:</span>
-                    <span className="cs_language text-capitalize">{lang}</span>
+                    <span className="cs_contact_icon">{t('topbar.lang')}</span>
+                    <span className="cs_language text-capitalize">{LANG_CODES[i18n.language] || 'ENG'}</span>
                   </span>
                   <div className="cs_language_dropdown" style={{ display: langOpen ? 'block' : 'none' }}>
-                    <button onClick={() => { setLang('ENG'); setLangOpen(false) }}>ENG</button>
-                    <button onClick={() => { setLang('SPA'); setLangOpen(false) }}>SPA</button>
-                    <button onClick={() => { setLang('FRA'); setLangOpen(false) }}>FRA</button>
-                    <button onClick={() => { setLang('DEU'); setLangOpen(false) }}>DEU</button>
-                    <button onClick={() => { setLang('ARA'); setLangOpen(false) }}>ARA</button>
-                    <button onClick={() => { setLang('BEN'); setLangOpen(false) }}>BEN</button>
+                    <button onClick={() => { i18n.changeLanguage('en'); setLangOpen(false) }}>ENG</button>
+                    <button onClick={() => { i18n.changeLanguage('es'); setLangOpen(false) }}>SPA</button>
+                    <button onClick={() => { i18n.changeLanguage('fr'); setLangOpen(false) }}>FRA</button>
+                    <button onClick={() => { i18n.changeLanguage('de'); setLangOpen(false) }}>DEU</button>
+                    <button onClick={() => { i18n.changeLanguage('ar'); setLangOpen(false) }}>ARA</button>
+                    <button onClick={() => { i18n.changeLanguage('bn'); setLangOpen(false) }}>BEN</button>
                   </div>
                 </li>
               </ul>
@@ -174,11 +176,11 @@ export default function Header({ isShop }) {
                 </button>
                 <a href="tel:9958192249" aria-label="Emergency call" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
                   <img src="/assets/img/icons/phone2.svg" alt="Phone icon" />
-                  <span>Emergency</span>
+                  <span>{t('buttons.emergency')}</span>
                 </a>
                 <Link to="/appointment.html" aria-label="Book an appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
                   <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
-                  <span>Appointment</span>
+                  <span>{t('buttons.appointment')}</span>
                 </Link>
               </div>
             </div>
@@ -190,7 +192,7 @@ export default function Header({ isShop }) {
           <div className="container">
             <div className="cs_header_search_box">
               <form className="cs_search_form position-relative" onSubmit={e => e.preventDefault()}>
-                <input type="search" name="search-text" placeholder="Search Services, Doctors..." autoComplete="off" />
+                <input type="search" name="search-text" placeholder={t('search.placeholder')} autoComplete="off" />
                 <button className="cs_search_btn" type="submit">
                   <img src="/assets/img/icons/search.svg" alt="Search icon" />
                 </button>

@@ -192,7 +192,16 @@ const AboutUs = () => {
             </div>
             <div className="col-xl-6">
               <div className="cs_technology_img cs_parallax cs_radius_20 position-relative">
-                <img src="/assets/img/whychoose_img_1.webp" alt="Technology and Care" />
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="cs_radius_20"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                >
+                  <source src="/images/banner-2.mp4" type="video/mp4" />
+                </video>
                 <div className="cs_technology_text">
                   <div className="cs_accredited_badge cs_accent_bg cs_white_color cs_radius_50">
                     <div className="cs_circular_text"><img src="/assets/img/circular_text.svg" alt="Circular Text" /></div>
@@ -343,7 +352,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Testimonial Slider */}
+      {/* Testimonial Slider — disabled per request
       <section className="cs_testimonial_section_5 pb-0">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center-column cs_mb_48 cs_mb_lg_40 mx-auto text-center">
@@ -383,6 +392,7 @@ const AboutUs = () => {
           ))}
         </Swiper>
       </section>
+      */}
 
       {/* Appointment CTA */}
       <section className="cs_appointment_section_3">
@@ -482,7 +492,7 @@ const AboutUs = () => {
                     <div className="cs_appointment_promise cs_radius_20 overflow-hidden position-relative">
                       <h3 className="cs_appointment_promise_title cs_fs_24 cs_semibold cs_primary_color mb-0">Your Health, Our Priority.</h3>
                       <div className="cs_appointment_promise_img">
-                        <img src="/assets/img/appointment_img_3.webp" alt="Hospital care team" />
+                        <img src="/images/last-img-636x549.jpeg" alt="Hospital care team" />
                       </div>
                     </div>
                   </div>

@@ -27,7 +27,12 @@ const ContactUs = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
+      <section className="cs_page_header_style_1 cs_page_header_video position-relative">
+        <div className="cs_page_header_video_bg">
+          <video autoPlay muted loop playsInline>
+            <source src="/images/Contact Us Banner.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div className="container">
           <div className="cs_page_header_in">
             <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">Contact Us</h1>

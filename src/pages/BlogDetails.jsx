@@ -29,22 +29,6 @@ const BlogDetails = () => {
 
   return (
     <main>
-      {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
-        <div className="container">
-          <div className="cs_page_header_in">
-            <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">Blog Details</h1>
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb cs_breadcrumb mb-0">
-                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
-                <li className="breadcrumb-item"><Link to="/blog.html">Blog</Link></li>
-                <li className="breadcrumb-item active" aria-current="page">{post.title}</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </section>
-
       {/* Blog Details Section */}
       <section className="cs_blog_section_1">
         <div className="container">

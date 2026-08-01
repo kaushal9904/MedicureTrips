@@ -21,7 +21,12 @@ const Blog = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
+      <section className="cs_page_header_style_1 cs_page_header_video position-relative">
+        <div className="cs_page_header_video_bg">
+          <video autoPlay muted loop playsInline>
+            <source src="/images/Blog Main Banner 1920x1080.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div className="container">
           <div className="cs_page_header_in">
             <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">Blog</h1>
@@ -57,7 +62,7 @@ const Blog = () => {
                     <div className="cs_post_meta_wrapper cs_mb_14">
                       <div className="cs_post_author">
                         <span className="cs_author_icon cs_center cs_radius_50">
-                          <img src="/assets/img/favico.svg" alt="Author icon" />
+                          <img src="/assets/img/favicon.webp" alt="Author icon" />
                         </span>
                         <span className="cs_author_title cs_fs_14">{post.category}</span>
                       </div>
