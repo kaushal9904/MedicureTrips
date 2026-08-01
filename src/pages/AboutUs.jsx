@@ -4,10 +4,10 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 const team = [
-  { name: 'Artemis Hospital', creds: 'NABH & JCI Accredited', designation: 'Cardiology', specialty: 'Multi-specialty Tertiary Care', img: '/assets/img/team_img_1.webp' },
-  { name: 'Medanta Hospital', creds: 'NABH & JCI Accredited', designation: 'Neuro Surgery', specialty: 'Multi-specialty Tertiary Care', img: '/assets/img/team_img_2.webp' },
-  { name: 'Fortis Hospital', creds: 'NABH & JCI Accredited', designation: 'Orthopedic', specialty: 'Multi-specialty Tertiary Care', img: '/assets/img/team_img_3.webp' },
-  { name: 'Max Hospital', creds: 'NABH & JCI Accredited', designation: 'Cancer Care', specialty: 'Multi-specialty Tertiary Care', img: '/assets/img/team_img_4.webp' },
+  { name: 'Artemis Hospital', creds: 'NABH & JCI Accredited', designation: 'Cardiology', specialty: 'Multi-specialty Tertiary Care', img: '/images/Artemis Hospital468x525.jpg' },
+  { name: 'Medanta Hospital', creds: 'NABH & JCI Accredited', designation: 'Neuro Surgery', specialty: 'Multi-specialty Tertiary Care', img: '/images/Medanta Hospital 468x525 4.jpg' },
+  { name: 'Fortis Hospital', creds: 'NABH & JCI Accredited', designation: 'Orthopedic', specialty: 'Multi-specialty Tertiary Care', img: '/images/Fortis Hospital 468x525 3_.jpg' },
+  { name: 'Max Hospital', creds: 'NABH & JCI Accredited', designation: 'Cancer Care', specialty: 'Multi-specialty Tertiary Care', img: '/images/Max Hospital 468x525 2_.jpg' },
 ];
 
 const testimonials = [
@@ -25,7 +25,12 @@ const AboutUs = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
+      <section className="cs_page_header_style_1 cs_page_header_video position-relative">
+        <div className="cs_page_header_video_bg">
+          <video autoPlay muted loop playsInline>
+            <source src="/images/Banner Video.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div className="container">
           <div className="cs_page_header_in">
             <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">About Us</h1>
@@ -53,7 +58,7 @@ const AboutUs = () => {
           <div className="row cs_gap_y_30">
             <div className="col-xl-5 col-lg-6">
               <div className="cs_about_img cs_radius_20 cs_parallax position-relative">
-                <img src="/assets/img/about_img_2.webp" alt="Compassionate Doctors" />
+                <img src="/images/About last img 804x914.jpg" alt="Compassionate Doctors" />
               </div>
             </div>
             <div className="col-xl-7 col-lg-6">
@@ -215,7 +220,7 @@ const AboutUs = () => {
           <div className="row cs_gap_y_30 justify-content-center position-relative z-1">
             <div className="col-lg-4 col-md-6">
               <div className="cs_work_card_1 cs_center_column text-center position-relative">
-                <div className="cs_work_img cs_center cs_radius_50"><img src="/assets/img/work_img_1.webp" alt="Work process" /></div>
+                <div className="cs_work_img cs_center cs_radius_50 cs_white_bg"><img src="/assets/img/icons/telehealth.svg" alt="Free Consultation icon" /></div>
                 <div className="cs_work_info">
                   <span className="cs_work_step cs_center cs_accent_bg cs_white_color cs_radius_50 cs_fs_20 cs_semibold cs_mb_22 cs_mb_lg_16">01</span>
                   <h3 className="cs_work_title cs_fs_24 cs_medium cs_mb_22 cs_mb_lg_12">Free Consultation</h3>
@@ -225,8 +230,8 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
-              <div className="cs_work_card_1 cs_center-column text-center position-relative">
-                <div className="cs_work_img cs_center cs_radius_50"><img src="/assets/img/work_img_2.webp" alt="Work process" /></div>
+              <div className="cs_work_card_1 cs_center_column text-center position-relative">
+                <div className="cs_work_img cs_center cs_radius_50 cs_white_bg"><img src="/assets/img/icons/transport.svg" alt="Visa & Travel Arranged icon" /></div>
                 <div className="cs_work_info">
                   <span className="cs_work_step cs_center cs_accent_bg cs_white_color cs_radius_50 cs_fs_20 cs_semibold cs_mb_22 cs_mb_lg_16">02</span>
                   <h3 className="cs_work_title cs_fs_24 cs_medium cs_mb_22 cs_mb_lg_12">Visa & Travel Arranged</h3>
@@ -236,8 +241,8 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
-              <div className="cs_work_card_1 cs_center-column text-center position-relative">
-                <div className="cs_work_img cs_center cs_radius_50"><img src="/assets/img/work_img_3.webp" alt="Work process" /></div>
+              <div className="cs_work_card_1 cs_center_column text-center position-relative">
+                <div className="cs_work_img cs_center cs_radius_50 cs_white_bg"><img src="/assets/img/icons/first-aid-kit.svg" alt="Treatment & Recovery icon" /></div>
                 <div className="cs_work_info">
                   <span className="cs_work_step cs_center cs_accent_bg cs_white_color cs_radius_50 cs_fs_20 cs_semibold cs_mb_22 cs_mb_lg_16">03</span>
                   <h3 className="cs_work_title cs_fs_24 cs_medium cs_mb_22 cs_mb_lg_12">Treatment & Recovery</h3>

@@ -30,12 +30,12 @@ const HomeV4 = () => {
   ];
 
   const services = [
-    { title: 'General Dentistry', desc: 'Comprehensive dental exams, cleanings, fillings, and preventive care to maintain your oral health.', icon: 'fa-tooth', features: ['Routine Exams & Cleanings', 'Dental Fillings', 'Gum Disease Treatment', 'Root Canal Therapy'] },
-    { title: 'Cosmetic Dentistry', desc: 'Transform your smile with professional whitening, veneers, bonding, and complete smile makeovers.', icon: 'fa-smile', features: ['Teeth Whitening', 'Porcelain Veneers', 'Dental Bonding', 'Smile Design'] },
-    { title: 'Orthodontics', desc: 'Straighten teeth with traditional braces, clear aligners, and invisible braces for a perfect smile.', icon: 'fa-teeth', features: ['Traditional Braces', 'Clear Aligners', 'Retainers', 'Jaw Correction'] },
-    { title: 'Oral Surgery', desc: 'Expert surgical care including extractions, implants, and jaw surgery with advanced techniques.', icon: 'fa-stethoscope', features: ['Tooth Extraction', 'Dental Implants', 'Bone Grafting', 'TMJ Treatment'] },
-    { title: 'Pediatric Dentistry', desc: 'Specialized dental care for children in a fun, friendly environment to build positive oral habits.', icon: 'fa-child', features: ['Child-Friendly Environment', 'Preventive Treatments', 'Sealants & Fluoride', 'Early Orthodontic Assessment'] },
-    { title: 'Emergency Care', desc: 'Immediate dental emergency services for broken teeth, severe pain, and urgent oral health issues.', icon: 'fa-truck-medical', features: ['Same-Day Appointments', 'Emergency Extractions', 'Pain Management', 'Temporary Repairs'] },
+    { title: 'General Dentistry', desc: 'Comprehensive dental exams, cleanings, fillings, and preventive care to maintain your oral health.', icon: 'fa-tooth', features: ['Routine Exams & Cleanings', 'Dental Fillings', 'Gum Disease Treatment', 'Root Canal Therapy'], img: '/images/General Dentistry 1068x300.jpg' },
+    { title: 'Cosmetic Dentistry', desc: 'Transform your smile with professional whitening, veneers, bonding, and complete smile makeovers.', icon: 'fa-smile', features: ['Teeth Whitening', 'Porcelain Veneers', 'Dental Bonding', 'Smile Design'], img: '/images/Cosmetic Dentistry 1068x300.jpg' },
+    { title: 'Orthodontics', desc: 'Straighten teeth with traditional braces, clear aligners, and invisible braces for a perfect smile.', icon: 'fa-teeth', features: ['Traditional Braces', 'Clear Aligners', 'Retainers', 'Jaw Correction'], img: '/images/Orthodontics 1068x300.jpg' },
+    { title: 'Oral Surgery', desc: 'Expert surgical care including extractions, implants, and jaw surgery with advanced techniques.', icon: 'fa-stethoscope', features: ['Tooth Extraction', 'Dental Implants', 'Bone Grafting', 'TMJ Treatment'], img: '/images/Oral Surgery 1068x300.jpg' },
+    { title: 'Pediatric Dentistry', desc: 'Specialized dental care for children in a fun, friendly environment to build positive oral habits.', icon: 'fa-child', features: ['Child-Friendly Environment', 'Preventive Treatments', 'Sealants & Fluoride', 'Early Orthodontic Assessment'], img: '/images/Pediatric Dentistry 1068x300.jpg' },
+    { title: 'Emergency Care', desc: 'Immediate dental emergency services for broken teeth, severe pain, and urgent oral health issues.', icon: 'fa-truck-medical', features: ['Same-Day Appointments', 'Emergency Extractions', 'Pain Management', 'Temporary Repairs'], img: '/images/Emergency Care 1068x300.jpg' },
   ];
 
   const experts = [
@@ -52,9 +52,9 @@ const HomeV4 = () => {
   ];
 
   const testimonials = [
-    { quote: 'The dental team completely transformed my smile. The veneers look so natural and the entire process was comfortable and professional. I can\'t stop smiling!', author: 'Jennifer Adams', role: 'Cosmetic Dentistry Patient', avatar: '/assets/img/avatar_6.webp' },
-    { quote: 'My kids actually look forward to their dental visits now. The pediatric team is amazing with children and the office is so welcoming and fun.', author: 'Michael Brown', role: 'Parent of 3', avatar: '/assets/img/avatar_7.webp' },
-    { quote: 'After years of hiding my teeth, I finally got the smile I always wanted. The clear aligners were practically invisible and the results are incredible.', author: 'Sarah Wilson', role: 'Orthodontics Patient', avatar: '/assets/img/avatar_8.webp' },
+    { quote: 'The dental team completely transformed my smile. The veneers look so natural and the entire process was comfortable and professional. I can\'t stop smiling!', author: 'Jennifer Adams', role: 'Cosmetic Dentistry Patient', avatar: '/images/Dental Bottom last 696x696.jpg' },
+    { quote: 'My kids actually look forward to their dental visits now. The pediatric team is amazing with children and the office is so welcoming and fun.', author: 'Michael Brown', role: 'Parent of 3', avatar: '/images/Dental Bottom last 696x696.jpg' },
+    { quote: 'After years of hiding my teeth, I finally got the smile I always wanted. The clear aligners were practically invisible and the results are incredible.', author: 'Sarah Wilson', role: 'Orthodontics Patient', avatar: '/images/Dental Bottom last 696x696.jpg' },
   ];
 
   return (
@@ -79,25 +79,27 @@ const HomeV4 = () => {
                     <span><i className="fa-solid fa-arrow-right"></i></span>
                   </Link>
                 </div>
+                {/* Hero patient avatars — disabled per request, keep markup for future re-enable
                 <div className="cs_hero_avatars cs_mt_24">
                   <div className="cs_avatar_wrapper">
                     <div className="cs_avatar cs_center cs_radius_50">
-                      <img src="/assets/img/avatar_1.webp" alt="Patient" />
+                      <img src="/images/Dental 2 400x400.jpg" alt="Patient" />
                     </div>
                     <div className="cs_avatar cs_center cs_radius_50">
-                      <img src="/assets/img/avatar_2.webp" alt="Patient" />
+                      <img src="/images/Dental 2 400x400.jpg" alt="Patient" />
                     </div>
                     <div className="cs_avatar cs_center cs_radius_50">
-                      <img src="/assets/img/avatar_3.webp" alt="Patient" />
+                      <img src="/images/Dental 2 400x400.jpg" alt="Patient" />
                     </div>
                   </div>
                   <p className="cs_trusted_text cs_fs_14 mb-0">Trusted by 10,000+ Happy Patients</p>
                 </div>
+                */}
               </div>
             </div>
             <div className="col-lg-6">
               <div className="cs_hero_img cs_radius_20">
-                <img src="/assets/img/hero_img_4.webp" alt="Dental Care" />
+                <img src="/images/dental care 1 925x720.jpg" alt="Dental Care" />
               </div>
             </div>
           </div>
@@ -157,7 +159,7 @@ const HomeV4 = () => {
           <div className="row cs_gap_y_30 align-items-center cs_mb_50">
             <div className="col-lg-6">
               <div className="cs_about_img cs_parallax cs_radius_20">
-                <img src="/assets/img/about_img_4.webp" alt="Dental Care" />
+                <img src="/images/Dental 2 400x400.jpg" alt="Dental Care" />
               </div>
             </div>
             <div className="col-lg-6">
@@ -191,7 +193,7 @@ const HomeV4 = () => {
           <div className="row cs_gap_y_30 align-items-center">
             <div className="col-lg-6 order-lg-2">
               <div className="cs_about_img cs_parallax cs_radius_20">
-                <img src="/assets/img/about_img_5.webp" alt="Dental Technology" />
+                <img src="/images/dental 971x423.jpg" alt="Dental Technology" />
               </div>
             </div>
             <div className="col-lg-6 order-lg-1">
@@ -250,7 +252,7 @@ const HomeV4 = () => {
                   </div>
                   <div className="col-lg-6">
                     <div className="cs_service_img cs_radius_20">
-                      <img src={`/assets/img/dental_service_img_${i + 1}.webp`} alt={service.title} />
+                      <img src={service.img} alt={service.title} />
                     </div>
                   </div>
                 </div>
@@ -286,7 +288,7 @@ const HomeV4 = () => {
         </div>
       </section>
 
-      {/* Team / Experts Section */}
+      {/* Team / Experts Section — disabled per request, keep markup for future re-enable
       <section className="cs_team_section_4 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
@@ -337,6 +339,7 @@ const HomeV4 = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Pricing Section */}
       <section className="cs_pricing_section_4">
@@ -414,9 +417,11 @@ const HomeV4 = () => {
                         </div>
                         <blockquote className="cs_mb_24">"{t.quote}"</blockquote>
                         <div className="cs_testimonial_author">
+                          {/* Author avatar circle — disabled per request, keep markup for future re-enable
                           <div className="cs_author_img">
                             <img src={t.avatar} alt={t.author} className="cs_radius_50" />
                           </div>
+                          */}
                           <div className="cs_author_info">
                             <h3 className="cs_author_name cs_fs_20 cs_bold cs_mb_6">{t.author}</h3>
                             <p className="cs_author_designation mb-0">{t.role}</p>

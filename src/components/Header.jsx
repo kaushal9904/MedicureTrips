@@ -30,12 +30,13 @@ export default function Header({ isShop }) {
     { label: 'Pages', path: '#', children: [
       { label: 'Our Doctors', path: '/our-doctors.html' },
       { label: 'Partner Hospitals', path: '/doctors.html' },
+      { label: 'Our Packages', path: '/packages.html' },
+      /* Disabled per request, keep entries for future re-enable:
       { label: 'Doctor Details', path: '/doctor-details.html' },
       { label: 'Account Login', path: '/login.html' },
       { label: 'Account Register', path: '/register.html' },
       { label: 'Our Events', path: '/event.html' },
       { label: 'Event Details', path: '/event-details.html' },
-      { label: 'Our Packages', path: '/packages.html' },
       { label: 'Our Facilities', path: '/facilities.html' },
       { label: 'Our Pricing Plan', path: '/pricing.html' },
       { label: 'FAQ with Answer', path: '/faq.html' },
@@ -43,12 +44,9 @@ export default function Header({ isShop }) {
       { label: 'Patient Resource', path: '/patient-resource.html' },
       { label: 'Career Opportunity', path: '/career.html' },
       { label: '404 Error', path: '/error-404.html' },
+      */
     ]},
-    { label: 'Blog', path: '/blog.html', children: [
-      { label: 'Blog Grid', path: '/blog.html' },
-      { label: 'Blog with Sidebar', path: '/blog-sidebar.html' },
-      { label: 'Blog Details', path: '/blog-details.html' },
-    ]},
+    { label: 'Blog', path: '/blog.html' },
     { label: 'Contact', path: '/contact-us.html' },
     { label: 'Shop', path: '/shop.html', children: [
       { label: 'Medical Shop', path: '/shop.html' },

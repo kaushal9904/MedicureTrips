@@ -57,10 +57,10 @@ const HomeV5 = () => {
   ];
 
   const team = [
-    { name: 'Dr. Amanda Foster', credentials: 'MD, FEBO', specialty: 'Cataract & Refractive Surgery Specialist', img: '/assets/img/team_img_13.webp' },
-    { name: 'Dr. Richard Nguyen', credentials: 'MD, PhD', specialty: 'Glaucoma & Retinal Disease Expert', img: '/assets/img/team_img_14.webp' },
-    { name: 'Dr. Catherine Lee', credentials: 'MD, FAAO', specialty: 'Pediatric Ophthalmologist', img: '/assets/img/team_img_15.webp' },
-    { name: 'Dr. Thomas Baker', credentials: 'MD, FACS', specialty: 'Cornea & External Disease Specialist', img: '/assets/img/team_img_16.webp' },
+    { name: 'Dr. Amanda Foster', credentials: 'MD, FEBO', specialty: 'Cataract & Refractive Surgery Specialist', img: '/images/DR avatar 468x525.jpg' },
+    { name: 'Dr. Richard Nguyen', credentials: 'MD, PhD', specialty: 'Glaucoma & Retinal Disease Expert', img: '/images/DR avatar 468x525 2_.jpg' },
+    { name: 'Dr. Catherine Lee', credentials: 'MD, FAAO', specialty: 'Pediatric Ophthalmologist', img: '/images/DR avatar 468x525 3_.jpg' },
+    { name: 'Dr. Thomas Baker', credentials: 'MD, FACS', specialty: 'Cornea & External Disease Specialist', img: '/images/DR avatar 468x525 4.jpg' },
   ];
 
   const equipment = [
@@ -86,56 +86,55 @@ const HomeV5 = () => {
 
   return (
     <main>
-      {/* Hero Section */}
-      <section className="cs_hero_style_5 position-relative">
-        <div className="cs_hero_parallax_bg position-relative">
-          <div className="cs_hero_video_bg">
-            <video autoPlay muted loop playsInline>
-              <source src="/images/Home Page Ban-1 16x9.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row align-items-center cs_gap_y_30">
-            <div className="col-lg-6">
-              <div className="cs_hero_content">
-                <div className="cs_hero_subtitle cs_accent_color cs_fs_14">// EYE CARE CENTER</div>
-                <h1 className="cs_hero_title cs_fs_96 cs_bold">See Clearly, Live Fully</h1>
-                <p className="cs_hero_desc cs_fs_18">Advanced vision care with cutting-edge technology and expert ophthalmologists. Your eyes deserve the best care possible.</p>
-                <div className="cs_hero_btns">
-                  <Link to="/appointment.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
-                    <span><i className="fa-solid fa-calendar-check"></i></span>
-                    <span>Book Eye Exam</span>
-                  </Link>
-                  <Link to="/services.html" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
-                    <span>Our Services</span>
-                    <span><i className="fa-solid fa-arrow-right"></i></span>
-                  </Link>
+      {/* Hero Section — same banner style as the home page (cs_hero_style_1) */}
+      <section>
+        <div className="cs_hero_slider_wrapper position-relative">
+          <Swiper modules={[EffectFade]} slidesPerView={1} speed={600}>
+            <SwiperSlide>
+              <div className="cs_hero_style_1 cs_hero_eye_care position-relative">
+                <div className="cs_hero_parallax_bg cs_hero_video_bg">
+                  <video autoPlay muted loop playsInline>
+                    <source src="/images/Eye Care Banner.mp4" type="video/mp4" />
+                  </video>
                 </div>
-                <div className="cs_hero_info_cards cs_mt_24">
-                  <div className="cs_hero_info_card cs_white_bg cs_radius_10">
-                    <i className="fa-solid fa-eye cs_accent_color cs_fs_24"></i>
-                    <div>
-                      <span className="cs_fs_14 cs_bold">50,000+</span>
-                      <span className="cs_fs_12">Successful Surgeries</span>
-                    </div>
-                  </div>
-                  <div className="cs_hero_info_card cs_white_bg cs_radius_10">
-                    <i className="fa-solid fa-user-doctor cs_accent_color cs_fs_24"></i>
-                    <div>
-                      <span className="cs_fs_14 cs_bold">20+</span>
-                      <span className="cs_fs_12">Expert Specialists</span>
+                <div className="container">
+                  <div className="cs_hero_content_wrapper">
+                    <div className="cs_hero_content">
+                      <div className="cs_hero_subtitle cs_accent_color cs_fs_14">// EYE CARE CENTER</div>
+                      <h1 className="cs_hero_title cs_fs_96 cs_bold">See Clearly, Live Fully</h1>
+                      <p className="cs_hero_desc cs_fs_18">Advanced vision care with cutting-edge technology and expert ophthalmologists. Your eyes deserve the best care possible.</p>
+                      <div className="cs_hero_btns">
+                        <Link to="/appointment.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                          <span><i className="fa-solid fa-calendar-check"></i></span>
+                          <span>Book Eye Exam</span>
+                        </Link>
+                        <Link to="/services.html" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
+                          <span>Our Services</span>
+                          <span><i className="fa-solid fa-arrow-right"></i></span>
+                        </Link>
+                      </div>
+                      <div className="cs_eye_hero_info_cards">
+                        <div className="cs_eye_hero_info_card cs_white_bg cs_radius_10">
+                          <i className="fa-solid fa-eye cs_accent_color cs_fs_24"></i>
+                          <div>
+                            <span className="cs_fs_14 cs_bold">50,000+</span>
+                            <span className="cs_fs_12">Successful Surgeries</span>
+                          </div>
+                        </div>
+                        <div className="cs_eye_hero_info_card cs_white_bg cs_radius_10">
+                          <i className="fa-solid fa-user-doctor cs_accent_color cs_fs_24"></i>
+                          <div>
+                            <span className="cs_fs_14 cs_bold">20+</span>
+                            <span className="cs_fs_12">Expert Specialists</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="cs_hero_img cs_radius_20">
-                <img src="/assets/img/hero_img_5.webp" alt="Eye Care" />
-              </div>
-            </div>
-          </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </section>
 
@@ -249,7 +248,7 @@ const HomeV5 = () => {
           <div className="row cs_gap_y_30 align-items-center">
             <div className="col-lg-6">
               <div className="cs_whychoose_img cs_parallax cs_radius_20 position-relative">
-                <img src="/assets/img/whychoose_img_1.webp" alt="Eye Care Technology" />
+                <img src="/images/Excellence in Vision Care 1031x1031.jpg" alt="Eye Care Technology" />
                 <div className="cs_whychoose_badge cs_accent_bg cs_white_color cs_radius_20">
                   <div className="cs_whychoose_badge_number cs_fs_60 cs_bold">
                     <span className="odometer" ref={(el) => { if (el) odometerRefs.current[0] = el; }} data-count-to="25"></span>+
@@ -535,7 +534,7 @@ const HomeV5 = () => {
         </div>
       </section>
 
-      {/* Testimonial Marquee */}
+      {/* Testimonial Marquee — disabled per request, keep markup for future re-enable
       <section className="cs_testimonial_section_5 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
@@ -570,6 +569,7 @@ const HomeV5 = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Work Process */}
       <section className="cs_process_section_5">

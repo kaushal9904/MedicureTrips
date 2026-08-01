@@ -47,11 +47,11 @@ const HomeV2 = () => {
   const tickerItems = ['Healing with heart', 'Treating with technology', 'Compassionate Care', 'Advanced Medicine', 'Expert Doctors', 'Modern Facility'];
 
   const services = [
-    { title: 'Cardiology', icon: '/assets/img/icons/cardiology.svg', desc: 'Advanced cardiac care including interventional procedures, preventive heart wellness, and 24/7 cardiac cath lab support.', features: ['ECG, Echo & TMT', 'Cardiac Cath Lab', 'Heart Failure Management'] },
-    { title: 'Neurology', icon: '/assets/img/icons/neurology.svg', desc: 'Comprehensive brain, spine & nerve care with stroke management, epilepsy surgery, and neuro-rehabilitation.', features: ['Neuro-Imaging', 'Stroke Recovery', 'Epilepsy Monitoring'] },
-    { title: 'Orthopedics', icon: '/assets/img/icons/orthopedics.svg', desc: 'Joint replacement, sports medicine, trauma surgery, and minimally invasive orthopedic procedures.', features: ['Joint Replacement', 'Sports Injury Clinic', 'Spine Surgery'] },
-    { title: 'Oncology', icon: '/assets/img/icons/oncology.svg', desc: 'Precision oncology, chemotherapy, immunotherapy, and compassionate palliative support.', features: ['Chemotherapy', 'Radiation Therapy', 'Palliative Care'] },
-    { title: 'Maternity', icon: '/assets/img/icons/maternity.svg', desc: 'Holistic pregnancy care, high-risk obstetrics, and state-of-the-art delivery suites.', features: ['Prenatal Care', 'High-Risk Pregnancy', 'NICU Support'] },
+    { title: 'Cardiology', icon: '/assets/img/icons/cardiology.svg', desc: 'Advanced cardiac care including interventional procedures, preventive heart wellness, and 24/7 cardiac cath lab support.', features: ['ECG, Echo & TMT', 'Cardiac Cath Lab', 'Heart Failure Management'], img: '/images/Cardiology-service 1321x523.jpg' },
+    { title: 'Neurology', icon: '/assets/img/icons/neurology.svg', desc: 'Comprehensive brain, spine & nerve care with stroke management, epilepsy surgery, and neuro-rehabilitation.', features: ['Neuro-Imaging', 'Stroke Recovery', 'Epilepsy Monitoring'], img: '/images/Neurology-service 1321x523.jpg' },
+    { title: 'Orthopedics', icon: '/assets/img/icons/orthopedics.svg', desc: 'Joint replacement, sports medicine, trauma surgery, and minimally invasive orthopedic procedures.', features: ['Joint Replacement', 'Sports Injury Clinic', 'Spine Surgery'], img: '/images/Orthopedics-service 1321x523.jpg' },
+    { title: 'Oncology', icon: '/assets/img/icons/oncology.svg', desc: 'Precision oncology, chemotherapy, immunotherapy, and compassionate palliative support.', features: ['Chemotherapy', 'Radiation Therapy', 'Palliative Care'], img: '/images/Oncology-service 1321x523.jpg' },
+    { title: 'Maternity', icon: '/assets/img/icons/maternity.svg', desc: 'Holistic pregnancy care, high-risk obstetrics, and state-of-the-art delivery suites.', features: ['Prenatal Care', 'High-Risk Pregnancy', 'NICU Support'], img: '/images/Maternity-service 1321x523.jpg' },
   ];
 
   const pricingPackages = [
@@ -61,15 +61,15 @@ const HomeV2 = () => {
   ];
 
   const team = [
-    { name: 'Dr. Gregory Bynum', credentials: 'MD, FRCP', designation: 'Cardiology', specialty: 'Senior Interventional Cardiologist', img: '/assets/img/team_img_1.webp' },
-    { name: 'Dr. Lori Fletcher', credentials: 'MBBS, MS', designation: 'Neurology', specialty: 'Chief Neurosurgeon Specialist', img: '/assets/img/team_img_2.webp' },
-    { name: 'Dr. Philip Johnson', credentials: 'DNB Ortho', designation: 'Orthopedics', specialty: 'Joint Replacement & Medicine', img: '/assets/img/team_img_3.webp' },
-    { name: 'Dr. Aline Briscoe', credentials: 'MD Oncology', designation: 'Oncology', specialty: 'Hematologist & Medical Oncologist', img: '/assets/img/team_img_4.webp' },
+    { name: 'Dr. Gregory Bynum', credentials: 'MD, FRCP', designation: 'Cardiology', specialty: 'Senior Interventional Cardiologist', img: '/images/DR avatar 468x525.jpg' },
+    { name: 'Dr. Lori Fletcher', credentials: 'MBBS, MS', designation: 'Neurology', specialty: 'Chief Neurosurgeon Specialist', img: '/images/DR avatar 468x525 2_.jpg' },
+    { name: 'Dr. Philip Johnson', credentials: 'DNB Ortho', designation: 'Orthopedics', specialty: 'Joint Replacement & Medicine', img: '/images/DR avatar 468x525 3_.jpg' },
+    { name: 'Dr. Aline Briscoe', credentials: 'MD Oncology', designation: 'Oncology', specialty: 'Hematologist & Medical Oncologist', img: '/images/DR avatar 468x525 4.jpg' },
   ];
 
   const testimonials = [
-    { quote: 'The healthcare center provided exceptional care for our entire family. The doctors were attentive, the facilities were world-class, and we felt genuinely cared for throughout our visit.', author: 'Sarah Mitchell', role: 'Healthcare Member', avatar: '/assets/img/avatar_4.webp' },
-    { quote: 'From the moment we walked in, the professionalism and warmth of the staff was remarkable. The diagnostic center is truly advanced and the results were quick and accurate.', author: 'James Robertson', role: 'Wellness Client', avatar: '/assets/img/avatar_5.webp' },
+    { quote: 'The healthcare center provided exceptional care for our entire family. The doctors were attentive, the facilities were world-class, and we felt genuinely cared for throughout our visit.', author: 'Sarah Mitchell', role: 'Healthcare Member', avatar: '/images/bottom last 666x666.jpg' },
+    { quote: 'From the moment we walked in, the professionalism and warmth of the staff was remarkable. The diagnostic center is truly advanced and the results were quick and accurate.', author: 'James Robertson', role: 'Wellness Client', avatar: '/images/bottom last 666x666.jpg' },
   ];
 
   return (
@@ -99,7 +99,7 @@ const HomeV2 = () => {
             <div className="col-lg-6">
               <div className="cs_hero_images">
                 <div className="cs_hero_img_1 cs_radius_20">
-                  <img src="/assets/img/hero_img_2.webp" alt="Healthcare Center" />
+                  <img src="/images/Healing 1 422x650_.jpg" alt="Healthcare Center" />
                 </div>
                 <div className="cs_hero_img_2 cs_radius_20">
                   <img src="/assets/img/hero_img_3.webp" alt="Medical Staff" />
@@ -159,7 +159,7 @@ const HomeV2 = () => {
           <div className="row cs_gap_y_30 align-items-center">
             <div className="col-lg-6">
               <div className="cs_about_img cs_parallax cs_radius_20 position-relative">
-                <img src="/assets/img/about_img_2.webp" alt="Healthcare Center" />
+                <img src="/images/Dedicated 2 804x914.jpg" alt="Healthcare Center" />
                 <div className="cs_about_badge cs_accent_bg cs_white_color cs_radius_20">
                   <i className="fa-solid fa-award cs_fs_40"></i>
                   <span className="cs_fs_14">Award Winning Healthcare</span>
@@ -278,7 +278,7 @@ const HomeV2 = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="cs_service_img cs_radius_20">
-                        <img src={`/assets/img/service_img_${i + 1}.webp`} alt={service.title} />
+                        <img src={service.img} alt={service.title} />
                       </div>
                     </div>
                   </div>
@@ -372,7 +372,7 @@ const HomeV2 = () => {
             </div>
             <div className="col-lg-6">
               <div className="cs_technology_img cs_parallax cs_radius_20 position-relative">
-                <img src="/assets/img/whychoose_img_2.webp" alt="Healthcare Facility" />
+                <img src="/images/Care Meets 3 636x777.jpg" alt="Healthcare Facility" />
                 <div className="cs_technology_badges">
                   <div className="cs_facility_badge cs_accent_bg cs_white_color cs_radius_15">
                     <i className="fa-solid fa-hospital cs_fs_24"></i>

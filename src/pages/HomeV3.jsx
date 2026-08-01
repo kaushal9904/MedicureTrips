@@ -54,10 +54,10 @@ const HomeV3 = () => {
   ];
 
   const tabs = [
-    { title: 'Sick Child Care', icon: 'fa-thermometer-half', desc: 'Expert care when your child is feeling unwell. Our pediatric specialists provide compassionate treatment for illnesses, infections, and acute conditions.', features: ['Same-day sick visits', 'On-site lab testing', 'Prescription management', 'Parent education'] },
-    { title: 'Well Child Daycare', icon: 'fa-sun', desc: 'Safe, nurturing environment for your child during the day with structured activities, meals, and health monitoring by certified staff.', features: ['Licensed caregivers', 'Age-appropriate activities', 'Healthy meals provided', 'Health monitoring'] },
-    { title: 'Post-Hospital Transition', icon: 'fa-house-medical', desc: 'Smooth transition from hospital to home with specialized care plans, medication management, and follow-up appointments.', features: ['Care coordination', 'Medication management', 'Physical therapy', 'Family support'] },
-    { title: 'Emergency Needs', icon: 'fa-truck-medical', desc: 'Round-the-clock emergency care for children with rapid response teams and child-friendly emergency facilities.', features: ['24/7 availability', 'Rapid response team', 'Child-friendly ER', 'Pediatric ICU'] },
+    { title: 'Sick Child Care', icon: 'fa-thermometer-half', desc: 'Expert care when your child is feeling unwell. Our pediatric specialists provide compassionate treatment for illnesses, infections, and acute conditions.', features: ['Same-day sick visits', 'On-site lab testing', 'Prescription management', 'Parent education'], img: '/images/Sick Child Care 1321x523.jpg' },
+    { title: 'Well Child Daycare', icon: 'fa-sun', desc: 'Safe, nurturing environment for your child during the day with structured activities, meals, and health monitoring by certified staff.', features: ['Licensed caregivers', 'Age-appropriate activities', 'Healthy meals provided', 'Health monitoring'], img: '/images/Well Child Daycare 1321x523.jpg' },
+    { title: 'Post-Hospital Transition', icon: 'fa-house-medical', desc: 'Smooth transition from hospital to home with specialized care plans, medication management, and follow-up appointments.', features: ['Care coordination', 'Medication management', 'Physical therapy', 'Family support'], img: '/images/Post-Hospital Transition  1321x523.jpg' },
+    { title: 'Emergency Needs', icon: 'fa-truck-medical', desc: 'Round-the-clock emergency care for children with rapid response teams and child-friendly emergency facilities.', features: ['24/7 availability', 'Rapid response team', 'Child-friendly ER', 'Pediatric ICU'], img: '/images/Emergency Needs 1321x523.jpg' },
   ];
 
   const features = [
@@ -69,10 +69,10 @@ const HomeV3 = () => {
   ];
 
   const team = [
-    { name: 'Dr. Emily Carter', credentials: 'MD Pediatrics', designation: 'Pediatrics', specialty: 'Chief Pediatrician & Child Specialist', img: '/assets/img/team_img_5.webp' },
-    { name: 'Dr. Michael Torres', credentials: 'DO, FAAP', designation: 'Neonatology', specialty: 'Neonatal & Infant Care Specialist', img: '/assets/img/team_img_6.webp' },
-    { name: 'Dr. Sarah Kim', credentials: 'MD', designation: 'Pediatric Surgery', specialty: 'Pediatric Surgeon & Specialist', img: '/assets/img/team_img_7.webp' },
-    { name: 'Dr. David Chen', credentials: 'MD, PhD', designation: 'Child Psychology', specialty: 'Child Psychologist & Therapist', img: '/assets/img/team_img_8.webp' },
+    { name: 'Dr. Emily Carter', credentials: 'MD Pediatrics', designation: 'Pediatrics', specialty: 'Chief Pediatrician & Child Specialist', img: '/images/DR avatar 468x525.jpg' },
+    { name: 'Dr. Michael Torres', credentials: 'DO, FAAP', designation: 'Neonatology', specialty: 'Neonatal & Infant Care Specialist', img: '/images/DR avatar 468x525 2_.jpg' },
+    { name: 'Dr. Sarah Kim', credentials: 'MD', designation: 'Pediatric Surgery', specialty: 'Pediatric Surgeon & Specialist', img: '/images/DR avatar 468x525 3_.jpg' },
+    { name: 'Dr. David Chen', credentials: 'MD, PhD', designation: 'Child Psychology', specialty: 'Child Psychologist & Therapist', img: '/images/DR avatar 468x525 4.jpg' },
   ];
 
   const admissionSteps = [
@@ -123,15 +123,15 @@ const HomeV3 = () => {
                     <span><i className="fa-solid fa-arrow-right"></i></span>
                   </Link>
                 </div>
-                <div className="cs_hero_avatars cs_mt_24">
-                  <div className="cs_avatar_wrapper">
-                    <div className="cs_avatar cs_center cs_radius_50">
+                <div className="cs_hero_users cs_mt_24">
+                  <div className="cs_hero_avatars">
+                    <div className="cs_hero_avatar">
                       <img src="/assets/img/avatar_1.webp" alt="Parent" />
                     </div>
-                    <div className="cs_avatar cs_center cs_radius_50">
+                    <div className="cs_hero_avatar">
                       <img src="/assets/img/avatar_2.webp" alt="Parent" />
                     </div>
-                    <div className="cs_avatar cs_center cs_radius_50">
+                    <div className="cs_hero_avatar">
                       <img src="/assets/img/avatar_3.webp" alt="Parent" />
                     </div>
                   </div>
@@ -141,14 +141,14 @@ const HomeV3 = () => {
             </div>
             <div className="col-lg-6">
               <div className="cs_hero_img cs_radius_20">
-                <img src="/assets/img/hero_img_3.webp" alt="Happy Children" />
+                <img src="/images/child care 1 527x353.jpg" alt="Happy Children" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Partners Slider */}
+      {/* Partners Slider — disabled per request, keep markup for future re-enable
       <section className="cs_partners_section cs_gray_bg">
         <div className="container">
           <Swiper
@@ -171,6 +171,7 @@ const HomeV3 = () => {
           </Swiper>
         </div>
       </section>
+      */}
 
       {/* About Section */}
       <section className="cs_about_style_3">
@@ -178,7 +179,7 @@ const HomeV3 = () => {
           <div className="row cs_gap_y_30 align-items-center">
             <div className="col-lg-6">
               <div className="cs_about_img cs_parallax cs_radius_20 position-relative">
-                <img src="/assets/img/about_img_3.webp" alt="Child Care" />
+                <img src="/images/Where Children 2 1140x768_.jpg" alt="Child Care" />
                 <div className="cs_about_hours cs_white_bg cs_radius_20">
                   <h4 className="cs_fs_20 cs_semibold cs_mb_12">Opening Hours</h4>
                   <div className="cs_hours_item">
@@ -194,6 +195,26 @@ const HomeV3 = () => {
                     <span className="cs_accent_color">Emergency Only</span>
                   </div>
                 </div>
+                <div className="cs_funfact_style_1">
+                  <div className="cs_funfact_item">
+                    <div className="cs_funfact_number cs_fs_60 cs_bold cs_white_color">
+                      <span className="odometer" ref={(el) => { if (el) odometerRefs.current[0] = el; }} data-count-to="5000"></span>+
+                    </div>
+                    <div className="cs_funfact_title cs_white_color">Happy Children</div>
+                  </div>
+                  <div className="cs_funfact_item">
+                    <div className="cs_funfact_number cs_fs_60 cs_bold cs_white_color">
+                      <span className="odometer" ref={(el) => { if (el) odometerRefs.current[1] = el; }} data-count-to="50"></span>+
+                    </div>
+                    <div className="cs_funfact_title cs_white_color">Expert Staff</div>
+                  </div>
+                  <div className="cs_funfact_item">
+                    <div className="cs_funfact_number cs_fs_60 cs_bold cs_white_color">
+                      <span className="odometer" ref={(el) => { if (el) odometerRefs.current[2] = el; }} data-count-to="15"></span>+
+                    </div>
+                    <div className="cs_funfact_title cs_white_color">Years Experience</div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-lg-6">
@@ -203,26 +224,6 @@ const HomeV3 = () => {
                   <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Where Children Come First</h2>
                 </div>
                 <p className="cs_about_desc cs_mb_24">Our child care center provides a safe, nurturing environment where children can grow, learn, and thrive. With experienced pediatric specialists and modern facilities, we ensure every child receives the best care possible.</p>
-                <div className="cs_funfact_style_1 cs_mb_24">
-                  <div className="cs_funfact_item">
-                    <div className="cs_funfact_number cs_fs_60 cs_bold cs_accent_color">
-                      <span className="odometer" ref={(el) => { if (el) odometerRefs.current[0] = el; }} data-count-to="5000"></span>+
-                    </div>
-                    <div className="cs_funfact_title">Happy Children</div>
-                  </div>
-                  <div className="cs_funfact_item">
-                    <div className="cs_funfact_number cs_fs_60 cs_bold cs_accent_color">
-                      <span className="odometer" ref={(el) => { if (el) odometerRefs.current[1] = el; }} data-count-to="50"></span>+
-                    </div>
-                    <div className="cs_funfact_title">Expert Staff</div>
-                  </div>
-                  <div className="cs_funfact_item">
-                    <div className="cs_funfact_number cs_fs_60 cs_bold cs_accent_color">
-                      <span className="odometer" ref={(el) => { if (el) odometerRefs.current[2] = el; }} data-count-to="15"></span>+
-                    </div>
-                    <div className="cs_funfact_title">Years Experience</div>
-                  </div>
-                </div>
                 <Link to="/about-us.html" className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5">
                   <span>Learn More About Us</span>
                   <span><i className="fa-solid fa-arrow-right"></i></span>
@@ -297,7 +298,7 @@ const HomeV3 = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="cs_service_tab_img cs_radius_20">
-                        <img src={`/assets/img/service_img_${i + 1}.webp`} alt={tab.title} />
+                        <img src={tab.img} alt={tab.title} />
                       </div>
                     </div>
                   </div>

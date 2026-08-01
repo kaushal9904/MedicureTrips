@@ -51,6 +51,12 @@ const ASSETS = {
   drAvatar3: "/images/DR avatar 468x525 3_.jpg",
   drAvatar4: "/images/DR avatar 468x525 4.jpg",
 
+  // Partner hospital images
+  hospitalArtemis: "/images/Artemis Hospital468x525.jpg",
+  hospitalMedanta: "/images/Medanta Hospital 468x525 4.jpg",
+  hospitalFortis: "/images/Fortis Hospital 468x525 3_.jpg",
+  hospitalMax: "/images/Max Hospital 468x525 2_.jpg",
+
   // Blog thumbnails
   blog1Img: "/images/Blog 1 early warn 636x375_.jpg",
   blog2Img: "/images/Blog 2 mind Body 636x375_.jpg",
@@ -172,28 +178,28 @@ const Home = () => {
       credentials: "NABH & JCI Accredited",
       designation: "Cardiology",
       specialty: "Multi-specialty Tertiary Care",
-      img: ASSETS.drAvatar1,
+      img: ASSETS.hospitalArtemis,
     },
     {
       name: "Medanta Hospital",
       credentials: "NABH & JCI Accredited",
       designation: "Neuro Surgery",
       specialty: "Multi-specialty Tertiary Care",
-      img: ASSETS.drAvatar2,
+      img: ASSETS.hospitalMedanta,
     },
     {
       name: "Fortis Hospital",
       credentials: "NABH & JCI Accredited",
       designation: "Orthopedic",
       specialty: "Multi-specialty Tertiary Care",
-      img: ASSETS.drAvatar3,
+      img: ASSETS.hospitalFortis,
     },
     {
       name: "Max Hospital",
       credentials: "NABH & JCI Accredited",
       designation: "Cancer Care",
       specialty: "Multi-specialty Tertiary Care",
-      img: ASSETS.drAvatar4,
+      img: ASSETS.hospitalMax,
     },
   ];
 
