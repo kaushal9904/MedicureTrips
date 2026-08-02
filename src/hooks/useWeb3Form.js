@@ -7,6 +7,7 @@ import { submitToWeb3Forms } from '../lib/web3forms';
  */
 export function useWeb3Form(source) {
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,12 +18,15 @@ export function useWeb3Form(source) {
         setStatus('success');
         e.target.reset();
       } else {
+        setErrorMessage(result.message || '');
         setStatus('error');
       }
-    } catch {
+    } catch (err) {
+      console.error('[web3forms] network/unexpected error:', err);
+      setErrorMessage(err?.message || '');
       setStatus('error');
     }
   };
 
-  return { handleSubmit, status };
+  return { handleSubmit, status, errorMessage };
 }

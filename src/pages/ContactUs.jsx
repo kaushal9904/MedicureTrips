@@ -124,7 +124,7 @@ const ContactUs = () => {
                       <img src="/assets/img/icons/arrow-right.svg" alt="Arrow icon" />
                     </button>
                     {contactForm.status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! We'll get back to you within 2 hours.</p>}
-                    {contactForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
+                    {contactForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>{contactForm.errorMessage || 'Something went wrong. Please try again.'}</p>}
                   </div>
                 </form>
               </div>

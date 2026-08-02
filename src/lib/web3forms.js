@@ -14,6 +14,15 @@ const ENDPOINT = 'https://api.web3forms.com/submit';
  * the response body can't be reliably parsed as JSON in that case.
  */
 export async function submitToWeb3Forms(formElement, source) {
+  if (!ACCESS_KEY) {
+    console.error(
+      '[web3forms] VITE_WEB3FORMS_ACCESS_KEY is missing from this build. ' +
+      'On Vercel, env vars are baked in at build time — adding/editing it in ' +
+      'the dashboard does nothing until you trigger a new deployment.'
+    )
+    return { success: false, message: 'Form is not configured (missing access key). Contact the site admin.' }
+  }
+
   const formData = new FormData(formElement)
   const hasFile = [...formData.values()].some((v) => v instanceof File && v.size > 0)
 
@@ -24,6 +33,7 @@ export async function submitToWeb3Forms(formElement, source) {
     page_source: source,
   }
 
+  let result
   if (hasFile) {
     Object.entries(extra).forEach(([key, value]) => formData.set(key, value))
     const response = await fetch(ENDPOINT, {
@@ -32,17 +42,22 @@ export async function submitToWeb3Forms(formElement, source) {
       body: formData,
     })
     try {
-      return await response.json()
+      result = await response.json()
     } catch {
-      return { success: response.ok }
+      result = { success: response.ok }
     }
+  } else {
+    const payload = { ...Object.fromEntries(formData.entries()), ...extra }
+    const response = await fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+    result = await response.json()
   }
 
-  const payload = { ...Object.fromEntries(formData.entries()), ...extra }
-  const response = await fetch(ENDPOINT, {
-    method: 'POST',
-    headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  })
-  return response.json()
+  if (!result.success) {
+    console.error('[web3forms] submission failed:', result)
+  }
+  return result
 }

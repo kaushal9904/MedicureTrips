@@ -156,7 +156,7 @@ const DoctorDetails = () => {
                       <span>{enquiryForm.status === 'sending' ? 'Sending...' : 'Enquire Now'}</span>
                     </button>
                     {enquiryForm.status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! We'll contact you shortly.</p>}
-                    {enquiryForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
+                    {enquiryForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>{enquiryForm.errorMessage || 'Something went wrong. Please try again.'}</p>}
                   </form>
                 </div>
               </aside>

@@ -20,6 +20,7 @@ const Career = () => {
   };
 
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -38,9 +39,12 @@ const Career = () => {
         });
         e.target.reset();
       } else {
+        setErrorMessage(result.message || '');
         setStatus('error');
       }
-    } catch {
+    } catch (err) {
+      console.error('[web3forms] network/unexpected error:', err);
+      setErrorMessage(err?.message || '');
       setStatus('error');
     }
   };
@@ -372,7 +376,7 @@ const Career = () => {
                       <span>{status === 'sending' ? 'Sending...' : 'Submit Application'}</span>
                     </button>
                     {status === 'success' && <p className="mb-0 cs_mt_12 text-white">Thank you for your application! We'll review it and get back to you soon.</p>}
-                    {status === 'error' && <p className="mb-0 cs_mt_12 text-white">Something went wrong. Please try again.</p>}
+                    {status === 'error' && <p className="mb-0 cs_mt_12 text-white">{errorMessage || 'Something went wrong. Please try again.'}</p>}
                   </div>
                 </div>
               </form>

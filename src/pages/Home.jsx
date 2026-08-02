@@ -347,7 +347,7 @@ const Home = () => {
                       )}
                       {instantBooking.status === "error" && (
                         <p className="cs_fs_14 mb-0" style={{ color: "#c0392b" }}>
-                          Something went wrong. Please try again.
+                          {instantBooking.errorMessage || "Something went wrong. Please try again."}
                         </p>
                       )}
                     </form>
@@ -443,7 +443,7 @@ const Home = () => {
                       )}
                       {instantBooking.status === "error" && (
                         <p className="cs_fs_14 mb-0" style={{ color: "#c0392b" }}>
-                          Something went wrong. Please try again.
+                          {instantBooking.errorMessage || "Something went wrong. Please try again."}
                         </p>
                       )}
                     </form>
@@ -539,7 +539,7 @@ const Home = () => {
                       )}
                       {instantBooking.status === "error" && (
                         <p className="cs_fs_14 mb-0" style={{ color: "#c0392b" }}>
-                          Something went wrong. Please try again.
+                          {instantBooking.errorMessage || "Something went wrong. Please try again."}
                         </p>
                       )}
                     </form>
@@ -1353,7 +1353,7 @@ const Home = () => {
                     )}
                     {appointmentForm.status === "error" && (
                       <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: "#c0392b" }}>
-                        Something went wrong. Please try again.
+                        {appointmentForm.errorMessage || "Something went wrong. Please try again."}
                       </p>
                     )}
                   </div>

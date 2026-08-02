@@ -27,6 +27,7 @@ const Checkout = () => {
   const total = subtotal + shipping;
 
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -42,9 +43,12 @@ const Checkout = () => {
         setStatus('success');
         e.target.reset();
       } else {
+        setErrorMessage(result.message || '');
         setStatus('error');
       }
-    } catch {
+    } catch (err) {
+      console.error('[web3forms] network/unexpected error:', err);
+      setErrorMessage(err?.message || '');
       setStatus('error');
     }
   };
@@ -293,7 +297,7 @@ const Checkout = () => {
                       <span>{status === 'sending' ? 'Placing Order...' : 'Place Order'}</span>
                     </button>
                     {status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! Your order has been received.</p>}
-                    {status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
+                    {status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>{errorMessage || 'Something went wrong. Please try again.'}</p>}
                   </div>
                 </div>
               </div>

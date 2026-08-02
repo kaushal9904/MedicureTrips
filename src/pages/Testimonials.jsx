@@ -64,6 +64,7 @@ const Testimonials = () => {
 
   const [hoverRating, setHoverRating] = useState(0);
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -83,9 +84,12 @@ const Testimonials = () => {
         setStatus('success');
         setFormData({ fullName: '', email: '', department: '', rating: 0, testimonial: '' });
       } else {
+        setErrorMessage(result.message || '');
         setStatus('error');
       }
-    } catch {
+    } catch (err) {
+      console.error('[web3forms] network/unexpected error:', err);
+      setErrorMessage(err?.message || '');
       setStatus('error');
     }
   };
@@ -261,7 +265,7 @@ const Testimonials = () => {
                       <img src="/assets/img/icons/arrow-right.svg" alt="Arrow icon" />
                     </button>
                     {status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thank you for sharing your story! Your testimonial will be reviewed and published soon.</p>}
-                    {status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
+                    {status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>{errorMessage || 'Something went wrong. Please try again.'}</p>}
                   </div>
                 </form>
               </div>

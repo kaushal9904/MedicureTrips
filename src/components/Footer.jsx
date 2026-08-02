@@ -8,6 +8,7 @@ export default function Footer() {
   const location = useLocation()
   const year = new Date().getFullYear()
   const [newsletterStatus, setNewsletterStatus] = useState('idle') // idle | sending | success | error
+  const [newsletterError, setNewsletterError] = useState('')
 
   const handleNewsletterSubmit = async (e) => {
     e.preventDefault()
@@ -18,9 +19,12 @@ export default function Footer() {
         setNewsletterStatus('success')
         e.target.reset()
       } else {
+        setNewsletterError(result.message || '')
         setNewsletterStatus('error')
       }
-    } catch {
+    } catch (err) {
+      console.error('[web3forms] network/unexpected error:', err)
+      setNewsletterError(err?.message || '')
       setNewsletterStatus('error')
     }
   }
@@ -116,7 +120,7 @@ export default function Footer() {
                 <span>{newsletterStatus === 'sending' ? '...' : t('footer.subscribe')}</span>
               </button>
               {newsletterStatus === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12 cs_white_color">Thanks for subscribing!</p>}
-              {newsletterStatus === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12 cs_white_color">Something went wrong. Please try again.</p>}
+              {newsletterStatus === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12 cs_white_color">{newsletterError || 'Something went wrong. Please try again.'}</p>}
             </form>
           </div>
           <div className="cs_footer_bottom_content">
