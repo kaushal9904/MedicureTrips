@@ -266,6 +266,10 @@ export default function useSiteAnimations(deps = []) {
     if (gsapReady && stReady && splitReady && !prefersReduced) {
       const titles = doc.querySelectorAll('.cs_section_title')
       titles.forEach((title) => {
+        // Guard against double-invoke (React StrictMode) re-splitting
+        // already-split text, which nests .cs_reveal_word wrappers and
+        // leaves the outer wrapper stuck at opacity:0 forever.
+        if (title.querySelector('.cs_reveal_word')) return
         try {
           const split = w.SplitText.create(title, {
             type: 'words',
@@ -280,18 +284,24 @@ export default function useSiteAnimations(deps = []) {
             stagger: 0.08,
             paused: true,
           })
+          let scrollTrigger = null
           const rect = title.getBoundingClientRect()
           const vh = w.innerHeight || doc.documentElement.clientHeight
           if (rect.top < vh && rect.bottom > 0) {
             tween.play()
           } else {
-            w.ScrollTrigger.create({
+            scrollTrigger = w.ScrollTrigger.create({
               trigger: title,
               start: 'top 85%',
               once: true,
               onEnter: () => tween.play(),
             })
           }
+          cleanupRef.current.push(() => {
+            tween.kill()
+            if (scrollTrigger) scrollTrigger.kill()
+            try { split.revert() } catch (_) {}
+          })
         } catch (_) {}
       })
     }

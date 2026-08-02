@@ -10,6 +10,7 @@ export default function Header({ isShop }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
+  const [openSubmenu, setOpenSubmenu] = useState(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY >= 10)
@@ -149,15 +150,24 @@ export default function Header({ isShop }) {
                       <li key={idx} className={item.children ? 'menu-item-has-children' : ''}>
                         {item.children ? (
                           <>
-                            <a href={item.path}>{item.label}</a>
-                            <ul className="cs_dropdown_list cs_mp_0">
+                            <a href={item.path} onClick={(e) => { if (item.path === '#') e.preventDefault() }}>{item.label}</a>
+                            <button
+                              type="button"
+                              className={`cs_menu_dropdown_toggle${openSubmenu === idx ? ' active' : ''}`}
+                              aria-label={`Toggle ${item.label} submenu`}
+                              aria-expanded={openSubmenu === idx}
+                              onClick={() => setOpenSubmenu(openSubmenu === idx ? null : idx)}
+                            >
+                              <span></span>
+                            </button>
+                            <ul className="cs_dropdown_list cs_mp_0" style={{ display: openSubmenu === idx ? 'block' : undefined }}>
                               {item.children.map((child, cidx) => (
-                                <li key={cidx}><Link to={child.path}>{child.label}</Link></li>
+                                <li key={cidx}><Link to={child.path} onClick={() => { setMenuOpen(false); setOpenSubmenu(null) }}>{child.label}</Link></li>
                               ))}
                             </ul>
                           </>
                         ) : (
-                          <Link to={item.path}>{item.label}</Link>
+                          <Link to={item.path} onClick={() => setMenuOpen(false)}>{item.label}</Link>
                         )}
                       </li>
                     ))}

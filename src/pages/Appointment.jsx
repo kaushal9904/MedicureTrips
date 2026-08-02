@@ -10,7 +10,12 @@ const Appointment = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
+      <section className="cs_page_header_style_1 cs_page_header_video position-relative">
+        <div className="cs_page_header_video_bg">
+          <video autoPlay muted loop playsInline>
+            <source src="/images/Appointment.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div className="container">
           <div className="cs_page_header_in">
             <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">Appointment</h1>
@@ -51,7 +56,7 @@ const Appointment = () => {
                 </ul>
                 <div className="cs_content_bottom">
                   <div className="cs_appointment_img cs_parallax cs_radius_20 position-relative">
-                    <img src="/assets/img/appointment_img_5.webp" alt="Hospital hallway" />
+                    <img src="/images/Appointment Hallway 803x540.jpeg" alt="Hospital hallway" />
                     <div className="cs_appointment_help_cta cs_fs_20 cs_semibold cs_white_color">
                       <span>Need help? Call us:</span>
                       <a href="tel:9958192249" aria-label="Call us to 9958192249">9958192249</a>
@@ -106,10 +111,18 @@ const Appointment = () => {
                       <label htmlFor="appt-doctor">Preferred Doctor</label>
                       <select className="cs_form_field cs_choice" name="doctor" id="appt-doctor" defaultValue="">
                         <option disabled value="">Select doctor</option>
-                        <option>Dr. Gregory Bynum</option>
-                        <option>Dr. Lori Fletcher</option>
-                        <option>Dr. Philip Johnson</option>
-                        <option>Dr. Aline Briscoe</option>
+                        <option>Dr. A. V. Gurava Reddy</option>
+                        <option>Dr. Aditya Gupta</option>
+                        <option>Dr. Ajay Kaul</option>
+                        <option>Dr. Ajitabh Srivastava</option>
+                        <option>Dr. Alok Ranjan</option>
+                        <option>Dr. Amal Roy Chaudhoory</option>
+                        <option>Dr. Amit Verma</option>
+                        <option>Dr. Anil Mandhani</option>
+                        <option>Dr. Arun Saroha</option>
+                        <option>Dr. Arvinder Singh Soin</option>
+                        <option>Dr. Ashish Sabharwal</option>
+                        <option>Dr. Ashok Kumar Vaid</option>
                       </select>
                     </div>
                   </div>
