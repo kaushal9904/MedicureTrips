@@ -1271,10 +1271,18 @@ const Home = () => {
                         <option disabled value="">
                           Select Doctor
                         </option>
-                        <option>Dr. Gregory Bynum</option>
-                        <option>Dr. Lori Fletcher</option>
-                        <option>Dr. Philip Johnson</option>
-                        <option>Dr. Aline Briscoe</option>
+                        <option>Dr. A. V. Gurava Reddy</option>
+                        <option>Dr. Aditya Gupta</option>
+                        <option>Dr. Ajay Kaul</option>
+                        <option>Dr. Ajitabh Srivastava</option>
+                        <option>Dr. Alok Ranjan</option>
+                        <option>Dr. Amal Roy Chaudhoory</option>
+                        <option>Dr. Amit Verma</option>
+                        <option>Dr. Anil Mandhani</option>
+                        <option>Dr. Arun Saroha</option>
+                        <option>Dr. Arvinder Singh Soin</option>
+                        <option>Dr. Ashish Sabharwal</option>
+                        <option>Dr. Ashok Kumar Vaid</option>
                       </select>
                     </div>
                   </div>
