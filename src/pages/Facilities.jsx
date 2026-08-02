@@ -78,7 +78,7 @@ const Facilities = () => {
                   <div className="cs_facility_body cs_px_24 cs_pb_30">
                     <h3 className="cs_facility_title cs_fs_22 cs_medium cs_mb_12">{facility.title}</h3>
                     <p className="cs_facility_desc cs_secondary_color cs_mb_20">{facility.description}</p>
-                    <Link to="/service-details.html" className="cs_read_more cs_accent_color cs_fs_16 cs_semibold">
+                    <Link to="/services.html" className="cs_read_more cs_accent_color cs_fs_16 cs_semibold">
                       Learn More <img src="/assets/img/icons/arrow-right.svg" alt="Arrow" className="cs_read_more_icon" />
                     </Link>
                   </div>

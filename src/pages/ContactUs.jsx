@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useWeb3Form } from '../hooks/useWeb3Form';
 
 const contactFeatures = [
   { title: 'Call Us', icon: '/assets/img/icons/phone.svg', text: '9958192249', sub: 'Monday - Sunday (All Day)', color: 'cs_color_1', link: 'tel:9958192249' },
@@ -20,6 +21,7 @@ const treatments = [
 ];
 
 const ContactUs = () => {
+  const contactForm = useWeb3Form('Contact Us Page — Message Form');
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -82,7 +84,7 @@ const ContactUs = () => {
                   <h2 className="cs_fs_40 cs_semibold cs_mb_12">Send us a Message</h2>
                   <p className="mb-0">Fill the form and we'll get back within 2 hours.</p>
                 </div>
-                <form className="cs_appointment_form_1 row cs_gap_y_24" onSubmit={e => e.preventDefault()}>
+                <form className="cs_appointment_form_1 row cs_gap_y_24" onSubmit={contactForm.handleSubmit}>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="contact_name">Name</label>
@@ -117,10 +119,12 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
-                      <span>Send Message</span>
+                    <button type="submit" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5" disabled={contactForm.status === 'sending'}>
+                      <span>{contactForm.status === 'sending' ? 'Sending...' : 'Send Message'}</span>
                       <img src="/assets/img/icons/arrow-right.svg" alt="Arrow icon" />
                     </button>
+                    {contactForm.status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! We'll get back to you within 2 hours.</p>}
+                    {contactForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
                   </div>
                 </form>
               </div>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { submitToWeb3Forms } from '../lib/web3forms';
 
 const testimonials = [
   {
@@ -62,6 +63,7 @@ const Testimonials = () => {
   });
 
   const [hoverRating, setHoverRating] = useState(0);
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -72,10 +74,20 @@ const Testimonials = () => {
     setFormData((prev) => ({ ...prev, rating }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert('Thank you for sharing your story! Your testimonial will be reviewed and published soon.');
-    setFormData({ fullName: '', email: '', department: '', rating: 0, testimonial: '' });
+    setStatus('sending');
+    try {
+      const result = await submitToWeb3Forms(e.target, 'Testimonials Page — Share Your Story Form');
+      if (result.success) {
+        setStatus('success');
+        setFormData({ fullName: '', email: '', department: '', rating: 0, testimonial: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
 
   const scrollToTop = () => {
@@ -210,6 +222,7 @@ const Testimonials = () => {
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label>Your Rating</label>
+                      <input type="hidden" name="rating" value={formData.rating} />
                       <div className="cs_star_rating_input">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <button
@@ -243,10 +256,12 @@ const Testimonials = () => {
                     </div>
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
-                      <span>Submit Testimonial</span>
+                    <button type="submit" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5" disabled={status === 'sending'}>
+                      <span>{status === 'sending' ? 'Sending...' : 'Submit Testimonial'}</span>
                       <img src="/assets/img/icons/arrow-right.svg" alt="Arrow icon" />
                     </button>
+                    {status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thank you for sharing your story! Your testimonial will be reviewed and published soon.</p>}
+                    {status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
                   </div>
                 </form>
               </div>

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import { useWeb3Form } from '../hooks/useWeb3Form';
 
 const team = [
   { name: 'Artemis Hospital', creds: 'NABH & JCI Accredited', designation: 'Cardiology', specialty: 'Multi-specialty Tertiary Care', img: '/images/Artemis Hospital468x525.jpg' },
@@ -18,6 +19,7 @@ const testimonials = [
 ];
 
 const AboutUs = () => {
+  const appointmentForm = useWeb3Form('About Us Page — Appointment Form');
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -408,7 +410,7 @@ const AboutUs = () => {
                         <p className="mb-0">Fill the details below — we'll confirm within 2hrs.</p>
                       </div>
                       <div className="cs_appointment_form_wrapper cs_gray3_bg cs_radius_20">
-                        <form className="cs_appointment_form_2 cs_type_1 row cs_gap_y_24" onSubmit={e => e.preventDefault()}>
+                        <form className="cs_appointment_form_2 cs_type_1 row cs_gap_y_24" onSubmit={appointmentForm.handleSubmit}>
                           <div className="col-12">
                             <div className="cs_input_wrap cs_white_bg cs_radius_5">
                               <label htmlFor="appt-name">Full Name</label>
@@ -479,10 +481,12 @@ const AboutUs = () => {
                             </div>
                           </div>
                           <div className="col-12">
-                            <button type="submit" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
-                              <span>Confirm Appointment</span>
+                            <button type="submit" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5" disabled={appointmentForm.status === 'sending'}>
+                              <span>{appointmentForm.status === 'sending' ? 'Sending...' : 'Confirm Appointment'}</span>
                               <img src="/assets/img/icons/arrow-right.svg" alt="Arrow" />
                             </button>
+                            {appointmentForm.status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! We'll contact you shortly.</p>}
+                            {appointmentForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
                           </div>
                         </form>
                       </div>

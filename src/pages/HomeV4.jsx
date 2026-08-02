@@ -244,7 +244,7 @@ const HomeV4 = () => {
                           </li>
                         ))}
                       </ul>
-                      <Link to="/service-details.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5 cs_mt_24">
+                      <Link to="/services.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5 cs_mt_24">
                         <span>Learn More</span>
                         <span><i className="fa-solid fa-arrow-right"></i></span>
                       </Link>

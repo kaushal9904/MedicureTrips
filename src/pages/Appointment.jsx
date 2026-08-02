@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useWeb3Form } from '../hooks/useWeb3Form';
 
 const Appointment = () => {
+  const appointmentForm = useWeb3Form('Appointment Page — Booking Form');
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -66,7 +68,7 @@ const Appointment = () => {
                   <h3 className="cs_fs_40 cs_semibold cs_mb_6">Book an Appointment</h3>
                   <p className="mb-0">Fill the details below. Our team will confirm within 2 hours.</p>
                 </div>
-                <form action="#" className="cs_appointment_form_1 row cs_gap_y_24" onSubmit={e => e.preventDefault()}>
+                <form className="cs_appointment_form_1 row cs_gap_y_24" onSubmit={appointmentForm.handleSubmit}>
                   <div className="col-12">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="appt-name">Full Name</label>
@@ -132,10 +134,12 @@ const Appointment = () => {
                     </div>
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
-                      <span>Confirm Appointment</span>
+                    <button type="submit" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5" disabled={appointmentForm.status === 'sending'}>
+                      <span>{appointmentForm.status === 'sending' ? 'Sending...' : 'Confirm Appointment'}</span>
                       <img src="/assets/img/icons/arrow-right.svg" alt="Arrow" />
                     </button>
+                    {appointmentForm.status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! We'll contact you shortly.</p>}
+                    {appointmentForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
                   </div>
                 </form>
               </div>

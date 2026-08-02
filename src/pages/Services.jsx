@@ -1,17 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-
-const services = [
-  { title: 'Organ Transplant', desc: 'Life-saving organ transplants with precision and compassionate care.', tags: ['Kidney & liver transplant', 'Post-op transplant care'], img: '/images/Organ Transplant.jpg' },
-  { title: 'Cardiology', desc: 'Heart care that combines expertise, technology, and heartfelt compassion.', tags: ['Bypass & angioplasty', 'Valve replacement'], img: '/images/Cardiology.jpg' },
-  { title: 'Neuro Surgery', desc: 'Advanced neurosurgical interventions for optimal brain and spinal health.', tags: ['Brain tumor surgery', 'Stroke management'], img: '/images/Neuro Surgery.jpg' },
-  { title: 'Spine Surgery', desc: 'Tailored spine surgeries ensuring relief and improved quality of life.', tags: ['Minimally invasive surgery', 'Disc replacement'], img: '/images/Spine Surgery.jpg' },
-  { title: 'Orthopedic', desc: 'Orthopedic excellence, restoring mobility and enhancing musculoskeletal health.', tags: ['Joint replacement', 'Sports injury care'], img: '/images/Orthopedic.jpg' },
-  { title: 'Urology', desc: 'Comprehensive urological care for optimal kidney and urinary health.', tags: ['Kidney stone treatment', 'Prostate care'], img: '/images/Urology.jpg' },
-  { title: 'ENT', desc: 'Expert ENT treatments promoting ear, nose, and throat well-being.', tags: ['Sinus surgery', 'Hearing care'], img: '/images/ENT.jpg' },
-  { title: 'Plastic Surgery', desc: 'Transformative plastic surgery, enhancing beauty and boosting confidence.', tags: ['Cosmetic surgery', 'Reconstructive surgery'], img: '/images/Plastic Surgery.jpg' },
-  { title: 'Cancer', desc: 'Holistic cancer care with advanced treatments and compassionate support.', tags: ['Chemotherapy', 'Immunotherapy'], img: '/images/Cancer.jpg' },
-];
+import { services } from '../data/services';
 
 const Services = () => {
   const [visibleCount, setVisibleCount] = useState(6);
@@ -57,14 +46,14 @@ const Services = () => {
                 <div className="cs_service_card_4 cs_gray2_bg cs_radius_20">
                   <div className="cs_card_body">
                     <h3 className="cs_card_title cs_fs_24 cs_medium cs_mb_20 cs_mb_lg_12">
-                      <Link to="/service-details.html">{service.title}</Link>
+                      <Link to={`/service-details.html?slug=${service.slug}`}>{service.title}</Link>
                     </h3>
                     <p className="cs_card_desc cs_mb_24 cs_mb_lg_16">{service.desc}</p>
                     <ul className="cs_card_tags cs_mp_0 cs_mb_30 cs_mb_lg_24">
                       {service.tags.map((tag, j) => <li key={j}>{tag}</li>)}
                     </ul>
                   </div>
-                  <Link to="/service-details.html" aria-label={`Open ${service.title}`} className="cs_card_img cs_radius_15">
+                  <Link to={`/service-details.html?slug=${service.slug}`} aria-label={`Open ${service.title}`} className="cs_card_img cs_radius_15">
                     <img src={service.img} alt={service.title} />
                     <span className="cs_card_btn cs_white_bg cs_center cs_radius_50">
                       <img src="/assets/img/icons/arrow-right.svg" alt="Arrow" />

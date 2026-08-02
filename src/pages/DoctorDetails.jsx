@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useWeb3Form } from '../hooks/useWeb3Form';
 
 const relatedDoctors = [
   { name: 'Marengo Asia Hospital', specialty: 'Neuro Surgery · NABH & JCI Accredited', img: '/assets/img/team_img_2.webp' },
@@ -7,6 +8,7 @@ const relatedDoctors = [
 ];
 
 const DoctorDetails = () => {
+  const enquiryForm = useWeb3Form('Doctor Details Page — Enquiry Form');
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -136,7 +138,7 @@ const DoctorDetails = () => {
                 </div>
                 <div className="cs_sidebar_widget cs_gray2_bg cs_radius_20">
                   <h3 className="cs_widget_title cs_fs_20 cs_semibold cs_primary_color cs_mb_20">Enquire Now</h3>
-                  <form className="cs_appointment_form" onSubmit={e => e.preventDefault()}>
+                  <form className="cs_appointment_form" onSubmit={enquiryForm.handleSubmit}>
                     <div className="cs_input_wrap cs_white_bg cs_radius_5">
                       <label htmlFor="booking-name" className="cs_form_label cs_primary_color cs_semibold">Full Name</label>
                       <input type="text" id="booking-name" name="name" className="cs_form_field" placeholder="Enter your name" autoComplete="off" />
@@ -149,10 +151,12 @@ const DoctorDetails = () => {
                       <label htmlFor="booking-symptoms" className="cs_form_label cs_primary_color cs_semibold">Brief symptoms</label>
                       <textarea id="booking-symptoms" name="symptoms" className="cs_form_field" rows="3" placeholder="Brief your symptoms"></textarea>
                     </div>
-                    <button type="submit" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5 w-100 justify-content-center">
+                    <button type="submit" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5 w-100 justify-content-center" disabled={enquiryForm.status === 'sending'}>
                       <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
-                      <span>Enquire Now</span>
+                      <span>{enquiryForm.status === 'sending' ? 'Sending...' : 'Enquire Now'}</span>
                     </button>
+                    {enquiryForm.status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! We'll contact you shortly.</p>}
+                    {enquiryForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
                   </form>
                 </div>
               </aside>

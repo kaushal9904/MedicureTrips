@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useWeb3Form } from "../hooks/useWeb3Form";
 
 /**
  * ─────────────────────────────────────────────────────────────
@@ -66,6 +67,8 @@ const Home = () => {
   const heroSwiperInstance = useRef(null);
   const testimonialSwiperInstance = useRef(null);
   const odometerRefs = useRef([]);
+  const instantBooking = useWeb3Form("Home Page — Instant Booking Widget");
+  const appointmentForm = useWeb3Form("Home Page — Book an Appointment Form");
 
   useEffect(() => {
     const initOdometers = async () => {
@@ -296,7 +299,7 @@ const Home = () => {
                     </div>
                     <form
                       className="cs_ib_card"
-                      onSubmit={(e) => e.preventDefault()}
+                      onSubmit={instantBooking.handleSubmit}
                     >
                       <div className="cs_header cs_accent_color">
                         <span className="cs_dot"></span>
@@ -310,6 +313,7 @@ const Home = () => {
                         </label>
                         <input
                           className="cs_field_value"
+                          name="treatment"
                           placeholder="Cardiology"
                           required
                         />
@@ -320,6 +324,7 @@ const Home = () => {
                         </label>
                         <input
                           className="cs_field_value"
+                          name="available_date"
                           placeholder="Tomorrow, 09:30 AM"
                           required
                         />
@@ -327,9 +332,24 @@ const Home = () => {
                       <button
                         type="submit"
                         className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
+                        disabled={instantBooking.status === "sending"}
                       >
-                        <span>Check Availability</span>
+                        <span>
+                          {instantBooking.status === "sending"
+                            ? "Sending..."
+                            : "Check Availability"}
+                        </span>
                       </button>
+                      {instantBooking.status === "success" && (
+                        <p className="cs_fs_14 mb-0" style={{ color: "#1a7f37" }}>
+                          Thanks! We'll contact you shortly.
+                        </p>
+                      )}
+                      {instantBooking.status === "error" && (
+                        <p className="cs_fs_14 mb-0" style={{ color: "#c0392b" }}>
+                          Something went wrong. Please try again.
+                        </p>
+                      )}
                     </form>
                   </div>
                 </div>
@@ -375,7 +395,7 @@ const Home = () => {
                     </div>
                     <form
                       className="cs_ib_card"
-                      onSubmit={(e) => e.preventDefault()}
+                      onSubmit={instantBooking.handleSubmit}
                     >
                       <div className="cs_header cs_accent_color">
                         <span className="cs_dot"></span>
@@ -389,6 +409,7 @@ const Home = () => {
                         </label>
                         <input
                           className="cs_field_value"
+                          name="treatment"
                           placeholder="Cardiology"
                           required
                         />
@@ -399,6 +420,7 @@ const Home = () => {
                         </label>
                         <input
                           className="cs_field_value"
+                          name="available_date"
                           placeholder="Tomorrow, 09:30 AM"
                           required
                         />
@@ -406,9 +428,24 @@ const Home = () => {
                       <button
                         type="submit"
                         className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
+                        disabled={instantBooking.status === "sending"}
                       >
-                        <span>Check Availability</span>
+                        <span>
+                          {instantBooking.status === "sending"
+                            ? "Sending..."
+                            : "Check Availability"}
+                        </span>
                       </button>
+                      {instantBooking.status === "success" && (
+                        <p className="cs_fs_14 mb-0" style={{ color: "#1a7f37" }}>
+                          Thanks! We'll contact you shortly.
+                        </p>
+                      )}
+                      {instantBooking.status === "error" && (
+                        <p className="cs_fs_14 mb-0" style={{ color: "#c0392b" }}>
+                          Something went wrong. Please try again.
+                        </p>
+                      )}
                     </form>
                   </div>
                 </div>
@@ -454,7 +491,7 @@ const Home = () => {
                     </div>
                     <form
                       className="cs_ib_card"
-                      onSubmit={(e) => e.preventDefault()}
+                      onSubmit={instantBooking.handleSubmit}
                     >
                       <div className="cs_header cs_accent_color">
                         <span className="cs_dot"></span>
@@ -468,6 +505,7 @@ const Home = () => {
                         </label>
                         <input
                           className="cs_field_value"
+                          name="treatment"
                           placeholder="Cardiology"
                           required
                         />
@@ -478,6 +516,7 @@ const Home = () => {
                         </label>
                         <input
                           className="cs_field_value"
+                          name="available_date"
                           placeholder="Tomorrow, 09:30 AM"
                           required
                         />
@@ -485,9 +524,24 @@ const Home = () => {
                       <button
                         type="submit"
                         className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
+                        disabled={instantBooking.status === "sending"}
                       >
-                        <span>Check Availability</span>
+                        <span>
+                          {instantBooking.status === "sending"
+                            ? "Sending..."
+                            : "Check Availability"}
+                        </span>
                       </button>
+                      {instantBooking.status === "success" && (
+                        <p className="cs_fs_14 mb-0" style={{ color: "#1a7f37" }}>
+                          Thanks! We'll contact you shortly.
+                        </p>
+                      )}
+                      {instantBooking.status === "error" && (
+                        <p className="cs_fs_14 mb-0" style={{ color: "#c0392b" }}>
+                          Something went wrong. Please try again.
+                        </p>
+                      )}
                     </form>
                   </div>
                 </div>
@@ -773,7 +827,7 @@ const Home = () => {
                     </div>
                     <h3 className="cs_service_title cs_fs_24 cs_medium mb-0">
                       <Link
-                        to="/service-details.html"
+                        to={`/service-details.html?slug=${service.title.toLowerCase().replace(/\s+/g, '-')}`}
                         aria-label={`Go to ${service.title} details page`}
                       >
                         {service.title}
@@ -798,7 +852,7 @@ const Home = () => {
                   style={{ backgroundImage: `url('${service.img}')` }}
                 >
                   <Link
-                    to="/service-details.html"
+                    to={`/service-details.html?slug=${service.title.toLowerCase().replace(/\s+/g, '-')}`}
                     aria-label={`Go to ${service.title} details page`}
                     className="cs_service_btn cs_accent_bg cs_white_color cs_radius_50"
                   >
@@ -1144,7 +1198,7 @@ const Home = () => {
                 </div>
                 <form
                   className="cs_appointment_form_1 row cs_gap_y_24"
-                  onSubmit={(e) => e.preventDefault()}
+                  onSubmit={appointmentForm.handleSubmit}
                 >
                   <div className="col-12">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
@@ -1272,13 +1326,28 @@ const Home = () => {
                     <button
                       type="submit"
                       className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5"
+                      disabled={appointmentForm.status === "sending"}
                     >
-                      <span>Confirm Appointment</span>
+                      <span>
+                        {appointmentForm.status === "sending"
+                          ? "Sending..."
+                          : "Confirm Appointment"}
+                      </span>
                       <img
                         src="/assets/img/icons/arrow-right.svg"
                         alt="Arrow"
                       />
                     </button>
+                    {appointmentForm.status === "success" && (
+                      <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: "#1a7f37" }}>
+                        Thanks! We'll contact you shortly.
+                      </p>
+                    )}
+                    {appointmentForm.status === "error" && (
+                      <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: "#c0392b" }}>
+                        Something went wrong. Please try again.
+                      </p>
+                    )}
                   </div>
                 </form>
               </div>

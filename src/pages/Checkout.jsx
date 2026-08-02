@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { submitToWeb3Forms } from '../lib/web3forms';
 
 const orderItems = [
   { id: 1, name: 'Pulse Oximeter', price: 39, quantity: 2, img: '/assets/img/product_img_2.webp' },
@@ -25,9 +26,27 @@ const Checkout = () => {
   const shipping = subtotal > 50 ? 0 : 9.99;
   const total = subtotal + shipping;
 
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
+    try {
+      const result = await submitToWeb3Forms(e.target, 'Checkout Page — Order');
+      if (result.success) {
+        setStatus('success');
+        e.target.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
 
   const scrollToTop = () => {
@@ -54,7 +73,9 @@ const Checkout = () => {
       {/* Checkout Section */}
       <section className="cs_checkout_section">
         <div className="container">
-          <form onSubmit={e => e.preventDefault()}>
+          <form onSubmit={handleSubmit}>
+            <input type="hidden" name="order_summary" value={orderItems.map(i => `${i.name} x${i.quantity} ($${(i.price * i.quantity).toFixed(2)})`).join(', ')} />
+            <input type="hidden" name="order_total" value={`$${total.toFixed(2)}`} />
             <div className="row cs_gap_y_40">
               {/* Billing Details */}
               <div className="col-lg-8">
@@ -268,9 +289,11 @@ const Checkout = () => {
 
                   {/* Place Order */}
                   <div className="cs_place_order cs_mt_40">
-                    <button type="submit" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
-                      <span>Place Order</span>
+                    <button type="submit" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5" disabled={status === 'sending'}>
+                      <span>{status === 'sending' ? 'Placing Order...' : 'Place Order'}</span>
                     </button>
+                    {status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! Your order has been received.</p>}
+                    {status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
                   </div>
                 </div>
               </div>

@@ -5,11 +5,13 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useWeb3Form } from '../hooks/useWeb3Form';
 
 const HomeV3 = () => {
   const odometerRefs = useRef([]);
   const [activeTab, setActiveTab] = useState(0);
   const [activeFaq, setActiveFaq] = useState(null);
+  const appointmentForm = useWeb3Form('Child Care Page — Appointment Form');
 
   useEffect(() => {
     const initOdometers = async () => {
@@ -479,35 +481,35 @@ const HomeV3 = () => {
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="cs_appointment_form_wrapper cs_white_bg cs_radius_20">
-                <form className="cs_appointment_form_1 row cs_gap_y_24" onSubmit={(e) => e.preventDefault()}>
+                <form className="cs_appointment_form_1 row cs_gap_y_24" onSubmit={appointmentForm.handleSubmit}>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="parentName">Parent's Name</label>
-                      <input type="text" id="parentName" className="cs_form_field" placeholder="Enter parent's name" />
+                      <input type="text" id="parentName" name="parent_name" className="cs_form_field" placeholder="Enter parent's name" />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="childName">Child's Name</label>
-                      <input type="text" id="childName" className="cs_form_field" placeholder="Enter child's name" />
+                      <input type="text" id="childName" name="child_name" className="cs_form_field" placeholder="Enter child's name" />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="phone">Phone Number</label>
-                      <input type="text" id="phone" className="cs_form_field" placeholder="Enter phone number" />
+                      <input type="text" id="phone" name="phone" className="cs_form_field" placeholder="Enter phone number" />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="email">Email Address</label>
-                      <input type="email" id="email" className="cs_form_field" placeholder="Enter email address" />
+                      <input type="email" id="email" name="email" className="cs_form_field" placeholder="Enter email address" />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="childAge">Child's Age</label>
-                      <select className="cs_form_field cs_choice" id="childAge" defaultValue="">
+                      <select className="cs_form_field cs_choice" id="childAge" name="child_age" defaultValue="">
                         <option disabled value="">Select age</option>
                         <option>6-12 months</option>
                         <option>1-2 years</option>
@@ -520,7 +522,7 @@ const HomeV3 = () => {
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="service">Service Type</label>
-                      <select className="cs_form_field cs_choice" id="service" defaultValue="">
+                      <select className="cs_form_field cs_choice" id="service" name="service" defaultValue="">
                         <option disabled value="">Select service</option>
                         <option>Sick Child Care</option>
                         <option>Well Child Daycare</option>
@@ -532,27 +534,29 @@ const HomeV3 = () => {
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5 position-relative">
                       <label htmlFor="date">Preferred Date</label>
-                      <input type="text" id="date" className="cs_form_field" placeholder="Select date" />
+                      <input type="text" id="date" name="date" className="cs_form_field" placeholder="Select date" />
                       <img src="/assets/img/icons/calendar.svg" alt="Calendar" className="cs_date_icon position-absolute" />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="time">Preferred Time</label>
-                      <input type="text" id="time" className="cs_form_field" placeholder="Select time" />
+                      <input type="text" id="time" name="time" className="cs_form_field" placeholder="Select time" />
                     </div>
                   </div>
                   <div className="col-12">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="message">Additional Notes</label>
-                      <textarea id="message" rows="3" className="cs_form_field" placeholder="Any special requirements or concerns..."></textarea>
+                      <textarea id="message" name="message" rows="3" className="cs_form_field" placeholder="Any special requirements or concerns..."></textarea>
                     </div>
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
-                      <span>Book Appointment</span>
+                    <button type="submit" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5" disabled={appointmentForm.status === 'sending'}>
+                      <span>{appointmentForm.status === 'sending' ? 'Sending...' : 'Book Appointment'}</span>
                       <img src="/assets/img/icons/arrow-right.svg" alt="Arrow" />
                     </button>
+                    {appointmentForm.status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! We'll contact you shortly.</p>}
+                    {appointmentForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
                   </div>
                 </form>
               </div>

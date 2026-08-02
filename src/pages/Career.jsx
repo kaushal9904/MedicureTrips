@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { submitToWeb3Forms } from '../lib/web3forms';
 
 const Career = () => {
   const [formData, setFormData] = useState({
@@ -18,17 +19,30 @@ const Career = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert('Thank you for your application! We will review it and get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      position: '',
-      experience: '',
-      message: ''
-    });
+    setStatus('sending');
+    try {
+      const result = await submitToWeb3Forms(e.target, 'Career Page — Job Application Form');
+      if (result.success) {
+        setStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          position: '',
+          experience: '',
+          message: ''
+        });
+        e.target.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
 
   const jobListings = [
@@ -332,8 +346,9 @@ const Career = () => {
                   <div className="col-md-6">
                     <div className="cs_form_group">
                       <label>Resume/CV</label>
-                      <input 
-                        type="file" 
+                      <input
+                        type="file"
+                        name="resume"
                         className="cs_file_input"
                         accept=".pdf,.doc,.docx"
                       />
@@ -353,9 +368,11 @@ const Career = () => {
                     </div>
                   </div>
                   <div className="col-12 text-center">
-                    <button type="submit" className="cs_btn cs_style_1 cs_white_bg">
-                      <span>Submit Application</span>
+                    <button type="submit" className="cs_btn cs_style_1 cs_white_bg" disabled={status === 'sending'}>
+                      <span>{status === 'sending' ? 'Sending...' : 'Submit Application'}</span>
                     </button>
+                    {status === 'success' && <p className="mb-0 cs_mt_12 text-white">Thank you for your application! We'll review it and get back to you soon.</p>}
+                    {status === 'error' && <p className="mb-0 cs_mt_12 text-white">Something went wrong. Please try again.</p>}
                   </div>
                 </div>
               </form>

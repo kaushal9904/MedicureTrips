@@ -47,11 +47,11 @@ const HomeV2 = () => {
   const tickerItems = ['Healing with heart', 'Treating with technology', 'Compassionate Care', 'Advanced Medicine', 'Expert Doctors', 'Modern Facility'];
 
   const services = [
-    { title: 'Cardiology', icon: '/assets/img/icons/cardiology.svg', desc: 'Advanced cardiac care including interventional procedures, preventive heart wellness, and 24/7 cardiac cath lab support.', features: ['ECG, Echo & TMT', 'Cardiac Cath Lab', 'Heart Failure Management'], img: '/images/Cardiology-service 1321x523.jpg' },
-    { title: 'Neurology', icon: '/assets/img/icons/neurology.svg', desc: 'Comprehensive brain, spine & nerve care with stroke management, epilepsy surgery, and neuro-rehabilitation.', features: ['Neuro-Imaging', 'Stroke Recovery', 'Epilepsy Monitoring'], img: '/images/Neurology-service 1321x523.jpg' },
-    { title: 'Orthopedics', icon: '/assets/img/icons/orthopedics.svg', desc: 'Joint replacement, sports medicine, trauma surgery, and minimally invasive orthopedic procedures.', features: ['Joint Replacement', 'Sports Injury Clinic', 'Spine Surgery'], img: '/images/Orthopedics-service 1321x523.jpg' },
-    { title: 'Oncology', icon: '/assets/img/icons/oncology.svg', desc: 'Precision oncology, chemotherapy, immunotherapy, and compassionate palliative support.', features: ['Chemotherapy', 'Radiation Therapy', 'Palliative Care'], img: '/images/Oncology-service 1321x523.jpg' },
-    { title: 'Maternity', icon: '/assets/img/icons/maternity.svg', desc: 'Holistic pregnancy care, high-risk obstetrics, and state-of-the-art delivery suites.', features: ['Prenatal Care', 'High-Risk Pregnancy', 'NICU Support'], img: '/images/Maternity-service 1321x523.jpg' },
+    { title: 'Cardiology', slug: 'cardiology', icon: '/assets/img/icons/cardiology.svg', desc: 'Advanced cardiac care including interventional procedures, preventive heart wellness, and 24/7 cardiac cath lab support.', features: ['ECG, Echo & TMT', 'Cardiac Cath Lab', 'Heart Failure Management'], img: '/images/Cardiology-service 1321x523.jpg' },
+    { title: 'Neurology', slug: 'neuro-surgery', icon: '/assets/img/icons/neurology.svg', desc: 'Comprehensive brain, spine & nerve care with stroke management, epilepsy surgery, and neuro-rehabilitation.', features: ['Neuro-Imaging', 'Stroke Recovery', 'Epilepsy Monitoring'], img: '/images/Neurology-service 1321x523.jpg' },
+    { title: 'Orthopedics', slug: 'orthopedic', icon: '/assets/img/icons/orthopedics.svg', desc: 'Joint replacement, sports medicine, trauma surgery, and minimally invasive orthopedic procedures.', features: ['Joint Replacement', 'Sports Injury Clinic', 'Spine Surgery'], img: '/images/Orthopedics-service 1321x523.jpg' },
+    { title: 'Oncology', slug: 'cancer', icon: '/assets/img/icons/oncology.svg', desc: 'Precision oncology, chemotherapy, immunotherapy, and compassionate palliative support.', features: ['Chemotherapy', 'Radiation Therapy', 'Palliative Care'], img: '/images/Oncology-service 1321x523.jpg' },
+    { title: 'Maternity', slug: null, icon: '/assets/img/icons/maternity.svg', desc: 'Holistic pregnancy care, high-risk obstetrics, and state-of-the-art delivery suites.', features: ['Prenatal Care', 'High-Risk Pregnancy', 'NICU Support'], img: '/images/Maternity-service 1321x523.jpg' },
   ];
 
   const pricingPackages = [
@@ -265,7 +265,7 @@ const HomeV2 = () => {
                           </li>
                         ))}
                       </ul>
-                      <Link to="/service-details.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5 cs_mt_24">
+                      <Link to={service.slug ? `/service-details.html?slug=${service.slug}` : '/services.html'} className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5 cs_mt_24">
                         <span>Learn More</span>
                         <span><i className="fa-solid fa-arrow-right"></i></span>
                       </Link>

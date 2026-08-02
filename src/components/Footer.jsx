@@ -1,9 +1,29 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
+import { submitToWeb3Forms } from '../lib/web3forms'
 
 export default function Footer() {
   const { t } = useTranslation()
+  const location = useLocation()
   const year = new Date().getFullYear()
+  const [newsletterStatus, setNewsletterStatus] = useState('idle') // idle | sending | success | error
+
+  const handleNewsletterSubmit = async (e) => {
+    e.preventDefault()
+    setNewsletterStatus('sending')
+    try {
+      const result = await submitToWeb3Forms(e.target, `Newsletter Signup — ${location.pathname}`)
+      if (result.success) {
+        setNewsletterStatus('success')
+        e.target.reset()
+      } else {
+        setNewsletterStatus('error')
+      }
+    } catch {
+      setNewsletterStatus('error')
+    }
+  }
 
   return (
     <footer className="cs_footer_style_1 cs_primary_bg">
@@ -42,12 +62,12 @@ export default function Footer() {
               <div className="cs_footer_widget">
                 <h2 className="cs_footer_widget_title cs_fs_24 cs_medium cs_white_color cs_mb_24 cs_mb_lg_20">{t('footer.specialtiesTitle')}</h2>
                 <ul className="cs_footer_widget_nav cs_mp_0">
-                  <li><Link to="/service-details.html">{t('footer.spec.organTransplant')}</Link></li>
-                  <li><Link to="/service-details.html">{t('footer.spec.cardiology')}</Link></li>
-                  <li><Link to="/service-details.html">{t('footer.spec.neuroSurgery')}</Link></li>
-                  <li><Link to="/service-details.html">{t('footer.spec.spineSurgery')}</Link></li>
-                  <li><Link to="/service-details.html">{t('footer.spec.orthopedic')}</Link></li>
-                  <li><Link to="/service-details.html">{t('footer.spec.cancer')}</Link></li>
+                  <li><Link to="/service-details.html?slug=organ-transplant">{t('footer.spec.organTransplant')}</Link></li>
+                  <li><Link to="/service-details.html?slug=cardiology">{t('footer.spec.cardiology')}</Link></li>
+                  <li><Link to="/service-details.html?slug=neuro-surgery">{t('footer.spec.neuroSurgery')}</Link></li>
+                  <li><Link to="/service-details.html?slug=spine-surgery">{t('footer.spec.spineSurgery')}</Link></li>
+                  <li><Link to="/service-details.html?slug=orthopedic">{t('footer.spec.orthopedic')}</Link></li>
+                  <li><Link to="/service-details.html?slug=cancer">{t('footer.spec.cancer')}</Link></li>
                 </ul>
               </div>
             </div>
@@ -89,12 +109,14 @@ export default function Footer() {
               <h2 className="cs_newsletter_title cs_fs_40 cs_semibold cs_white_color mb-0">{t('footer.newsletterTitle')}</h2>
               <p className="cs_newsletter_subtitle mb-0">{t('footer.newsletterSubtitle')}</p>
             </div>
-            <form className="cs_newsletter_form position-relative" onSubmit={e => e.preventDefault()}>
-              <input type="email" name="email" className="cs_newsletter_inpu cs_white_bg cs_radius_5" placeholder={t('footer.emailPlaceholder')} autoComplete="off" />
-              <button type="submit" aria-label="Sign up button" className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5">
+            <form className="cs_newsletter_form position-relative" onSubmit={handleNewsletterSubmit}>
+              <input type="email" name="email" className="cs_newsletter_inpu cs_white_bg cs_radius_5" placeholder={t('footer.emailPlaceholder')} autoComplete="off" disabled={newsletterStatus === 'sending'} />
+              <button type="submit" aria-label="Sign up button" className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5" disabled={newsletterStatus === 'sending'}>
                 <span><i className="fa-regular fa-paper-plane"></i></span>
-                <span>{t('footer.subscribe')}</span>
+                <span>{newsletterStatus === 'sending' ? '...' : t('footer.subscribe')}</span>
               </button>
+              {newsletterStatus === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12 cs_white_color">Thanks for subscribing!</p>}
+              {newsletterStatus === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12 cs_white_color">Something went wrong. Please try again.</p>}
             </form>
           </div>
           <div className="cs_footer_bottom_content">

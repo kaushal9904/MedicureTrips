@@ -6,10 +6,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
+import { useWeb3Form } from '../hooks/useWeb3Form';
 
 const HomeV5 = () => {
   const odometerRefs = useRef([]);
   const [activeFaq, setActiveFaq] = useState(null);
+  const appointmentForm = useWeb3Form('Eye Care Page — Appointment Form');
 
   useEffect(() => {
     const initOdometers = async () => {
@@ -228,7 +230,7 @@ const HomeV5 = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/service-details.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                  <Link to="/services.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
                     <span>Learn More</span>
                     <span><i className="fa-solid fa-arrow-right"></i></span>
                   </Link>
@@ -429,29 +431,29 @@ const HomeV5 = () => {
             </div>
             <div className="col-lg-6">
               <div className="cs_appointment_form_wrapper cs_white_bg cs_radius_20">
-                <form className="cs_appointment_form_1 row cs_gap_y_24" onSubmit={(e) => e.preventDefault()}>
+                <form className="cs_appointment_form_1 row cs_gap_y_24" onSubmit={appointmentForm.handleSubmit}>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="fullName">Full Name</label>
-                      <input type="text" id="fullName" className="cs_form_field" placeholder="Enter your name" />
+                      <input type="text" id="fullName" name="name" className="cs_form_field" placeholder="Enter your name" />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="phone">Phone Number</label>
-                      <input type="text" id="phone" className="cs_form_field" placeholder="Enter phone number" />
+                      <input type="text" id="phone" name="phone" className="cs_form_field" placeholder="Enter phone number" />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="email">Email Address</label>
-                      <input type="email" id="email" className="cs_form_field" placeholder="Enter email address" />
+                      <input type="email" id="email" name="email" className="cs_form_field" placeholder="Enter email address" />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="service">Service Type</label>
-                      <select className="cs_form_field cs_choice" id="service" defaultValue="">
+                      <select className="cs_form_field cs_choice" id="service" name="service" defaultValue="">
                         <option disabled value="">Select service</option>
                         <option>Comprehensive Eye Exam</option>
                         <option>Cataract Consultation</option>
@@ -464,7 +466,7 @@ const HomeV5 = () => {
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="doctor">Preferred Doctor</label>
-                      <select className="cs_form_field cs_choice" id="doctor" defaultValue="">
+                      <select className="cs_form_field cs_choice" id="doctor" name="doctor" defaultValue="">
                         <option disabled value="">Select doctor</option>
                         <option>Dr. Amanda Foster</option>
                         <option>Dr. Richard Nguyen</option>
@@ -476,21 +478,23 @@ const HomeV5 = () => {
                   <div className="col-sm-6">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5 position-relative">
                       <label htmlFor="date">Preferred Date</label>
-                      <input type="text" id="date" className="cs_form_field" placeholder="Select date" />
+                      <input type="text" id="date" name="date" className="cs_form_field" placeholder="Select date" />
                       <img src="/assets/img/icons/calendar.svg" alt="Calendar" className="cs_date_icon position-absolute" />
                     </div>
                   </div>
                   <div className="col-12">
                     <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
                       <label htmlFor="message">Reason for Visit</label>
-                      <textarea id="message" rows="3" className="cs_form_field" placeholder="Describe your eye concerns..."></textarea>
+                      <textarea id="message" name="message" rows="3" className="cs_form_field" placeholder="Describe your eye concerns..."></textarea>
                     </div>
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
-                      <span>Book Appointment</span>
+                    <button type="submit" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5" disabled={appointmentForm.status === 'sending'}>
+                      <span>{appointmentForm.status === 'sending' ? 'Sending...' : 'Book Appointment'}</span>
                       <img src="/assets/img/icons/arrow-right.svg" alt="Arrow" />
                     </button>
+                    {appointmentForm.status === 'success' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#1a7f37' }}>Thanks! We'll contact you shortly.</p>}
+                    {appointmentForm.status === 'error' && <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: '#c0392b' }}>Something went wrong. Please try again.</p>}
                   </div>
                 </form>
               </div>
