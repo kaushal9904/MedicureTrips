@@ -57,12 +57,12 @@ const ASSETS = {
   hospitalMedanta: "/images/Medanta Hospital 468x525 4.jpg",
   hospitalFortis: "/images/Fortis Hospital 468x525 3_.jpg",
   hospitalMax: "/images/Max Hospital 468x525 2_.jpg",
-  hospitalApollo: "/assets/img/facility_img_1.webp",
-  hospitalManipal: "/assets/img/facility_img_2.webp",
-  hospitalKokilaben: "/assets/img/facility_img_3.webp",
+  hospitalApollo: "/images/Apollo Hospital 468x525.jpg",
+  hospitalManipal: "/images/Manipal Hospital 468x525.jpg",
+  hospitalKokilaben: "/images/Kokilaben Dhirubhai Ambani Hospital 468x525.jpg",
   hospitalBlkMax: "/images/BLK Hospital 468x525 4.jpeg",
-  hospitalNarayana: "/assets/img/facility_img_4.webp",
-  hospitalShalby: "/assets/img/facility_img_5.webp",
+  hospitalNarayana: "/images/Narayana Health City 468x525.jpg",
+  hospitalShalby: "/images/Shalby Hospitals 468x525.jpg",
 
   // Blog thumbnails
   blog1Img: "/images/Blog 1 early warn 636x375_.jpg",

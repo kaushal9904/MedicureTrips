@@ -30,6 +30,8 @@ import Checkout from './pages/Checkout'
 import Event from './pages/Event'
 import EventDetails from './pages/EventDetails'
 import Facilities from './pages/Facilities'
+import MedicalVisa from './pages/MedicalVisa'
+import CostCalculator from './pages/CostCalculator'
 import FAQ from './pages/FAQ'
 import Testimonials from './pages/Testimonials'
 import Pricing from './pages/Pricing'
@@ -94,6 +96,8 @@ function App() {
         <Route path="/event.html" element={<Event />} />
         <Route path="/event-details.html" element={<EventDetails />} />
         <Route path="/facilities.html" element={<Facilities />} />
+        <Route path="/medical-visa.html" element={<MedicalVisa />} />
+        <Route path="/cost-calculator.html" element={<CostCalculator />} />
         <Route path="/faq.html" element={<FAQ />} />
         <Route path="/testimonials.html" element={<Testimonials />} />
         <Route path="/pricing.html" element={<Pricing />} />

@@ -8,7 +8,7 @@ const resources = {
       nav: {
         home: 'Home', about: 'About', services: 'Services', pages: 'Pages', blog: 'Blog', contact: 'Contact',
         homeChildren: { generalHospital: 'General Hospital', healthcareCenter: 'Healthcare Center', childCare: 'Child Care', dentalCare: 'Dental Care', eyeCare: 'Eye Care' },
-        pagesChildren: { ourDoctors: 'Our Doctors', partnerHospitals: 'Partner Hospitals', ourPackages: 'Our Packages' },
+        pagesChildren: { ourDoctors: 'Our Doctors', partnerHospitals: 'Partner Hospitals', ourPackages: 'Our Packages', medicalVisa: 'Medical Visa', costCalculator: 'Cost Calculator' },
       },
       buttons: { emergency: 'Emergency', appointment: 'Appointment' },
       search: { placeholder: 'Search Services, Doctors...' },
@@ -39,7 +39,7 @@ const resources = {
       nav: {
         home: 'Inicio', about: 'Acerca de', services: 'Servicios', pages: 'Páginas', blog: 'Blog', contact: 'Contacto',
         homeChildren: { generalHospital: 'Hospital General', healthcareCenter: 'Centro de Salud', childCare: 'Cuidado Infantil', dentalCare: 'Cuidado Dental', eyeCare: 'Cuidado Ocular' },
-        pagesChildren: { ourDoctors: 'Nuestros Médicos', partnerHospitals: 'Hospitales Asociados', ourPackages: 'Nuestros Paquetes' },
+        pagesChildren: { ourDoctors: 'Nuestros Médicos', partnerHospitals: 'Hospitales Asociados', ourPackages: 'Nuestros Paquetes', medicalVisa: 'Visa Médica', costCalculator: 'Calculadora de Costos' },
       },
       buttons: { emergency: 'Emergencia', appointment: 'Cita' },
       search: { placeholder: 'Buscar Servicios, Médicos...' },
@@ -70,7 +70,7 @@ const resources = {
       nav: {
         home: 'Accueil', about: 'À propos', services: 'Services', pages: 'Pages', blog: 'Blog', contact: 'Contact',
         homeChildren: { generalHospital: 'Hôpital Général', healthcareCenter: 'Centre de Santé', childCare: 'Soins Pédiatriques', dentalCare: 'Soins Dentaires', eyeCare: 'Soins Oculaires' },
-        pagesChildren: { ourDoctors: 'Nos Médecins', partnerHospitals: 'Hôpitaux Partenaires', ourPackages: 'Nos Forfaits' },
+        pagesChildren: { ourDoctors: 'Nos Médecins', partnerHospitals: 'Hôpitaux Partenaires', ourPackages: 'Nos Forfaits', medicalVisa: 'Visa Médical', costCalculator: 'Calculateur de Coûts' },
       },
       buttons: { emergency: 'Urgence', appointment: 'Rendez-vous' },
       search: { placeholder: 'Rechercher Services, Médecins...' },
@@ -101,7 +101,7 @@ const resources = {
       nav: {
         home: 'Startseite', about: 'Über uns', services: 'Leistungen', pages: 'Seiten', blog: 'Blog', contact: 'Kontakt',
         homeChildren: { generalHospital: 'Allgemeinkrankenhaus', healthcareCenter: 'Gesundheitszentrum', childCare: 'Kinderbetreuung', dentalCare: 'Zahnpflege', eyeCare: 'Augenpflege' },
-        pagesChildren: { ourDoctors: 'Unsere Ärzte', partnerHospitals: 'Partnerkrankenhäuser', ourPackages: 'Unsere Pakete' },
+        pagesChildren: { ourDoctors: 'Unsere Ärzte', partnerHospitals: 'Partnerkrankenhäuser', ourPackages: 'Unsere Pakete', medicalVisa: 'Medizinisches Visum', costCalculator: 'Kostenrechner' },
       },
       buttons: { emergency: 'Notfall', appointment: 'Termin' },
       search: { placeholder: 'Leistungen, Ärzte suchen...' },
@@ -132,7 +132,7 @@ const resources = {
       nav: {
         home: 'الرئيسية', about: 'من نحن', services: 'الخدمات', pages: 'الصفحات', blog: 'المدونة', contact: 'اتصل بنا',
         homeChildren: { generalHospital: 'مستشفى عام', healthcareCenter: 'مركز الرعاية الصحية', childCare: 'رعاية الأطفال', dentalCare: 'رعاية الأسنان', eyeCare: 'رعاية العيون' },
-        pagesChildren: { ourDoctors: 'أطباؤنا', partnerHospitals: 'المستشفيات الشريكة', ourPackages: 'باقاتنا' },
+        pagesChildren: { ourDoctors: 'أطباؤنا', partnerHospitals: 'المستشفيات الشريكة', ourPackages: 'باقاتنا', medicalVisa: 'التأشيرة الطبية', costCalculator: 'حاسبة التكلفة' },
       },
       buttons: { emergency: 'طوارئ', appointment: 'حجز موعد' },
       search: { placeholder: 'ابحث عن الخدمات والأطباء...' },
@@ -163,7 +163,7 @@ const resources = {
       nav: {
         home: 'হোম', about: 'আমাদের সম্পর্কে', services: 'সেবাসমূহ', pages: 'পৃষ্ঠাসমূহ', blog: 'ব্লগ', contact: 'যোগাযোগ',
         homeChildren: { generalHospital: 'জেনারেল হাসপাতাল', healthcareCenter: 'স্বাস্থ্যসেবা কেন্দ্র', childCare: 'শিশু পরিচর্যা', dentalCare: 'দন্ত পরিচর্যা', eyeCare: 'চোখের পরিচর্যা' },
-        pagesChildren: { ourDoctors: 'আমাদের ডাক্তারগণ', partnerHospitals: 'অংশীদার হাসপাতাল', ourPackages: 'আমাদের প্যাকেজ' },
+        pagesChildren: { ourDoctors: 'আমাদের ডাক্তারগণ', partnerHospitals: 'অংশীদার হাসপাতাল', ourPackages: 'আমাদের প্যাকেজ', medicalVisa: 'মেডিকেল ভিসা', costCalculator: 'খরচ ক্যালকুলেটর' },
       },
       buttons: { emergency: 'জরুরি', appointment: 'অ্যাপয়েন্টমেন্ট' },
       search: { placeholder: 'সেবা, ডাক্তার খুঁজুন...' },

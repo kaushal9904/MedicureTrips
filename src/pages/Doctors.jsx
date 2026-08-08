@@ -8,11 +8,11 @@ const allDoctors = [
   { name: 'Fortis Hospital', specialty: 'Orthopedic · NABH & JCI Accredited', img: '/images/Fortis Hospital 468x525 3_.jpg' },
   { name: 'BLK Hospital', specialty: 'Urology & ENT · NABH & JCI Accredited', img: '/images/BLK Hospital 468x525 4.jpeg' },
   { name: 'Max Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/images/Max Hospital 468x525 2_.jpg' },
-  { name: 'Apollo Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/assets/img/facility_img_1.webp' },
-  { name: 'Manipal Hospital', specialty: 'Organ Transplant · NABH & JCI Accredited', img: '/assets/img/facility_img_2.webp' },
-  { name: 'Kokilaben Dhirubhai Ambani Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/assets/img/facility_img_3.webp' },
-  { name: 'Narayana Health City', specialty: 'Cardiology · NABH & JCI Accredited', img: '/assets/img/facility_img_4.webp' },
-  { name: 'Shalby Hospitals', specialty: 'Orthopedic · NABH & JCI Accredited', img: '/assets/img/facility_img_5.webp' },
+  { name: 'Apollo Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/images/Apollo Hospital 468x525.jpg' },
+  { name: 'Manipal Hospital', specialty: 'Organ Transplant · NABH & JCI Accredited', img: '/images/Manipal Hospital 468x525.jpg' },
+  { name: 'Kokilaben Dhirubhai Ambani Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/images/Kokilaben Dhirubhai Ambani Hospital 468x525.jpg' },
+  { name: 'Narayana Health City', specialty: 'Cardiology · NABH & JCI Accredited', img: '/images/Narayana Health City 468x525.jpg' },
+  { name: 'Shalby Hospitals', specialty: 'Orthopedic · NABH & JCI Accredited', img: '/images/Shalby Hospitals 468x525.jpg' },
 ];
 
 const departments = ['Organ Transplant', 'Cardiology', 'Neuro Surgery', 'Spine Surgery', 'Orthopedic', 'Urology', 'ENT', 'Plastic Surgery', 'Cancer'];

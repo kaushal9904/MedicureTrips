@@ -14209,4 +14209,339 @@ label {
     padding: 22px;
   }
 }
+
+/*================================================================
+  FAQ Accordion (shared by FAQ page + Medical Visa page)
+==================================================================*/
+.cs_faq_tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cs_faq_tab {
+  padding: 10px 22px;
+  border-radius: 50px;
+  background-color: var(--gray2-color);
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+.cs_faq_tab:hover {
+  background-color: var(--gray3-color);
+}
+.cs_faq_tab.active {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.cs_faq_accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cs_faq_item {
+  border: 1px solid var(--gray3-color);
+  border-radius: 12px;
+  background-color: var(--white-color);
+  overflow: hidden;
+  transition: border-color 0.25s ease;
+}
+.cs_faq_item.active {
+  border-color: var(--accent-color);
+}
+.cs_faq_question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  text-align: left;
+  background-color: transparent;
+}
+.cs_faq_question_text {
+  color: var(--primary-color);
+}
+.cs_faq_icon {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--accent-color);
+  background-color: var(--gray2-color);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+.cs_faq_item.active .cs_faq_icon {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.cs_faq_answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+.cs_faq_item.active .cs_faq_answer {
+  padding: 0 24px 22px;
+}
+.cs_faq_answer_text {
+  margin: 0;
+  line-height: 1.7em;
+}
+
+/*================================================================
+  Section vertical rhythm (Medical Visa + Cost Calculator pages,
+  plus two pre-existing theme sections reused here that shipped
+  with no padding of their own: cs_process_section_2, cs_faq_section)
+==================================================================*/
+.cs_visa_intro_section,
+.cs_visa_types_section,
+.cs_visa_docs_section,
+.cs_calc_hero_section,
+.cs_calc_section,
+.cs_process_section_2,
+.cs_faq_section {
+  padding: 120px 0;
+}
+@media (max-width: 991px) {
+  .cs_visa_intro_section,
+  .cs_visa_types_section,
+  .cs_visa_docs_section,
+  .cs_calc_hero_section,
+  .cs_calc_section,
+  .cs_process_section_2,
+  .cs_faq_section {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 575px) {
+  .cs_visa_intro_section,
+  .cs_visa_types_section,
+  .cs_visa_docs_section,
+  .cs_calc_hero_section,
+  .cs_calc_section,
+  .cs_process_section_2,
+  .cs_faq_section {
+    padding: 50px 0;
+  }
+}
+
+/*================================================================
+  Medical Visa Page
+==================================================================*/
+.cs_visa_highlight_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cs_visa_highlight_list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.cs_visa_highlight_list i {
+  margin-top: 3px;
+  color: var(--accent2-color);
+  flex: none;
+}
+.cs_visa_intro_card {
+  padding: 40px 32px;
+}
+.cs_visa_intro_icon {
+  font-size: 42px;
+  margin-bottom: 18px;
+  display: inline-block;
+}
+.cs_visa_type_card {
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(31, 41, 55, 0.06);
+}
+.cs_visa_type_icon {
+  width: 56px;
+  height: 56px;
+  font-size: 22px;
+}
+.cs_visa_type_row {
+  padding: 12px 0;
+  border-top: 1px solid var(--gray2-color);
+}
+.cs_visa_type_row p {
+  font-size: 14px;
+  color: var(--secondary-color);
+  line-height: 1.6em;
+}
+.cs_visa_type_label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 4px;
+}
+.cs_visa_eligibility_note {
+  max-width: 900px;
+  margin: 40px auto 0;
+  font-size: 13px;
+  color: var(--secondary-color);
+  line-height: 1.7em;
+}
+.cs_visa_eligibility_note i {
+  margin-right: 6px;
+  color: var(--accent-color);
+}
+.cs_visa_doc_list {
+  list-style: none;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 4px 20px rgba(31, 41, 55, 0.06);
+}
+.cs_visa_doc_list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.cs_visa_doc_icon {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--white-color);
+  background-color: var(--accent2-color);
+}
+
+/*================================================================
+  Cost Calculator Page
+==================================================================*/
+.cs_calc_card {
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(31, 41, 55, 0.06);
+}
+.cs_calc_field label i {
+  margin-right: 8px;
+}
+.cs_calc_field select.cs_form_field {
+  width: 100%;
+  height: 56px;
+  padding: 0 18px;
+  border: none;
+}
+.cs_calc_field_desc {
+  font-size: 13px;
+  color: var(--secondary-color);
+  line-height: 1.6em;
+}
+.cs_calc_pill_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cs_calc_pill {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: var(--gray2-color);
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+.cs_calc_pill:hover {
+  background-color: var(--gray3-color);
+}
+.cs_calc_pill.active {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.cs_calc_result {
+  padding: 36px 32px;
+  height: 100%;
+  background: linear-gradient(160deg, var(--accent-color) 0%, #2d55b8 100%);
+}
+.cs_calc_result_label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 8px;
+}
+.cs_calc_result_value {
+  display: block;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+.cs_calc_result_sub {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 8px;
+}
+.cs_calc_result_list {
+  list-style: none;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cs_calc_result_list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.cs_calc_result_list li span:last-child {
+  font-weight: 700;
+  color: var(--white-color);
+}
+.cs_calc_result_savings {
+  margin-top: 24px;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.cs_calc_result_savings strong {
+  font-size: 20px;
+  color: var(--white-color);
+}
+.cs_calc_result > .cs_btn_style_1 {
+  margin-top: 24px;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 575px) {
+  .cs_calc_card,
+  .cs_visa_intro_card,
+  .cs_visa_doc_list {
+    padding: 24px;
+  }
+  .cs_calc_result {
+    padding: 26px 22px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

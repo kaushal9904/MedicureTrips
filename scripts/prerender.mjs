@@ -48,6 +48,8 @@ const routes = [
   '/event.html',
   '/event-details.html',
   '/facilities.html',
+  '/medical-visa.html',
+  '/cost-calculator.html',
   '/faq.html',
   '/testimonials.html',
   '/pricing.html',

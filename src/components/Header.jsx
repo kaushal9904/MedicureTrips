@@ -32,6 +32,8 @@ export default function Header({ isShop }) {
       { label: t('nav.pagesChildren.ourDoctors'), path: '/our-doctors.html' },
       { label: t('nav.pagesChildren.partnerHospitals'), path: '/doctors.html' },
       { label: t('nav.pagesChildren.ourPackages'), path: '/packages.html' },
+      { label: t('nav.pagesChildren.medicalVisa'), path: '/medical-visa.html' },
+      { label: t('nav.pagesChildren.costCalculator'), path: '/cost-calculator.html' },
       /* Disabled per request, keep entries for future re-enable:
       { label: 'Doctor Details', path: '/doctor-details.html' },
       { label: 'Account Login', path: '/login.html' },
