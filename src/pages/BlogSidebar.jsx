@@ -112,7 +112,7 @@ const BlogSidebar = () => {
                 {blogPosts.map((post) => (
                   <article key={post.id} className="cs_post_style_3">
                     <Link to="/blog-details.html" aria-label="Read the post details" className="cs_post_img cs_radius_20 cs_mb_15">
-                      <img src={post.img} alt="Post image" />
+                      <img src={post.img} alt="Post image" loading="lazy" decoding="async" />
                       <span className="cs_post_date cs_accent_bg cs_radius_10 cs_center">
                         <span className="cs_post_date_day cs_fs_40 cs_semibold cs_white_color cs_primary_font">{post.day}</span>
                         <span className="cs_white_color">{post.month}</span>
@@ -192,7 +192,7 @@ const BlogSidebar = () => {
                     {recentPosts.map((post, i) => (
                       <li key={i} className="cs_post_style_6">
                         <Link to="/blog-details.html" aria-label="Read the post details" className="cs_post_thumb cs_radius_5">
-                          <img src={post.img} alt="Post thumbnail" />
+                          <img src={post.img} alt="Post thumbnail" loading="lazy" decoding="async" />
                         </Link>
                         <div className="cs_post_info">
                           <span className="cs_post_date cs_mb_6">

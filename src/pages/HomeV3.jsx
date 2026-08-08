@@ -106,7 +106,6 @@ const HomeV3 = () => {
           <div className="row align-items-center cs_gap_y_30">
             <div className="col-lg-6">
               <div className="cs_hero_content">
-                <div className="cs_hero_subtitle cs_accent_color cs_fs_14">// CHILD CARE CENTER</div>
                 <h1 className="cs_hero_title cs_fs_96 cs_bold">Healing Little Bodies Growing Big Dreams</h1>
                 <p className="cs_hero_desc cs_fs_18">Compassionate pediatric care in a warm, child-friendly environment. Your child's health and happiness are our top priorities.</p>
                 <div className="cs_hero_rating cs_mb_24">
@@ -222,7 +221,6 @@ const HomeV3 = () => {
             <div className="col-lg-6">
               <div className="cs_about_content">
                 <div className="cs_section_heading_style_1">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14">// ABOUT US</p>
                   <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Where Children Come First</h2>
                 </div>
                 <p className="cs_about_desc cs_mb_24">Our child care center provides a safe, nurturing environment where children can grow, learn, and thrive. With experienced pediatric specialists and modern facilities, we ensure every child receives the best care possible.</p>
@@ -264,7 +262,6 @@ const HomeV3 = () => {
       <section className="cs_service_section_3 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// SERVICES</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Comprehensive Child Care <br /> Services for Every Need
             </h2>
@@ -315,7 +312,6 @@ const HomeV3 = () => {
       <section className="cs_features_section_3">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// WHY US</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               What Makes Our Child <br /> Care Center Special
             </h2>
@@ -366,7 +362,6 @@ const HomeV3 = () => {
       <section className="cs_team_section_3 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_48 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// OUR TEAM</p>
             <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">
               Meet Our Caring <br /> Pediatric Specialists
             </h2>
@@ -408,7 +403,6 @@ const HomeV3 = () => {
       <section className="cs_admission_section_3">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// ADMISSION</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Simple Steps to <br /> Enroll Your Child
             </h2>
@@ -434,7 +428,6 @@ const HomeV3 = () => {
       <section className="cs_pricing_section_3 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// PRICING</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Affordable Child Care <br /> Plans for Every Family
             </h2>
@@ -473,7 +466,6 @@ const HomeV3 = () => {
       <section className="cs_appointment_section_3">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// APPOINTMENT</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Schedule Your Child's <br /> Visit Today
             </h2>
@@ -569,7 +561,6 @@ const HomeV3 = () => {
       <section className="cs_faq_section_3 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// FAQ</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Frequently Asked Questions <br /> About Our Child Care
             </h2>

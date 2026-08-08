@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useWeb3Form } from "../hooks/useWeb3Form";
+import { costEstimates, formatUSD, formatRange } from "../data/costEstimates";
 
 /**
  * ─────────────────────────────────────────────────────────────
@@ -56,6 +57,12 @@ const ASSETS = {
   hospitalMedanta: "/images/Medanta Hospital 468x525 4.jpg",
   hospitalFortis: "/images/Fortis Hospital 468x525 3_.jpg",
   hospitalMax: "/images/Max Hospital 468x525 2_.jpg",
+  hospitalApollo: "/assets/img/facility_img_1.webp",
+  hospitalManipal: "/assets/img/facility_img_2.webp",
+  hospitalKokilaben: "/assets/img/facility_img_3.webp",
+  hospitalBlkMax: "/images/BLK Hospital 468x525 4.jpeg",
+  hospitalNarayana: "/assets/img/facility_img_4.webp",
+  hospitalShalby: "/assets/img/facility_img_5.webp",
 
   // Blog thumbnails
   blog1Img: "/images/Blog 1 early warn 636x375_.jpg",
@@ -65,9 +72,22 @@ const ASSETS = {
 
 const Home = () => {
   const heroSwiperInstance = useRef(null);
+  // Only the active hero slide's video should download/decode/play — the other
+  // two sit muted+paused until swiped to, instead of all three autoplaying
+  // and streaming simultaneously in the background (a multi-hundred-MB waste).
+  const heroVideoRefs = useRef([]);
+  const setHeroVideoActive = (activeIndex) => {
+    heroVideoRefs.current.forEach((video, i) => {
+      if (!video) return;
+      if (i === activeIndex) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+  };
   const testimonialSwiperInstance = useRef(null);
   const odometerRefs = useRef([]);
-  const instantBooking = useWeb3Form("Home Page — Instant Booking Widget");
   const appointmentForm = useWeb3Form("Home Page — Book an Appointment Form");
 
   useEffect(() => {
@@ -203,6 +223,48 @@ const Home = () => {
       specialty: "Multi-specialty Tertiary Care",
       img: ASSETS.hospitalMax,
     },
+    {
+      name: "Apollo Hospital",
+      credentials: "NABH & JCI Accredited",
+      designation: "Oncology",
+      specialty: "Multi-specialty Tertiary Care",
+      img: ASSETS.hospitalApollo,
+    },
+    {
+      name: "Manipal Hospital",
+      credentials: "NABH & JCI Accredited",
+      designation: "Organ Transplant",
+      specialty: "Multi-specialty Tertiary Care",
+      img: ASSETS.hospitalManipal,
+    },
+    {
+      name: "Kokilaben Dhirubhai Ambani Hospital",
+      credentials: "NABH & JCI Accredited",
+      designation: "Cancer Care",
+      specialty: "Multi-specialty Tertiary Care",
+      img: ASSETS.hospitalKokilaben,
+    },
+    {
+      name: "BLK-Max Super Speciality Hospital",
+      credentials: "NABH & JCI Accredited",
+      designation: "Oncology",
+      specialty: "Multi-specialty Tertiary Care",
+      img: ASSETS.hospitalBlkMax,
+    },
+    {
+      name: "Narayana Health City",
+      credentials: "NABH & JCI Accredited",
+      designation: "Cardiac Surgery",
+      specialty: "Multi-specialty Tertiary Care",
+      img: ASSETS.hospitalNarayana,
+    },
+    {
+      name: "Shalby Hospitals",
+      credentials: "NABH & JCI Accredited",
+      designation: "Orthopedic",
+      specialty: "Multi-specialty Tertiary Care",
+      img: ASSETS.hospitalShalby,
+    },
   ];
 
   const blogPosts = [
@@ -253,7 +315,11 @@ const Home = () => {
         <div className="cs_hero_slider_wrapper position-relative">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
-            onSwiper={(swiper) => (heroSwiperInstance.current = swiper)}
+            onSwiper={(swiper) => {
+              heroSwiperInstance.current = swiper;
+              setHeroVideoActive(swiper.realIndex);
+            }}
+            onSlideChange={(swiper) => setHeroVideoActive(swiper.realIndex)}
             slidesPerView={1}
             loop={true}
             speed={600}
@@ -263,16 +329,20 @@ const Home = () => {
             <SwiperSlide>
               <div className="cs_hero_style_1 position-relative">
                 <div className="cs_hero_parallax_bg cs_hero_video_bg">
-                  <video autoPlay muted loop playsInline>
+                  <video
+                    ref={(el) => (heroVideoRefs.current[0] = el)}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                  >
                     <source src={ASSETS.heroVideoSlide1} type="video/mp4" />
                   </video>
                 </div>
                 <div className="container">
                   <div className="cs_hero_content_wrapper">
                     <div className="cs_hero_content">
-                      <div className="cs_hero_subtitle cs_accent_color cs_fs_14">
-                        // MEDICAL TOURISM MADE SIMPLE
-                      </div>
                       <h1 className="cs_hero_title cs_fs_96 cs_bold">
                         Welcome to Medicure Trip
                       </h1>
@@ -297,60 +367,6 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <form
-                      className="cs_ib_card"
-                      onSubmit={instantBooking.handleSubmit}
-                    >
-                      <div className="cs_header cs_accent_color">
-                        <span className="cs_dot"></span>
-                        <span className="cs_title cs_fs_20 cs_semibold">
-                          Instant Booking
-                        </span>
-                      </div>
-                      <div className="cs_field_item cs_radius_5">
-                        <label className="cs_field_label cs_fs_12 mb-0">
-                          Treatment
-                        </label>
-                        <input
-                          className="cs_field_value"
-                          name="treatment"
-                          placeholder="Cardiology"
-                          required
-                        />
-                      </div>
-                      <div className="cs_field_item cs_radius_5">
-                        <label className="cs_field_label cs_fs_12 mb-0">
-                          Available Date
-                        </label>
-                        <input
-                          className="cs_field_value"
-                          name="available_date"
-                          placeholder="Tomorrow, 09:30 AM"
-                          required
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
-                        disabled={instantBooking.status === "sending"}
-                      >
-                        <span>
-                          {instantBooking.status === "sending"
-                            ? "Sending..."
-                            : "Check Availability"}
-                        </span>
-                      </button>
-                      {instantBooking.status === "success" && (
-                        <p className="cs_fs_14 mb-0" style={{ color: "#1a7f37" }}>
-                          Thanks! We'll contact you shortly.
-                        </p>
-                      )}
-                      {instantBooking.status === "error" && (
-                        <p className="cs_fs_14 mb-0" style={{ color: "#c0392b" }}>
-                          {instantBooking.errorMessage || "Something went wrong. Please try again."}
-                        </p>
-                      )}
-                    </form>
                   </div>
                 </div>
               </div>
@@ -359,16 +375,19 @@ const Home = () => {
             <SwiperSlide>
               <div className="cs_hero_style_1 position-relative">
                 <div className="cs_hero_parallax_bg cs_hero_video_bg">
-                  <video autoPlay muted loop playsInline>
+                  <video
+                    ref={(el) => (heroVideoRefs.current[1] = el)}
+                    muted
+                    loop
+                    playsInline
+                    preload="none"
+                  >
                     <source src={ASSETS.heroVideoSlide2} type="video/mp4" />
                   </video>
                 </div>
                 <div className="container">
                   <div className="cs_hero_content_wrapper">
                     <div className="cs_hero_content">
-                      <div className="cs_hero_subtitle cs_accent_color cs_fs_14">
-                        // MEDICAL TOURISM MADE SIMPLE
-                      </div>
                       <h1 className="cs_hero_title cs_fs_96 cs_bold">
                         Experience World-Class Care
                       </h1>
@@ -393,60 +412,6 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <form
-                      className="cs_ib_card"
-                      onSubmit={instantBooking.handleSubmit}
-                    >
-                      <div className="cs_header cs_accent_color">
-                        <span className="cs_dot"></span>
-                        <span className="cs_title cs_fs_20 cs_semibold">
-                          Instant Booking
-                        </span>
-                      </div>
-                      <div className="cs_field_item cs_radius_5">
-                        <label className="cs_field_label cs_fs_12 mb-0">
-                          Treatment
-                        </label>
-                        <input
-                          className="cs_field_value"
-                          name="treatment"
-                          placeholder="Cardiology"
-                          required
-                        />
-                      </div>
-                      <div className="cs_field_item cs_radius_5">
-                        <label className="cs_field_label cs_fs_12 mb-0">
-                          Available Date
-                        </label>
-                        <input
-                          className="cs_field_value"
-                          name="available_date"
-                          placeholder="Tomorrow, 09:30 AM"
-                          required
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
-                        disabled={instantBooking.status === "sending"}
-                      >
-                        <span>
-                          {instantBooking.status === "sending"
-                            ? "Sending..."
-                            : "Check Availability"}
-                        </span>
-                      </button>
-                      {instantBooking.status === "success" && (
-                        <p className="cs_fs_14 mb-0" style={{ color: "#1a7f37" }}>
-                          Thanks! We'll contact you shortly.
-                        </p>
-                      )}
-                      {instantBooking.status === "error" && (
-                        <p className="cs_fs_14 mb-0" style={{ color: "#c0392b" }}>
-                          {instantBooking.errorMessage || "Something went wrong. Please try again."}
-                        </p>
-                      )}
-                    </form>
                   </div>
                 </div>
               </div>
@@ -455,16 +420,19 @@ const Home = () => {
             <SwiperSlide>
               <div className="cs_hero_style_1 position-relative">
                 <div className="cs_hero_parallax_bg cs_hero_video_bg">
-                  <video autoPlay muted loop playsInline>
+                  <video
+                    ref={(el) => (heroVideoRefs.current[2] = el)}
+                    muted
+                    loop
+                    playsInline
+                    preload="none"
+                  >
                     <source src={ASSETS.heroVideoSlide3} type="video/mp4" />
                   </video>
                 </div>
                 <div className="container">
                   <div className="cs_hero_content_wrapper">
                     <div className="cs_hero_content">
-                      <div className="cs_hero_subtitle cs_accent_color cs_fs_14">
-                        // MEDICAL TOURISM MADE SIMPLE
-                      </div>
                       <h1 className="cs_hero_title cs_fs_96 cs_bold">
                         Your Trusted Medical Tourism Partner
                       </h1>
@@ -489,60 +457,6 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <form
-                      className="cs_ib_card"
-                      onSubmit={instantBooking.handleSubmit}
-                    >
-                      <div className="cs_header cs_accent_color">
-                        <span className="cs_dot"></span>
-                        <span className="cs_title cs_fs_20 cs_semibold">
-                          Instant Booking
-                        </span>
-                      </div>
-                      <div className="cs_field_item cs_radius_5">
-                        <label className="cs_field_label cs_fs_12 mb-0">
-                          Treatment
-                        </label>
-                        <input
-                          className="cs_field_value"
-                          name="treatment"
-                          placeholder="Cardiology"
-                          required
-                        />
-                      </div>
-                      <div className="cs_field_item cs_radius_5">
-                        <label className="cs_field_label cs_fs_12 mb-0">
-                          Available Date
-                        </label>
-                        <input
-                          className="cs_field_value"
-                          name="available_date"
-                          placeholder="Tomorrow, 09:30 AM"
-                          required
-                        />
-                      </div>
-                      <button
-                        type="submit"
-                        className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
-                        disabled={instantBooking.status === "sending"}
-                      >
-                        <span>
-                          {instantBooking.status === "sending"
-                            ? "Sending..."
-                            : "Check Availability"}
-                        </span>
-                      </button>
-                      {instantBooking.status === "success" && (
-                        <p className="cs_fs_14 mb-0" style={{ color: "#1a7f37" }}>
-                          Thanks! We'll contact you shortly.
-                        </p>
-                      )}
-                      {instantBooking.status === "error" && (
-                        <p className="cs_fs_14 mb-0" style={{ color: "#c0392b" }}>
-                          {instantBooking.errorMessage || "Something went wrong. Please try again."}
-                        </p>
-                      )}
-                    </form>
                   </div>
                 </div>
               </div>
@@ -565,6 +479,186 @@ const Home = () => {
             >
               <i className="fa-solid fa-arrow-right"></i>
             </div>
+          </div>
+
+          {/* Fixed appointment card — stays in place while hero slides rotate behind it */}
+          <div className="cs_hero_appointment_overlay cs_radius_20">
+            <div className="cs_hero_appointment_head">
+              <h3 className="cs_fs_24 cs_semibold cs_white_color cs_mb_6">
+                Book a Free Consultation
+              </h3>
+              <p className="cs_fs_14 cs_white_color mb-0">
+                Free &middot; No obligation &middot; We'll confirm within 2hrs
+              </p>
+            </div>
+            <form
+              className="cs_appointment_form_1 row cs_gap_y_16 cs_hero_appointment_body"
+              onSubmit={appointmentForm.handleSubmit}
+            >
+              <div className="col-12">
+                <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
+                  <label htmlFor="hero-name">Full Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="hero-name"
+                    className="cs_form_field"
+                    placeholder="Enter your name"
+                    autoComplete="off"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
+                  <label htmlFor="hero-phone">Phone Number</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="hero-phone"
+                    className="cs_form_field"
+                    placeholder="Enter your phone"
+                    autoComplete="off"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
+                  <label htmlFor="hero-email">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="hero-email"
+                    className="cs_form_field"
+                    placeholder="Enter your email"
+                    autoComplete="off"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
+                  <label htmlFor="hero-department">Service</label>
+                  <select
+                    className="cs_form_field cs_choice"
+                    name="department"
+                    id="hero-department"
+                    defaultValue=""
+                  >
+                    <option disabled value="">
+                      Select department
+                    </option>
+                    <option>Cardiology</option>
+                    <option>Neurology</option>
+                    <option>Oncology</option>
+                    <option>Maternity</option>
+                    <option>Orthopedics</option>
+                  </select>
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
+                  <label htmlFor="hero-doctor">Preferred Doctor</label>
+                  <select
+                    className="cs_form_field cs_choice"
+                    name="doctor"
+                    id="hero-doctor"
+                    defaultValue=""
+                  >
+                    <option disabled value="">
+                      Select Doctor
+                    </option>
+                    <option>Dr. A. V. Gurava Reddy</option>
+                    <option>Dr. Aditya Gupta</option>
+                    <option>Dr. Ajay Kaul</option>
+                    <option>Dr. Ajitabh Srivastava</option>
+                    <option>Dr. Alok Ranjan</option>
+                    <option>Dr. Amal Roy Chaudhoory</option>
+                    <option>Dr. Amit Verma</option>
+                    <option>Dr. Anil Mandhani</option>
+                    <option>Dr. Arun Saroha</option>
+                    <option>Dr. Arvinder Singh Soin</option>
+                    <option>Dr. Ashish Sabharwal</option>
+                    <option>Dr. Ashok Kumar Vaid</option>
+                  </select>
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <div className="cs_input_wrap cs_gray2_bg cs_radius_5 position-relative">
+                  <label htmlFor="hero-date">Date</label>
+                  <input
+                    type="text"
+                    name="date"
+                    id="hero-date"
+                    className="cs_form_field"
+                    placeholder="Select date"
+                  />
+                  <img
+                    src="/assets/img/icons/calendar.svg"
+                    alt="Calendar icon"
+                    className="cs_date_icon position-absolute"
+                  />
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <div className="cs_input_wrap cs_gray2_bg cs_radius_5 position-relative">
+                  <label htmlFor="hero-time">Preferred Time</label>
+                  <input
+                    type="text"
+                    name="time"
+                    id="hero-time"
+                    className="cs_form_field"
+                    placeholder="Select time"
+                  />
+                  <span className="cs_time_icon position-absolute"></span>
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
+                  <label htmlFor="hero-message">
+                    Additional Notes (optional)
+                  </label>
+                  <textarea
+                    name="message"
+                    rows="2"
+                    id="hero-message"
+                    className="cs_form_field"
+                    placeholder="Describe your symptom here..."
+                  ></textarea>
+                </div>
+              </div>
+              <div className="col-12">
+                <button
+                  type="submit"
+                  className="cs_hero_appointment_submit cs_white_color cs_semibold cs_radius_5 w-100 justify-content-center"
+                  disabled={appointmentForm.status === "sending"}
+                >
+                  <span>
+                    {appointmentForm.status === "sending"
+                      ? "Sending..."
+                      : "Confirm Appointment"}
+                  </span>
+                  <img
+                    src="/assets/img/icons/arrow-right.svg"
+                    alt="Arrow"
+                    className="cs_hero_appointment_submit_arrow"
+                  />
+                </button>
+                <p className="cs_hero_appointment_trust cs_fs_12 mb-0">
+                  <i className="fa-solid fa-lock"></i> 100% Confidential
+                  <span className="cs_hero_appointment_trust_dot">&middot;</span>
+                  <i className="fa-solid fa-bolt"></i> Reply within 2 hours
+                </p>
+                {appointmentForm.status === "success" && (
+                  <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: "#1a7f37" }}>
+                    Thanks! We'll contact you shortly.
+                  </p>
+                )}
+                {appointmentForm.status === "error" && (
+                  <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: "#c0392b" }}>
+                    {appointmentForm.errorMessage || "Something went wrong. Please try again."}
+                  </p>
+                )}
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -661,6 +755,7 @@ const Home = () => {
                   muted
                   loop
                   playsInline
+                  preload="none"
                   className="cs_radius_20"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 >
@@ -682,9 +777,6 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="cs_about_content">
                 <div className="cs_section_heading_style_1">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14">
-                    // About US
-                  </p>
                   <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
                     Your Health Journey Starts Here
                   </h2>
@@ -807,9 +899,6 @@ const Home = () => {
       <section className="cs_service_section_1 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_columb cs_mb_50 cs_mb_lg_40 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">
-              // TREATMENTS
-            </p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Top-Notch Treatment Options for <br /> International Patients.
             </h2>
@@ -879,10 +968,109 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Treatment Cost Estimates */}
+      <section className="cs_cost_estimates_section">
+        <div className="container">
+          <div className="cs_cost_estimates_heading text-center">
+            <span className="cs_cost_badge">Cost Transparency</span>
+            <h2 className="cs_fs_40 cs_bold cs_white_color cs_mb_16 cs_mt_16">
+              Treatment Cost Estimates
+            </h2>
+            <p className="cs_cost_estimates_desc">
+              India offers world-class surgical care at a fraction of what the
+              same procedures cost in the USA or UK — with no compromise on
+              quality, safety, or accreditation. Below are indicative cost
+              ranges in USD.
+            </p>
+          </div>
+          <div className="row cs_gap_y_24">
+            {costEstimates
+              .filter((item) => !['ivf-treatment', 'spine-surgery'].includes(item.slug))
+              .map((item) => (
+              <div key={item.slug} className="col-xl-4 col-md-6">
+                <div className="cs_cost_card">
+                  <div className="cs_cost_card_header">
+                    <span className="cs_cost_card_icon">
+                      <i className={`fa-solid ${item.icon}`}></i>
+                    </span>
+                    <div>
+                      <h3 className="cs_cost_card_title">{item.title}</h3>
+                      <span className="cs_cost_card_category">
+                        {item.category.toUpperCase()}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="cs_cost_row cs_cost_row_india">
+                    <span className="cs_cost_flag">
+                      <span className="cs_cost_dot cs_cost_dot_india"></span>
+                      India
+                    </span>
+                    <span className="cs_cost_value cs_cost_value_india">
+                      From {formatUSD(item.india)}
+                    </span>
+                  </div>
+                  <div className="cs_cost_row">
+                    <span className="cs_cost_flag">
+                      <span className="cs_cost_dot"></span>
+                      USA
+                    </span>
+                    <span className="cs_cost_value cs_cost_value_muted">
+                      {formatRange(item.usa)}
+                    </span>
+                  </div>
+                  <div className="cs_cost_row">
+                    <span className="cs_cost_flag">
+                      <span className="cs_cost_dot"></span>
+                      UK
+                    </span>
+                    <span className="cs_cost_value cs_cost_value_muted">
+                      {formatRange(item.uk)}
+                    </span>
+                  </div>
+                  <Link
+                    to="/packages.html"
+                    className="cs_cost_card_btn"
+                    aria-label={`Get cost estimate for ${item.title}`}
+                  >
+                    <span>Get My Estimate</span>
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="cs_cost_disclaimer">
+            <p>
+              <i className="fa-solid fa-circle-info"></i>
+              Estimates are indicative and based on published hospital rates;
+              final cost depends on individual diagnosis and treatment plan.
+            </p>
+            <p>
+              <i className="fa-solid fa-circle-info"></i>
+              All-inclusive packages typically cover surgery, anaesthesia,
+              hospital stay, post-op medication, and a dedicated care manager.
+            </p>
+            <p>
+              <i className="fa-solid fa-circle-info"></i>
+              International travel, accommodation, and visa fees are not
+              included in the above estimates.
+            </p>
+          </div>
+          <div className="cs_cost_cta text-center">
+            <p className="cs_fs_18 cs_white_color cs_mb_20">
+              Need a personalised cost estimate for your specific condition?
+            </p>
+            <Link to="/packages.html" className="cs_cost_cta_btn">
+              <span>Request Free Cost Estimate</span>
+              <i className="fa-solid fa-arrow-right"></i>
+            </Link>
+          </div>
+        </div>
+      </section> 
       {/* Technology / Why Choose Section */}
       <section className="cs_technology_section_1">
         <div className="container">
-          <div className="row cs_gap_y_30">
+          <div className="row cs_gap_y_30"> 
             <div className="col-lg-6">
               <div className="cs_technology_img cs_parallax cs_radius_20 position-relative">
                 <video
@@ -890,6 +1078,7 @@ const Home = () => {
                   muted
                   loop
                   playsInline
+                  preload="none"
                   className="cs_radius_20"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 >
@@ -942,9 +1131,6 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="cs_technology_content">
                 <div className="cs_section_heading_style_1 cs_mb_48 cs_mb_lg_40">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">
-                    // Why choose Medicure Trip
-                  </p>
                   <h2 className="cs_section_title cs_fs_40 cs_bold cs_mb_6">
                     Where Care & Technology Unite
                   </h2>
@@ -1033,9 +1219,6 @@ const Home = () => {
       <section className="cs_team_section_1 cs_gray2_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_48 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17 text-uppercase">
-              // Our Network
-            </p>
             <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">
               Our Qualified Panel of <br /> Partner Hospitals
             </h2>
@@ -1045,7 +1228,7 @@ const Home = () => {
               <div key={i} className="col-lg-3 col-sm-6">
                 <div className="cs_team_Style_1">
                   <div className="cs_team_img cs_radius_20 cs_mb_24 position-relative">
-                    <img src={doc.img} alt={`${doc.name} image`} />
+                    <img src={doc.img} alt={`${doc.name} image`} loading="lazy" decoding="async" />
                     <span className="cs_team_designation cs_gray3_bg cs_fs_14 position-absolute">
                       {doc.designation}
                     </span>
@@ -1101,12 +1284,9 @@ const Home = () => {
       <section className="cs_appointment_section_1">
         <div className="container">
           <div className="row cs_gap_y_30">
-            <div className="col-lg-6">
+            <div className="col-lg-12">
               <div className="cs_appointment_content">
                 <div className="cs_section_heading_style_1 cs_mb_12">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17 text-uppercase">
-                    // Instant Confirmation
-                  </p>
                   <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">
                     Your Health Journey Starts Here
                   </h2>
@@ -1138,6 +1318,7 @@ const Home = () => {
                       muted
                       loop
                       playsInline
+                      preload="none"
                       className="cs_radius_20"
                       style={{
                         width: "100%",
@@ -1184,180 +1365,6 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="cs_appointment_form_wrapper">
-                <div className="cs_appointment_heading cs_mb_24">
-                  <h3 className="cs_fs_40 cs_semibold cs_mb_6">
-                    Book a Free Consultation
-                  </h3>
-                  <p className="mb-0">
-                    Fill the details below — we'll confirm within 2hrs.
-                  </p>
-                </div>
-                <form
-                  className="cs_appointment_form_1 row cs_gap_y_24"
-                  onSubmit={appointmentForm.handleSubmit}
-                >
-                  <div className="col-12">
-                    <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
-                      <label htmlFor="name">Full Name</label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        className="cs_form_field"
-                        placeholder="Enter your name"
-                        autoComplete="off"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
-                      <label htmlFor="phone">Phone Number</label>
-                      <input
-                        type="text"
-                        name="phone"
-                        id="phone"
-                        className="cs_form_field"
-                        placeholder="Enter your phone"
-                        autoComplete="off"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
-                      <label htmlFor="email">Email Address</label>
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        className="cs_form_field"
-                        placeholder="Enter your email address"
-                        autoComplete="off"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
-                      <label htmlFor="department">Service</label>
-                      <select
-                        className="cs_form_field cs_choice"
-                        name="department"
-                        id="department"
-                        defaultValue=""
-                      >
-                        <option disabled value="">
-                          Select department
-                        </option>
-                        <option>Cardiology</option>
-                        <option>Neurology</option>
-                        <option>Oncology</option>
-                        <option>Maternity</option>
-                        <option>Orthopedics</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
-                      <label htmlFor="doctor">Preferred Doctor</label>
-                      <select
-                        className="cs_form_field cs_choice"
-                        name="doctor"
-                        id="doctor"
-                        defaultValue=""
-                      >
-                        <option disabled value="">
-                          Select Doctor
-                        </option>
-                        <option>Dr. A. V. Gurava Reddy</option>
-                        <option>Dr. Aditya Gupta</option>
-                        <option>Dr. Ajay Kaul</option>
-                        <option>Dr. Ajitabh Srivastava</option>
-                        <option>Dr. Alok Ranjan</option>
-                        <option>Dr. Amal Roy Chaudhoory</option>
-                        <option>Dr. Amit Verma</option>
-                        <option>Dr. Anil Mandhani</option>
-                        <option>Dr. Arun Saroha</option>
-                        <option>Dr. Arvinder Singh Soin</option>
-                        <option>Dr. Ashish Sabharwal</option>
-                        <option>Dr. Ashok Kumar Vaid</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="cs_input_wrap cs_gray2_bg cs_radius_5 position-relative">
-                      <label htmlFor="date">Date</label>
-                      <input
-                        type="text"
-                        name="date"
-                        id="date"
-                        className="cs_form_field"
-                        placeholder="Select date"
-                      />
-                      <img
-                        src="/assets/img/icons/calendar.svg"
-                        alt="Calendar icon"
-                        className="cs_date_icon position-absolute"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="cs_input_wrap cs_gray2_bg cs_radius_5 position-relative">
-                      <label htmlFor="time">Preferred Time</label>
-                      <input
-                        type="text"
-                        name="time"
-                        id="time"
-                        className="cs_form_field"
-                        placeholder="Select time"
-                      />
-                      <span className="cs_time_icon position-absolute"></span>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="cs_input_wrap cs_gray2_bg cs_radius_5">
-                      <label htmlFor="message">
-                        Additional Notes (optional)
-                      </label>
-                      <textarea
-                        name="message"
-                        rows="3"
-                        id="message"
-                        className="cs_form_field"
-                        placeholder="Describe your symptom here..."
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <button
-                      type="submit"
-                      className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5"
-                      disabled={appointmentForm.status === "sending"}
-                    >
-                      <span>
-                        {appointmentForm.status === "sending"
-                          ? "Sending..."
-                          : "Confirm Appointment"}
-                      </span>
-                      <img
-                        src="/assets/img/icons/arrow-right.svg"
-                        alt="Arrow"
-                      />
-                    </button>
-                    {appointmentForm.status === "success" && (
-                      <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: "#1a7f37" }}>
-                        Thanks! We'll contact you shortly.
-                      </p>
-                    )}
-                    {appointmentForm.status === "error" && (
-                      <p className="cs_fs_14 mb-0 cs_mt_12" style={{ color: "#c0392b" }}>
-                        {appointmentForm.errorMessage || "Something went wrong. Please try again."}
-                      </p>
-                    )}
-                  </div>
-                </form>
               </div>
             </div>
           </div>
@@ -1411,9 +1418,6 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="cs_testimonial_content">
                 <div className="cs_section_heading_style_1 cs_mb_12">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17 text-uppercase">
-                    // Real stories· Real care
-                  </p>
                   <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">
                     What Our Patients Say About the Medicure Trip Experience
                   </h2>
@@ -1497,9 +1501,6 @@ const Home = () => {
       <section className="cs_blog_section_1">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_48 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17 text-uppercase">
-              // Latest news & Blogs
-            </p>
             <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">
               Patient Stories — Crafted by <br /> Our Medical Experts.
             </h2>
@@ -1513,7 +1514,7 @@ const Home = () => {
                     aria-label="Read the post details"
                     className="cs_post_img cs_radius_20 cs_mb_22 overflow-hidden"
                   >
-                    <img src={post.img} alt="Post image" />
+                    <img src={post.img} alt="Post image" loading="lazy" decoding="async" />
                     <span className="cs_post_category cs_fs_14">
                       {post.category}
                     </span>

@@ -166,7 +166,6 @@ const DoctorDetails = () => {
           {/* Related Doctors */}
           <div className="cs_mt_80">
             <div className="cs_section_heading_style_1 cs_center-column cs_mb_48 cs_mb_lg_40 text-center">
-              <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17 text-uppercase">// Related Hospitals</p>
               <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">Explore Our Other Partner Hospitals</h2>
             </div>
             <div className="row cs_gap_y_24 justify-content-center">

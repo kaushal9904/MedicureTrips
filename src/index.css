@@ -8,3 +8,102 @@ body {
   max-width: 100%;
   margin: 0;
 }
+
+/* Scale the whole UI down slightly on larger screens so tall sections
+   (hero, appointment card, etc.) fit within the viewport instead of
+   getting cut off. Mobile is left untouched since it already stacks
+   content vertically and scrolls naturally. */
+@media (min-width: 992px) {
+  html {
+    zoom: 0.9;
+  }
+}
+
+/* Compress the hero + booking card so the full form fits within a normal
+   laptop viewport without needing to scroll to see the submit button. */
+@media (min-width: 992px) {
+  .cs_hero_style_1 {
+    min-height: 820px !important;
+    max-height: 980px !important;
+    padding-top: 150px !important;
+  }
+  .cs_hero_appointment_overlay {
+    top: 110px !important;
+  }
+  .cs_hero_appointment_head {
+    padding: 18px 28px !important;
+  }
+  .cs_hero_appointment_body {
+    padding: 18px 28px 22px !important;
+  }
+  .cs_hero_appointment_body.cs_gap_y_16 {
+    row-gap: 10px !important;
+  }
+  .cs_hero_appointment_overlay .cs_input_wrap {
+    padding: 7px 14px !important;
+  }
+  .cs_hero_appointment_overlay .cs_form_field {
+    font-size: 14px !important;
+  }
+  .cs_hero_appointment_submit {
+    padding: 12px 24px !important;
+  }
+}
+
+/* Floating WhatsApp button, visible on every page.
+   Stacked above .cs_scrollup_btn (bottom-right, 50px, bottom:40px) so the
+   two fixed buttons never overlap. */
+.cs_whatsapp_float {
+  position: fixed;
+  right: 22px;
+  bottom: 104px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: #ffffff;
+  font-size: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cs_whatsapp_float:hover {
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+}
+
+/* Prev/Next pagination links (e.g. Our Doctors page) need to fit their
+   label text instead of the fixed 45px square used for page numbers. */
+.cs_pagination_nav {
+  width: auto !important;
+  padding: 0 18px;
+}
+
+/* Hospital/doctor photo cards (Home "Partner Hospitals" section, the
+   Partner Hospitals page, and Our Doctors) mix real 468x525 photos with
+   generic placeholder images of other aspect ratios. Without a fixed
+   ratio here, cards using a differently-shaped image render at a
+   different height than the rest of the grid. Lock every card image to
+   the same 468:525 portrait ratio already used by the site's real
+   hospital/doctor photos so every card in a grid matches size, with
+   object-fit: cover (already set in style.css) handling the crop. */
+.cs_team_Style_1 .cs_team_img,
+.cs_team_style_2 .cs_team_img {
+  aspect-ratio: 468 / 525;
+  height: auto;
+}
+
+@media (max-width: 575px) {
+  .cs_whatsapp_float {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    right: 12px;
+    bottom: 68px;
+  }
+}

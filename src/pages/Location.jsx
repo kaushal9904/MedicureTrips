@@ -58,7 +58,6 @@ const Location = () => {
             {/* Address & Contact */}
             <div className="col-lg-6">
               <div className="cs_section_heading_style_1 cs_mb_30">
-                <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">// FIND US</p>
                 <h2 className="cs_section_title cs_fs_40 cs_semibold cs_mb_6">Hospital Address & Contact</h2>
               </div>
               <div className="cs_location_contact cs_white_bg cs_radius_20 cs_p_40">

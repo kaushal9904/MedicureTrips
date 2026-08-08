@@ -81,7 +81,6 @@ const HomeV2 = () => {
           <div className="row align-items-center cs_gap_y_30">
             <div className="col-lg-6">
               <div className="cs_hero_content">
-                <div className="cs_hero_subtitle cs_accent_color cs_fs_14">// HEALTHCARE CENTER</div>
                 <h1 className="cs_hero_title cs_fs_96 cs_bold">Healing Beyond Boundaries</h1>
                 <p className="cs_hero_desc cs_fs_18">Your trusted partner in comprehensive healthcare with advanced diagnostics, expert physicians, and compassionate care for every member of your family.</p>
                 <div className="cs_hero_btns">
@@ -166,7 +165,6 @@ const HomeV2 = () => {
             <div className="col-lg-6">
               <div className="cs_about_content">
                 <div className="cs_section_heading_style_1">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14">// ABOUT US</p>
                   <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Dedicated to Your Health & Wellbeing</h2>
                 </div>
                 <p className="cs_about_desc cs_mb_24">Founded with a vision to revolutionize healthcare, our center combines advanced medical technology with human warmth. Our multidisciplinary team of specialists, state-of-the-art infrastructure, and patient-first philosophy have made us a trusted name.</p>
@@ -237,7 +235,6 @@ const HomeV2 = () => {
       <section className="cs_service_section_2 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// SERVICES</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Comprehensive Healthcare <br /> Services for All Ages
             </h2>
@@ -287,7 +284,6 @@ const HomeV2 = () => {
       <section className="cs_pricing_section_2">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// PRICING</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Affordable Health Checkup <br /> Packages for Your Peace of Mind
             </h2>
@@ -341,7 +337,6 @@ const HomeV2 = () => {
             <div className="col-lg-6">
               <div className="cs_technology_content">
                 <div className="cs_section_heading_style_1 cs_mb_48">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14">// WHY CHOOSE US</p>
                   <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">Where Care Meets Excellence</h2>
                 </div>
                 <div className="cs_accordion_style_2">
@@ -391,7 +386,6 @@ const HomeV2 = () => {
       <section className="cs_process_section_2">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// HOW IT WORKS</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Simple Steps to Your <br /> Healthcare Journey
             </h2>
@@ -417,7 +411,6 @@ const HomeV2 = () => {
       <section className="cs_team_section_2 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_48 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// OUR TEAM</p>
             <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">
               Meet Our Expert <br /> Healthcare Professionals
             </h2>
@@ -459,7 +452,6 @@ const HomeV2 = () => {
       <section className="cs_testimonial_section_2">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_48 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// TESTIMONIALS</p>
             <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">
               What Our Patients Say <br /> About Our Healthcare Center
             </h2>

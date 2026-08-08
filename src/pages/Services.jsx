@@ -16,7 +16,7 @@ const Services = () => {
       {/* Page Header */}
       <section className="cs_page_header_style_1 cs_page_header_video position-relative">
         <div className="cs_page_header_video_bg">
-          <video autoPlay muted loop playsInline>
+          <video autoPlay muted loop playsInline preload="auto">
             <source src="/images/Services Main Banner.mp4" type="video/mp4" />
           </video>
         </div>
@@ -37,7 +37,6 @@ const Services = () => {
       <section className="cs_services_section_5 slider-section" aria-label="Our services">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_type_3 cs_center_column mx-auto text-center cs_mb_48 cs_mb_lg_40">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">// TREATMENTS</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Top-Notch Treatment Options for International Patients</h2>
           </div>
           <div className="row cs_gap_y_24 cs_mb_48 cs_mb_lg_40 justify-content-center">

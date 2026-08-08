@@ -125,7 +125,6 @@ const Testimonials = () => {
       <section className="cs_testimonials_section">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column mx-auto text-center cs_mb_48 cs_mb_lg_40">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">// PATIENT TESTIMONIALS</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Real Stories From Real Patients Who Trust Medicure Trip for Their Healthcare Needs</h2>
           </div>
           <div className="row cs_gap_y_24">
@@ -133,7 +132,7 @@ const Testimonials = () => {
               <div key={testimonial.id} className="col-lg-4 col-md-6">
                 <article className="cs_testimonial_card cs_radius_20 cs_gray2_bg cs_px_24 cs_py_30">
                   <div className="cs_testimonial_author cs_mb_16">
-                    <img src={testimonial.img} alt={testimonial.name} className="cs_testimonial_avatar cs_radius_50" />
+                    <img src={testimonial.img} alt={testimonial.name} className="cs_testimonial_avatar cs_radius_50" loading="lazy" decoding="async" />
                     <div className="cs_testimonial_author_info">
                       <h3 className="cs_testimonial_name cs_fs_18 cs_semibold cs_mb_2">{testimonial.name}</h3>
                       <p className="cs_testimonial_designation cs_fs_14 cs_secondary_color cs_mb_0">{testimonial.designation}</p>
@@ -166,7 +165,6 @@ const Testimonials = () => {
       <section className="cs_share_story_section">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column mx-auto text-center cs_mb_48 cs_mb_lg_40">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">// SHARE YOUR STORY</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">We'd Love to Hear About Your Experience With Medicure Trip</h2>
           </div>
           <div className="row justify-content-center">

@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Preloader from './components/Preloader'
 import ScrollToTop from './components/ScrollToTop'
+import WhatsAppButton from './components/WhatsAppButton'
 import useSiteAnimations from './hooks/useSiteAnimations'
 import routeMeta, { defaultMeta } from './routeMeta'
 import Home from './pages/Home'
@@ -109,6 +110,7 @@ function App() {
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
+      <WhatsAppButton />
     </>
   )
 }

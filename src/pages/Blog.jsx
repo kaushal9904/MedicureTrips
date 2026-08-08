@@ -23,7 +23,7 @@ const Blog = () => {
       {/* Page Header */}
       <section className="cs_page_header_style_1 cs_page_header_video position-relative">
         <div className="cs_page_header_video_bg">
-          <video autoPlay muted loop playsInline>
+          <video autoPlay muted loop playsInline preload="auto">
             <source src="/images/Blog Main Banner 1920x1080.mp4" type="video/mp4" />
           </video>
         </div>
@@ -44,7 +44,6 @@ const Blog = () => {
       <section className="cs_blog_section_1">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_48 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_12">// Latest News &amp; Blogs</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Treatment Guides, Costs, and Stories From Our <br /> Medical Team Trusted by International Patients</h2>
           </div>
           <div className="row cs_gap_y_48 justify-content-center">
@@ -52,7 +51,7 @@ const Blog = () => {
               <div key={post.slug} className="col-lg-4 col-md-6">
                 <article className="cs_post_style_3">
                   <Link to={`/blog-details.html?slug=${post.slug}`} aria-label="Read the post details" className="cs_post_img cs_radius_20 cs_mb_24">
-                    <img src={post.img} alt={post.title} />
+                    <img src={post.img} alt={post.title} loading="lazy" decoding="async" />
                     <span className="cs_post_date cs_accent_bg cs_radius_10 cs_center">
                       <span className="cs_post_date_day cs_fs_40 cs_semibold cs_white_color cs_primary_font">{post.day}</span>
                       <span className="cs_white_color">{post.month}</span>

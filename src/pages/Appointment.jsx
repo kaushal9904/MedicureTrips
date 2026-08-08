@@ -12,7 +12,7 @@ const Appointment = () => {
       {/* Page Header */}
       <section className="cs_page_header_style_1 cs_page_header_video position-relative">
         <div className="cs_page_header_video_bg">
-          <video autoPlay muted loop playsInline>
+          <video autoPlay muted loop playsInline preload="auto">
             <source src="/images/Appointment.mp4" type="video/mp4" />
           </video>
         </div>

@@ -3394,6 +3394,7 @@ label {
 ==================================================================*/
 .cs_hero_style_1 {
   height: 100vh;
+  min-height: 950px;
   max-height: 1080px;
   position: relative;
   padding: 180px 0 120px;
@@ -4378,6 +4379,108 @@ label {
 }
 .cs_ib_card .cs_btn_style_1:active {
   transform: scale(0.98);
+}
+
+/*========================================
+  Hero Fixed Appointment Overlay
+==========================================*/
+.cs_hero_appointment_overlay {
+  position: absolute;
+  top: 150px;
+  right: 5%;
+  width: min(500px, 92vw);
+  z-index: 5;
+  background-color: var(--white-color);
+  box-shadow: 0 25px 50px -12px rgba(31, 41, 55, 0.35);
+}
+.cs_hero_appointment_head {
+  padding: 24px 32px;
+  background: linear-gradient(120deg, var(--accent-color) 0%, #2d55b8 100%);
+}
+.cs_hero_appointment_body {
+  padding: 26px 32px 30px;
+}
+.cs_hero_appointment_overlay .cs_input_wrap {
+  padding: 10px 16px;
+  border: 1px solid rgba(34, 65, 143, 0.14);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.cs_hero_appointment_overlay .cs_input_wrap:focus-within {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(34, 65, 143, 0.12);
+}
+.cs_hero_appointment_overlay .cs_input_wrap label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--accent-color);
+}
+.cs_hero_appointment_overlay .cs_form_field {
+  font-size: 15px;
+  padding: 2px 0;
+  height: auto;
+}
+.cs_hero_appointment_submit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 24px;
+  border: 0;
+  font-size: 16px;
+  background-color: var(--accent2-color);
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+.cs_hero_appointment_submit:hover:not(:disabled) {
+  background-color: #429a45;
+}
+.cs_hero_appointment_submit:active:not(:disabled) {
+  transform: scale(0.99);
+}
+.cs_hero_appointment_submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.cs_hero_appointment_submit_arrow {
+  filter: brightness(0) invert(1);
+}
+.cs_hero_appointment_trust {
+  margin-top: 14px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+.cs_hero_appointment_trust i {
+  color: var(--accent2-color);
+  margin-right: 4px;
+}
+.cs_hero_appointment_trust_dot {
+  margin: 0 8px;
+  opacity: 0.5;
+}
+@media (max-width: 1399px) {
+  .cs_hero_appointment_overlay {
+    width: min(430px, 92vw);
+  }
+  .cs_hero_appointment_head {
+    padding: 20px 26px;
+  }
+  .cs_hero_appointment_body {
+    padding: 22px 26px 26px;
+  }
+}
+@media (max-width: 991px) {
+  .cs_hero_appointment_overlay {
+    position: static;
+    width: 100%;
+    max-width: 560px;
+    margin: 34px auto 0;
+  }
+}
+/* Keep the hero slider arrows/counter clear of the fixed appointment card,
+   which sits near the top of the right edge. */
+@media (min-width: 992px) {
+  .cs_hero_slider_wrapper > .cs_controller_1 {
+    bottom: 40px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -13705,4 +13808,405 @@ label {
   .cs_policy_contact {
     padding: 20px 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*================================================================
+  Treatment Cost Estimates (dark comparison section)
+==================================================================*/
+.cs_cost_estimates_section {
+  padding: 100px 0;
+  background-color: #0a0e1a;
+  background-image: radial-gradient(60% 80% at 50% 0%, rgba(34, 65, 143, 0.35) 0%, rgba(10, 14, 26, 0) 70%);
+}
+.cs_cost_estimates_heading {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+.cs_cost_badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background-color: var(--white-color);
+  color: #e8630a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.cs_cost_estimates_desc {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 16px;
+  line-height: 1.7em;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.cs_cost_card {
+  height: 100%;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #10162a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.cs_cost_card:hover {
+  border-color: rgba(232, 99, 10, 0.5);
+  transform: translateY(-4px);
+}
+.cs_cost_card_header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+.cs_cost_card_icon {
+  width: 46px;
+  height: 46px;
+  flex: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #e8630a;
+  background-color: rgba(232, 99, 10, 0.12);
+}
+.cs_cost_card_title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--white-color);
+  margin: 0;
+  line-height: 1.3em;
+}
+.cs_cost_card_category {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.cs_cost_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+.cs_cost_row_india {
+  background-color: rgba(232, 99, 10, 0.1);
+  border: 1px solid rgba(232, 99, 10, 0.3);
+}
+.cs_cost_flag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.55);
+}
+.cs_cost_row_india .cs_cost_flag {
+  color: rgba(255, 255, 255, 0.85);
+}
+.cs_cost_dot {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.cs_cost_dot_india {
+  background-color: #ff8a3d;
+}
+.cs_cost_value {
+  font-size: 14px;
+  font-weight: 600;
+}
+.cs_cost_value_india {
+  font-size: 16px;
+  color: #ff8a3d;
+}
+.cs_cost_value_muted {
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: line-through;
+}
+.cs_cost_card_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(232, 99, 10, 0.4);
+  color: #ff8a3d;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+.cs_cost_card_btn:hover {
+  background-color: #e8630a;
+  color: var(--white-color);
+}
+.cs_cost_disclaimer {
+  margin-top: 40px;
+  padding: 22px 26px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.cs_cost_disclaimer p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+.cs_cost_disclaimer p:last-child {
+  margin-bottom: 0;
+}
+.cs_cost_disclaimer i {
+  margin-top: 3px;
+  color: #ff8a3d;
+  flex: none;
+}
+.cs_cost_cta {
+  margin-top: 40px;
+}
+.cs_cost_cta_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 34px;
+  border-radius: 8px;
+  background-color: #e8630a;
+  color: var(--white-color);
+  font-weight: 600;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+.cs_cost_cta_btn:hover {
+  background-color: #d1560a;
+  color: var(--white-color);
+}
+.cs_cost_cta_btn:active {
+  transform: scale(0.99);
+}
+@media (max-width: 575px) {
+  .cs_cost_estimates_section {
+    padding: 70px 0;
+  }
+  .cs_cost_card {
+    padding: 20px;
+  }
+}
+
+/*================================================================
+  Treatment Cost Breakdown (detailed, Packages page)
+==================================================================*/
+.cs_cost_breakdown_section {
+  background-color: var(--gray2-color);
+}
+.cs_cost_breakdown_heading {
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+.cs_cost_breakdown_badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background-color: var(--gray4-color);
+  color: var(--accent-color);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.cs_cost_breakdown_desc {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.7em;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.cs_cost_breakdown_list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cs_cost_breakdown_row {
+  padding: 32px;
+  border-radius: 20px;
+  background-color: var(--white-color);
+  box-shadow: 0 4px 20px rgba(31, 41, 55, 0.06);
+}
+.cs_cost_breakdown_info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.cs_cost_breakdown_icon {
+  width: 52px;
+  height: 52px;
+  flex: none;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--accent-color);
+  background-color: var(--gray4-color);
+}
+.cs_cost_breakdown_category {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: var(--secondary2-color);
+  margin-bottom: 4px;
+}
+.cs_cost_breakdown_title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+}
+.cs_cost_breakdown_row_desc {
+  color: var(--secondary-color);
+  font-size: 15px;
+  line-height: 1.6em;
+  margin-bottom: 16px;
+}
+.cs_cost_breakdown_includes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cs_cost_breakdown_includes li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--primary-color);
+}
+.cs_cost_breakdown_includes i {
+  margin-top: 3px;
+  color: var(--accent2-color);
+  flex: none;
+}
+.cs_cost_breakdown_stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cs_cost_breakdown_stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background-color: var(--gray2-color);
+}
+.cs_cost_breakdown_stat_india {
+  background-color: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.35);
+}
+.cs_cost_breakdown_stat_label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.cs_cost_breakdown_stat_india .cs_cost_breakdown_stat_label {
+  color: var(--primary-color);
+}
+.cs_cost_breakdown_stat_value {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent2-color);
+}
+.cs_cost_breakdown_stat_muted {
+  color: var(--secondary2-color);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.cs_cost_breakdown_savings {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+  padding: 24px 20px;
+  border-radius: 14px;
+  background: linear-gradient(160deg, var(--accent-color) 0%, #2d55b8 100%);
+}
+.cs_cost_breakdown_savings_label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+.cs_cost_breakdown_savings_value {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--white-color);
+  line-height: 1.2em;
+}
+.cs_cost_breakdown_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 11px 18px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+.cs_cost_breakdown_btn:hover {
+  background-color: var(--accent2-color);
+  color: var(--white-color);
+}
+.cs_cost_breakdown_disclaimer {
+  margin-top: 40px;
+  padding: 22px 26px;
+  border-radius: 12px;
+  background-color: var(--white-color);
+}
+.cs_cost_breakdown_disclaimer p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+.cs_cost_breakdown_disclaimer p:last-child {
+  margin-bottom: 0;
+}
+.cs_cost_breakdown_disclaimer i {
+  margin-top: 3px;
+  color: var(--accent-color);
+  flex: none;
+}
+@media (max-width: 991px) {
+  .cs_cost_breakdown_savings {
+    padding: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .cs_cost_breakdown_row {
+    padding: 22px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

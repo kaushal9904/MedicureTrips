@@ -1,57 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { costEstimates, formatUSD, formatRange } from '../data/costEstimates';
 
 const Packages = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
-  const [selectedPriceRange, setSelectedPriceRange] = useState('All');
-
-  const categories = [
-    'All', 'Cardiac', 'Orthopedic', 'Dental', 'Neurology', 'Cosmetic', 'Wellness'
-  ];
-
-  const priceRanges = [
-    'All', 'Under $500', '$500 - $2000', '$2000 - $5000', 'Over $5000'
-  ];
-
-  const packages = [
-    { id: 1, title: 'Full Body Checkup', price: 199, category: 'Wellness', image: '/assets/img/package_img_1.webp', description: 'Comprehensive health screening with advanced diagnostics.', features: ['Complete Blood Work', 'Heart Screening', 'Liver Function Test', 'Kidney Function Test'] },
-    { id: 2, title: 'Cardiac Screening', price: 299, category: 'Cardiac', image: '/assets/img/package_img_2.webp', description: 'Advanced cardiac assessment and heart health monitoring.', features: ['ECG Test', 'Echocardiogram', 'Blood Pressure Monitoring', 'Cholesterol Panel'] },
-    { id: 3, title: 'Knee Replacement', price: 7890, category: 'Orthopedic', image: '/assets/img/package_img_3.webp', description: 'Complete knee replacement surgery with rehabilitation.', features: ['Pre-surgery Assessment', 'Surgery Package', 'Post-op Care', 'Physical Therapy'] },
-    { id: 4, title: 'Cataract Surgery', price: 1250, category: 'Neurology', image: '/assets/img/package_img_4.webp', description: 'Advanced cataract removal with premium lens implant.', features: ['Eye Examination', 'Premium Lens', 'Surgery', 'Follow-up Visits'] },
-    { id: 5, title: 'Root Canal', price: 450, category: 'Dental', image: '/assets/img/package_img_5.webp', description: 'Painless root canal treatment with crown placement.', features: ['X-Ray', 'Root Canal Treatment', 'Crown', 'Follow-up'] },
-    { id: 6, title: 'Teeth Whitening', price: 220, category: 'Dental', image: '/assets/img/package_img_6.webp', description: 'Professional teeth whitening for a brighter smile.', features: ['Consultation', 'Whitening Procedure', 'Aftercare Kit', 'Touch-up Session'] },
-    { id: 7, title: 'Physiotherapy', price: 540, category: 'Orthopedic', image: '/assets/img/package_img_7.webp', description: 'Complete physiotherapy session package for recovery.', features: ['Initial Assessment', '10 Sessions', 'Home Exercise Plan', 'Progress Reports'] },
-    { id: 8, title: 'Yoga & Stress Management', price: 180, category: 'Wellness', image: '/assets/img/package_img_8.webp', description: 'Holistic wellness program for stress relief.', features: ['Yoga Sessions', 'Meditation Classes', 'Diet Consultation', 'Lifestyle Tips'] },
-    { id: 9, title: 'Liposuction', price: 2990, category: 'Cosmetic', image: '/assets/img/package_img_9.webp', description: 'Advanced body contouring with minimal downtime.', features: ['Consultation', 'Surgery', 'Compression Garments', 'Follow-up Care'] },
-    { id: 10, title: 'Gallbladder Removal', price: 1550, category: 'Wellness', image: '/assets/img/package_img_10.webp', description: 'Laparoscopic gallbladder removal surgery.', features: ['Pre-op Tests', 'Surgery', 'Hospital Stay', 'Post-op Care'] },
-    { id: 11, title: 'Hernia Repair', price: 3250, category: 'Wellness', image: '/assets/img/package_img_11.webp', description: 'Advanced hernia repair with mesh placement.', features: ['Consultation', 'Surgery', 'Mesh Placement', 'Recovery Support'] },
-    { id: 12, title: 'Dental Implant', price: 1290, category: 'Dental', image: '/assets/img/package_img_12.webp', description: 'Premium dental implant with natural-looking crown.', features: ['Bone Assessment', 'Implant Surgery', 'Crown Placement', 'Follow-up'] },
-    { id: 13, title: 'Annual Wellness', price: 399, category: 'Wellness', image: '/assets/img/package_img_13.webp', description: 'Complete annual health checkup package.', features: ['Full Body Checkup', 'Blood Tests', 'Heart Screening', 'Health Report'] },
-    { id: 14, title: 'Skin Rejuvenation', price: 590, category: 'Cosmetic', image: '/assets/img/package_img_14.webp', description: 'Advanced skin treatment for youthful glow.', features: ['Consultation', 'Chemical Peel', 'Laser Treatment', 'Aftercare'] },
-    { id: 15, title: 'MRI Scan', price: 890, category: 'Neurology', image: '/assets/img/package_img_15.webp', description: 'High-resolution MRI scanning with expert analysis.', features: ['Consultation', 'MRI Scan', 'Expert Analysis', 'Report'] }
-  ];
-
-  const filterPackages = () => {
-    return packages.filter(pkg => {
-      const categoryMatch = selectedCategory === 'All' || pkg.category === selectedCategory;
-      let priceMatch = true;
-      
-      if (selectedPriceRange === 'Under $500') {
-        priceMatch = pkg.price < 500;
-      } else if (selectedPriceRange === '$500 - $2000') {
-        priceMatch = pkg.price >= 500 && pkg.price <= 2000;
-      } else if (selectedPriceRange === '$2000 - $5000') {
-        priceMatch = pkg.price > 2000 && pkg.price <= 5000;
-      } else if (selectedPriceRange === 'Over $5000') {
-        priceMatch = pkg.price > 5000;
-      }
-      
-      return categoryMatch && priceMatch;
-    });
-  };
-
-  const filteredPackages = filterPackages();
-
   return (
     <>
       {/* Page Header */}
@@ -67,145 +18,148 @@ const Packages = () => {
         </div>
       </section>
 
-      {/* Packages Section */}
-      <section className="cs_packages cs_py_100">
+      {/* Treatment Cost Breakdown */}
+      <section className="cs_cost_breakdown_section cs_py_100">
         <div className="container">
-          <div className="row">
-            {/* Filter Sidebar */}
-            <div className="col-lg-3">
-              <div className="cs_filter_sidebar">
-                <h3 className="cs_filter_title">Filter By</h3>
-                
-                {/* Treatment Type Filter */}
-                <div className="cs_filter_group">
-                  <h4>Treatment Type</h4>
-                  <ul className="cs_filter_list">
-                    {categories.map((category, index) => (
-                      <li key={index}>
-                        <label className={`cs_checkbox ${selectedCategory === category ? 'active' : ''}`}>
-                          <input 
-                            type="radio" 
-                            name="category" 
-                            checked={selectedCategory === category}
-                            onChange={() => setSelectedCategory(category)}
-                          />
-                          <span>{category}</span>
-                        </label>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Price Range Filter */}
-                <div className="cs_filter_group">
-                  <h4>Price Range</h4>
-                  <ul className="cs_filter_list">
-                    {priceRanges.map((range, index) => (
-                      <li key={index}>
-                        <label className={`cs_checkbox ${selectedPriceRange === range ? 'active' : ''}`}>
-                          <input 
-                            type="radio" 
-                            name="price" 
-                            checked={selectedPriceRange === range}
-                            onChange={() => setSelectedPriceRange(range)}
-                          />
-                          <span>{range}</span>
-                        </label>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Packages Grid */}
-            <div className="col-lg-9">
-              <div className="row">
-                {filteredPackages.map((pkg) => (
-                  <div className="col-lg-4 col-md-6" key={pkg.id}>
-                    <div className="cs_package_card">
-                      <div className="cs_package_img">
-                        <img src={pkg.image} alt={pkg.title} />
-                        <div className="cs_package_price">${pkg.price}</div>
+          <div className="cs_cost_breakdown_heading text-center">
+            <span className="cs_cost_breakdown_badge">Cost Transparency</span>
+            <h2 className="cs_fs_40 cs_bold cs_mb_16 cs_mt_16">
+              Treatment Cost Breakdown: India vs USA vs UK
+            </h2>
+            <p className="cs_cost_breakdown_desc">
+              A detailed look at what each treatment costs at Medicure Trip's
+              partner hospitals in India compared to the USA and UK, plus
+              exactly what's included in every package.
+            </p>
+          </div>
+          <div className="cs_cost_breakdown_list">
+            {costEstimates.map((item) => {
+              const savingsPercent = Math.round((1 - item.india / item.usa[0]) * 100);
+              return (
+                <div key={item.slug} className="cs_cost_breakdown_row">
+                  <div className="row cs_gap_y_24 align-items-center">
+                    <div className="col-lg-4">
+                      <div className="cs_cost_breakdown_info">
+                        <span className="cs_cost_breakdown_icon">
+                          <i className={`fa-solid ${item.icon}`}></i>
+                        </span>
+                        <div>
+                          <span className="cs_cost_breakdown_category">
+                            {item.category.toUpperCase()}
+                          </span>
+                          <h3 className="cs_cost_breakdown_title">{item.title}</h3>
+                        </div>
                       </div>
-                      <div className="cs_package_content">
-                        <h3 className="cs_package_title">{pkg.title}</h3>
-                        <p className="cs_package_desc">{pkg.description}</p>
-                        <ul className="cs_package_features">
-                          {pkg.features.map((feature, idx) => (
-                            <li key={idx}>
-                              <i className="fas fa-check"></i>
-                              {feature}
-                            </li>
-                          ))}
-                        </ul>
-                        <Link to="/contact-us.html" className="cs_btn cs_style_1 cs_accent_bg">
-                          <span>Book Now</span>
+                      <p className="cs_cost_breakdown_row_desc">{item.description}</p>
+                      <ul className="cs_cost_breakdown_includes cs_mp_0">
+                        {item.includes.map((point, i) => (
+                          <li key={i}>
+                            <i className="fa-solid fa-check"></i>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="col-lg-5">
+                      <div className="cs_cost_breakdown_stats">
+                        <div className="cs_cost_breakdown_stat cs_cost_breakdown_stat_india">
+                          <span className="cs_cost_breakdown_stat_label">India (Medicure Trip)</span>
+                          <span className="cs_cost_breakdown_stat_value">From {formatUSD(item.india)}</span>
+                        </div>
+                        <div className="cs_cost_breakdown_stat">
+                          <span className="cs_cost_breakdown_stat_label">USA</span>
+                          <span className="cs_cost_breakdown_stat_value cs_cost_breakdown_stat_muted">{formatRange(item.usa)}</span>
+                        </div>
+                        <div className="cs_cost_breakdown_stat">
+                          <span className="cs_cost_breakdown_stat_label">UK</span>
+                          <span className="cs_cost_breakdown_stat_value cs_cost_breakdown_stat_muted">{formatRange(item.uk)}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="cs_cost_breakdown_savings">
+                        <span className="cs_cost_breakdown_savings_label">You Save Up To</span>
+                        <span className="cs_cost_breakdown_savings_value">{savingsPercent}%</span>
+                        <Link to="/contact-us.html" className="cs_cost_breakdown_btn">
+                          <span>Get Personalized Quote</span>
+                          <i className="fa-solid fa-arrow-right"></i>
                         </Link>
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
-            </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="cs_cost_breakdown_disclaimer">
+            <p>
+              <i className="fa-solid fa-circle-info"></i>
+              Estimates are indicative and based on published hospital rates; final cost depends on individual diagnosis and treatment plan.
+            </p>
+            <p>
+              <i className="fa-solid fa-circle-info"></i>
+              All-inclusive packages typically cover surgery, anaesthesia, hospital stay, post-op medication, and a dedicated care manager.
+            </p>
+            <p>
+              <i className="fa-solid fa-circle-info"></i>
+              International travel, accommodation, and visa fees are not included in the above estimates.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Help Widget */}
-      <div className="cs_help_widget">
-        <div className="cs_help_content">
-          <h4>Need Help?</h4>
-          <div className="cs_help_item">
-            <i className="fas fa-phone"></i>
-            <div>
-              <span>Call Us</span>
-              <a href="tel:+18001234567">+1 800 123 4567</a>
-            </div>
+      {/* Visit Our Center */}
+      <section className="cs_venue cs_py_100">
+        <div className="container">
+          <div className="cs_section_heading_style_1 cs_center-column text-center cs_mb_48 cs_mb_lg_40">
+            <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Visit Our Center</h2>
           </div>
-          <div className="cs_help_item">
-            <i className="fas fa-envelope"></i>
-            <div>
-              <span>Email Us</span>
-              <a href="mailto:shivammehra20244@gmail.com">shivammehra20244@gmail.com</a>
+          <div className="row cs_gap_y_24 cs_mb_48 cs_mb_lg_40">
+            <div className="col-md-4">
+              <div className="cs_feature_card_1 cs_radius_20 cs_color_1">
+                <div className="cs_feature_card_header cs_mb_20">
+                  <div className="cs_feature_icon cs_white_bg cs_radius_10 cs_center">
+                    <img src="/assets/img/icons/location-pin.svg" alt="Location icon" />
+                  </div>
+                  <h3 className="cs_feature_title cs_fs_24 cs_medium mb-0">Address</h3>
+                </div>
+                <p className="mb-0">Sushant Lok, Gurugram, Haryana, India</p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="cs_feature_card_1 cs_radius_20 cs_color_2">
+                <div className="cs_feature_card_header cs_mb_20">
+                  <div className="cs_feature_icon cs_white_bg cs_radius_10 cs_center">
+                    <img src="/assets/img/icons/phone.svg" alt="Phone icon" />
+                  </div>
+                  <h3 className="cs_feature_title cs_fs_24 cs_medium mb-0">Call Us</h3>
+                </div>
+                <a href="tel:9958192249">9958192249</a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="cs_feature_card_1 cs_radius_20 cs_color_3">
+                <div className="cs_feature_card_header cs_mb_20">
+                  <div className="cs_feature_icon cs_white_bg cs_radius_10 cs_center">
+                    <img src="/assets/img/icons/emain.svg" alt="Email icon" />
+                  </div>
+                  <h3 className="cs_feature_title cs_fs_24 cs_medium mb-0">Email Us</h3>
+                </div>
+                <a href="mailto:shivammehra20244@gmail.com">shivammehra20244@gmail.com</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Venue Widget */}
-      <section className="cs_venue cs_py_50">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <h3 className="cs_venue_title">Visit Our Center</h3>
-              <div className="cs_venue_info">
-                <div className="cs_venue_item">
-                  <i className="fas fa-map-marker-alt"></i>
-                  <p>123 Medical Center Drive, Healthcare City, HC 12345</p>
-                </div>
-                <div className="cs_venue_item">
-                  <i className="fas fa-phone"></i>
-                  <p>+1 800 123 4567</p>
-                </div>
-                <div className="cs_venue_item">
-                  <i className="fas fa-clock"></i>
-                  <p>Mon - Fri: 8:00 AM - 8:00 PM</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="cs_map_embed">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153169!3d-37.817323442021595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
-                  width="100%" 
-                  height="300" 
-                  style={{border: 0}} 
-                  allowFullScreen="" 
-                  loading="lazy"
-                  title="Our Location"
-                ></iframe>
-              </div>
+        <div className="cs_contact_map_section">
+          <div className="container">
+            <div className="cs_contact_map cs_radius_20">
+              <iframe
+                src="https://maps.google.com/maps?q=Sushant+Lok,+Gurugram,+Haryana,+India&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                title="Medicure Trip location map"
+              ></iframe>
             </div>
           </div>
         </div>

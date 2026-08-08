@@ -29,7 +29,7 @@ const AboutUs = () => {
       {/* Page Header */}
       <section className="cs_page_header_style_1 cs_page_header_video position-relative">
         <div className="cs_page_header_video_bg">
-          <video autoPlay muted loop playsInline>
+          <video autoPlay muted loop playsInline preload="auto">
             <source src="/images/Banner Video.mp4" type="video/mp4" />
           </video>
         </div>
@@ -51,7 +51,6 @@ const AboutUs = () => {
         <div className="container">
           <div className="cs_section_heading_style_2 cs_mb_48 cs_mb_lg_40">
             <div className="cs_section_heading_left">
-              <p className="cs_section_subtitle cs_accent_color cs_fs_14 mb-0">// Your Health Partner in India</p>
             </div>
             <div className="cs_section_heading_right">
               <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">We Believe World-Class Medical Care Should be Accessible, Affordable, & Compassionate.</h2>
@@ -156,7 +155,6 @@ const AboutUs = () => {
             <div className="col-xl-6">
               <div className="cs_technology_content">
                 <div className="cs_section_heading_style_1 cs_mb_48 cs_mb_lg_40">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">// Why choose Medicure Trip</p>
                   <h2 className="cs_section_title cs_fs_40 cs_bold cs_mb_6">Where Care & Technology Unite</h2>
                   <p className="cs_section_desc mb-0">We don't just treat illnesses — we restore lives with empathy, precision, and integrity.</p>
                 </div>
@@ -199,6 +197,7 @@ const AboutUs = () => {
                   muted
                   loop
                   playsInline
+                  preload="none"
                   className="cs_radius_20"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 >
@@ -225,7 +224,6 @@ const AboutUs = () => {
       <section className="cs_work_section_1 position-relative pb-0">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_48 cs_mb_lg_40 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">// How Medicure Trip Works</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Three Seamless Steps From <br />Free Consultation to Recovery</h2>
           </div>
           <div className="row cs_gap_y_30 justify-content-center position-relative z-1">
@@ -318,7 +316,6 @@ const AboutUs = () => {
       <section className="cs_team_section_1 cs_gray2_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center-column cs_mb_48 cs_mb_lg_40 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17 text-uppercase">// Our Network</p>
             <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">Our Qualified Panel of <br />Partner Hospitals</h2>
           </div>
           <div className="row cs_gap_y_24">
@@ -358,7 +355,6 @@ const AboutUs = () => {
       <section className="cs_testimonial_section_5 pb-0">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center-column cs_mb_48 cs_mb_lg_40 mx-auto text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17 text-uppercase">// Real patient experiences</p>
             <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">Trusted by Patients Around the World</h2>
           </div>
         </div>

@@ -186,7 +186,7 @@ export default function Header({ isShop }) {
                 </button>
                 <a href="tel:9958192249" aria-label="Emergency call" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
                   <img src="/assets/img/icons/phone2.svg" alt="Phone icon" />
-                  <span>{t('buttons.emergency')}</span>
+                  <span>9958192249</span>
                 </a>
                 <Link to="/appointment.html" aria-label="Book an appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
                   <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />

@@ -68,7 +68,6 @@ const Pricing = () => {
       <section className="cs_pricing_section_2">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// PRICING</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Simple, Transparent <br /> Healthcare Plans</h2>
           </div>
 

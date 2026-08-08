@@ -65,7 +65,6 @@ const Facilities = () => {
       <section className="cs_facilities_section">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column mx-auto text-center cs_mb_48 cs_mb_lg_40">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">// WORLD-CLASS INFRASTRUCTURE</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Equipped With Cutting-Edge Technology and Designed for Patient Comfort, Safety, and Faster Recovery</h2>
           </div>
           <div className="row cs_gap_y_24">
@@ -73,7 +72,7 @@ const Facilities = () => {
               <div key={facility.id} className="col-lg-4 col-md-6">
                 <article className="cs_facility_card cs_radius_20 cs_gray2_bg">
                   <div className="cs_facility_img cs_radius_20 cs_mb_20">
-                    <img src={facility.img} alt={facility.title} />
+                    <img src={facility.img} alt={facility.title} loading="lazy" decoding="async" />
                   </div>
                   <div className="cs_facility_body cs_px_24 cs_pb_30">
                     <h3 className="cs_facility_title cs_fs_22 cs_medium cs_mb_12">{facility.title}</h3>

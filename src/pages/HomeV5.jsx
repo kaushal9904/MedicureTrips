@@ -95,14 +95,13 @@ const HomeV5 = () => {
             <SwiperSlide>
               <div className="cs_hero_style_1 cs_hero_eye_care position-relative">
                 <div className="cs_hero_parallax_bg cs_hero_video_bg">
-                  <video autoPlay muted loop playsInline>
+                  <video autoPlay muted loop playsInline preload="auto">
                     <source src="/images/Eye Care Banner.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div className="container">
                   <div className="cs_hero_content_wrapper">
                     <div className="cs_hero_content">
-                      <div className="cs_hero_subtitle cs_accent_color cs_fs_14">// EYE CARE CENTER</div>
                       <h1 className="cs_hero_title cs_fs_96 cs_bold">See Clearly, Live Fully</h1>
                       <p className="cs_hero_desc cs_fs_18">Advanced vision care with cutting-edge technology and expert ophthalmologists. Your eyes deserve the best care possible.</p>
                       <div className="cs_hero_btns">
@@ -144,7 +143,6 @@ const HomeV5 = () => {
       <section className="cs_about_style_5">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// ABOUT US</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Your Trusted Partner <br /> in Vision Health
             </h2>
@@ -197,7 +195,6 @@ const HomeV5 = () => {
       <section className="cs_service_section_5 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// SERVICES</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Comprehensive Eye Care <br /> Services for Every Need
             </h2>
@@ -262,7 +259,6 @@ const HomeV5 = () => {
             <div className="col-lg-6">
               <div className="cs_whychoose_content">
                 <div className="cs_section_heading_style_1 cs_mb_48">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14">// WHY CHOOSE US</p>
                   <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">Excellence in Vision Care</h2>
                 </div>
                 <div className="row cs_gap_y_24">
@@ -312,7 +308,6 @@ const HomeV5 = () => {
       <section className="cs_team_section_5 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_48 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// OUR SPECIALISTS</p>
             <h2 className="cs_section_title cs_fs_40 cs_bold mb-0">
               Meet Our Expert <br /> Ophthalmologists
             </h2>
@@ -353,7 +348,6 @@ const HomeV5 = () => {
       <section className="cs_equipment_section_5">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// OUR EQUIPMENT</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               State-of-the-Art <br /> Eye Care Technology
             </h2>
@@ -400,7 +394,6 @@ const HomeV5 = () => {
             <div className="col-lg-6">
               <div className="cs_appointment_content">
                 <div className="cs_section_heading_style_1 cs_mb_24">
-                  <p className="cs_section_subtitle cs_accent_color cs_fs_14">// APPOINTMENT</p>
                   <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Schedule Your Eye Exam Today</h2>
                 </div>
                 <p className="cs_mb_24">Book your comprehensive eye examination with our expert ophthalmologists. Early detection is key to preserving your vision.</p>
@@ -550,7 +543,6 @@ const HomeV5 = () => {
       <section className="cs_testimonial_section_5 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// TESTIMONIALS</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               What Our Patients Say <br /> About Our Eye Care
             </h2>
@@ -587,7 +579,6 @@ const HomeV5 = () => {
       <section className="cs_process_section_5">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// HOW IT WORKS</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Your Journey to Better <br /> Vision Starts Here
             </h2>
@@ -613,7 +604,6 @@ const HomeV5 = () => {
       <section className="cs_faq_section_5 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// FAQ</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Frequently Asked Questions <br /> About Eye Care
             </h2>

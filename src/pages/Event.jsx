@@ -83,7 +83,6 @@ const Event = () => {
       <section className="cs_events_section">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column mx-auto text-center cs_mb_48 cs_mb_lg_40">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">// UPCOMING EVENTS</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Stay Informed and Involved — Join Our Upcoming Health Events, Workshops, and Community Programs</h2>
           </div>
           <div className="row cs_gap_y_24">

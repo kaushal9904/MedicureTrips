@@ -66,7 +66,6 @@ const HomeV4 = () => {
           <div className="row align-items-center cs_gap_y_30">
             <div className="col-lg-6">
               <div className="cs_hero_content">
-                <div className="cs_hero_subtitle cs_accent_color cs_fs_14">// DENTAL CARE CENTER</div>
                 <h1 className="cs_hero_title cs_fs_96 cs_bold">Advanced Dental Care at Medicure Trip</h1>
                 <p className="cs_hero_desc cs_fs_18">Your trusted partner in comprehensive dental health. From routine cleanings to complete smile makeovers, we deliver excellence in dental care.</p>
                 <div className="cs_hero_btns">
@@ -151,7 +150,6 @@ const HomeV4 = () => {
       <section className="cs_about_style_4">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// ABOUT US</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Your Trusted Dental <br /> Care Partner
             </h2>
@@ -218,7 +216,6 @@ const HomeV4 = () => {
       <section className="cs_service_section_4 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// SERVICES</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Complete Dental Services <br /> for Every Need
             </h2>
@@ -266,7 +263,6 @@ const HomeV4 = () => {
       <section className="cs_process_section_4">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// HOW IT WORKS</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Your Journey to a <br /> Perfect Smile
             </h2>
@@ -292,7 +288,6 @@ const HomeV4 = () => {
       <section className="cs_team_section_4 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// OUR EXPERTS</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Meet Our Skilled <br /> Dental Professionals
             </h2>
@@ -345,7 +340,6 @@ const HomeV4 = () => {
       <section className="cs_pricing_section_4">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// PRICING</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               Affordable Dental Care <br /> Plans for Everyone
             </h2>
@@ -385,7 +379,6 @@ const HomeV4 = () => {
       <section className="cs_testimonial_section_4 cs_gray_bg">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center_column cs_mb_50 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14">// TESTIMONIALS</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">
               What Our Patients Say <br /> About Our Dental Care
             </h2>

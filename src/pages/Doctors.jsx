@@ -8,6 +8,11 @@ const allDoctors = [
   { name: 'Fortis Hospital', specialty: 'Orthopedic · NABH & JCI Accredited', img: '/images/Fortis Hospital 468x525 3_.jpg' },
   { name: 'BLK Hospital', specialty: 'Urology & ENT · NABH & JCI Accredited', img: '/images/BLK Hospital 468x525 4.jpeg' },
   { name: 'Max Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/images/Max Hospital 468x525 2_.jpg' },
+  { name: 'Apollo Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/assets/img/facility_img_1.webp' },
+  { name: 'Manipal Hospital', specialty: 'Organ Transplant · NABH & JCI Accredited', img: '/assets/img/facility_img_2.webp' },
+  { name: 'Kokilaben Dhirubhai Ambani Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/assets/img/facility_img_3.webp' },
+  { name: 'Narayana Health City', specialty: 'Cardiology · NABH & JCI Accredited', img: '/assets/img/facility_img_4.webp' },
+  { name: 'Shalby Hospitals', specialty: 'Orthopedic · NABH & JCI Accredited', img: '/assets/img/facility_img_5.webp' },
 ];
 
 const departments = ['Organ Transplant', 'Cardiology', 'Neuro Surgery', 'Spine Surgery', 'Orthopedic', 'Urology', 'ENT', 'Plastic Surgery', 'Cancer'];
@@ -35,7 +40,6 @@ const Doctors = () => {
       <section className="cs_team_section_5">
         <div className="container">
           <div className="cs_section_heading_style_1 cs_center-column cs_mb_48 cs_mb_lg_40 text-center">
-            <p className="cs_section_subtitle cs_accent_color cs_fs_14 cs_mb_17">// Our Network</p>
             <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Navigate Your Healthcare Journey With Confidence <br />Through Our Partner Hospitals.</h2>
           </div>
           <form className="cs_doctor_filter cs_gray3_bg cs_radius_5 cs_mb_24" onSubmit={e => e.preventDefault()}>
@@ -73,7 +77,7 @@ const Doctors = () => {
               <div key={i} className="col-xl-3 col-lg-4 col-sm-6">
                 <div className="cs_team_style_2 cs_radius_20 position-relative overflow-hidden">
                   <div className="cs_team_img">
-                    <img src={doc.img} alt={`${doc.name} image`} />
+                    <img src={doc.img} alt={`${doc.name} image`} loading="lazy" decoding="async" />
                   </div>
                   <div className="cs_team_info text-center">
                     <Link to="/contact-us.html" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5 cs_mb_13">
