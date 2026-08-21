@@ -110,7 +110,7 @@ const MedicalVisa = () => {
                 <i className="fa-solid fa-passport cs_visa_intro_icon"></i>
                 <h3 className="cs_fs_24 cs_semibold cs_white_color cs_mb_10">Waiting On An Invitation Letter?</h3>
                 <p className="cs_white_color mb-0 cs_mb_20">Send us your reports and we'll request it from your matched hospital as part of your treatment plan.</p>
-                <Link to="/appointment.html" className="cs_btn_style_1 cs_white_bg cs_primary_color cs_semibold cs_radius_5">
+                <Link to="/appointment" className="cs_btn_style_1 cs_white_bg cs_primary_color cs_semibold cs_radius_5">
                   <span>Talk To A Coordinator</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </Link>
@@ -190,7 +190,7 @@ const MedicalVisa = () => {
                 <h2 className="cs_section_title cs_fs_40 cs_semibold cs_mb_10">What You'll Need To Apply</h2>
                 <p className="cs_section_desc mb-0">This is the core paperwork every India medical visa application asks for. Our coordinators review each document with you before submission, so incomplete paperwork never holds up your travel dates.</p>
               </div>
-              <Link to="/contact-us.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
+              <Link to="/contact-us" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
                 <img src="/assets/img/icons/emain.svg" alt="Email icon" />
                 <span>Ask About Your Documents</span>
               </Link>
@@ -268,7 +268,7 @@ const MedicalVisa = () => {
                 <div className="cs_cta_text">
                   <h2 className="cs_cta_title cs_fs_40 cs_semibold cs_mb_10">Let's Get Your Visa Moving</h2>
                   <p className="cs_cta_subtitle cs_mb_30">Send over your medical reports and preferred travel window — we'll confirm your visa category and start your hospital invitation letter right away.</p>
-                  <Link to="/appointment.html" aria-label="Book a Free Consultation" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/appointment" aria-label="Book a Free Consultation" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                     <span>Book Free Consultation</span>
                   </Link>

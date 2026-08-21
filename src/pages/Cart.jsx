@@ -58,7 +58,7 @@ const Cart = () => {
               <i className="fa-solid fa-cart-shopping cs_fs_60 cs_gray_color cs_mb_24"></i>
               <h2 className="cs_fs_40 cs_semibold cs_mb_16">Your cart is empty</h2>
               <p className="cs_mb_32">Looks like you haven't added any items to your cart yet.</p>
-              <Link to="/shop.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
+              <Link to="/shop" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
                 <span>Continue Shopping</span>
               </Link>
             </div>
@@ -82,12 +82,12 @@ const Cart = () => {
                         <tr key={item.id}>
                           <td>
                             <div className="cs_cart_product">
-                              <Link to="/shop-details.html" className="cs_cart_product_img cs_radius_10">
+                              <Link to="/shop-details" className="cs_cart_product_img cs_radius_10">
                                 <img src={item.img} alt={item.name} />
                               </Link>
                               <div className="cs_cart_product_info">
                                 <h4 className="cs_fs_18 cs_medium">
-                                  <Link to="/shop-details.html">{item.name}</Link>
+                                  <Link to="/shop-details">{item.name}</Link>
                                 </h4>
                               </div>
                             </div>
@@ -172,7 +172,7 @@ const Cart = () => {
                       <span className="cs_totals_value cs_primary_color">${total.toFixed(2)}</span>
                     </li>
                   </ul>
-                  <Link to="/checkout.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5 w-100 justify-content-center">
+                  <Link to="/checkout" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5 w-100 justify-content-center">
                     <span>Proceed to Checkout</span>
                   </Link>
                 </div>

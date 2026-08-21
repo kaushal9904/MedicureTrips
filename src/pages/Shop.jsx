@@ -74,12 +74,12 @@ const Shop = () => {
             {products.map((product) => (
               <div key={product.id} className="col-xl-4 col-md-6">
                 <div className="cs_product_card cs_white_bg cs_radius_20">
-                  <Link to="/shop-details.html" className="cs_product_img cs_radius_15 cs_mb_20">
+                  <Link to="/shop-details" className="cs_product_img cs_radius_15 cs_mb_20">
                     <img src={product.img} alt={product.name} loading="lazy" decoding="async" />
                   </Link>
                   <div className="cs_product_info">
                     <h3 className="cs_product_title cs_fs_20 cs_medium cs_mb_8">
-                      <Link to="/shop-details.html">{product.name}</Link>
+                      <Link to="/shop-details">{product.name}</Link>
                     </h3>
                     <div className="cs_product_rating cs_mb_12">
                       {[...Array(5)].map((_, i) => (
@@ -95,7 +95,7 @@ const Shop = () => {
                         <span className="cs_price_old cs_fs_16 cs_text_decoration cs_ms_8">${product.oldPrice}</span>
                       )}
                     </div>
-                    <Link to="/cart.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
+                    <Link to="/cart" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
                       <i className="fa-solid fa-cart-shopping"></i>
                       <span>Add to Cart</span>
                     </Link>

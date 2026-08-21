@@ -69,11 +69,11 @@ const HomeV4 = () => {
                 <h1 className="cs_hero_title cs_fs_96 cs_bold">Advanced Dental Care at Medicure Trip</h1>
                 <p className="cs_hero_desc cs_fs_18">Your trusted partner in comprehensive dental health. From routine cleanings to complete smile makeovers, we deliver excellence in dental care.</p>
                 <div className="cs_hero_btns">
-                  <Link to="/appointment.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                  <Link to="/appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
                     <span><i className="fa-solid fa-calendar-check"></i></span>
                     <span>Book Appointment</span>
                   </Link>
-                  <Link to="/services.html" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
+                  <Link to="/services" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
                     <span>Our Services</span>
                     <span><i className="fa-solid fa-arrow-right"></i></span>
                   </Link>
@@ -114,11 +114,11 @@ const HomeV4 = () => {
           <h3 className="cs_fs_24 cs_semibold cs_mb_24">Quick Links</h3>
           <ul className="cs_side_nav cs_mp_0">
             <li><Link to="/" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-home"></i> Home</Link></li>
-            <li><Link to="/about-us.html" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-user"></i> About Us</Link></li>
-            <li><Link to="/services.html" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-tooth"></i> Services</Link></li>
-            <li><Link to="/doctors.html" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-user-doctor"></i> Our Dentists</Link></li>
-            <li><Link to="/appointment.html" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-calendar"></i> Appointment</Link></li>
-            <li><Link to="/contact-us.html" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-phone"></i> Contact Us</Link></li>
+            <li><Link to="/about-us" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-user"></i> About Us</Link></li>
+            <li><Link to="/services" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-tooth"></i> Services</Link></li>
+            <li><Link to="/doctors" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-user-doctor"></i> Our Dentists</Link></li>
+            <li><Link to="/appointment" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-calendar"></i> Appointment</Link></li>
+            <li><Link to="/contact-us" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-phone"></i> Contact Us</Link></li>
           </ul>
           <div className="cs_side_header_contact cs_mt_24">
             <p className="cs_fs_14"><i className="fa-solid fa-phone cs_accent_color"></i> 9958192249</p>
@@ -181,7 +181,7 @@ const HomeV4 = () => {
                     <span>Emergency Dental Services</span>
                   </div>
                 </div>
-                <Link to="/about-us.html" className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5">
+                <Link to="/about-us" className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5">
                   <span>Learn More</span>
                   <span><i className="fa-solid fa-arrow-right"></i></span>
                 </Link>
@@ -241,7 +241,7 @@ const HomeV4 = () => {
                           </li>
                         ))}
                       </ul>
-                      <Link to="/services.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5 cs_mt_24">
+                      <Link to="/services" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5 cs_mt_24">
                         <span>Learn More</span>
                         <span><i className="fa-solid fa-arrow-right"></i></span>
                       </Link>
@@ -321,7 +321,7 @@ const HomeV4 = () => {
                           <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
                           <a href="#"><i className="fa-brands fa-instagram"></i></a>
                         </div>
-                        <Link to="/appointment.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                        <Link to="/appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
                           <span>Book Appointment</span>
                           <span><i className="fa-solid fa-arrow-right"></i></span>
                         </Link>
@@ -365,7 +365,7 @@ const HomeV4 = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/appointment.html" className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${plan.recommended ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}>
+                  <Link to="/appointment" className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${plan.recommended ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}>
                     <span>Get Started</span>
                   </Link>
                 </div>

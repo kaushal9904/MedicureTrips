@@ -50,7 +50,7 @@ const Blog = () => {
             {visiblePosts.map((post) => (
               <div key={post.slug} className="col-lg-4 col-md-6">
                 <article className="cs_post_style_3">
-                  <Link to={`/blog-details.html?slug=${post.slug}`} aria-label="Read the post details" className="cs_post_img cs_radius_20 cs_mb_24">
+                  <Link to={`/blog-details?slug=${post.slug}`} aria-label="Read the post details" className="cs_post_img cs_radius_20 cs_mb_24">
                     <img src={post.img} alt={post.title} loading="lazy" decoding="async" />
                     <span className="cs_post_date cs_accent_bg cs_radius_10 cs_center">
                       <span className="cs_post_date_day cs_fs_40 cs_semibold cs_white_color cs_primary_font">{post.day}</span>
@@ -71,7 +71,7 @@ const Blog = () => {
                       </div>
                     </div>
                     <h3 className="cs_post_title cs_fs_24 cs_medium mb-0">
-                      <Link to={`/blog-details.html?slug=${post.slug}`} aria-label="Read the post details">{post.title}</Link>
+                      <Link to={`/blog-details?slug=${post.slug}`} aria-label="Read the post details">{post.title}</Link>
                     </h3>
                     <p className="cs_post_excerpt cs_mt_12 mb-0">{post.excerpt}</p>
                   </div>

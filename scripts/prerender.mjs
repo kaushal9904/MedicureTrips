@@ -27,43 +27,43 @@ async function launchBrowser() {
 
 const routes = [
   '/',
-  '/home-v2.html',
-  '/home-v3.html',
-  '/home-v4.html',
-  '/home-v5.html',
-  '/about-us.html',
-  '/services.html',
-  '/service-details.html',
-  '/doctors.html',
-  '/doctor-details.html',
-  '/contact-us.html',
-  '/blog.html',
-  '/blog-sidebar.html',
-  '/blog-details.html',
-  '/appointment.html',
-  '/shop.html',
-  '/shop-details.html',
-  '/cart.html',
-  '/checkout.html',
-  '/event.html',
-  '/event-details.html',
-  '/facilities.html',
-  '/medical-visa.html',
-  '/cost-calculator.html',
-  '/orthopedic-surgery.html',
-  '/faq.html',
-  '/testimonials.html',
-  '/pricing.html',
-  '/packages.html',
-  '/career.html',
-  '/patient-resource.html',
-  '/location.html',
-  '/login.html',
-  '/register.html',
-  '/password.html',
-  '/privacy-policy.html',
-  '/term-condition.html',
-  '/error-404.html',
+  '/home-v2',
+  '/home-v3',
+  '/home-v4',
+  '/home-v5',
+  '/about-us',
+  '/services',
+  '/service-details',
+  '/doctors',
+  '/doctor-details',
+  '/contact-us',
+  '/blog',
+  '/blog-sidebar',
+  '/blog-details',
+  '/appointment',
+  '/shop',
+  '/shop-details',
+  '/cart',
+  '/checkout',
+  '/event',
+  '/event-details',
+  '/facilities',
+  '/medical-visa',
+  '/cost-calculator',
+  '/orthopedic-surgery',
+  '/faq',
+  '/testimonials',
+  '/pricing',
+  '/packages',
+  '/career',
+  '/patient-resource',
+  '/location',
+  '/login',
+  '/register',
+  '/password',
+  '/privacy-policy',
+  '/term-condition',
+  '/error-404',
 ];
 
 async function run() {
@@ -83,10 +83,13 @@ async function run() {
       await page.waitForSelector('main', { timeout: 10000 }).catch(() => {});
       await page.waitForTimeout(300);
 
+      // Physical build output always keeps the .html extension — that's what
+      // Vercel's `cleanUrls` setting (vercel.json) looks for when it serves
+      // a request to the extension-less route (e.g. /services -> dist/services.html).
       const html = await page.content();
       const outPath = route === '/'
         ? path.resolve('dist/index.html')
-        : path.resolve('dist' + route);
+        : path.resolve('dist' + route + '.html');
 
       await writeFile(outPath, html, 'utf-8');
       ok++;

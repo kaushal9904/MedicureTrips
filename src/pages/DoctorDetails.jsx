@@ -181,7 +181,7 @@ const DoctorDetails = () => {
                           <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
                           <a href="#"><i className="fa-brands fa-instagram"></i></a>
                         </div>
-                        <Link to="/contact-us.html" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
+                        <Link to="/contact-us" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                           <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                           <span>Enquire Now</span>
                         </Link>
@@ -189,7 +189,7 @@ const DoctorDetails = () => {
                     </div>
                     <div className="cs_team_info">
                       <h3 className="cs_team_title cs_fs_20 cs_bold cs_mb_12">
-                        <Link to="/doctors.html" aria-label="View partner hospitals">{doc.name}</Link>
+                        <Link to="/doctors" aria-label="View partner hospitals">{doc.name}</Link>
                       </h3>
                       <p className="cs_team_subtitle mb-0">{doc.specialty}</p>
                     </div>

@@ -77,7 +77,7 @@ const ServiceDetails = () => {
                                 <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
                                 <a href="#"><i className="fa-brands fa-instagram"></i></a>
                               </div>
-                              <Link to="/contact-us.html" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
+                              <Link to="/contact-us" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                                 <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                                 <span>Enquire Now</span>
                               </Link>
@@ -85,7 +85,7 @@ const ServiceDetails = () => {
                           </div>
                           <div className="cs_team_info">
                             <h3 className="cs_team_title cs_fs_20 cs_bold cs_mb_12">
-                              <Link to="/doctors.html" aria-label="View partner hospitals">{doc.name}</Link>
+                              <Link to="/doctors" aria-label="View partner hospitals">{doc.name}</Link>
                             </h3>
                             <p className="cs_team_subtitle mb-0">{doc.creds}</p>
                           </div>
@@ -109,10 +109,10 @@ const ServiceDetails = () => {
                 <div className="cs_sidebar_widget cs_gray2_bg cs_radius_20">
                   <h3 className="cs_widget_title cs_fs_20 cs_semibold cs_mb_22">Quick Links</h3>
                   <ul className="cs_service_category_list cs_mp_0">
-                    <li><Link to="/doctors.html">Partner Hospitals</Link></li>
-                    <li><Link to="/services.html">All Treatments</Link></li>
-                    <li><Link to="/faq.html">FAQ</Link></li>
-                    <li><Link to="/about-us.html">About Medicure Trip</Link></li>
+                    <li><Link to="/doctors">Partner Hospitals</Link></li>
+                    <li><Link to="/services">All Treatments</Link></li>
+                    <li><Link to="/faq">FAQ</Link></li>
+                    <li><Link to="/about-us">About Medicure Trip</Link></li>
                   </ul>
                 </div>
                 <div className="cs_sidebar_widget cs_gray2_bg cs_radius_20">

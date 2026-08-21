@@ -136,7 +136,7 @@ const Register = () => {
                 <div className="cs_form_check cs_mb_30">
                   <input type="checkbox" className="cs_form_check_input" id="agreeTerms" />
                   <label className="cs_form_check_label" htmlFor="agreeTerms">
-                    I agree to the <Link to="/term-condition.html" className="cs_accent_color cs_semibold">Terms & Conditions</Link> and <Link to="/privacy-policy.html" className="cs_accent_color cs_semibold">Privacy Policy</Link>
+                    I agree to the <Link to="/term-condition" className="cs_accent_color cs_semibold">Terms & Conditions</Link> and <Link to="/privacy-policy" className="cs_accent_color cs_semibold">Privacy Policy</Link>
                   </label>
                 </div>
 
@@ -146,7 +146,7 @@ const Register = () => {
                 </button>
 
                 <p className="cs_login_register text-center mb-0">
-                  Already have an account? <Link to="/login.html" className="cs_accent_color cs_semibold">Login</Link>
+                  Already have an account? <Link to="/login" className="cs_accent_color cs_semibold">Login</Link>
                 </p>
               </form>
             </div>

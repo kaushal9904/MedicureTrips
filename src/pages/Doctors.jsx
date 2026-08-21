@@ -80,12 +80,12 @@ const Doctors = () => {
                     <img src={doc.img} alt={`${doc.name} image`} loading="lazy" decoding="async" />
                   </div>
                   <div className="cs_team_info text-center">
-                    <Link to="/contact-us.html" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5 cs_mb_13">
+                    <Link to="/contact-us" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5 cs_mb_13">
                       <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                       <span>Enquire Now</span>
                     </Link>
                     <h3 className="cs_team_title cs_fs_20 cs_bold cs_white_color cs_mb_12">
-                      <Link to="/doctor-details.html" aria-label="View hospital details">{doc.name}</Link>
+                      <Link to="/doctor-details" aria-label="View hospital details">{doc.name}</Link>
                     </h3>
                     <p className="cs_team_subtitle cs_white_color mb-0">{doc.specialty}</p>
                   </div>

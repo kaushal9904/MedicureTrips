@@ -89,7 +89,7 @@ const Event = () => {
             {events.map((event) => (
               <div key={event.id} className="col-lg-4 col-md-6">
                 <article className="cs_event_card cs_radius_20 cs_gray2_bg">
-                  <Link to="/event-details.html" aria-label="View event details" className="cs_event_img cs_radius_20 cs_mb_20">
+                  <Link to="/event-details" aria-label="View event details" className="cs_event_img cs_radius_20 cs_mb_20">
                     <img src={event.img} alt={event.title} />
                     <span className="cs_event_date_badge cs_accent_bg cs_radius_10 cs_center">
                       <span className="cs_event_date_day cs_fs_28 cs_semibold cs_white_color cs_primary_font">{event.date.split(' ')[1].replace(',', '')}</span>
@@ -108,10 +108,10 @@ const Event = () => {
                       </span>
                     </div>
                     <h3 className="cs_event_title cs_fs_22 cs_medium cs_mb_12">
-                      <Link to="/event-details.html" aria-label="View event details">{event.title}</Link>
+                      <Link to="/event-details" aria-label="View event details">{event.title}</Link>
                     </h3>
                     <p className="cs_event_desc cs_secondary_color cs_mb_20">{event.description}</p>
-                    <Link to="/event-details.html" className="cs_read_more cs_accent_color cs_fs_16 cs_semibold">
+                    <Link to="/event-details" className="cs_read_more cs_accent_color cs_fs_16 cs_semibold">
                       Read More <img src="/assets/img/icons/arrow-right.svg" alt="Arrow" className="cs_read_more_icon" />
                     </Link>
                   </div>
@@ -131,7 +131,7 @@ const Event = () => {
                 <div className="cs_cta_text">
                   <h2 className="cs_cta_title cs_fs_40 cs_semibold cs_mb_10">Don't Miss Our Next Event</h2>
                   <p className="cs_cta_subtitle cs_mb_30">Subscribe to our newsletter and get notified about upcoming health events, workshops, and community programs.</p>
-                  <Link to="/contact-us.html" aria-label="Contact Us" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/contact-us" aria-label="Contact Us" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                     <span>Get In Touch</span>
                   </Link>

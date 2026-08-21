@@ -143,7 +143,7 @@ const CostCalculator = () => {
                   <strong>Save up to {breakdown.savings}%</strong>
                 </div>
 
-                <Link to="/appointment.html" className="cs_btn_style_1 cs_white_bg cs_primary_color cs_semibold cs_radius_5">
+                <Link to="/appointment" className="cs_btn_style_1 cs_white_bg cs_primary_color cs_semibold cs_radius_5">
                   <span>Get My Personalized Quote</span>
                   <i className="fa-solid fa-arrow-right"></i>
                 </Link>
@@ -194,7 +194,7 @@ const CostCalculator = () => {
                 <div className="cs_cta_text">
                   <h2 className="cs_cta_title cs_fs_40 cs_semibold cs_mb_10">Ready For A Real Quote, Not Just An Estimate?</h2>
                   <p className="cs_cta_subtitle cs_mb_30">Send your medical reports and our coordinators will get back to you with an itemized treatment and travel quote built around your actual case.</p>
-                  <Link to="/contact-us.html" aria-label="Contact Us" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/contact-us" aria-label="Contact Us" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/emain.svg" alt="Email icon" />
                     <span>Contact Us</span>
                   </Link>

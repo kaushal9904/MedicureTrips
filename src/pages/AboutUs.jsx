@@ -74,7 +74,7 @@ const AboutUs = () => {
                     <li><img src="/assets/img/icons/check-double.svg" alt="Check icon" /><span>ISO 27001 certified data security</span></li>
                     <li><img src="/assets/img/icons/check-double.svg" alt="Check icon" /><span>Rehabilitation & recovery support</span></li>
                   </ul>
-                  <Link to="/doctors.html" aria-label="Go to partner hospitals page" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/doctors" aria-label="Go to partner hospitals page" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
                     <span>Meet Our Partner Hospitals</span>
                     <span><i className="fa-solid fa-arrow-right"></i></span>
                   </Link>
@@ -206,7 +206,7 @@ const AboutUs = () => {
                 <div className="cs_technology_text">
                   <div className="cs_accredited_badge cs_accent_bg cs_white_color cs_radius_50">
                     <div className="cs_circular_text"><img src="/assets/img/circular_text.svg" alt="Circular Text" /></div>
-                    <Link to="/contact-us.html" className="cs_call_btn cs_center cs_white_bg cs_radius_50"><img src="/assets/img/icons/phone3.svg" alt="Phone icon" /></Link>
+                    <Link to="/contact-us" className="cs_call_btn cs_center cs_white_bg cs_radius_50"><img src="/assets/img/icons/phone3.svg" alt="Phone icon" /></Link>
                   </div>
                   <ul className="cs_feature_list cs_white_color cs_mp_0">
                     <li><img src="/assets/img/icons/check-double.svg" alt="Check icon" /><span>NABH Accredited Hospital of the Year</span></li>
@@ -332,7 +332,7 @@ const AboutUs = () => {
                         <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
                         <a href="#"><i className="fa-brands fa-instagram"></i></a>
                       </div>
-                      <Link to="/contact-us.html" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
+                      <Link to="/contact-us" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                         <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                         <span>Enquire Now</span>
                       </Link>
@@ -340,7 +340,7 @@ const AboutUs = () => {
                   </div>
                   <div className="cs_team_info">
                     <h3 className="cs_team_title cs_fs_20 cs_bold cs_mb_12">
-                      <Link to="/doctors.html" aria-label="View partner hospitals">{doc.name}</Link>
+                      <Link to="/doctors" aria-label="View partner hospitals">{doc.name}</Link>
                     </h3>
                     <p className="cs_team_subtitle mb-0">{doc.creds} &middot; {doc.specialty}</p>
                   </div>

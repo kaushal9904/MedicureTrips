@@ -441,7 +441,7 @@ const OrthopedicLanding = () => {
                     <h3>{doc.name}</h3>
                     <p className="ol_doctor_hospital">{doc.hospital}</p>
                     <p className="ol_doctor_focus">{doc.focus}</p>
-                    <Link to="/contact-us.html" className="ol_doctor_cta">
+                    <Link to="/contact-us" className="ol_doctor_cta">
                       <i className="fa-solid fa-calendar-check"></i> Book Consultation
                     </Link>
                   </div>
@@ -476,7 +476,7 @@ const OrthopedicLanding = () => {
             ))}
           </div>
           <div className="text-center ol_hospitals_cta">
-            <Link to="/doctors.html">
+            <Link to="/doctors">
               View All Partner Hospitals <i className="fa-solid fa-arrow-right"></i>
             </Link>
           </div>

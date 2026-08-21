@@ -115,11 +115,11 @@ const HomeV3 = () => {
                   <span className="cs_rating_text">Rated 4.9/5 by 2,500+ Parents</span>
                 </div>
                 <div className="cs_hero_btns">
-                  <Link to="/appointment.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                  <Link to="/appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
                     <span><i className="fa-solid fa-calendar-check"></i></span>
                     <span>Book Appointment</span>
                   </Link>
-                  <Link to="/about-us.html" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
+                  <Link to="/about-us" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
                     <span>Our Services</span>
                     <span><i className="fa-solid fa-arrow-right"></i></span>
                   </Link>
@@ -224,7 +224,7 @@ const HomeV3 = () => {
                   <h2 className="cs_section_title cs_fs_40 cs_semibold mb-0">Where Children Come First</h2>
                 </div>
                 <p className="cs_about_desc cs_mb_24">Our child care center provides a safe, nurturing environment where children can grow, learn, and thrive. With experienced pediatric specialists and modern facilities, we ensure every child receives the best care possible.</p>
-                <Link to="/about-us.html" className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5">
+                <Link to="/about-us" className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5">
                   <span>Learn More About Us</span>
                   <span><i className="fa-solid fa-arrow-right"></i></span>
                 </Link>
@@ -290,7 +290,7 @@ const HomeV3 = () => {
                           </li>
                         ))}
                       </ul>
-                      <Link to="/appointment.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                      <Link to="/appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
                         <span>Book Now</span>
                         <span><i className="fa-solid fa-arrow-right"></i></span>
                       </Link>
@@ -380,7 +380,7 @@ const HomeV3 = () => {
                         <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
                         <a href="#"><i className="fa-brands fa-instagram"></i></a>
                       </div>
-                      <Link to="/appointment.html" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
+                      <Link to="/appointment" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                         <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                         <span>Appointment</span>
                       </Link>
@@ -388,7 +388,7 @@ const HomeV3 = () => {
                   </div>
                   <div className="cs_team_info">
                     <h3 className="cs_team_title cs_fs_20 cs_bold cs_mb_12">
-                      <Link to="/doctor-details.html">{doc.name} <span>({doc.credentials})</span></Link>
+                      <Link to="/doctor-details">{doc.name} <span>({doc.credentials})</span></Link>
                     </h3>
                     <p className="cs_team_subtitle mb-0">{doc.specialty}</p>
                   </div>
@@ -452,7 +452,7 @@ const HomeV3 = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/appointment.html" className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${plan.recommended ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}>
+                  <Link to="/appointment" className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${plan.recommended ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}>
                     <span>Enroll Now</span>
                   </Link>
                 </div>

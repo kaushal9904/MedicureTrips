@@ -93,14 +93,14 @@ const BlogDetails = () => {
 
                 {/* Post Navigation */}
                 <nav className="cs_post_navigation" aria-label="Post navigation">
-                  <Link to={`/blog-details.html?slug=${prevPost.slug}`} className="cs_post_nav_item cs_radius_20">
+                  <Link to={`/blog-details?slug=${prevPost.slug}`} className="cs_post_nav_item cs_radius_20">
                     <span className="cs_post_nav_label cs_fs_16 cs_semibold">
                       <img src="/assets/img/icons/arrow-right.svg" alt="Previous" style={{ transform: 'rotate(180deg)' }} />
                       Previous Post
                     </span>
                     <h3 className="cs_post_nav_title cs_fs_24 cs_medium mb-0">{prevPost.title}</h3>
                   </Link>
-                  <Link to={`/blog-details.html?slug=${nextPost.slug}`} className="cs_post_nav_item cs_radius_20 cs_post_nav_next">
+                  <Link to={`/blog-details?slug=${nextPost.slug}`} className="cs_post_nav_item cs_radius_20 cs_post_nav_next">
                     <span className="cs_post_nav_label cs_fs_16 cs_semibold">
                       Next Post
                       <img src="/assets/img/icons/arrow-right.svg" alt="Next" />
@@ -143,7 +143,7 @@ const BlogDetails = () => {
                   <ul className="cs_recent_posts_list cs_mp_0">
                     {recentPosts.map((p) => (
                       <li key={p.slug} className="cs_post_style_6">
-                        <Link to={`/blog-details.html?slug=${p.slug}`} aria-label="Read the post details" className="cs_post_thumb cs_radius_5">
+                        <Link to={`/blog-details?slug=${p.slug}`} aria-label="Read the post details" className="cs_post_thumb cs_radius_5">
                           <img src={p.img} alt={p.title} />
                         </Link>
                         <div className="cs_post_info">
@@ -152,7 +152,7 @@ const BlogDetails = () => {
                             {p.day} {p.month}
                           </span>
                           <h3 className="cs_post_title cs_fs_16 cs_semibold cs_secondary_font mb-0">
-                            <Link to={`/blog-details.html?slug=${p.slug}`} aria-label="Read the post details">{p.title}</Link>
+                            <Link to={`/blog-details?slug=${p.slug}`} aria-label="Read the post details">{p.title}</Link>
                           </h3>
                         </div>
                       </li>
@@ -164,7 +164,7 @@ const BlogDetails = () => {
                 <div className="cs_sidebar_widget cs_promo_widget cs_radius_20 cs_bg_filed text-center" style={{ backgroundImage: "url('/assets/img/team_img_21.webp')" }}>
                   <h3 className="cs_widget_title cs_fs_20 cs_semibold cs_white_color cs_mb_24">Ask Our Experts</h3>
                   <p className="cs_promo_desc cs_white_color cs_mb_12">Have a health concern? Get personalized advice from Medicure Trip specialists.</p>
-                  <Link to="/appointment.html" aria-label="Book consultation" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/appointment" aria-label="Book consultation" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                     <span>Book Consultation</span>
                   </Link>

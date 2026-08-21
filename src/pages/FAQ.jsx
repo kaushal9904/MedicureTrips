@@ -167,7 +167,7 @@ const FAQ = () => {
                 <div className="cs_cta_text">
                   <h2 className="cs_cta_title cs_fs_40 cs_semibold cs_mb_10">Still Have Questions?</h2>
                   <p className="cs_cta_subtitle cs_mb_30">Our team is here to help. Reach out to us directly and we'll get back to you with the answers you need.</p>
-                  <Link to="/contact-us.html" aria-label="Contact Us" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/contact-us" aria-label="Contact Us" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/emain.svg" alt="Email icon" />
                     <span>Contact Us</span>
                   </Link>

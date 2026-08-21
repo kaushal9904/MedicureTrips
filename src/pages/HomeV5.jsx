@@ -105,11 +105,11 @@ const HomeV5 = () => {
                       <h1 className="cs_hero_title cs_fs_96 cs_bold">See Clearly, Live Fully</h1>
                       <p className="cs_hero_desc cs_fs_18">Advanced vision care with cutting-edge technology and expert ophthalmologists. Your eyes deserve the best care possible.</p>
                       <div className="cs_hero_btns">
-                        <Link to="/appointment.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                        <Link to="/appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
                           <span><i className="fa-solid fa-calendar-check"></i></span>
                           <span>Book Eye Exam</span>
                         </Link>
-                        <Link to="/services.html" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
+                        <Link to="/services" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
                           <span>Our Services</span>
                           <span><i className="fa-solid fa-arrow-right"></i></span>
                         </Link>
@@ -227,7 +227,7 @@ const HomeV5 = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/services.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                  <Link to="/services" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
                     <span>Learn More</span>
                     <span><i className="fa-solid fa-arrow-right"></i></span>
                   </Link>
@@ -325,7 +325,7 @@ const HomeV5 = () => {
                         <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
                         <a href="#"><i className="fa-brands fa-instagram"></i></a>
                       </div>
-                      <Link to="/appointment.html" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
+                      <Link to="/appointment" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                         <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                         <span>Appointment</span>
                       </Link>
@@ -333,7 +333,7 @@ const HomeV5 = () => {
                   </div>
                   <div className="cs_team_info">
                     <h3 className="cs_team_title cs_fs_20 cs_bold cs_mb_12">
-                      <Link to="/doctor-details.html">{doc.name} <span>({doc.credentials})</span></Link>
+                      <Link to="/doctor-details">{doc.name} <span>({doc.credentials})</span></Link>
                     </h3>
                     <p className="cs_team_subtitle mb-0">{doc.specialty}</p>
                   </div>
@@ -370,7 +370,7 @@ const HomeV5 = () => {
                   <div className="cs_equipment_content cs_white_bg cs_radius_20">
                     <h3 className="cs_fs_32 cs_semibold cs_mb_12">{item.title}</h3>
                     <p className="cs_mb_24">{item.desc}</p>
-                    <Link to="/about-us.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                    <Link to="/about-us" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
                       <span>Learn More</span>
                       <span><i className="fa-solid fa-arrow-right"></i></span>
                     </Link>

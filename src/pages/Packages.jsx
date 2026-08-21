@@ -80,7 +80,7 @@ const Packages = () => {
                       <div className="cs_cost_breakdown_savings">
                         <span className="cs_cost_breakdown_savings_label">You Save Up To</span>
                         <span className="cs_cost_breakdown_savings_value">{savingsPercent}%</span>
-                        <Link to="/contact-us.html" className="cs_cost_breakdown_btn">
+                        <Link to="/contact-us" className="cs_cost_breakdown_btn">
                           <span>Get Personalized Quote</span>
                           <i className="fa-solid fa-arrow-right"></i>
                         </Link>

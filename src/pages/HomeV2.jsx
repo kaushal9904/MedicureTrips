@@ -84,11 +84,11 @@ const HomeV2 = () => {
                 <h1 className="cs_hero_title cs_fs_96 cs_bold">Healing Beyond Boundaries</h1>
                 <p className="cs_hero_desc cs_fs_18">Your trusted partner in comprehensive healthcare with advanced diagnostics, expert physicians, and compassionate care for every member of your family.</p>
                 <div className="cs_hero_btns">
-                  <Link to="/doctors.html" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
+                  <Link to="/doctors" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5">
                     <span><i className="fa-solid fa-stethoscope"></i></span>
                     <span>Find a Doctor</span>
                   </Link>
-                  <Link to="/about-us.html" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
+                  <Link to="/about-us" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
                     <span>Learn More</span>
                     <span><i className="fa-solid fa-arrow-right"></i></span>
                   </Link>
@@ -197,7 +197,7 @@ const HomeV2 = () => {
                 <div className="cs_about_quote cs_mb_24">
                   <blockquote>"Healthcare is not just about treating illness — it's about promoting wellness and enriching lives."</blockquote>
                 </div>
-                <Link to="/about-us.html" className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5">
+                <Link to="/about-us" className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5">
                   <span>More About Us</span>
                   <span><i className="fa-solid fa-arrow-right"></i></span>
                 </Link>
@@ -262,7 +262,7 @@ const HomeV2 = () => {
                           </li>
                         ))}
                       </ul>
-                      <Link to={service.slug ? `/service-details.html?slug=${service.slug}` : '/services.html'} className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5 cs_mt_24">
+                      <Link to={service.slug ? `/service-details?slug=${service.slug}` : '/services'} className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5 cs_mt_24">
                         <span>Learn More</span>
                         <span><i className="fa-solid fa-arrow-right"></i></span>
                       </Link>
@@ -317,7 +317,7 @@ const HomeV2 = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/appointment.html" className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${pkg.recommended ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}>
+                  <Link to="/appointment" className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${pkg.recommended ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}>
                     <span>Book Package</span>
                   </Link>
                 </div>
@@ -429,7 +429,7 @@ const HomeV2 = () => {
                         <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
                         <a href="#"><i className="fa-brands fa-instagram"></i></a>
                       </div>
-                      <Link to="/appointment.html" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
+                      <Link to="/appointment" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                         <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                         <span>Appointment</span>
                       </Link>
@@ -437,7 +437,7 @@ const HomeV2 = () => {
                   </div>
                   <div className="cs_team_info">
                     <h3 className="cs_team_title cs_fs_20 cs_bold cs_mb_12">
-                      <Link to="/doctor-details.html">{doc.name} <span>({doc.credentials})</span></Link>
+                      <Link to="/doctor-details">{doc.name} <span>({doc.credentials})</span></Link>
                     </h3>
                     <p className="cs_team_subtitle mb-0">{doc.specialty}</p>
                   </div>

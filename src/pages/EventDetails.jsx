@@ -48,7 +48,7 @@ const EventDetails = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb cs_breadcrumb mb-0">
                 <li className="breadcrumb-item"><Link to="/">Home</Link></li>
-                <li className="breadcrumb-item"><Link to="/event.html">Events</Link></li>
+                <li className="breadcrumb-item"><Link to="/event">Events</Link></li>
                 <li className="breadcrumb-item active" aria-current="page">Event Details</li>
               </ol>
             </nav>
@@ -181,7 +181,7 @@ const EventDetails = () => {
                 <div className="cs_sidebar_widget cs_promo_widget cs_radius_20 cs_bg_filed text-center" style={{ backgroundImage: "url('/assets/img/team_img_21.webp')" }}>
                   <h3 className="cs_widget_title cs_fs_20 cs_semibold cs_white_color cs_mb_24">Register Now</h3>
                   <p className="cs_promo_desc cs_white_color cs_mb_12">Secure your spot at the Annual Health Awareness Camp. Free for all attendees.</p>
-                  <Link to="/appointment.html" aria-label="Register for event" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/appointment" aria-label="Register for event" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                     <span>Register Free</span>
                   </Link>
@@ -213,7 +213,7 @@ const EventDetails = () => {
             {relatedEvents.map((event) => (
               <div key={event.id} className="col-lg-4 col-md-6">
                 <article className="cs_event_card cs_radius_20 cs_gray2_bg">
-                  <Link to="/event-details.html" aria-label="View event details" className="cs_event_img cs_radius_20 cs_mb_20">
+                  <Link to="/event-details" aria-label="View event details" className="cs_event_img cs_radius_20 cs_mb_20">
                     <img src={event.img} alt={event.title} />
                     <span className="cs_event_date_badge cs_accent_bg cs_radius_10 cs_center">
                       <span className="cs_event_date_day cs_fs_28 cs_semibold cs_white_color cs_primary_font">{event.date.split(' ')[1].replace(',', '')}</span>
@@ -232,9 +232,9 @@ const EventDetails = () => {
                       </span>
                     </div>
                     <h3 className="cs_event_title cs_fs_22 cs_medium cs_mb_12">
-                      <Link to="/event-details.html" aria-label="View event details">{event.title}</Link>
+                      <Link to="/event-details" aria-label="View event details">{event.title}</Link>
                     </h3>
-                    <Link to="/event-details.html" className="cs_read_more cs_accent_color cs_fs_16 cs_semibold">
+                    <Link to="/event-details" className="cs_read_more cs_accent_color cs_fs_16 cs_semibold">
                       Read More <img src="/assets/img/icons/arrow-right.svg" alt="Arrow" className="cs_read_more_icon" />
                     </Link>
                   </div>

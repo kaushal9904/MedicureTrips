@@ -45,14 +45,14 @@ const Services = () => {
                 <div className="cs_service_card_4 cs_gray2_bg cs_radius_20">
                   <div className="cs_card_body">
                     <h3 className="cs_card_title cs_fs_24 cs_medium cs_mb_20 cs_mb_lg_12">
-                      <Link to={`/service-details.html?slug=${service.slug}`}>{service.title}</Link>
+                      <Link to={`/service-details?slug=${service.slug}`}>{service.title}</Link>
                     </h3>
                     <p className="cs_card_desc cs_mb_24 cs_mb_lg_16">{service.desc}</p>
                     <ul className="cs_card_tags cs_mp_0 cs_mb_30 cs_mb_lg_24">
                       {service.tags.map((tag, j) => <li key={j}>{tag}</li>)}
                     </ul>
                   </div>
-                  <Link to={`/service-details.html?slug=${service.slug}`} aria-label={`Open ${service.title}`} className="cs_card_img cs_radius_15">
+                  <Link to={`/service-details?slug=${service.slug}`} aria-label={`Open ${service.title}`} className="cs_card_img cs_radius_15">
                     <img src={service.img} alt={service.title} />
                     <span className="cs_card_btn cs_white_bg cs_center cs_radius_50">
                       <img src="/assets/img/icons/arrow-right.svg" alt="Arrow" />
@@ -82,7 +82,7 @@ const Services = () => {
                 <div className="cs_cta_text">
                   <h2 className="cs_cta_title cs_fs_40 cs_semibold cs_mb_10">Need a Personalized Treatment Plan?</h2>
                   <p className="cs_cta_subtitle cs_mb_30">Our expert doctors are here to guide you with tailored care pathways & second opinions.</p>
-                  <Link to="/appointment.html" aria-label="Book Free Consultation" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/appointment" aria-label="Book Free Consultation" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                     <span>Book Free Consultation</span>
                   </Link>

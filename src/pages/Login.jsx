@@ -84,7 +84,7 @@ const Login = () => {
                     <input type="checkbox" className="cs_form_check_input" id="rememberMe" />
                     <label className="cs_form_check_label" htmlFor="rememberMe">Remember me</label>
                   </div>
-                  <Link to="/password.html" className="cs_accent_color cs_semibold cs_fs_14">Forgot Password?</Link>
+                  <Link to="/password" className="cs_accent_color cs_semibold cs_fs_14">Forgot Password?</Link>
                 </div>
 
                 <button type="submit" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5 w-100 cs_mb_20">
@@ -93,7 +93,7 @@ const Login = () => {
                 </button>
 
                 <p className="cs_login_register text-center mb-0">
-                  Don't have an account? <Link to="/register.html" className="cs_accent_color cs_semibold">Register</Link>
+                  Don't have an account? <Link to="/register" className="cs_accent_color cs_semibold">Register</Link>
                 </p>
               </form>
             </div>

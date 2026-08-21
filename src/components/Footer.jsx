@@ -53,12 +53,12 @@ export default function Footer() {
               <div className="cs_footer_widget">
                 <h2 className="cs_footer_widget_title cs_fs_24 cs_medium cs_white_color cs_mb_24 cs_mb_lg_20">{t('footer.quickLinks')}</h2>
                 <ul className="cs_footer_widget_nav cs_mp_0">
-                  <li><Link to="/about-us.html">{t('footer.links.aboutUs')}</Link></li>
-                  <li><Link to="/doctors.html">{t('footer.links.partnerHospitals')}</Link></li>
-                  <li><Link to="/services.html">{t('footer.links.treatments')}</Link></li>
-                  <li><Link to="/appointment.html">{t('footer.links.freeConsultation')}</Link></li>
-                  <li><Link to="/faq.html">{t('footer.links.faq')}</Link></li>
-                  <li><Link to="/testimonials.html">{t('footer.links.patientFeedback')}</Link></li>
+                  <li><Link to="/about-us">{t('footer.links.aboutUs')}</Link></li>
+                  <li><Link to="/doctors">{t('footer.links.partnerHospitals')}</Link></li>
+                  <li><Link to="/services">{t('footer.links.treatments')}</Link></li>
+                  <li><Link to="/appointment">{t('footer.links.freeConsultation')}</Link></li>
+                  <li><Link to="/faq">{t('footer.links.faq')}</Link></li>
+                  <li><Link to="/testimonials">{t('footer.links.patientFeedback')}</Link></li>
                 </ul>
               </div>
             </div>
@@ -66,12 +66,12 @@ export default function Footer() {
               <div className="cs_footer_widget">
                 <h2 className="cs_footer_widget_title cs_fs_24 cs_medium cs_white_color cs_mb_24 cs_mb_lg_20">{t('footer.specialtiesTitle')}</h2>
                 <ul className="cs_footer_widget_nav cs_mp_0">
-                  <li><Link to="/service-details.html?slug=organ-transplant">{t('footer.spec.organTransplant')}</Link></li>
-                  <li><Link to="/service-details.html?slug=cardiology">{t('footer.spec.cardiology')}</Link></li>
-                  <li><Link to="/service-details.html?slug=neuro-surgery">{t('footer.spec.neuroSurgery')}</Link></li>
-                  <li><Link to="/service-details.html?slug=spine-surgery">{t('footer.spec.spineSurgery')}</Link></li>
-                  <li><Link to="/service-details.html?slug=orthopedic">{t('footer.spec.orthopedic')}</Link></li>
-                  <li><Link to="/service-details.html?slug=cancer">{t('footer.spec.cancer')}</Link></li>
+                  <li><Link to="/service-details?slug=organ-transplant">{t('footer.spec.organTransplant')}</Link></li>
+                  <li><Link to="/service-details?slug=cardiology">{t('footer.spec.cardiology')}</Link></li>
+                  <li><Link to="/service-details?slug=neuro-surgery">{t('footer.spec.neuroSurgery')}</Link></li>
+                  <li><Link to="/service-details?slug=spine-surgery">{t('footer.spec.spineSurgery')}</Link></li>
+                  <li><Link to="/service-details?slug=orthopedic">{t('footer.spec.orthopedic')}</Link></li>
+                  <li><Link to="/service-details?slug=cancer">{t('footer.spec.cancer')}</Link></li>
                 </ul>
               </div>
             </div>
@@ -126,9 +126,9 @@ export default function Footer() {
           <div className="cs_footer_bottom_content">
             <p className="cs_footer_copyright mb-0">&copy; {year} <span className="cs_white_color">Medicure Trip</span>. {t('footer.copyrightSuffix')}</p>
             <ul className="cs_footer_bottom_nav cs_mp_0">
-              <li><Link to="/term-condition.html" aria-label="Terms of Use">{t('footer.termsOfUse')}</Link></li>
-              <li><Link to="/privacy-policy.html" aria-label="Privacy Policy">{t('footer.privacyPolicy')}</Link></li>
-              <li><Link to="/faq.html" aria-label="FAQ">{t('footer.links.faq')}</Link></li>
+              <li><Link to="/term-condition" aria-label="Terms of Use">{t('footer.termsOfUse')}</Link></li>
+              <li><Link to="/privacy-policy" aria-label="Privacy Policy">{t('footer.privacyPolicy')}</Link></li>
+              <li><Link to="/faq" aria-label="FAQ">{t('footer.links.faq')}</Link></li>
             </ul>
           </div>
         </div>

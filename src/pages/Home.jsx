@@ -353,7 +353,7 @@ const Home = () => {
                       </p>
                       <div className="cs_hero_btns">
                         <Link
-                          to="/contact-us.html"
+                          to="/contact-us"
                           className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
                         >
                           <span>
@@ -398,7 +398,7 @@ const Home = () => {
                       </p>
                       <div className="cs_hero_btns">
                         <Link
-                          to="/contact-us.html"
+                          to="/contact-us"
                           className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
                         >
                           <span>
@@ -443,7 +443,7 @@ const Home = () => {
                       </p>
                       <div className="cs_hero_btns">
                         <Link
-                          to="/contact-us.html"
+                          to="/contact-us"
                           className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
                         >
                           <span>
@@ -798,7 +798,7 @@ const Home = () => {
                   </p>
                   <div className="cs_btns_wrapper">
                     <Link
-                      to="/about-us.html"
+                      to="/about-us"
                       aria-label="Go to about us page"
                       className="cs_btn_style_1 cs_primary_color cs_semibold cs_radius_5"
                     >
@@ -916,7 +916,7 @@ const Home = () => {
                     </div>
                     <h3 className="cs_service_title cs_fs_24 cs_medium mb-0">
                       <Link
-                        to={`/service-details.html?slug=${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                        to={`/service-details?slug=${service.title.toLowerCase().replace(/\s+/g, '-')}`}
                         aria-label={`Go to ${service.title} details page`}
                       >
                         {service.title}
@@ -941,7 +941,7 @@ const Home = () => {
                   style={{ backgroundImage: `url('${service.img}')` }}
                 >
                   <Link
-                    to={`/service-details.html?slug=${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                    to={`/service-details?slug=${service.title.toLowerCase().replace(/\s+/g, '-')}`}
                     aria-label={`Go to ${service.title} details page`}
                     className="cs_service_btn cs_accent_bg cs_white_color cs_radius_50"
                   >
@@ -956,7 +956,7 @@ const Home = () => {
           </div>
           <div className="text-center cs_mt_40">
             <Link
-              to="/services.html"
+              to="/services"
               className="cs_btn_style_1 cs_accent_bg cs_white_color cs_radius_5"
             >
               <span>View All 9 Treatments</span>
@@ -1028,7 +1028,7 @@ const Home = () => {
                     </span>
                   </div>
                   <Link
-                    to="/packages.html"
+                    to="/packages"
                     className="cs_cost_card_btn"
                     aria-label={`Get cost estimate for ${item.title}`}
                   >
@@ -1060,7 +1060,7 @@ const Home = () => {
             <p className="cs_fs_18 cs_white_color cs_mb_20">
               Need a personalised cost estimate for your specific condition?
             </p>
-            <Link to="/packages.html" className="cs_cost_cta_btn">
+            <Link to="/packages" className="cs_cost_cta_btn">
               <span>Request Free Cost Estimate</span>
               <i className="fa-solid fa-arrow-right"></i>
             </Link>
@@ -1093,7 +1093,7 @@ const Home = () => {
                       />
                     </div>
                     <Link
-                      to="/contact-us.html"
+                      to="/contact-us"
                       className="cs_call_btn cs_center cs_white_bg cs_radius_50"
                     >
                       <img
@@ -1248,7 +1248,7 @@ const Home = () => {
                         </a>
                       </div>
                       <Link
-                        to="/contact-us.html"
+                        to="/contact-us"
                         aria-label="Enquire about this hospital"
                         className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5"
                       >
@@ -1263,7 +1263,7 @@ const Home = () => {
                   <div className="cs_team_info">
                     <h3 className="cs_team_title cs_fs_20 cs_bold cs_mb_12">
                       <Link
-                        to="/doctors.html"
+                        to="/doctors"
                         aria-label="View partner hospitals"
                       >
                         {doc.name}
@@ -1510,7 +1510,7 @@ const Home = () => {
               <div key={i} className="col-lg-4">
                 <div className="cs_post_style_1">
                   <Link
-                    to="/blog-details.html"
+                    to="/blog-details"
                     aria-label="Read the post details"
                     className="cs_post_img cs_radius_20 cs_mb_22 overflow-hidden"
                   >
@@ -1540,7 +1540,7 @@ const Home = () => {
                     </div>
                     <h3 className="cs_post_title cs_fs_24 cs_medium cs_mb_48 cs_mb_lg_24">
                       <Link
-                        to="/blog-details.html"
+                        to="/blog-details"
                         aria-label="Read the post details"
                       >
                         {post.title}
@@ -1554,7 +1554,7 @@ const Home = () => {
                         <span className="cs_author_title">By Admin</span>
                       </div>
                       <Link
-                        to="/blog-details.html"
+                        to="/blog-details"
                         aria-label="Read the post details"
                         className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5"
                       >

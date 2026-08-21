@@ -75,44 +75,44 @@ function App() {
       {!isShopPage && <Header />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home-v2.html" element={<HomeV2 />} />
-        <Route path="/home-v3.html" element={<HomeV3 />} />
-        <Route path="/home-v4.html" element={<HomeV4 />} />
-        <Route path="/home-v5.html" element={<HomeV5 />} />
-        <Route path="/about-us.html" element={<AboutUs />} />
-        <Route path="/services.html" element={<Services />} />
-        <Route path="/service-details.html" element={<ServiceDetails />} />
-        <Route path="/doctors.html" element={<Doctors />} />
-        <Route path="/our-doctors.html" element={<OurDoctors />} />
-        <Route path="/doctor-details.html" element={<DoctorDetails />} />
-        <Route path="/contact-us.html" element={<ContactUs />} />
-        <Route path="/blog.html" element={<Blog />} />
-        <Route path="/blog-sidebar.html" element={<BlogSidebar />} />
-        <Route path="/blog-details.html" element={<BlogDetails />} />
-        <Route path="/appointment.html" element={<Appointment />} />
-        <Route path="/shop.html" element={<><Header isShop /><Shop /></>} />
-        <Route path="/shop-details.html" element={<><Header isShop /><ShopDetails /></>} />
-        <Route path="/cart.html" element={<><Header isShop /><Cart /></>} />
-        <Route path="/checkout.html" element={<><Header isShop /><Checkout /></>} />
-        <Route path="/event.html" element={<Event />} />
-        <Route path="/event-details.html" element={<EventDetails />} />
-        <Route path="/facilities.html" element={<Facilities />} />
-        <Route path="/medical-visa.html" element={<MedicalVisa />} />
-        <Route path="/cost-calculator.html" element={<CostCalculator />} />
-        <Route path="/orthopedic-surgery.html" element={<OrthopedicLanding />} />
-        <Route path="/faq.html" element={<FAQ />} />
-        <Route path="/testimonials.html" element={<Testimonials />} />
-        <Route path="/pricing.html" element={<Pricing />} />
-        <Route path="/packages.html" element={<Packages />} />
-        <Route path="/career.html" element={<Career />} />
-        <Route path="/patient-resource.html" element={<PatientResource />} />
-        <Route path="/location.html" element={<Location />} />
-        <Route path="/login.html" element={<Login />} />
-        <Route path="/register.html" element={<Register />} />
-        <Route path="/password.html" element={<Password />} />
-        <Route path="/privacy-policy.html" element={<PrivacyPolicy />} />
-        <Route path="/term-condition.html" element={<TermCondition />} />
-        <Route path="/error-404.html" element={<Error404 />} />
+        <Route path="/home-v2" element={<HomeV2 />} />
+        <Route path="/home-v3" element={<HomeV3 />} />
+        <Route path="/home-v4" element={<HomeV4 />} />
+        <Route path="/home-v5" element={<HomeV5 />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/service-details" element={<ServiceDetails />} />
+        <Route path="/doctors" element={<Doctors />} />
+        <Route path="/our-doctors" element={<OurDoctors />} />
+        <Route path="/doctor-details" element={<DoctorDetails />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog-sidebar" element={<BlogSidebar />} />
+        <Route path="/blog-details" element={<BlogDetails />} />
+        <Route path="/appointment" element={<Appointment />} />
+        <Route path="/shop" element={<><Header isShop /><Shop /></>} />
+        <Route path="/shop-details" element={<><Header isShop /><ShopDetails /></>} />
+        <Route path="/cart" element={<><Header isShop /><Cart /></>} />
+        <Route path="/checkout" element={<><Header isShop /><Checkout /></>} />
+        <Route path="/event" element={<Event />} />
+        <Route path="/event-details" element={<EventDetails />} />
+        <Route path="/facilities" element={<Facilities />} />
+        <Route path="/medical-visa" element={<MedicalVisa />} />
+        <Route path="/cost-calculator" element={<CostCalculator />} />
+        <Route path="/orthopedic-surgery" element={<OrthopedicLanding />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/packages" element={<Packages />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/patient-resource" element={<PatientResource />} />
+        <Route path="/location" element={<Location />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/password" element={<Password />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/term-condition" element={<TermCondition />} />
+        <Route path="/error-404" element={<Error404 />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

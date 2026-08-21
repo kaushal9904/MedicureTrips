@@ -111,7 +111,7 @@ const BlogSidebar = () => {
               <div className="cs_blog_posts_list">
                 {blogPosts.map((post) => (
                   <article key={post.id} className="cs_post_style_3">
-                    <Link to="/blog-details.html" aria-label="Read the post details" className="cs_post_img cs_radius_20 cs_mb_15">
+                    <Link to="/blog-details" aria-label="Read the post details" className="cs_post_img cs_radius_20 cs_mb_15">
                       <img src={post.img} alt="Post image" loading="lazy" decoding="async" />
                       <span className="cs_post_date cs_accent_bg cs_radius_10 cs_center">
                         <span className="cs_post_date_day cs_fs_40 cs_semibold cs_white_color cs_primary_font">{post.day}</span>
@@ -132,7 +132,7 @@ const BlogSidebar = () => {
                         </div>
                       </div>
                       <h2 className="cs_post_title cs_fs_24 cs_medium mb-0">
-                        <Link to="/blog-details.html" aria-label="Read the post details">{post.title}</Link>
+                        <Link to="/blog-details" aria-label="Read the post details">{post.title}</Link>
                       </h2>
                     </div>
                   </article>
@@ -191,7 +191,7 @@ const BlogSidebar = () => {
                   <ul className="cs_recent_posts_list cs_mp_0">
                     {recentPosts.map((post, i) => (
                       <li key={i} className="cs_post_style_6">
-                        <Link to="/blog-details.html" aria-label="Read the post details" className="cs_post_thumb cs_radius_5">
+                        <Link to="/blog-details" aria-label="Read the post details" className="cs_post_thumb cs_radius_5">
                           <img src={post.img} alt="Post thumbnail" loading="lazy" decoding="async" />
                         </Link>
                         <div className="cs_post_info">
@@ -200,7 +200,7 @@ const BlogSidebar = () => {
                             {post.date}
                           </span>
                           <h3 className="cs_post_title cs_fs_16 cs_semibold cs_secondary_font mb-0">
-                            <Link to="/blog-details.html" aria-label="Read the post details">{post.title}</Link>
+                            <Link to="/blog-details" aria-label="Read the post details">{post.title}</Link>
                           </h3>
                         </div>
                       </li>
@@ -212,7 +212,7 @@ const BlogSidebar = () => {
                 <div className="cs_sidebar_widget cs_promo_widget cs_radius_20 cs_bg_filed text-center" style={{ backgroundImage: "url('/assets/img/team_img_21.webp')" }}>
                   <h3 className="cs_widget_title cs_fs_20 cs_semibold cs_white_color cs_mb_24">Ask Our Experts</h3>
                   <p className="cs_promo_desc cs_white_color cs_mb_12">Have a health concern? Get personalized advice from Medicure Trip specialists.</p>
-                  <Link to="/appointment.html" aria-label="Book consultation" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/appointment" aria-label="Book consultation" className="cs_btn_style_1 cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                     <span>Book Consultation</span>
                   </Link>

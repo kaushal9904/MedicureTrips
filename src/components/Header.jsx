@@ -21,43 +21,43 @@ export default function Header({ isShop }) {
   const navItems = [
     { label: t('nav.home'), path: '/', children: [
       { label: t('nav.homeChildren.generalHospital'), path: '/' },
-      { label: t('nav.homeChildren.healthcareCenter'), path: '/home-v2.html' },
-      { label: t('nav.homeChildren.childCare'), path: '/home-v3.html' },
-      { label: t('nav.homeChildren.dentalCare'), path: '/home-v4.html' },
-      { label: t('nav.homeChildren.eyeCare'), path: '/home-v5.html' },
+      { label: t('nav.homeChildren.healthcareCenter'), path: '/home-v2' },
+      { label: t('nav.homeChildren.childCare'), path: '/home-v3' },
+      { label: t('nav.homeChildren.dentalCare'), path: '/home-v4' },
+      { label: t('nav.homeChildren.eyeCare'), path: '/home-v5' },
     ]},
-    { label: t('nav.about'), path: '/about-us.html' },
-    { label: t('nav.services'), path: '/services.html' },
+    { label: t('nav.about'), path: '/about-us' },
+    { label: t('nav.services'), path: '/services' },
     { label: t('nav.pages'), path: '#', children: [
-      { label: t('nav.pagesChildren.ourDoctors'), path: '/our-doctors.html' },
-      { label: t('nav.pagesChildren.partnerHospitals'), path: '/doctors.html' },
-      { label: t('nav.pagesChildren.ourPackages'), path: '/packages.html' },
-      { label: t('nav.pagesChildren.medicalVisa'), path: '/medical-visa.html' },
-      { label: t('nav.pagesChildren.costCalculator'), path: '/cost-calculator.html' },
-      { label: 'Orthopedic Surgery', path: '/orthopedic-surgery.html' },
+      { label: t('nav.pagesChildren.ourDoctors'), path: '/our-doctors' },
+      { label: t('nav.pagesChildren.partnerHospitals'), path: '/doctors' },
+      { label: t('nav.pagesChildren.ourPackages'), path: '/packages' },
+      { label: t('nav.pagesChildren.medicalVisa'), path: '/medical-visa' },
+      { label: t('nav.pagesChildren.costCalculator'), path: '/cost-calculator' },
+      { label: 'Orthopedic Surgery', path: '/orthopedic-surgery' },
       /* Disabled per request, keep entries for future re-enable:
-      { label: 'Doctor Details', path: '/doctor-details.html' },
-      { label: 'Account Login', path: '/login.html' },
-      { label: 'Account Register', path: '/register.html' },
-      { label: 'Our Events', path: '/event.html' },
-      { label: 'Event Details', path: '/event-details.html' },
-      { label: 'Our Facilities', path: '/facilities.html' },
-      { label: 'Our Pricing Plan', path: '/pricing.html' },
-      { label: 'FAQ with Answer', path: '/faq.html' },
-      { label: 'Our Testimonial', path: '/testimonials.html' },
-      { label: 'Patient Resource', path: '/patient-resource.html' },
-      { label: 'Career Opportunity', path: '/career.html' },
-      { label: '404 Error', path: '/error-404.html' },
+      { label: 'Doctor Details', path: '/doctor-details' },
+      { label: 'Account Login', path: '/login' },
+      { label: 'Account Register', path: '/register' },
+      { label: 'Our Events', path: '/event' },
+      { label: 'Event Details', path: '/event-details' },
+      { label: 'Our Facilities', path: '/facilities' },
+      { label: 'Our Pricing Plan', path: '/pricing' },
+      { label: 'FAQ with Answer', path: '/faq' },
+      { label: 'Our Testimonial', path: '/testimonials' },
+      { label: 'Patient Resource', path: '/patient-resource' },
+      { label: 'Career Opportunity', path: '/career' },
+      { label: '404 Error', path: '/error-404' },
       */
     ]},
-    { label: t('nav.blog'), path: '/blog.html' },
-    { label: t('nav.contact'), path: '/contact-us.html' },
+    { label: t('nav.blog'), path: '/blog' },
+    { label: t('nav.contact'), path: '/contact-us' },
     /* Disabled per request, keep entry for future re-enable:
-    { label: 'Shop', path: '/shop.html', children: [
-      { label: 'Medical Shop', path: '/shop.html' },
-      { label: 'Shop Details', path: '/shop-details.html' },
-      { label: 'Shopping Cart', path: '/cart.html' },
-      { label: 'Checkout', path: '/checkout.html' },
+    { label: 'Shop', path: '/shop', children: [
+      { label: 'Medical Shop', path: '/shop' },
+      { label: 'Shop Details', path: '/shop-details' },
+      { label: 'Shopping Cart', path: '/cart' },
+      { label: 'Checkout', path: '/checkout' },
     ]},
     */
   ]
@@ -75,10 +75,10 @@ export default function Header({ isShop }) {
               </div>
               <div className="cs_main_header_right">
                 <div className="cs_header_btns_wrapper">
-                  <Link to="/login.html" aria-label="Login" className="cs_header_icon_btn">
+                  <Link to="/login" aria-label="Login" className="cs_header_icon_btn">
                     <img src="/assets/img/icons/user.svg" alt="User icon" />
                   </Link>
-                  <Link to="/cart.html" aria-label="Cart" className="cs_header_icon_btn">
+                  <Link to="/cart" aria-label="Cart" className="cs_header_icon_btn">
                     <img src="/assets/img/icons/shopping-cart.svg" alt="Cart icon" />
                     <span className="cs_cart_count">0</span>
                   </Link>
@@ -113,7 +113,7 @@ export default function Header({ isShop }) {
             <div className="cs_top_header_right">
               <ul className="cs_contact_list cs_mp_0">
                 <li className="cs_contact_item cs_fs_14 cs_white_color">
-                  <Link to="/location.html" aria-label="Go to location page">
+                  <Link to="/location" aria-label="Go to location page">
                     <span>{t('topbar.location')}</span>
                   </Link>
                 </li>
@@ -191,7 +191,7 @@ export default function Header({ isShop }) {
                   <img src="/assets/img/icons/phone2.svg" alt="Phone icon" />
                   <span>9958192249</span>
                 </a>
-                <Link to="/appointment.html" aria-label="Book an appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
+                <Link to="/appointment" aria-label="Book an appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
                   <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                   <span>{t('buttons.appointment')}</span>
                 </Link>

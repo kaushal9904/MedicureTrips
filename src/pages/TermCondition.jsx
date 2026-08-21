@@ -118,7 +118,7 @@ const TermCondition = () => {
 
                 <div id="privacy" className="cs_policy_section cs_mb_30">
                   <h3 className="cs_fs_24 cs_semibold cs_mb_16">5. Privacy & Data Protection</h3>
-                  <p className="cs_fs_16 cs_mb_12">Your privacy is fundamental to our practice. Our collection, use, and protection of your personal and medical information is governed by our <Link to="/privacy-policy.html" className="cs_accent_color cs_semibold">Privacy Policy</Link>, which is incorporated into these Terms by reference.</p>
+                  <p className="cs_fs_16 cs_mb_12">Your privacy is fundamental to our practice. Our collection, use, and protection of your personal and medical information is governed by our <Link to="/privacy-policy" className="cs_accent_color cs_semibold">Privacy Policy</Link>, which is incorporated into these Terms by reference.</p>
                   <ul className="cs_policy_list cs_mb_12">
                     <li>We comply with all applicable data protection laws, including HIPAA, HITECH, and state privacy regulations.</li>
                     <li>Medical records are stored securely and access is restricted to authorized healthcare personnel.</li>

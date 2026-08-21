@@ -64,7 +64,7 @@ const Password = () => {
                 </button>
 
                 <p className="cs_login_register text-center mb-0">
-                  <Link to="/login.html" className="cs_accent_color cs_semibold">
+                  <Link to="/login" className="cs_accent_color cs_semibold">
                     <i className="fa-solid fa-arrow-left cs_me_6"></i> Back to Login
                   </Link>
                 </p>

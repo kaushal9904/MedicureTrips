@@ -112,7 +112,7 @@ const Pricing = () => {
                     ))}
                   </ul>
                   <Link
-                    to="/contact-us.html"
+                    to="/contact-us"
                     className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${plan.popular ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}
                   >
                     <span>Choose Plan</span>
@@ -133,7 +133,7 @@ const Pricing = () => {
                 <div className="cs_cta_text">
                   <h2 className="cs_cta_title cs_fs_40 cs_semibold cs_mb_10">Ready to Get Started?</h2>
                   <p className="cs_cta_subtitle cs_mb_30">Choose the perfect plan for your healthcare needs and start your journey to better health today.</p>
-                  <Link to="/contact-us.html" aria-label="Contact Us" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
+                  <Link to="/contact-us" aria-label="Contact Us" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5">
                     <img src="/assets/img/icons/emain.svg" alt="Email icon" />
                     <span>Contact Us</span>
                   </Link>
