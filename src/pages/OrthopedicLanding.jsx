@@ -57,6 +57,29 @@ const doctors = [
   },
 ];
 
+const partnerHospitals = [
+  {
+    name: 'Fortis Hospital',
+    img: '/images/Fortis Hospital 468x525 3_.jpg',
+  },
+  {
+    name: 'Medanta Hospital',
+    img: '/images/Medanta Hospital 468x525 4.jpg',
+  },
+  {
+    name: 'Artemis Hospital',
+    img: '/images/Artemis Hospital468x525.jpg',
+  },
+  {
+    name: 'Kokilaben Dhirubhai Ambani Hospital',
+    img: '/images/Kokilaben Dhirubhai Ambani Hospital 468x525.jpg',
+  },
+  {
+    name: 'Shalby Hospitals',
+    img: '/images/Shalby Hospitals 468x525.jpg',
+  },
+];
+
 const whyChoose = [
   {
     icon: '/assets/img/icons/robotic-surgery.svg',
@@ -425,6 +448,37 @@ const OrthopedicLanding = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partner Hospitals */}
+      <section className="ol_hospitals">
+        <div className="container">
+          <div className="ol_section_heading text-center">
+            <h2>Where You'll Be Treated</h2>
+            <p>Our orthopedic surgeons operate out of India's most trusted, internationally accredited hospitals.</p>
+          </div>
+          <div className="ol_hospital_grid">
+            {partnerHospitals.map((hosp, i) => (
+              <div key={i} className="ol_hospital_card">
+                <div className="ol_hospital_img">
+                  <img src={hosp.img} alt={`${hosp.name} building`} loading="lazy" decoding="async" />
+                </div>
+                <div className="ol_hospital_info">
+                  <h4>{hosp.name}</h4>
+                  <span className="ol_hospital_badge">
+                    <i className="fa-solid fa-circle-check"></i> NABH &amp; JCI Accredited
+                  </span>
+                  <p>Multi-specialty Tertiary Care</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center ol_hospitals_cta">
+            <Link to="/doctors.html">
+              View All Partner Hospitals <i className="fa-solid fa-arrow-right"></i>
+            </Link>
           </div>
         </div>
       </section>

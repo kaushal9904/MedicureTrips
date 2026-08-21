@@ -491,6 +491,86 @@
   color: #ffffff;
 }
 
+/* ---------------- Partner Hospitals ---------------- */
+.ol_hospitals {
+  background-color: #ffffff;
+}
+.ol_hospital_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.ol_hospital_card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--gray2-color, #f4f2f9);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.ol_hospital_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
+}
+.ol_hospital_img {
+  aspect-ratio: 468 / 525;
+  overflow: hidden;
+}
+.ol_hospital_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ol_hospital_info {
+  padding: 16px;
+  text-align: center;
+}
+.ol_hospital_info h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.3em;
+}
+.ol_hospital_badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #1a7f37;
+  margin-bottom: 4px;
+}
+.ol_hospital_badge i {
+  font-size: 11px;
+}
+.ol_hospital_info p {
+  font-size: 11px;
+  color: var(--secondary-color);
+  margin: 0;
+}
+.ol_hospitals_cta {
+  margin-top: 40px;
+}
+.ol_hospitals_cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 15px;
+}
+.ol_hospitals_cta a:hover {
+  color: #ff8a3d;
+}
+@media (max-width: 991px) {
+  .ol_hospital_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .ol_hospital_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ---------------- Why Choose ---------------- */
 .ol_why_img {
   border-radius: 20px;
