@@ -32,6 +32,7 @@ import EventDetails from './pages/EventDetails'
 import Facilities from './pages/Facilities'
 import MedicalVisa from './pages/MedicalVisa'
 import CostCalculator from './pages/CostCalculator'
+import OrthopedicLanding from './pages/OrthopedicLanding'
 import FAQ from './pages/FAQ'
 import Testimonials from './pages/Testimonials'
 import Pricing from './pages/Pricing'
@@ -98,6 +99,7 @@ function App() {
         <Route path="/facilities.html" element={<Facilities />} />
         <Route path="/medical-visa.html" element={<MedicalVisa />} />
         <Route path="/cost-calculator.html" element={<CostCalculator />} />
+        <Route path="/orthopedic-surgery.html" element={<OrthopedicLanding />} />
         <Route path="/faq.html" element={<FAQ />} />
         <Route path="/testimonials.html" element={<Testimonials />} />
         <Route path="/pricing.html" element={<Pricing />} />

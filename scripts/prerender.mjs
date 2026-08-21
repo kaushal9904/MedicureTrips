@@ -50,6 +50,7 @@ const routes = [
   '/facilities.html',
   '/medical-visa.html',
   '/cost-calculator.html',
+  '/orthopedic-surgery.html',
   '/faq.html',
   '/testimonials.html',
   '/pricing.html',

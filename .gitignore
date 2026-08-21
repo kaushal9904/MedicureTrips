@@ -13,6 +13,9 @@ dist-ssr
 *.local
 .env
 
+# Held-back work in progress, not part of the active app
+_holding/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -27,6 +27,7 @@ const routeMeta = {
   '/facilities.html': { title: `Facilities | ${SITE}`, description: DEFAULT_DESC },
   '/medical-visa.html': { title: `India Medical Visa Guide for International Patients | ${SITE}`, description: "Everything international patients need to know about the India medical visa — e-Medical, Regular and Attendant visa categories, required documents, and Medicure Trip's free hospital invitation letter support." },
   '/cost-calculator.html': { title: `Medical Treatment Cost Calculator | ${SITE}`, description: "Calculate an all-in estimate for your India medical trip — treatment, hotel, food, flights and visa fees — using Medicure Trip's own partner hospital pricing." },
+  '/orthopedic-surgery.html': { title: `Orthopedic Surgery in India — Up to 90% Savings | ${SITE}`, description: "Robotic-assisted knee & hip replacement in India by senior orthopedic surgeons at JCI & NABH accredited hospitals — up to 90% less than the USA and UK. Get a free quote today." },
   '/faq.html': { title: `FAQ | ${SITE}`, description: "Frequently asked questions about medical treatment and travel to India with Medicure Trip." },
   '/testimonials.html': { title: `Patient Testimonials | ${SITE}`, description: "Read real stories from patients who trusted Medicure Trip for their healthcare journey to India." },
   '/pricing.html': { title: `Pricing | ${SITE}`, description: DEFAULT_DESC },
