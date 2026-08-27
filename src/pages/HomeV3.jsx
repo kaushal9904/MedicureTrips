@@ -452,7 +452,7 @@ const HomeV3 = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/appointment" className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${plan.recommended ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}>
+                  <Link to="/appointment" className={`cs_radius_5 w-100 text-center ${plan.recommended ? 'cs_btn_style_1 cs_accent_bg cs_white_color' : 'cs_btn_style_2 cs_type_1 cs_primary_color cs_semibold'}`}>
                     <span>Enroll Now</span>
                   </Link>
                 </div>

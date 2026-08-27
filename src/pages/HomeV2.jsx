@@ -61,10 +61,10 @@ const HomeV2 = () => {
   ];
 
   const team = [
-    { name: 'Dr. Gregory Bynum', credentials: 'MD, FRCP', designation: 'Cardiology', specialty: 'Senior Interventional Cardiologist', img: '/images/DR avatar 468x525.jpg' },
-    { name: 'Dr. Lori Fletcher', credentials: 'MBBS, MS', designation: 'Neurology', specialty: 'Chief Neurosurgeon Specialist', img: '/images/DR avatar 468x525 2_.jpg' },
-    { name: 'Dr. Philip Johnson', credentials: 'DNB Ortho', designation: 'Orthopedics', specialty: 'Joint Replacement & Medicine', img: '/images/DR avatar 468x525 3_.jpg' },
-    { name: 'Dr. Aline Briscoe', credentials: 'MD Oncology', designation: 'Oncology', specialty: 'Hematologist & Medical Oncologist', img: '/images/DR avatar 468x525 4.jpg' },
+    { name: 'Dr. Ajay Kaul', credentials: 'Cardiac Surgeon', designation: 'Cardiology', specialty: 'Heart Bypass Surgery, Valve Surgery', img: '/images/Dr. Ajay Kaul.jpg' },
+    { name: 'Dr. Aditya Gupta', credentials: 'Neurosurgeon', designation: 'Neurology', specialty: 'Brain Tumor, Deep Brain Stimulation', img: '/images/Dr. Aditya Gupta.jpg' },
+    { name: 'Dr. Subhash Jangid', credentials: 'MS (AIIMS), DNB (Ortho)', designation: 'Orthopedics', specialty: 'Robotic Knee & Hip Replacement', img: '/images/Dr. Subhash Jangid.png' },
+    { name: 'Dr. Amit Verma', credentials: 'Medical Oncologist', designation: 'Oncology', specialty: 'Immunotherapy, Targeted Therapy', img: '/images/Dr. Amit Verma.jpg' },
   ];
 
   const testimonials = [
@@ -78,7 +78,7 @@ const HomeV2 = () => {
       <section className="cs_hero_style_2 position-relative">
         <div className="cs_hero_parallax_bg cs_bg_filed" style={{ backgroundImage: "url('/assets/img/hero_bg_v2.webp')" }}></div>
         <div className="container">
-          <div className="row align-items-center cs_gap_y_30">
+          <div className="row align-items-start cs_gap_y_30">
             <div className="col-lg-6">
               <div className="cs_hero_content">
                 <h1 className="cs_hero_title cs_fs_96 cs_bold">Healing Beyond Boundaries</h1>
@@ -317,7 +317,7 @@ const HomeV2 = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/appointment" className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${pkg.recommended ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}>
+                  <Link to="/appointment" className={`cs_radius_5 w-100 text-center ${pkg.recommended ? 'cs_btn_style_1 cs_accent_bg cs_white_color' : 'cs_btn_style_2 cs_type_1 cs_primary_color cs_semibold'}`}>
                     <span>Book Package</span>
                   </Link>
                 </div>

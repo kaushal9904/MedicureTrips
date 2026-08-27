@@ -3071,6 +3071,287 @@ label {
   margin-bottom: 70px;
 }
 
+/* cs_mt_* -- margin-top utilities (mirrors cs_mb_* above; used throughout the site but was missing). */
+.cs_mt_1 {
+  margin-top: 1px;
+}
+
+.cs_mt_2 {
+  margin-top: 2px;
+}
+
+.cs_mt_3 {
+  margin-top: 3px;
+}
+
+.cs_mt_4 {
+  margin-top: 4px;
+}
+
+.cs_mt_5 {
+  margin-top: 5px;
+}
+
+.cs_mt_6 {
+  margin-top: 6px;
+}
+
+.cs_mt_7 {
+  margin-top: 7px;
+}
+
+.cs_mt_8 {
+  margin-top: 8px;
+}
+
+.cs_mt_9 {
+  margin-top: 9px;
+}
+
+.cs_mt_10 {
+  margin-top: 10px;
+}
+
+.cs_mt_11 {
+  margin-top: 11px;
+}
+
+.cs_mt_12 {
+  margin-top: 12px;
+}
+
+.cs_mt_13 {
+  margin-top: 13px;
+}
+
+.cs_mt_14 {
+  margin-top: 14px;
+}
+
+.cs_mt_15 {
+  margin-top: 15px;
+}
+
+.cs_mt_16 {
+  margin-top: 16px;
+}
+
+.cs_mt_17 {
+  margin-top: 17px;
+}
+
+.cs_mt_18 {
+  margin-top: 18px;
+}
+
+.cs_mt_19 {
+  margin-top: 19px;
+}
+
+.cs_mt_20 {
+  margin-top: 20px;
+}
+
+.cs_mt_21 {
+  margin-top: 21px;
+}
+
+.cs_mt_22 {
+  margin-top: 22px;
+}
+
+.cs_mt_23 {
+  margin-top: 23px;
+}
+
+.cs_mt_24 {
+  margin-top: 24px;
+}
+
+.cs_mt_25 {
+  margin-top: 25px;
+}
+
+.cs_mt_26 {
+  margin-top: 26px;
+}
+
+.cs_mt_27 {
+  margin-top: 27px;
+}
+
+.cs_mt_28 {
+  margin-top: 28px;
+}
+
+.cs_mt_29 {
+  margin-top: 29px;
+}
+
+.cs_mt_30 {
+  margin-top: 30px;
+}
+
+.cs_mt_31 {
+  margin-top: 31px;
+}
+
+.cs_mt_32 {
+  margin-top: 32px;
+}
+
+.cs_mt_33 {
+  margin-top: 33px;
+}
+
+.cs_mt_34 {
+  margin-top: 34px;
+}
+
+.cs_mt_35 {
+  margin-top: 35px;
+}
+
+.cs_mt_36 {
+  margin-top: 36px;
+}
+
+.cs_mt_37 {
+  margin-top: 37px;
+}
+
+.cs_mt_38 {
+  margin-top: 38px;
+}
+
+.cs_mt_39 {
+  margin-top: 39px;
+}
+
+.cs_mt_40 {
+  margin-top: 40px;
+}
+
+.cs_mt_41 {
+  margin-top: 41px;
+}
+
+.cs_mt_42 {
+  margin-top: 42px;
+}
+
+.cs_mt_43 {
+  margin-top: 43px;
+}
+
+.cs_mt_44 {
+  margin-top: 44px;
+}
+
+.cs_mt_45 {
+  margin-top: 45px;
+}
+
+.cs_mt_46 {
+  margin-top: 46px;
+}
+
+.cs_mt_47 {
+  margin-top: 47px;
+}
+
+.cs_mt_48 {
+  margin-top: 48px;
+}
+
+.cs_mt_49 {
+  margin-top: 49px;
+}
+
+.cs_mt_50 {
+  margin-top: 50px;
+}
+
+.cs_mt_51 {
+  margin-top: 51px;
+}
+
+.cs_mt_52 {
+  margin-top: 52px;
+}
+
+.cs_mt_53 {
+  margin-top: 53px;
+}
+
+.cs_mt_54 {
+  margin-top: 54px;
+}
+
+.cs_mt_55 {
+  margin-top: 55px;
+}
+
+.cs_mt_56 {
+  margin-top: 56px;
+}
+
+.cs_mt_57 {
+  margin-top: 57px;
+}
+
+.cs_mt_58 {
+  margin-top: 58px;
+}
+
+.cs_mt_59 {
+  margin-top: 59px;
+}
+
+.cs_mt_60 {
+  margin-top: 60px;
+}
+
+.cs_mt_61 {
+  margin-top: 61px;
+}
+
+.cs_mt_62 {
+  margin-top: 62px;
+}
+
+.cs_mt_63 {
+  margin-top: 63px;
+}
+
+.cs_mt_64 {
+  margin-top: 64px;
+}
+
+.cs_mt_65 {
+  margin-top: 65px;
+}
+
+.cs_mt_66 {
+  margin-top: 66px;
+}
+
+.cs_mt_67 {
+  margin-top: 67px;
+}
+
+.cs_mt_68 {
+  margin-top: 68px;
+}
+
+.cs_mt_69 {
+  margin-top: 69px;
+}
+
+.cs_mt_70 {
+  margin-top: 70px;
+}
+
 @media screen and (max-width: 991px) {
   .cs_mb_lg_1 {
     margin-bottom: 1px;
@@ -3594,6 +3875,40 @@ label {
   -o-object-fit: cover;
      object-fit: cover;
 }
+/* .cs_hero_btns and .cs_hero_badge had no rules at all for this hero
+   variant, so the buttons rendered with no gap and the badge rendered
+   as a plain full-width block instead of a floating overlay card. */
+.cs_hero_style_2 .cs_hero_btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cs_hero_style_2 .cs_hero_images {
+  position: relative;
+}
+.cs_hero_style_2 .cs_hero_badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  padding: 20px 28px;
+  z-index: 1;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+.cs_hero_style_2 .cs_hero_badge_number {
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.cs_hero_style_2 .cs_hero_badge_text {
+  font-size: 14px;
+}
+@media (max-width: 575px) {
+  .cs_hero_style_2 .cs_hero_badge {
+    left: 12px;
+    bottom: 12px;
+    padding: 14px 18px;
+  }
+}
 .cs_hero_style_2 .cs_hero_img_2 {
   width: 100%;
   position: absolute;
@@ -3942,6 +4257,61 @@ label {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+/* The actual HomeV4 hero markup is a plain two-column layout (not the grid
+   version above), and .cs_hero_btns had no rule at all for this hero style
+   — same missing-gap bug as .cs_hero_style_2. */
+.cs_hero_style_4 .cs_hero_btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* HomeV4 "Recognized as Best Dental Clinic" badge used cs_inline-flex,
+   cs_p_16 and cs_gap_12 — none of those utility classes exist anywhere in
+   this stylesheet, so the badge had no layout at all (icon and text just
+   stacked in block flow with zero padding/gap). */
+.cs_about_badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+.cs_about_badge > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* HomeV4's dental services section reuses .cs_service_icon/_header/_content
+   class names from the cs_service_card_1 component, but only card_1 has
+   scoped CSS. Here the icon had no fixed size, so cs_center's flex layout
+   stretched it to the full card width (a squashed oval, not a circle), and
+   .cs_service_content had no padding, so the "Learn More" button sat flush
+   against the card's bottom edge. */
+.cs_service_section_4 .cs_service_header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cs_service_section_4 .cs_service_icon {
+  width: 60px;
+  height: 60px;
+  flex: none;
+}
+.cs_service_section_4 .cs_service_content {
+  padding: 32px 32px 40px;
+}
+
+/* The generic .cs_testimonial_img rule (width: min(50vw, 948px)) was
+   written for a different, full-bleed-image testimonial layout elsewhere.
+   HomeV4's card reuses the same class name for a normal col-lg-4 image
+   column, so that oversized fixed width made the image spill out over the
+   text column next to it. */
+.cs_testimonial_style_4 .cs_testimonial_img {
+  width: 100%;
+  height: 100%;
 }
 .cs_hero_style_4 .cs_hero_meta {
   max-width: 350px;
@@ -6061,6 +6431,60 @@ label {
     left: 15px;
     right: 15px;
     padding: 15px;
+  }
+}
+
+/*================================================================
+  Features Section 3 (flip cards) — had no CSS at all, so both faces
+  of each card dumped into normal flow instead of stacking as a card,
+  and the section had no padding, leaving it flush against neighbors.
+==================================================================*/
+.cs_features_section_3 {
+  padding: 120px 0;
+}
+.cs_flip_card {
+  height: 280px;
+  perspective: 1200px;
+}
+.cs_flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+.cs_flip_card:hover .cs_flip_card_inner {
+  transform: rotateY(180deg);
+}
+.cs_flip_card_front,
+.cs_flip_card_back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+  backface-visibility: hidden;
+  border-radius: inherit;
+}
+.cs_flip_card_front h4,
+.cs_flip_card_front i {
+  color: var(--white-color);
+}
+.cs_flip_card_back {
+  transform: rotateY(180deg);
+  border: 1px solid var(--gray4-color, #eef1f8);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+@media (max-width: 991px) {
+  .cs_features_section_3 {
+    padding: 60px 0;
+  }
+  .cs_flip_card {
+    height: 240px;
   }
 }
 
@@ -10463,6 +10887,13 @@ label {
 .cs_feature_card_2:hover {
   transform: translateY(-3px);
   box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+/* These icon SVGs have their fill color (#136DF4) baked into the file, so on
+   a matching accent-blue box (.cs_accent_bg) they're nearly invisible. Since
+   they're plain <img> references (not inline SVG), CSS `color` can't recolor
+   them — force them to render white instead so they read correctly on blue. */
+.cs_feature_icon.cs_accent_bg img {
+  filter: brightness(0) invert(1);
 }
 @media (max-width: 991px) {
   .cs_feature_card_2 {

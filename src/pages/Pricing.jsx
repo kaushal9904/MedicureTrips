@@ -113,7 +113,7 @@ const Pricing = () => {
                   </ul>
                   <Link
                     to="/contact-us"
-                    className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${plan.popular ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}
+                    className={`cs_radius_5 w-100 text-center ${plan.popular ? 'cs_btn_style_1 cs_accent_bg cs_white_color' : 'cs_btn_style_2 cs_type_1 cs_primary_color cs_semibold'}`}
                   >
                     <span>Choose Plan</span>
                   </Link>

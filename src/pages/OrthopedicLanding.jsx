@@ -18,7 +18,52 @@ const procedures = costEstimates.filter((item) => procedureSlugs.includes(item.s
 
 const savingsPct = (india, usaMax) => Math.round((1 - india / usaMax) * 100);
 
+// First 6 are shown on page 1 of the doctors section, in this order.
+// The rest paginate 6-per-page after that. Images intentionally not
+// rendered yet — data kept here so they're a one-line swap to re-enable later.
 const doctors = [
+  {
+    name: 'Dr. Subhash Jangid',
+    hospital: 'Fortis Memorial Research Institute, Gurugram',
+    focus: 'Knee & Hip Replacement, Robotic Orthopedics',
+    img: '/images/Dr. Subhash Jangid.png',
+  },
+  {
+    name: 'Dr. Rajeev Verma',
+    hospital: 'Manipal Hospital, Dwarka, New Delhi',
+    focus: 'Robotic Surgery, Knee & Hip Replacement, Sports Injuries',
+    img: '/images/Dr. Rajeev Verma.png',
+  },
+  {
+    name: 'Dr. Hemant Sharma',
+    hospital: 'Marengo Asia Hospitals, Gurugram',
+    focus: 'Robotic & Computer-Navigated Hip & Knee Replacement',
+    img: '/images/Dr. Hemant Sharma.jpg',
+  },
+  {
+    name: 'Dr. Jayant Arora',
+    hospital: 'Fortis Memorial Research Institute, Gurugram',
+    focus: 'Knee Arthritis, Computer-Navigated & Robotic Knee Replacement',
+    img: '/images/Dr. Jayant Arora.jpg',
+  },
+  {
+    name: 'Dr. Debashish Chanda',
+    hospital: 'Fortis Memorial Research Institute, Gurugram',
+    focus: 'Robotic Knee & Hip Replacement, Joint Preservation',
+    img: '/images/Dr. Debashish Chanda.jpg',
+  },
+  {
+    name: 'Dr. Attique Vasdev',
+    hospital: 'Medanta – The Medicity, Gurugram',
+    focus: 'Knee Replacement, Sports Injuries, Ligament Reconstruction',
+    img: '/images/Dr. Attique Vasdev.png',
+  },
+  {
+    name: 'Dr. Vivek Dahiya',
+    hospital: 'Medanta – The Medicity, Gurugram',
+    focus: 'Knee Arthroscopy, Ligament Reconstruction, Revision Knee Replacement',
+    img: '/images/Dr. Vivek Dahiya.png',
+  },
   {
     name: 'Dr. A. V. Gurava Reddy',
     hospital: 'KIMS Hospitals, Hyderabad',
@@ -44,18 +89,15 @@ const doctors = [
     img: '/images/Dr. IPS Oberoi.jpg',
   },
   {
-    name: 'Dr. Subhash Jangid',
-    hospital: 'Fortis Memorial Research Institute, Gurugram',
-    focus: 'Knee & Hip Replacement, Robotic Orthopedics',
-    img: '/assets/img/team_img_20.webp',
-  },
-  {
     name: 'Dr. H. S. Chhabra',
     hospital: 'Indian Spinal Injuries Centre, New Delhi',
     focus: 'Complex Spine & Orthopedic Reconstruction',
     img: '/images/Dr. H. S. Chhabra.jpg',
   },
 ];
+
+const DOCTORS_FIRST_PAGE = 6;
+const DOCTORS_PER_PAGE = 6;
 
 const partnerHospitals = [
   {
@@ -192,7 +234,16 @@ const faqs = [
 const OrthopedicLanding = () => {
   const odometerRefs = useRef([]);
   const [openFaq, setOpenFaq] = useState(0);
+  const [doctorsPage, setDoctorsPage] = useState(1);
   const quoteForm = useWeb3Form('Orthopedic Landing Page — Free Quote Form');
+
+  const totalDoctorPages = 1 + Math.ceil(Math.max(0, doctors.length - DOCTORS_FIRST_PAGE) / DOCTORS_PER_PAGE);
+  const visibleDoctors = doctorsPage === 1
+    ? doctors.slice(0, DOCTORS_FIRST_PAGE)
+    : doctors.slice(
+        DOCTORS_FIRST_PAGE + (doctorsPage - 2) * DOCTORS_PER_PAGE,
+        DOCTORS_FIRST_PAGE + (doctorsPage - 1) * DOCTORS_PER_PAGE
+      );
 
   useEffect(() => {
     const initOdometers = async () => {
@@ -431,16 +482,14 @@ const OrthopedicLanding = () => {
             <p>Senior, internationally trained specialists — every surgery is performed by the named surgeon, not a trainee.</p>
           </div>
           <div className="row cs_gap_y_24">
-            {doctors.map((doc, i) => (
-              <div key={i} className="col-lg-4 col-sm-6">
-                <div className="ol_doctor_card">
-                  <div className="ol_doctor_img">
-                    <img src={doc.img} alt={`${doc.name} photo`} loading="lazy" decoding="async" />
+            {visibleDoctors.map((doc) => (
+              <div key={doc.name} className="col-lg-4 col-sm-6">
+                <div className="ol_doctor_card ol_doctor_card_placeholder">
+                  <div className="ol_doctor_img ol_doctor_img_placeholder">
+                    <i className="fa-solid fa-user-doctor"></i>
                   </div>
                   <div className="ol_doctor_info">
                     <h3>{doc.name}</h3>
-                    <p className="ol_doctor_hospital">{doc.hospital}</p>
-                    <p className="ol_doctor_focus">{doc.focus}</p>
                     <Link to="/contact-us" className="ol_doctor_cta">
                       <i className="fa-solid fa-calendar-check"></i> Book Consultation
                     </Link>
@@ -449,6 +498,34 @@ const OrthopedicLanding = () => {
               </div>
             ))}
           </div>
+          {totalDoctorPages > 1 && (
+            <nav className="ol_doctors_pagination" aria-label="Doctors pagination">
+              <button
+                type="button"
+                onClick={() => setDoctorsPage((p) => Math.max(1, p - 1))}
+                disabled={doctorsPage === 1}
+              >
+                <i className="fa-solid fa-arrow-left"></i> Prev
+              </button>
+              {Array.from({ length: totalDoctorPages }, (_, i) => i + 1).map((p) => (
+                <button
+                  key={p}
+                  type="button"
+                  className={doctorsPage === p ? 'active' : ''}
+                  onClick={() => setDoctorsPage(p)}
+                >
+                  {p}
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => setDoctorsPage((p) => Math.min(totalDoctorPages, p + 1))}
+                disabled={doctorsPage === totalDoctorPages}
+              >
+                Next <i className="fa-solid fa-arrow-right"></i>
+              </button>
+            </nav>
+          )}
         </div>
       </section>
 

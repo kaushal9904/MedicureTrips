@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 const HomeV4 = () => {
   const odometerRefs = useRef([]);
@@ -365,7 +364,7 @@ const HomeV4 = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link to="/appointment" className={`cs_btn_style_1 cs_radius_5 w-100 text-center ${plan.recommended ? 'cs_accent_bg cs_white_color' : 'cs_primary_color cs_semibold'}`}>
+                  <Link to="/appointment" className={`cs_radius_5 w-100 text-center ${plan.recommended ? 'cs_btn_style_1 cs_accent_bg cs_white_color' : 'cs_btn_style_2 cs_type_1 cs_primary_color cs_semibold'}`}>
                     <span>Get Started</span>
                   </Link>
                 </div>
@@ -384,11 +383,10 @@ const HomeV4 = () => {
             </h2>
           </div>
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Autoplay]}
             slidesPerView={1}
             loop={true}
             speed={600}
-            pagination={{ clickable: true, el: '.cs_testimonial_pagination' }}
             navigation={{ prevEl: '.cs_testimonial_prev', nextEl: '.cs_testimonial_next' }}
           >
             {testimonials.map((t, i) => (
@@ -426,9 +424,6 @@ const HomeV4 = () => {
                 </div>
               </SwiperSlide>
             ))}
-            <div className="cs_pagination_wrapper d-flex justify-content-center cs_mt_24">
-              <div className="cs_testimonial_pagination"></div>
-            </div>
           </Swiper>
         </div>
       </section>
