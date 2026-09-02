@@ -1,4 +1,17 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "medicuretrip.com"
+        }
+      ],
+      "destination": "https://www.medicuretrip.com/:path*",
+      "permanent": true
+    }
+  ]
 }
