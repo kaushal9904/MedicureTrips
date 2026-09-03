@@ -104,8 +104,10 @@ const Facilities = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="cs_cta_img">
-                  <img src="/assets/img/cta_img_2.webp" alt="Doctors Team" />
+                <div className="cs_cta_icon_panel cs_radius_20 position-relative">
+                  <i className="fa-solid fa-hospital"></i>
+                  <span className="cs_cta_icon_panel_shape cs_cta_icon_panel_shape_1"></span>
+                  <span className="cs_cta_icon_panel_shape cs_cta_icon_panel_shape_2"></span>
                 </div>
               </div>
             </div>

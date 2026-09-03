@@ -36,7 +36,7 @@ const CostCalculator = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
+      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/images/cost calculator 1920x600.jpg.jpeg')" }}>
         <div className="container">
           <div className="cs_page_header_in">
             <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">Cost Calculator</h1>
@@ -171,8 +171,13 @@ const CostCalculator = () => {
       {/* How the estimate works — SEO body copy */}
       <section>
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-9">
+          <div className="row cs_gap_y_30 align-items-center">
+            <div className="col-lg-5">
+              <div className="cs_radius_20 position-relative">
+                <img src="/images/Quote 1061x647.jpg.jpeg" alt="India Treatment Cost Quote" />
+              </div>
+            </div>
+            <div className="col-lg-7">
               <h2 className="cs_fs_28 cs_semibold cs_mb_16">How This India Treatment Cost Estimate Is Built</h2>
               <p className="cs_secondary_color">
                 Most medical tourism quotes only mention the hospital bill, which leaves patients guessing at everything else. Our calculator adds four more real costs on top of the procedure price: a hotel stay sized to your recovery timeline, daily food and local transport for every traveler in your group, round-trip flights, and the government visa fee. The result is a single number that reflects what a trip to one of our partner hospitals in India is likely to cost from departure to return — not just the surgery.
@@ -201,8 +206,10 @@ const CostCalculator = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="cs_cta_img">
-                  <img src="/assets/img/cta_img_2.webp" alt="Doctors Team" />
+                <div className="cs_cta_icon_panel cs_radius_20 position-relative">
+                  <i className="fa-solid fa-file-invoice-dollar"></i>
+                  <span className="cs_cta_icon_panel_shape cs_cta_icon_panel_shape_1"></span>
+                  <span className="cs_cta_icon_panel_shape cs_cta_icon_panel_shape_2"></span>
                 </div>
               </div>
             </div>

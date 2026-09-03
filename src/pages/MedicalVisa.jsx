@@ -75,7 +75,7 @@ const MedicalVisa = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/assets/img/page_header_bg.webp')" }}>
+      <section className="cs_page_header_style_1 cs_bg_filed" style={{ backgroundImage: "url('/images/Medical visa 1920x600.jpg.jpeg')" }}>
         <div className="container">
           <div className="cs_page_header_in">
             <h1 className="cs_page_header_title cs_fs_60 cs_bold cs_mb_10">India Medical Visa Guide</h1>
@@ -106,6 +106,9 @@ const MedicalVisa = () => {
               </ul>
             </div>
             <div className="col-lg-5">
+              <div className="cs_radius_20 cs_mb_24 position-relative">
+                <img src="/images/medical visa 1061x647.jpg.jpeg" alt="India Medical Visa Assistance" />
+              </div>
               <div className="cs_visa_intro_card cs_radius_20 cs_accent_bg cs_white_color text-center">
                 <i className="fa-solid fa-passport cs_visa_intro_icon"></i>
                 <h3 className="cs_fs_24 cs_semibold cs_white_color cs_mb_10">Waiting On An Invitation Letter?</h3>
@@ -275,8 +278,10 @@ const MedicalVisa = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="cs_cta_img">
-                  <img src="/assets/img/cta_img_2.webp" alt="Doctors Team" />
+                <div className="cs_cta_icon_panel cs_radius_20 position-relative">
+                  <i className="fa-solid fa-passport"></i>
+                  <span className="cs_cta_icon_panel_shape cs_cta_icon_panel_shape_1"></span>
+                  <span className="cs_cta_icon_panel_shape cs_cta_icon_panel_shape_2"></span>
                 </div>
               </div>
             </div>

@@ -11935,6 +11935,44 @@ label {
   }
 }
 
+.cs_cta_icon_panel {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--accent-color) 0%, #3E63C8 100%);
+}
+.cs_cta_icon_panel i {
+  position: relative;
+  z-index: 1;
+  font-size: 110px;
+  color: var(--white-color);
+}
+.cs_cta_icon_panel_shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+}
+.cs_cta_icon_panel_shape_1 {
+  width: 180px;
+  height: 180px;
+  top: -55px;
+  right: -55px;
+}
+.cs_cta_icon_panel_shape_2 {
+  width: 130px;
+  height: 130px;
+  bottom: -45px;
+  left: -35px;
+  background: rgba(255, 255, 255, 0.08);
+}
+@media (max-width: 991px) {
+  .cs_cta_icon_panel {
+    min-height: 220px;
+  }
+}
+
 .cs_cta_style_2 {
   overflow: hidden;
   padding: 125px 20px 110px 120px;
