@@ -19,13 +19,7 @@ export default function Header({ isShop }) {
   }, [])
 
   const navItems = [
-    { label: t('nav.home'), path: '/', children: [
-      { label: t('nav.homeChildren.generalHospital'), path: '/' },
-      { label: t('nav.homeChildren.healthcareCenter'), path: '/home-v2' },
-      { label: t('nav.homeChildren.childCare'), path: '/home-v3' },
-      { label: t('nav.homeChildren.dentalCare'), path: '/home-v4' },
-      { label: t('nav.homeChildren.eyeCare'), path: '/home-v5' },
-    ]},
+    { label: t('nav.home'), path: '/' },
     { label: t('nav.about'), path: '/about-us' },
     { label: t('nav.services'), path: '/services' },
     { label: t('nav.pages'), path: '#', children: [

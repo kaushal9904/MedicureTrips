@@ -8,10 +8,6 @@ import WhatsAppButton from './components/WhatsAppButton'
 import useSiteAnimations from './hooks/useSiteAnimations'
 import routeMeta, { defaultMeta } from './routeMeta'
 import Home from './pages/Home'
-import HomeV2 from './pages/HomeV2'
-import HomeV3 from './pages/HomeV3'
-import HomeV4 from './pages/HomeV4'
-import HomeV5 from './pages/HomeV5'
 import AboutUs from './pages/AboutUs'
 import Services from './pages/Services'
 import ServiceDetails from './pages/ServiceDetails'
@@ -75,10 +71,6 @@ function App() {
       {!isShopPage && <Header />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home-v2" element={<HomeV2 />} />
-        <Route path="/home-v3" element={<HomeV3 />} />
-        <Route path="/home-v4" element={<HomeV4 />} />
-        <Route path="/home-v5" element={<HomeV5 />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/service-details" element={<ServiceDetails />} />

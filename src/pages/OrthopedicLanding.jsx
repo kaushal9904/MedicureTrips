@@ -19,8 +19,7 @@ const procedures = costEstimates.filter((item) => procedureSlugs.includes(item.s
 const savingsPct = (india, usaMax) => Math.round((1 - india / usaMax) * 100);
 
 // First 6 are shown on page 1 of the doctors section, in this order.
-// The rest paginate 6-per-page after that. Images intentionally not
-// rendered yet — data kept here so they're a one-line swap to re-enable later.
+// The rest paginate 6-per-page after that.
 const doctors = [
   {
     name: 'Dr. Subhash Jangid',
@@ -484,12 +483,14 @@ const OrthopedicLanding = () => {
           <div className="row cs_gap_y_24">
             {visibleDoctors.map((doc) => (
               <div key={doc.name} className="col-lg-4 col-sm-6">
-                <div className="ol_doctor_card ol_doctor_card_placeholder">
-                  <div className="ol_doctor_img ol_doctor_img_placeholder">
-                    <i className="fa-solid fa-user-doctor"></i>
+                <div className="ol_doctor_card">
+                  <div className="ol_doctor_img">
+                    <img src={doc.img} alt={doc.name} loading="lazy" />
                   </div>
                   <div className="ol_doctor_info">
                     <h3>{doc.name}</h3>
+                    <p className="ol_doctor_hospital">{doc.hospital}</p>
+                    <p className="ol_doctor_focus">{doc.focus}</p>
                     <Link to="/contact-us" className="ol_doctor_cta">
                       <i className="fa-solid fa-calendar-check"></i> Book Consultation
                     </Link>

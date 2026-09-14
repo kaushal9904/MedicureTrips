@@ -3,10 +3,6 @@ const DEFAULT_DESC = "Medicure Trip offers top medical treatments and tour packa
 
 const routeMeta = {
   '/': { title: `${SITE} - Medical Tourism in India`, description: DEFAULT_DESC },
-  '/home-v2': { title: `Healthcare Center | ${SITE}`, description: DEFAULT_DESC },
-  '/home-v3': { title: `Child Care | ${SITE}`, description: DEFAULT_DESC },
-  '/home-v4': { title: `Dental Care | ${SITE}`, description: DEFAULT_DESC },
-  '/home-v5': { title: `Eye Care | ${SITE}`, description: DEFAULT_DESC },
   '/about-us': { title: `About Us | ${SITE}`, description: "We offer the top treatment and tour packages for international patients coming to India, partnering with leading hospitals and medical experts." },
   '/services': { title: `Our Treatments | ${SITE}`, description: "Explore our treatment options — Organ Transplant, Cardiology, Neuro Surgery, Spine Surgery, Orthopedic, Urology, ENT, Plastic Surgery, and Cancer care." },
   '/service-details': { title: `Treatment Details | ${SITE}`, description: DEFAULT_DESC },
