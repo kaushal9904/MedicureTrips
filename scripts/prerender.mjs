@@ -73,6 +73,11 @@ async function run() {
   const browser = await launchBrowser();
   const page = await browser.newPage();
 
+  // Don't load Google Tag Manager/Analytics while prerendering: it would send
+  // bogus hits from the build machine and bake GTM's injected <script> into
+  // the static HTML (the inline snippet in index.html already loads it).
+  await page.route(/googletagmanager\.com|google-analytics\.com|doubleclick\.net/, (r) => r.abort());
+
   let ok = 0;
   let failed = [];
 
@@ -86,6 +91,9 @@ async function run() {
       // Physical build output always keeps the .html extension — that's what
       // Vercel's `cleanUrls` setting (vercel.json) looks for when it serves
       // a request to the extension-less route (e.g. /services -> dist/services.html).
+      await page.evaluate(() =>
+        document.querySelectorAll('script[src*="googletagmanager.com"]').forEach((el) => el.remove()),
+      );
       const html = await page.content();
       const outPath = route === '/'
         ? path.resolve('dist/index.html')

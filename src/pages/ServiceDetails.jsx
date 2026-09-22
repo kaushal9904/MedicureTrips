@@ -1,4 +1,5 @@
-import { Link, useSearchParams } from 'react-router-dom';
+import Link from '../components/TrackedLink';
+import { useSearchParams } from 'react-router-dom';
 import { getServiceBySlug, partnerHospitals, techIcons } from '../data/services';
 import { useWeb3Form } from '../hooks/useWeb3Form';
 

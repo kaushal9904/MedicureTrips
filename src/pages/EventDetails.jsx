@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-
+import Link from '../components/TrackedLink';
 const eventDetail = {
   img: '/assets/img/event_img_1.webp',
   date: 'March 15, 2026',

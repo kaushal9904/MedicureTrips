@@ -1,4 +1,5 @@
-import { Link, useSearchParams } from 'react-router-dom';
+import Link from '../components/TrackedLink';
+import { useSearchParams } from 'react-router-dom';
 import { blogPosts, getPostBySlug } from '../data/blogPosts';
 
 const tags = ['Cardiology', 'Neurology', 'Oncology', 'Orthopedics', 'Medical Tourism', 'Surgery Cost'];

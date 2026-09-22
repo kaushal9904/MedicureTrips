@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-
+import Link from '../components/TrackedLink';
 const events = [
   {
     id: 1,

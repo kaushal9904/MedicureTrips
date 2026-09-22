@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-
+import Link from '../components/TrackedLink';
 const sections = [
   { id: 'acceptance', title: '1. Acceptance of Terms' },
   { id: 'medical-services', title: '2. Medical Services & Use' },

@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-
+import Link from '../components/TrackedLink';
 const resources = [
   { title: 'Online Lab Reports', icon: 'fa-solid fa-flask', desc: 'Access your lab test results online anytime. Simply log in with your patient ID to view and download reports.', link: '#' },
   { title: 'Patient Forms', icon: 'fa-solid fa-file-lines', desc: 'Download and complete patient registration and medical history forms before your visit to save time.', link: '#' },

@@ -28,6 +28,7 @@ export default function ScrollToTop() {
       name="ScrollToTopBtn"
       className="cs_scrollup_btn"
       id="scrollToTopBtn"
+      data-track-name="scroll-to-top"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
       <i className="fa-solid fa-arrow-up"></i>

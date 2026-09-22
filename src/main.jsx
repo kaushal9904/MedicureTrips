@@ -4,6 +4,9 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import './i18n/config'
 import App from './App.jsx'
+import { initButtonTracking } from './lib/tracking'
+
+initButtonTracking()
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

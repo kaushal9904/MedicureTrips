@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from '../components/TrackedLink';
 import { useWeb3Form } from '../hooks/useWeb3Form';
 
 const contactFeatures = [

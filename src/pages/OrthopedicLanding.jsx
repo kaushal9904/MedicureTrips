@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/TrackedLink';
 import { useWeb3Form } from '../hooks/useWeb3Form';
 import { costEstimates, formatUSD, formatRange } from '../data/costEstimates';
 import './OrthopedicLanding.css';

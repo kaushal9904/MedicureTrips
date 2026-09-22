@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/TrackedLink';
 import { submitToWeb3Forms } from '../lib/web3forms';
 
 const Career = () => {

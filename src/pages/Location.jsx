@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-
+import Link from '../components/TrackedLink';
 const openingHours = [
   { day: 'Monday – Friday', time: '8:00 AM – 8:00 PM' },
   { day: 'Saturday', time: '9:00 AM – 5:00 PM' },

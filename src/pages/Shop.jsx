@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from '../components/TrackedLink';
 import { useState } from 'react';
 
 const products = [

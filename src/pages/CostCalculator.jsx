@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from '../components/TrackedLink';
 import { useMemo, useState } from 'react';
 import { costEstimates, formatUSD } from '../data/costEstimates';
 

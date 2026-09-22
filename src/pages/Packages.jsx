@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/TrackedLink';
 import { costEstimates, formatUSD, formatRange } from '../data/costEstimates';
 
 const Packages = () => {
