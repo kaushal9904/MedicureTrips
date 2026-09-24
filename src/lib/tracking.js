@@ -113,9 +113,7 @@ function onClick(event) {
       }
     }
 
-    window.dataLayer = window.dataLayer || []
-    window.dataLayer.push({
-      event: EVENT_NAME,
+    const payload = {
       button_text: label.text,
       button_id: el.id || '',
       button_type: categorize(el, el.getAttribute('href') || ''),
@@ -125,7 +123,13 @@ function onClick(event) {
       page_path: window.location.pathname,
       page_title: document.title,
       ...utm,
-    })
+    }
+
+    window.dataLayer = window.dataLayer || []
+    // For the GTM container (GTM-P8RGSBFL).
+    window.dataLayer.push({ event: EVENT_NAME, ...payload })
+    // For the Google tag (AW-16842155836) defined in index.html.
+    if (typeof window.gtag === 'function') window.gtag('event', EVENT_NAME, payload)
   } catch (err) {
     // Tracking must never break the page.
     console.warn('[tracking] click handler failed:', err)
