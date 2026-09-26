@@ -1,33 +1,21 @@
 import Link from '../components/TrackedLink';
 import { useState } from 'react';
+import { getHospitals, getHospitalSpecialties, getSpecialties, hospitalPath } from '../data/db';
 
-const allDoctors = [
-  { name: 'Artemis Hospital', specialty: 'Cardiology · NABH & JCI Accredited', img: '/images/Artemis Hospital468x525.jpg' },
-  { name: 'Marengo Asia Hospital', specialty: 'Neuro Surgery · NABH & JCI Accredited', img: '/images/Marengo Asia Hospital 468x525.jpeg' },
-  { name: 'Medanta Hospital', specialty: 'Organ Transplant · NABH & JCI Accredited', img: '/images/Medanta Hospital 468x525 4.jpg' },
-  { name: 'Fortis Hospital', specialty: 'Orthopedic · NABH & JCI Accredited', img: '/images/Fortis Hospital 468x525 3_.jpg' },
-  { name: 'BLK Hospital', specialty: 'Urology & ENT · NABH & JCI Accredited', img: '/images/BLK Hospital 468x525 4.jpeg' },
-  { name: 'Max Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/images/Max Hospital 468x525 2_.jpg' },
-  { name: 'Apollo Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/images/Apollo Hospital 468x525.jpg' },
-  { name: 'Manipal Hospital', specialty: 'Organ Transplant · NABH & JCI Accredited', img: '/images/Manipal Hospital 468x525.jpg' },
-  { name: 'Kokilaben Dhirubhai Ambani Hospital', specialty: 'Cancer Care · NABH & JCI Accredited', img: '/images/Kokilaben Dhirubhai Ambani Hospital 468x525.jpg' },
-  { name: 'Narayana Health City', specialty: 'Cardiology · NABH & JCI Accredited', img: '/images/Narayana Health City 468x525.jpg' },
-  { name: 'Shalby Hospitals', specialty: 'Orthopedic · NABH & JCI Accredited', img: '/images/Shalby Hospitals 468x525.jpg' },
-];
+const allHospitals = getHospitals().map(h => ({ ...h, specialties: getHospitalSpecialties(h.id) }));
 
-const departments = ['Organ Transplant', 'Cardiology', 'Neuro Surgery', 'Spine Surgery', 'Orthopedic', 'Urology', 'ENT', 'Plastic Surgery', 'Cancer'];
+const departments = getSpecialties();
 
 const Doctors = () => {
   const [filterDept, setFilterDept] = useState('');
   const [searchName, setSearchName] = useState('');
 
-  const filteredDoctors = allDoctors.filter(doc => {
-    const matchesDept = !filterDept || doc.specialty.toLowerCase().includes(filterDept.toLowerCase());
-    const matchesName = !searchName || doc.name.toLowerCase().includes(searchName.toLowerCase());
+  const query = searchName.trim().toLowerCase();
+  const visibleHospitals = allHospitals.filter(h => {
+    const matchesDept = !filterDept || h.specialties.includes(filterDept);
+    const matchesName = !query || h.name.toLowerCase().includes(query) || (h.city ?? '').toLowerCase().includes(query);
     return matchesDept && matchesName;
   });
-
-  const visibleDoctors = filteredDoctors;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -59,7 +47,7 @@ const Doctors = () => {
                 <div className="cs_filter_input">
                   <label htmlFor="filter-name">Search Hospital</label>
                   <div className="cs_white_bg cs_radius_5 position-relative">
-                    <input type="text" id="filter-name" name="search" className="cs_form_field" placeholder="Search by hospital name" autoComplete="off" value={searchName} onChange={e => setSearchName(e.target.value)} />
+                    <input type="text" id="filter-name" name="search" className="cs_form_field" placeholder="Search by hospital or city" autoComplete="off" value={searchName} onChange={e => setSearchName(e.target.value)} />
                     <img src="/assets/img/icons/search.svg" alt="Search icon" className="cs_search_icon" />
                   </div>
                 </div>
@@ -73,25 +61,31 @@ const Doctors = () => {
             </div>
           </form>
           <div className="row cs_gap_y_24 cs_mb_48 cs_mb_lg_40 justify-content-center">
-            {visibleDoctors.map((doc, i) => (
-              <div key={i} className="col-xl-3 col-lg-4 col-sm-6">
+            {visibleHospitals.map(h => (
+              <div key={h.id} className="col-xl-3 col-lg-4 col-sm-6">
                 <div className="cs_team_style_2 cs_radius_20 position-relative overflow-hidden">
                   <div className="cs_team_img">
-                    <img src={doc.img} alt={`${doc.name} image`} loading="lazy" decoding="async" />
+                    <img src={h.image ?? '/assets/img/team_img_5.webp'} alt={`${h.name} image`} loading="lazy" decoding="async" />
                   </div>
                   <div className="cs_team_info text-center">
+                    <Link to={hospitalPath(h.slug)} className="cs_card_link" aria-label={`View ${h.name}`} tabIndex={-1} />
                     <Link to="/contact-us" aria-label="Enquire about this hospital" className="cs_btn_style_1 cs_danger_bg cs_white_color cs_semibold cs_radius_5 cs_mb_13">
                       <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />
                       <span>Enquire Now</span>
                     </Link>
                     <h3 className="cs_team_title cs_fs_20 cs_bold cs_white_color cs_mb_12">
-                      <Link to="/doctor-details" aria-label="View hospital details">{doc.name}</Link>
+                      <Link to={hospitalPath(h.slug)}>{h.name}</Link>
                     </h3>
-                    <p className="cs_team_subtitle cs_white_color mb-0">{doc.specialty}</p>
+                    <p className="cs_team_subtitle cs_white_color mb-0">
+                      {[h.city, h.accreditations.slice(0, 2).join(' & ')].filter(Boolean).join(' · ')}
+                    </p>
                   </div>
                 </div>
               </div>
             ))}
+            {visibleHospitals.length === 0 && (
+              <p className="text-center mb-0">No hospitals match your search. Try a different treatment or name.</p>
+            )}
           </div>
         </div>
       </section>

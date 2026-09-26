@@ -107,3 +107,173 @@ body {
     bottom: 68px;
   }
 }
+
+/* Doctor cards: the info overlay covers the whole card, so a stretched link
+   inside it makes the photo clickable while the buttons stay on top. */
+.cs_team_style_2 .cs_team_info > .cs_card_link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.cs_team_style_2 .cs_team_info > :not(.cs_card_link) {
+  z-index: 2;
+}
+
+/* Doctor profile page */
+.cs_doctor_details .cs_doctor_hero .cs_doctor_img {
+  aspect-ratio: 468 / 525;
+}
+.cs_doctor_stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.cs_doctor_stats li {
+  flex: 1 1 160px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  background-color: var(--gray2-color);
+}
+.cs_doctor_stats strong {
+  display: block;
+  color: var(--primary-color);
+  font-size: 22px;
+  line-height: 1.3;
+}
+.cs_doctor_timeline li {
+  position: relative;
+  padding: 0 0 20px 28px;
+  border-left: 2px solid rgba(134, 148, 167, 0.3);
+}
+.cs_doctor_timeline li:last-child {
+  padding-bottom: 0;
+}
+.cs_doctor_timeline li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+.cs_sidebar_widget .cs_hospital_facts li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(134, 148, 167, 0.25);
+}
+.cs_sidebar_widget .cs_hospital_facts li:last-child {
+  border-bottom: 0;
+}
+
+/* Doctor photo cards: keep faces in frame on portrait crops */
+.cs_doctor_card .cs_team_img img {
+  object-position: top center;
+}
+
+/* Small round doctor photos */
+.cs_avatar_sm,
+.cs_avatar_md {
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  background-color: #fff;
+}
+.cs_avatar_sm {
+  width: 56px;
+  height: 56px;
+}
+.cs_avatar_md {
+  width: 88px;
+  height: 88px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 16px rgba(31, 41, 55, 0.15);
+}
+.cs_profile_header_person {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 575px) {
+  .cs_avatar_md {
+    width: 64px;
+    height: 64px;
+  }
+  .cs_profile_header_person {
+    gap: 14px;
+  }
+}
+
+/* Hospital profile */
+.cs_doctor_details .cs_doctor_hero .cs_hospital_img {
+  aspect-ratio: 4 / 3;
+}
+.cs_sidebar_hospital_img {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 16 / 9;
+}
+.cs_sidebar_hospital_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cs_doctor_details .cs_doctor_main .cs_two_col_list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 24px;
+}
+@media (max-width: 575px) {
+  .cs_doctor_details .cs_doctor_main .cs_two_col_list {
+    grid-template-columns: 1fr;
+  }
+}
+.cs_specialty_chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.cs_specialty_chips li {
+  display: inline-flex;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  background-color: var(--gray2-color);
+}
+.cs_specialty_chips img {
+  width: 16px;
+}
+.cs_dept_heads {
+  display: grid;
+  gap: 32px;
+}
+.cs_dept_group ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+.cs_dept_head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--gray2-color);
+  transition: background-color 0.2s ease;
+}
+.cs_dept_head:hover {
+  background-color: #e6e2f1;
+}
+.cs_dept_head strong {
+  display: block;
+  color: var(--primary-color);
+  line-height: 1.35;
+}
+.cs_dept_head small {
+  display: block;
+  font-size: 14px;
+  line-height: 1.4;
+}

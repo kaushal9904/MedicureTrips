@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "db": "node scripts/build-db.mjs",
+    "images": "node scripts/import-images.mjs",
     "build": "vite build && node scripts/prerender.mjs",
     "lint": "oxlint",
     "preview": "vite preview"
@@ -25,6 +27,7 @@
     "@vitejs/plugin-react": "^6.0.3",
     "oxlint": "^1.71.0",
     "playwright-core": "^1.62.1",
+    "sharp": "^0.35.4",
     "vite": "^8.1.1"
   }
 }

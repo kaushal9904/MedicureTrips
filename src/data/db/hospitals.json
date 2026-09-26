@@ -1,0 +1,2625 @@
+[
+  {
+    "id": "ee6f3f0c-ee78-4a8f-8d4b-01005b2e0567",
+    "slug": "fortis-memorial-research-institute",
+    "name": "Fortis Memorial Research Institute",
+    "city": "Gurgaon",
+    "description": "Flagship quaternary-care hospital of Fortis Healthcare and the group's Gurgaon HQ. ~11-acre campus, ~330+ beds. JCI, NABH, NABL accredited. Home to South Asia's first Gamma Knife Esprit and Elekta Unity MR Linac. Among Newsweek's World's Best Smart Hospitals.",
+    "image": "/images/hospitals/fortis-memorial-research-institute.webp",
+    "accreditations": [
+      "JCI",
+      "NABH",
+      "NABL",
+      "CEA"
+    ],
+    "address": "Sector 44, Opposite Millennium City Centre (HUDA City Centre), Gurugram, Haryana 122002",
+    "establishedYear": 2013,
+    "bedCount": 330,
+    "icuBeds": 99,
+    "departments": [
+      "Cardiac Sciences",
+      "Neurosciences",
+      "Oncology (Fortis Cancer Institute)",
+      "Orthopaedics/Bone & Joint",
+      "Renal Sciences",
+      "Gastro Sciences",
+      "Organ Transplant",
+      "Emergency & Trauma",
+      "Critical Care"
+    ],
+    "hospitalType": "Multi-super-specialty / Quaternary care",
+    "ownership": "Fortis Healthcare (part of IHH Healthcare Berhad)",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. (Col) Manjinder Sandhu",
+            "title": "Chairperson, Cardiac Sciences",
+            "image_url": "/images/doctors/dr-col-manjinder-sandhu.webp",
+            "doctorSlug": "dr-col-manjinder-sandhu"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Sandeep Vaishya",
+            "title": "Executive Director & HOD, Neurosurgery",
+            "image_url": "/images/doctors/dr-sandeep-vaishya.webp",
+            "doctorSlug": "dr-sandeep-vaishya"
+          }
+        ],
+        "department": "Neurosciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Vinod Raina",
+            "title": "Chairman, Medical Oncology",
+            "image_url": "/images/doctors/dr-vinod-raina.webp",
+            "doctorSlug": "dr-vinod-raina"
+          },
+          {
+            "name": "Dr. Rahul Bhargava",
+            "title": "Principal Director & Chief, Haematology, Haemato-Oncology & BMT",
+            "image_url": "/images/doctors/dr-rahul-bhargava.webp",
+            "doctorSlug": "dr-rahul-bhargava"
+          },
+          {
+            "name": "Dr. Ankur Bahl",
+            "title": "Medical Oncology",
+            "image_url": "/images/doctors/dr-ankur-bahl.webp",
+            "doctorSlug": "dr-ankur-bahl"
+          },
+          {
+            "name": "Dr. Nitesh Rohatgi",
+            "title": "Medical Oncology",
+            "image_url": "/images/specialists/dr-nitesh-rohatgi.webp",
+            "doctorSlug": "dr-nitesh-rohatgi"
+          },
+          {
+            "name": "Dr. Vedant Kabra",
+            "title": "Surgical Oncology",
+            "image_url": "/images/doctors/dr-vedant-kabra.webp",
+            "doctorSlug": "dr-vedant-kabra"
+          },
+          {
+            "name": "Dr. Biswajyoti Hazarika",
+            "title": "Surgical Oncology",
+            "image_url": "/images/doctors/dr-biswajyoti-hazarika.webp",
+            "doctorSlug": "dr-biswajyoti-hazarika"
+          }
+        ],
+        "department": "Oncology (Fortis Cancer Institute)"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Salil Jain",
+            "title": "Director, Nephrology",
+            "image_url": "/images/doctors/dr-salil-jain.webp",
+            "doctorSlug": "dr-salil-jain"
+          }
+        ],
+        "department": "Renal Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. (Prof.) Gourdas Choudhuri",
+            "title": "Director & HOD, Gastroenterology & Hepatobiliary Sciences",
+            "image_url": "/images/doctors/dr-gourdas-choudhuri.webp",
+            "doctorSlug": "dr-gourdas-choudhuri"
+          },
+          {
+            "name": "Dr. Amit Javed",
+            "title": "Principal Director & HOD, GI / GI Oncology / Bariatric Surgery",
+            "image_url": "/images/specialists/dr-amit-javed.webp",
+            "doctorSlug": "dr-amit-javed"
+          }
+        ],
+        "department": "Gastro Sciences"
+      },
+      {
+        "note": "Kidney transplant via the Nephrology/Urology team; liver transplant via the GI & liver-transplant team.",
+        "heads": [
+          {
+            "name": "Dr. Pradeep Bansal",
+            "title": "Urology",
+            "image_url": "/images/doctors/dr-pradeep-kumar-bansal.webp",
+            "doctorSlug": "dr-pradeep-kumar-bansal"
+          }
+        ],
+        "department": "Organ Transplant"
+      }
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "8f90193f-a179-462f-9f6f-82e792b10848",
+    "slug": "medanta-the-medicity",
+    "name": "Medanta – The Medicity",
+    "city": "Gurgaon",
+    "description": "Founded by Dr. Naresh Trehan; founding & largest hospital of the Medanta network. 43-acre campus, ~1,250-1,440 operational beds, 40+ OTs, 30+ super-specialities. Repeatedly ranked India's No.1 in Newsweek's World's Best Hospitals. JCI, NABH, NABL accredited.",
+    "image": "/images/hospitals/medanta-the-medicity.webp",
+    "accreditations": [
+      "JCI",
+      "NABH",
+      "NABL"
+    ],
+    "address": "CH Baktawar Singh Road, Islampur Colony, Sector 38, Gurugram, Haryana 122001",
+    "establishedYear": 2009,
+    "bedCount": 1440,
+    "icuBeds": 316,
+    "departments": [
+      "Cardiac Sciences",
+      "Oncology",
+      "Neurosciences",
+      "Gastroenterology",
+      "Orthopaedics",
+      "Nephrology & Kidney Transplant",
+      "Liver Transplant",
+      "Obstetrics & Gynaecology",
+      "Critical Care"
+    ],
+    "hospitalType": "Multi-super-specialty / Quaternary care",
+    "ownership": "Global Health Ltd (Medanta network); founded by Dr. Naresh Trehan",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [],
+    "isFeatured": true
+  },
+  {
+    "id": "68a3daff-b3cb-4f44-aa3b-f7509ec2c959",
+    "slug": "artemis-hospital",
+    "name": "Artemis Hospital",
+    "city": "Gurgaon",
+    "description": "Founded by promoters of Apollo Tyres Ltd. First JCI- and NABH-accredited hospital in Gurgaon (reportedly only city hospital accredited 4x by JCI). ~750-bed tertiary/super-speciality centre, 40+ specialities, 14 Centres of Excellence. WHO Asia-Pacific Hand Hygiene Excellence Award (2011).",
+    "image": "/images/hospitals/artemis-hospital.webp",
+    "accreditations": [
+      "JCI",
+      "NABH",
+      "NABL",
+      "ISO 9001"
+    ],
+    "address": "Sector 51, Wazirabad Village, near Unitech Cyber Park, Gurugram, Haryana 122003",
+    "establishedYear": 2007,
+    "bedCount": 400,
+    "icuBeds": null,
+    "departments": [
+      "Cardiology & Cardiac Surgery",
+      "Oncology",
+      "Orthopaedics & Joint Replacement",
+      "Neurosciences",
+      "Nephrology",
+      "Urology",
+      "Gastroenterology",
+      "Organ Transplant",
+      "IVF"
+    ],
+    "hospitalType": "Multi-specialty / Super-specialty",
+    "ownership": "Artemis Medicare Services (promoters of Apollo Tyres Group; founder Onkar Kanwar)",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [
+      {
+        "note": "Cardiology is organized into units led by chiefs rather than a single named chairman.",
+        "heads": [
+          {
+            "name": "Dr. Rahul Mehrotra",
+            "title": "Chief, Non-Invasive & Clinical Cardiology",
+            "image_url": "/images/specialists/dr-rahul-mehrotra.webp",
+            "doctorSlug": "dr-rahul-mehrotra"
+          },
+          {
+            "name": "Dr. Balbir Kalra",
+            "title": "Chief, Interventional Cardiology",
+            "image_url": "/images/specialists/dr-balbir-kalra.webp",
+            "doctorSlug": "dr-balbir-kalra"
+          },
+          {
+            "name": "Dr. Amit Kumar Chaurasia",
+            "title": "Chief, Cath Lab & TAVI",
+            "image_url": "/images/specialists/dr-amit-kumar-chaurasia.webp",
+            "doctorSlug": "dr-amit-kumar-chaurasia"
+          },
+          {
+            "name": "Dr. Ajay Kaul",
+            "title": "Chief/Director, Cardiothoracic & Vascular Surgery (CTVS)",
+            "image_url": "/images/doctors/dr-ajay-kaul.webp",
+            "doctorSlug": "dr-ajay-kaul"
+          },
+          {
+            "name": "Dr. Aseem Ranjan Srivastava",
+            "title": "Head, Paediatric Cardiac Surgery",
+            "image_url": "/images/specialists/dr-aseem-ranjan-srivastava.webp",
+            "doctorSlug": "dr-aseem-ranjan-srivastava"
+          },
+          {
+            "name": "Dr. Nidhi Rawal",
+            "title": "Head, Paediatric Cardiology",
+            "image_url": "/images/specialists/dr-nidhi-rawal.webp",
+            "doctorSlug": "dr-nidhi-rawal"
+          }
+        ],
+        "department": "Cardiology & Cardiac Surgery"
+      },
+      {
+        "note": "A multi-team division — no single overall Chairman of Oncology named publicly.",
+        "heads": [
+          {
+            "name": "Dr. Subodh Chandra Pande",
+            "title": "HOD, Radiation Oncology",
+            "image_url": "/images/specialists/dr-subodh-chandra-pande.webp",
+            "doctorSlug": "dr-subodh-chandra-pande"
+          },
+          {
+            "name": "Dr. Rahul Naithani",
+            "title": "Chief, Hematology-Oncology & Bone Marrow Transplant",
+            "image_url": "/images/specialists/dr-rahul-naithani.webp",
+            "doctorSlug": "dr-rahul-naithani"
+          },
+          {
+            "name": "Dr. Sameer Kaul",
+            "title": "Senior Consultant, Surgical Oncology",
+            "image_url": "/images/specialists/dr-sameer-kaul.webp",
+            "doctorSlug": "dr-sameer-kaul"
+          }
+        ],
+        "department": "Oncology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. I.P.S. Oberoi",
+            "title": "Chairperson, Orthopaedics Program & Chief, Robotic Joint Replacement & Arthroscopy Surgery",
+            "image_url": "/images/doctors/dr-i-p-s-oberoi.webp",
+            "doctorSlug": "dr-i-p-s-oberoi"
+          }
+        ],
+        "department": "Orthopaedics & Joint Replacement"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Aditya Gupta",
+            "title": "Chairman, Department of Neurosurgery & CNS Radiosurgery (also Co-Chief, CyberKnife Centre)",
+            "image_url": "/images/doctors/dr-aditya-gupta.webp",
+            "doctorSlug": "dr-aditya-gupta"
+          },
+          {
+            "name": "Dr. Vipul Gupta",
+            "title": "Director, Neurointerventional Surgery",
+            "image_url": "/images/specialists/dr-vipul-gupta.webp",
+            "doctorSlug": "dr-vipul-gupta"
+          }
+        ],
+        "department": "Neurosciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Lakshmi Kant Tripathi",
+            "title": "Head of Nephrology",
+            "image_url": "/images/specialists/dr-lakshmi-kant-tripathi.webp",
+            "doctorSlug": "dr-lakshmi-kant-tripathi"
+          },
+          {
+            "name": "Dr. Manju Aggarwal",
+            "title": "Director, Nephrology",
+            "image_url": "/images/specialists/dr-manju-aggarwal.webp",
+            "doctorSlug": "dr-manju-aggarwal"
+          }
+        ],
+        "department": "Nephrology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Rajiv Yadav",
+            "title": "Chairman, Urology & Head, Urologic Oncology and Robotic Surgery",
+            "image_url": "/images/specialists/dr-rajiv-yadav.webp",
+            "doctorSlug": "dr-rajiv-yadav"
+          },
+          {
+            "name": "Dr. S.V. Kotwal",
+            "title": "Head of Department, Urology",
+            "image_url": "/images/specialists/dr-s-v-kotwal.webp",
+            "doctorSlug": "dr-s-v-kotwal"
+          }
+        ],
+        "department": "Urology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Pawan Rawal",
+            "title": "Senior Consultant, Medical Gastroenterology",
+            "image_url": "/images/specialists/dr-pawan-rawal.webp",
+            "doctorSlug": "dr-pawan-rawal"
+          },
+          {
+            "name": "Dr. Giriraj Singh Bora",
+            "title": "Additional Director & Chief, Liver Transplant & HPB Surgery (Surgical Gastroenterology / GI & HPB Surgery)",
+            "image_url": "/images/specialists/dr-giriraj-singh-bora.webp",
+            "doctorSlug": "dr-giriraj-singh-bora"
+          },
+          {
+            "name": "Dr. Sakshi Karkra",
+            "title": "Head, Paediatric Gastroenterology & Hepatology",
+            "image_url": "/images/specialists/dr-sakshi-karkra.webp",
+            "doctorSlug": "dr-sakshi-karkra"
+          }
+        ],
+        "department": "Gastroenterology"
+      }
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "f3f2ae9c-f839-4282-8e04-961d5cea4ae1",
+    "slug": "paras-hospital",
+    "name": "Paras Hospital",
+    "city": "Gurgaon",
+    "description": "First and flagship hospital of Paras Healthcare, founded by Dr. Dharminder Nagar. ~250-bed super-speciality hospital; first in Haryana to receive NABH and NABL accreditation. Neurosciences milestones incl. first in NCR with stand-alone image-guided tumour navigation; pioneered day-care angioplasty and transradial interventional cardiology in the region.",
+    "image": "/images/hospitals/paras-hospital.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "C-1, Sushant Lok Phase I, Sector 43, Gurugram, Haryana 122002",
+    "establishedYear": 2006,
+    "bedCount": 283,
+    "icuBeds": 65,
+    "departments": [
+      "Neurosciences",
+      "Cardiac Sciences",
+      "Orthopaedics & Joint Replacement",
+      "Oncology",
+      "Nephrology",
+      "Urology",
+      "Gastroenterology",
+      "Mother & Child"
+    ],
+    "hospitalType": "Multi-super-specialty / Tertiary care",
+    "ownership": "Paras Healthcare (founder Dr. Dharminder Nagar)",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [],
+    "isFeatured": true
+  },
+  {
+    "id": "997ca37d-da74-465c-b6cf-b5645905dc73",
+    "slug": "max-super-speciality-saket",
+    "name": "Max Super Speciality Hospital, Saket",
+    "city": "Delhi",
+    "description": "514+ bed hospital in south Delhi; split into East Block (a unit of Devki Devi Foundation) and West Block (a unit of MHIL). JCI, NABH, ISO accredited. Treated 34 lakh+ patients across 32 specialities combined.",
+    "image": "/images/hospitals/max-super-speciality-saket.webp",
+    "accreditations": [
+      "JCI",
+      "NABH",
+      "NABL"
+    ],
+    "address": "1-2, Press Enclave Marg, Saket Institutional Area, Saket, New Delhi 110017",
+    "establishedYear": 2006,
+    "bedCount": 514,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Oncology (Medical/Surgical/Radiation)",
+      "Neurosciences",
+      "Transplants (Heart, Lung, BMT, Liver, Renal)",
+      "Nephrology",
+      "Urology",
+      "Bariatric",
+      "Obstetrics & Gynaecology"
+    ],
+    "hospitalType": "Super-specialty (quaternary care)",
+    "ownership": "Max Healthcare (East Block: Devki Devi Foundation; West Block: MHIL)",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [],
+    "isFeatured": true
+  },
+  {
+    "id": "c61c7a6e-26e0-4c06-9f70-3cec469540e4",
+    "slug": "fortis-hospital-noida-sector-62",
+    "name": "Fortis Hospital, Noida Sector 62",
+    "city": "Noida",
+    "description": "Part of Fortis Healthcare; described as the second-largest Fortis hub after Gurgaon. ~200-236 beds, 7-12 OTs. NABH accredited. Only Heart Command Centre of Fortis across UP; first active liver transplant programme in western UP. Bi-plane Cath Lab, CT-based Brain Suite, 256-slice CT.",
+    "image": "/images/hospitals/fortis-hospital-noida-sector-62.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "B-22, Sector 62, Gautam Buddh Nagar, Noida, Uttar Pradesh 201301",
+    "establishedYear": 2004,
+    "bedCount": 200,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Neurosciences & Stroke",
+      "Liver Transplant & GI",
+      "Oncology",
+      "Orthopaedics",
+      "Nephrology",
+      "Mental Health",
+      "Critical Care"
+    ],
+    "hospitalType": "Multi-super-specialty / Tertiary care",
+    "ownership": "Fortis Healthcare",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Sanjeev Gera",
+            "title": "Director & HOD, Cardiology",
+            "image_url": "/images/doctors/dr-sanjeev-gera.webp",
+            "doctorSlug": "dr-sanjeev-gera"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "note": "Noida holds a World Stroke Organization Diamond award for stroke care.",
+        "heads": [
+          {
+            "name": "Dr. Rahul Gupta",
+            "title": "Senior Director & HOD, Neuro & Spine Surgery",
+            "image_url": "/images/specialists/dr-rahul-gupta-neuro.webp",
+            "doctorSlug": "dr-rahul-gupta-neuro"
+          }
+        ],
+        "department": "Neurosciences & Stroke"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Vivek Vij",
+            "title": "Chairman, Liver Transplant & Hepatobiliary Sciences",
+            "image_url": "/images/doctors/dr-vivek-vij.webp",
+            "doctorSlug": "dr-vivek-vij"
+          }
+        ],
+        "department": "Liver Transplant & GI"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Rakesh Ojha",
+            "title": "HOD, Medical Oncology",
+            "image_url": "/images/specialists/dr-rakesh-ojha.webp",
+            "doctorSlug": "dr-rakesh-ojha"
+          },
+          {
+            "name": "Dr. Shubham Garg",
+            "title": "Surgical Oncology",
+            "image_url": "/images/specialists/dr-shubham-garg.webp",
+            "doctorSlug": "dr-shubham-garg"
+          },
+          {
+            "name": "Dr. Vikas Dua",
+            "title": "Director, Paediatric Haematology-Oncology & BMT",
+            "image_url": "/images/doctors/dr-vikas-dua.webp",
+            "doctorSlug": "dr-vikas-dua"
+          }
+        ],
+        "department": "Oncology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Atul Mishra",
+            "title": "Chairman, Orthopaedics & Joint Replacement",
+            "image_url": "/images/specialists/dr-atul-mishra.webp",
+            "doctorSlug": "dr-atul-mishra"
+          }
+        ],
+        "department": "Orthopaedics"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Anuja Porwal",
+            "title": "Senior Nephrology Lead",
+            "image_url": "/images/specialists/dr-anuja-porwal.webp",
+            "doctorSlug": "dr-anuja-porwal"
+          }
+        ],
+        "department": "Nephrology"
+      }
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "6933d205-be44-42d4-98bb-4bcb7dfee661",
+    "slug": "fortis-escorts-heart-institute",
+    "name": "Fortis Escorts Heart Institute, Okhla",
+    "city": "Delhi",
+    "description": "310-bed multi-speciality hospital, largest private cardiac hospital in the Asia-Pacific. Began as Escorts Heart Institute & Research Centre; acquired by Fortis in 2005. JCI, NABH, NABL accredited; 4 Centres of Excellence. Country's first TAVI, MitraClip, Impella-supported complex angioplasty, HIS bundle pacing, Extra Cardiac Fontan.",
+    "image": "/images/hospitals/fortis-escorts-heart-institute.webp",
+    "accreditations": [
+      "JCI",
+      "NABH"
+    ],
+    "address": "Okhla Road, opp. Sukhdev Vihar Metro Station, New Friends Colony, New Delhi 110025",
+    "establishedYear": 1988,
+    "bedCount": 310,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences (interventional, EP, CT surgery, heart transplant, paediatric cardiac)",
+      "Liver & Digestive Diseases",
+      "Kidney & Urology",
+      "Bone & Joint",
+      "Oncology",
+      "Neurology"
+    ],
+    "hospitalType": "Cardiac super-specialty (multi-specialty)",
+    "ownership": "Fortis Healthcare (acquired Escorts Heart Institute in 2005)",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Ashok Seth",
+            "title": "Chairman, Fortis Escorts Heart Institute (also Chairman, Cardiology Council)",
+            "image_url": "/images/doctors/dr-ashok-seth.webp",
+            "doctorSlug": "dr-ashok-seth"
+          },
+          {
+            "name": "Dr. Z.S. Meharwal",
+            "title": "Chairman & Head, Adult Cardiac Surgery & Heart Transplant",
+            "image_url": "/images/doctors/dr-z-s-meharwal.webp",
+            "doctorSlug": "dr-z-s-meharwal"
+          },
+          {
+            "name": "Dr. Shiv Kumar Choudhary",
+            "title": "Executive Director, CTVS",
+            "image_url": "/images/doctors/dr-shiv-kumar-choudhary.webp",
+            "doctorSlug": "dr-shiv-kumar-choudhary"
+          },
+          {
+            "name": "Dr. Aparna Jaswal",
+            "title": "Director, EP & Cardiac Pacing",
+            "image_url": "/images/doctors/dr-aparna-jaswal.webp",
+            "doctorSlug": "dr-aparna-jaswal"
+          },
+          {
+            "name": "Dr. Krishna Subramony Iyer",
+            "title": "Chairman & Head, Paediatric & Congenital Heart Surgery",
+            "image_url": "/images/doctors/dr-krishna-subramony-iyer.webp",
+            "doctorSlug": "dr-krishna-subramony-iyer"
+          },
+          {
+            "name": "Dr. Anita Saxena",
+            "title": "Executive Director, Paediatric Cardiology",
+            "image_url": "/images/doctors/dr-anita-saxena.webp",
+            "doctorSlug": "dr-anita-saxena"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Subrat Kumar Acharya",
+            "title": "Executive Director, Gastroenterology (Fortis Escorts Liver & Digestive Diseases Institute)",
+            "image_url": "/images/specialists/dr-subrat-kumar-acharya.webp",
+            "doctorSlug": "dr-subrat-kumar-acharya"
+          }
+        ],
+        "department": "Liver & Digestive Diseases"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Sanjeev Gulati",
+            "title": "Principal/Executive Director & HOD, Nephrology",
+            "image_url": "/images/specialists/dr-sanjeev-gulati.webp",
+            "doctorSlug": "dr-sanjeev-gulati"
+          },
+          {
+            "name": "Dr. Anil Gulia",
+            "title": "Director, Urology & Kidney Transplant",
+            "image_url": "/images/specialists/dr-anil-gulia.webp",
+            "doctorSlug": "dr-anil-gulia"
+          }
+        ],
+        "department": "Kidney & Urology"
+      }
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "38912589-bb1e-4110-95ed-67e6db78d709",
+    "slug": "max-super-speciality-vaishali",
+    "name": "Max Super Speciality Hospital, Vaishali",
+    "city": "Delhi",
+    "description": "A unit of Crosslay Remedies Ltd., part of Max Healthcare. ~370-387 beds incl. 128 critical-care and 16 HDU beds, 14 modular OTs, 28-37 specialities. NABH and NABL accredited; teaching hospital with fellowship programmes.",
+    "image": "/images/hospitals/max-super-speciality-vaishali.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "W-3, Ashok Marg, near Radisson Blu Hotel, Sector 1, Vaishali, Ghaziabad, Uttar Pradesh 201012",
+    "establishedYear": 2008,
+    "bedCount": null,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Oncology",
+      "Neurosciences",
+      "Orthopaedics",
+      "Nephrology",
+      "Gastroenterology",
+      "Mother & Child"
+    ],
+    "hospitalType": "Super-specialty / Tertiary care",
+    "ownership": "Max Healthcare",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [],
+    "isFeatured": true
+  },
+  {
+    "id": "3347adc9-d8bc-4aa8-8233-20d8c99c901b",
+    "slug": "blk-max-super-speciality-hospital",
+    "name": "BLK-Max Super Speciality Hospital",
+    "city": "Delhi",
+    "description": "Founded by Dr. B.L. Kapur, inaugurated by PM Jawaharlal Nehru on 2 Jan 1959; redeveloped and relaunched as a multi-super-speciality facility, now part of Max Healthcare as BLK-Max. ~650 beds, 162 critical-care beds, 22 modular OTs over 6,50,000 sq ft. JCI, NABH, NABL. 13 Centres of Excellence; one of Asia's largest BMT centres.",
+    "image": "/images/hospitals/blk-max-super-speciality-hospital.webp",
+    "accreditations": [
+      "JCI",
+      "NABH",
+      "ISO"
+    ],
+    "address": "Pusa Road, Radha Soami Satsang, Rajendra Nagar/Rajendra Place, New Delhi 110005",
+    "establishedYear": 1959,
+    "bedCount": 650,
+    "icuBeds": 162,
+    "departments": [
+      "Oncology & BMT",
+      "Cardiac Sciences",
+      "Neurosciences",
+      "Orthopaedics",
+      "Nephrology & Urology",
+      "Liver Transplant",
+      "Gastroenterology",
+      "Pulmonology"
+    ],
+    "hospitalType": "Super-specialty / Tertiary care",
+    "ownership": "Max Healthcare (founded by Dr. B.L. Kapur)",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Dharma Choudhary",
+            "title": "Chairman/Head, BMT & Haematology",
+            "image_url": "/images/doctors/dr-dharma-choudhary.webp",
+            "doctorSlug": "dr-dharma-choudhary"
+          },
+          {
+            "name": "Dr. Chandragouda Dodagoudar",
+            "title": "Vice Chairman & Unit Head, Medical Oncology",
+            "image_url": "/images/specialists/dr-chandragouda-dodagoudar.webp",
+            "doctorSlug": "dr-chandragouda-dodagoudar"
+          },
+          {
+            "name": "Dr. S. Hukku",
+            "title": "Director, Radiation Oncology",
+            "image_url": "/images/specialists/dr-s-hukku.webp",
+            "doctorSlug": "dr-s-hukku"
+          },
+          {
+            "name": "Dr. Shikha Halder",
+            "title": "Director, Radiation Oncology",
+            "image_url": "/images/specialists/dr-shikha-halder.webp",
+            "doctorSlug": "dr-shikha-halder"
+          }
+        ],
+        "department": "Oncology & BMT"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Subhash Chandra",
+            "title": "Chairman & HOD, Cardiology",
+            "image_url": "/images/specialists/dr-subhash-chandra.webp",
+            "doctorSlug": "dr-subhash-chandra"
+          },
+          {
+            "name": "Dr. T.S. Kler",
+            "title": "Senior Chairman-level Electrophysiologist",
+            "image_url": "/images/specialists/dr-t-s-kler.webp",
+            "doctorSlug": "dr-t-s-kler"
+          },
+          {
+            "name": "Dr. Ramji Mehrotra",
+            "title": "Director, Cardiac Surgery",
+            "image_url": "/images/doctors/dr-ramji-mehrotra.webp",
+            "doctorSlug": "dr-ramji-mehrotra"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Atul Prasad",
+            "title": "Director & HOD, Neurology",
+            "image_url": "/images/specialists/dr-atul-prasad.webp",
+            "doctorSlug": "dr-atul-prasad"
+          },
+          {
+            "name": "Dr. Anil Kumar Kansal",
+            "title": "Director/Head, Neurosurgery",
+            "image_url": "/images/specialists/dr-anil-kumar-kansal.webp",
+            "doctorSlug": "dr-anil-kumar-kansal"
+          }
+        ],
+        "department": "Neurosciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Bhushan Nariani",
+            "title": "Chairman, Orthopaedics & Joint Replacement",
+            "image_url": "/images/specialists/dr-bhushan-nariani.webp",
+            "doctorSlug": "dr-bhushan-nariani"
+          },
+          {
+            "name": "Dr. Deepak Chaudhary",
+            "title": "Senior Director, Arthroscopy & Sports Medicine",
+            "image_url": "/images/specialists/dr-deepak-chaudhary.webp",
+            "doctorSlug": "dr-deepak-chaudhary"
+          }
+        ],
+        "department": "Orthopaedics"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Abhideep Chaudhary",
+            "title": "Senior Director & HOD, HPB Surgery & Liver Transplantation",
+            "image_url": "/images/doctors/dr-abhideep-chaudhary.webp",
+            "doctorSlug": "dr-abhideep-chaudhary"
+          }
+        ],
+        "department": "Liver Transplant"
+      }
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "8e7ced60-3dc8-4b24-9859-aad5732874fd",
+    "slug": "indraprastha-apollo-hospital",
+    "name": "Indraprastha Apollo Hospital",
+    "city": "Delhi",
+    "description": "Third super-speciality hospital of Apollo Hospitals, set up jointly with the Government of Delhi. ~15-acre campus, ~700-718 beds (expandable to 1,000), 52+ specialities. First hospital in India accredited by JCI (2005). India's first paediatric liver transplant (1998); largest sleep lab in Asia; India's first Proton Therapy Centre.",
+    "image": "/images/hospitals/indraprastha-apollo-hospital.webp",
+    "accreditations": [
+      "JCI",
+      "NABH",
+      "NABL"
+    ],
+    "address": "Delhi-Mathura Road, Sarita Vihar / Jasola Vihar, New Delhi 110076",
+    "establishedYear": 1996,
+    "bedCount": 695,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Oncology (incl. Varian Edge radiosurgery)",
+      "Neurosciences",
+      "Orthopaedics",
+      "Organ Transplants (liver, kidney, heart)",
+      "Gastroenterology",
+      "Nephrology"
+    ],
+    "hospitalType": "Multi-super-specialty / Quaternary care",
+    "ownership": "Apollo Hospitals Group (JV with Govt. of Delhi)",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Atul Mathur",
+            "title": "Chairman & Head, Interventional Cardiology",
+            "image_url": "/images/doctors/dr-atul-mathur.webp",
+            "doctorSlug": "dr-atul-mathur"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Sudhir Tyagi",
+            "title": "Senior Consultant, Neurosurgery",
+            "image_url": "/images/specialists/dr-sudhir-tyagi.webp",
+            "doctorSlug": "dr-sudhir-tyagi"
+          },
+          {
+            "name": "Dr. Sumit Singh",
+            "title": "Senior Consultant, Neurology",
+            "image_url": "/images/specialists/dr-sumit-singh.webp",
+            "doctorSlug": "dr-sumit-singh"
+          }
+        ],
+        "department": "Neurosciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Ashok Rajgopal",
+            "title": "Group Chairman, Orthopaedics & Joint Replacement",
+            "image_url": "/images/doctors/dr-ashok-rajgopal.webp",
+            "doctorSlug": "dr-ashok-rajgopal"
+          },
+          {
+            "name": "Dr. Raju Vaishya",
+            "title": "Senior Consultant, Orthopaedics",
+            "image_url": "/images/specialists/dr-raju-vaishya.webp",
+            "doctorSlug": "dr-raju-vaishya"
+          }
+        ],
+        "department": "Orthopaedics"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Neerav Goyal",
+            "title": "Senior Consultant, Liver Transplant Surgery",
+            "image_url": "/images/specialists/dr-neerav-goyal.webp",
+            "doctorSlug": "dr-neerav-goyal"
+          },
+          {
+            "name": "Dr. Subhash Gupta",
+            "title": "Senior Consultant, Liver Transplant Program",
+            "image_url": "/images/specialists/dr-subhash-gupta.webp",
+            "doctorSlug": "dr-subhash-gupta"
+          }
+        ],
+        "department": "Organ Transplants"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. D.K. Agarwal",
+            "title": "Senior Consultant, Nephrology",
+            "image_url": "/images/specialists/dr-d-k-agarwal.webp",
+            "doctorSlug": "dr-d-k-agarwal"
+          },
+          {
+            "name": "Dr. Sandeep Guleria",
+            "title": "Senior Consultant, Nephrology & Renal Transplant",
+            "image_url": "/images/specialists/dr-sandeep-guleria.webp",
+            "doctorSlug": "dr-sandeep-guleria"
+          }
+        ],
+        "department": "Nephrology"
+      }
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "40bddee2-b8b4-4241-9ffd-dc5f004fd7c5",
+    "slug": "manipal-hospital-dwarka",
+    "name": "Manipal Hospital, Dwarka",
+    "city": "Delhi",
+    "description": "Multi-super-speciality tertiary hospital of the Manipal Hospitals group (Manipal Education & Medical Group). NABH and NABL accredited. Named Best Multi-Speciality Hospital in Delhi NCR (India Healthcare Awards 2021) and Best Hospital for Patient Safety (FICCI 2020).",
+    "image": "/images/hospitals/manipal-hospital-dwarka.webp",
+    "accreditations": [
+      "NABH"
+    ],
+    "address": "Sector 6, Dwarka, New Delhi 110075",
+    "establishedYear": 2017,
+    "bedCount": 380,
+    "icuBeds": 118,
+    "departments": [
+      "Oncology",
+      "Cardiology",
+      "Neurology & Neurosurgery",
+      "Orthopaedics & Spine",
+      "Renal Sciences",
+      "Nuclear Medicine",
+      "Reproductive Medicine",
+      "Laparoscopic Surgery"
+    ],
+    "hospitalType": "Multi-super-specialty / Tertiary care",
+    "ownership": "Manipal Health Enterprises (Manipal Education & Medical Group)",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Anusheel Munshi",
+            "title": "HOD, Radiation Oncology",
+            "image_url": "/images/specialists/dr-anusheel-munshi.webp",
+            "doctorSlug": "dr-anusheel-munshi"
+          }
+        ],
+        "department": "Radiation Oncology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Bipin Kumar Dubey",
+            "title": "HOD, Cardiac Sciences",
+            "image_url": "/images/specialists/dr-bipin-kumar-dubey.webp",
+            "doctorSlug": "dr-bipin-kumar-dubey"
+          },
+          {
+            "name": "Dr. Yugal K. Mishra",
+            "title": "Chairman, Cardiac Sciences",
+            "image_url": "/images/specialists/dr-yugal-k-mishra.webp",
+            "doctorSlug": "dr-yugal-k-mishra"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Kadam Nagpal",
+            "title": "HOD, Neurology",
+            "image_url": "/images/specialists/dr-kadam-nagpal.webp",
+            "doctorSlug": "dr-kadam-nagpal"
+          }
+        ],
+        "department": "Neurology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Anurag Saxena",
+            "title": "Cluster Head, Neurosurgery",
+            "image_url": "/images/specialists/dr-anurag-saxena.webp",
+            "doctorSlug": "dr-anurag-saxena"
+          }
+        ],
+        "department": "Neurosurgery"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Rajeev Verma",
+            "title": "HOD & Consultant, Orthopaedics & Joint Replacement",
+            "image_url": "/images/specialists/dr-rajeev-verma.webp",
+            "doctorSlug": "dr-rajeev-verma"
+          }
+        ],
+        "department": "Orthopaedics & Joint Replacement"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Suman Lata Nayak",
+            "title": "HOD, Nephrology",
+            "image_url": "/images/specialists/dr-suman-lata-nayak.webp",
+            "doctorSlug": "dr-suman-lata-nayak"
+          }
+        ],
+        "department": "Nephrology"
+      }
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "fbd28ea2-0d7d-4532-8243-56a5ae2d16db",
+    "slug": "aakash-healthcare",
+    "name": "Aakash Healthcare Super Speciality Hospital",
+    "city": "Delhi",
+    "description": "Largest tertiary care facility in Dwarka/South West Delhi. ~230-300 beds incl. 68-80 critical-care beds and 15 dialysis beds. NABL / NABH accredited. Chairman Mr. J.C. Chaudhry; MD Dr. Aashish Chaudhry (orthopaedic surgeon). Known for orthopaedics & joint replacement.",
+    "image": "/images/hospitals/aakash-healthcare.webp",
+    "accreditations": [
+      "NABH",
+      "NABL",
+      "ISO"
+    ],
+    "address": "Hospital Plot, Road No. 201, Sector 3, Dwarka, New Delhi 110059",
+    "establishedYear": 2017,
+    "bedCount": 230,
+    "icuBeds": 70,
+    "departments": [
+      "Orthopaedics & Joint Replacement",
+      "Cardiology & Cardiac Surgery",
+      "Neurology & Neurosurgery",
+      "Renal Sciences",
+      "Oncology",
+      "Mother & Child",
+      "General & Minimal Access Surgery",
+      "Ophthalmology"
+    ],
+    "hospitalType": "Super-specialty / Tertiary care",
+    "ownership": "Aakash Healthcare (Chairman J.C. Chaudhry; MD Dr. Aashish Chaudhry)",
+    "timings": "24/7 Emergency & Inpatient Care · OPD consultations by appointment",
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Aashish Chaudhry",
+            "title": "Director & Head, Orthopaedics & Joint Replacement (also Managing Director of the hospital)",
+            "image_url": "/images/doctors/dr-aashish-chaudhry.webp",
+            "doctorSlug": "dr-aashish-chaudhry"
+          }
+        ],
+        "department": "Orthopaedics & Joint Replacement"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Ashish Agarwal",
+            "title": "Senior Consultant & HOD, Cardiology",
+            "image_url": "/images/specialists/dr-ashish-agarwal.webp",
+            "doctorSlug": "dr-ashish-agarwal"
+          },
+          {
+            "name": "Dr. Khushwant Popli",
+            "title": "Head, Cardiac Surgery (CTVS)",
+            "image_url": "/images/specialists/dr-khushwant-popli.webp",
+            "doctorSlug": "dr-khushwant-popli"
+          },
+          {
+            "name": "Dr. Amit Pendharkar",
+            "title": "Director, Cardiology (Unit 2)",
+            "image_url": "/images/specialists/dr-amit-pendharkar.webp",
+            "doctorSlug": "dr-amit-pendharkar"
+          }
+        ],
+        "department": "Cardiology & Cardiac Surgery"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Madhukar Bhardwaj",
+            "title": "Director & HOD, Neurology",
+            "image_url": "/images/specialists/dr-madhukar-bhardwaj.webp",
+            "doctorSlug": "dr-madhukar-bhardwaj"
+          },
+          {
+            "name": "Dr. Amit Srivastava",
+            "title": "Director & Senior Consultant, Neurosurgery",
+            "image_url": "/images/specialists/dr-amit-srivastava.webp",
+            "doctorSlug": "dr-amit-srivastava"
+          },
+          {
+            "name": "Dr. Nagesh Chandra",
+            "title": "Senior Consultant & HOD, Neurosurgery & Spine Surgery",
+            "image_url": "/images/specialists/dr-nagesh-chandra.webp",
+            "doctorSlug": "dr-nagesh-chandra"
+          }
+        ],
+        "department": "Neurology & Neurosurgery"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Umesh Gupta",
+            "title": "Senior Consultant & Director, Nephrology",
+            "image_url": "/images/specialists/dr-umesh-gupta.webp",
+            "doctorSlug": "dr-umesh-gupta"
+          },
+          {
+            "name": "Dr. Vikas Agarwal",
+            "title": "Director & HOD, Urology, Uro-Oncology & Kidney Transplantation",
+            "image_url": "/images/specialists/dr-vikas-agarwal.webp",
+            "doctorSlug": "dr-vikas-agarwal"
+          }
+        ],
+        "department": "Renal Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Parveen Jain",
+            "title": "Senior Consultant & HOD, Medical Oncology",
+            "image_url": "/images/specialists/dr-parveen-jain.webp",
+            "doctorSlug": "dr-parveen-jain"
+          },
+          {
+            "name": "Dr. Arun Kumar Giri",
+            "title": "Director, Surgical Oncology",
+            "image_url": "/images/specialists/dr-arun-kumar-giri.webp",
+            "doctorSlug": "dr-arun-kumar-giri"
+          }
+        ],
+        "department": "Oncology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Shipli Ghosh Shrivastava",
+            "title": "Senior Consultant & Director, Obstetrics & Gynaecology",
+            "image_url": "/images/specialists/dr-shipli-ghosh-shrivastava.webp",
+            "doctorSlug": "dr-shipli-ghosh-shrivastava"
+          },
+          {
+            "name": "Dr. Syed Mustafa Hasan",
+            "title": "Director, Paediatrics",
+            "image_url": "/images/specialists/dr-syed-mustafa-hasan.webp",
+            "doctorSlug": "dr-syed-mustafa-hasan"
+          }
+        ],
+        "department": "Mother & Child"
+      },
+      {
+        "note": "No single named HOD is listed in current public sources; run as a Center of Excellence. Recommend confirming directly with the hospital.",
+        "heads": [],
+        "department": "General & Minimal Access Surgery"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Prashaant Chaudhry",
+            "title": "HOD, Ophthalmology",
+            "image_url": "/images/specialists/dr-prashaant-chaudhry.webp",
+            "doctorSlug": "dr-prashaant-chaudhry"
+          }
+        ],
+        "department": "Ophthalmology"
+      }
+    ],
+    "isFeatured": true
+  },
+  {
+    "id": "55fba62f-7bd1-4396-94ff-57a1d09f07e3",
+    "slug": "asian-institute-of-medical-sciences",
+    "name": "Asian Institute of Medical Sciences",
+    "city": "Faridabad",
+    "description": "Tertiary referral hospital and medical school founded by Padma Shri Dr. Narendra Kumar Pandey. ~425 beds. NABH and NABL accredited. 13 Centres of Excellence. First hospital in North India to deploy Varian's RapidArc on a Trilogy system.",
+    "image": "/images/hospitals/asian-institute-of-medical-sciences.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "Badkhal Flyover Road, Sector 21A, Faridabad, Haryana 121001",
+    "establishedYear": 2010,
+    "bedCount": 425,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Neurosciences",
+      "Oncology",
+      "Orthopaedics",
+      "Nephrology",
+      "Gastroenterology",
+      "Critical Care"
+    ],
+    "hospitalType": "Tertiary care / Teaching hospital",
+    "ownership": "Asian Hospital group (founder Dr. N.K. Pandey)",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Rishi Gupta",
+            "title": "Chairman, Cardiology (also Director, Clinical Services)",
+            "image_url": "/images/specialists/dr-rishi-gupta.webp",
+            "doctorSlug": "dr-rishi-gupta"
+          },
+          {
+            "name": "Dr. Subrat Akhoury",
+            "title": "Director & Head, Cath Lab & Interventional Cardiology",
+            "image_url": "/images/specialists/dr-subrat-akhoury.webp",
+            "doctorSlug": "dr-subrat-akhoury"
+          },
+          {
+            "name": "Dr. Simmi Manocha",
+            "title": "Associate Director & HOD, Non-Invasive Cardiology",
+            "image_url": "/images/specialists/dr-simmi-manocha.webp",
+            "doctorSlug": "dr-simmi-manocha"
+          },
+          {
+            "name": "Dr. Amit Chaudhary",
+            "title": "Associate Director, Cardiothoracic & Vascular Surgery (CTVS)",
+            "image_url": "/images/specialists/dr-amit-chaudhary.webp",
+            "doctorSlug": "dr-amit-chaudhary"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Mukesh Pandey",
+            "title": "Director & HOD, Neurosurgery / Centre for Neurosciences",
+            "image_url": "/images/specialists/dr-mukesh-pandey.webp",
+            "doctorSlug": "dr-mukesh-pandey"
+          },
+          {
+            "name": "Dr. Neha Kapoor",
+            "title": "Associate Director & HOD, Neurology",
+            "image_url": "/images/specialists/dr-neha-kapoor.webp",
+            "doctorSlug": "dr-neha-kapoor"
+          }
+        ],
+        "department": "Neurosciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Durgatosh Pandey",
+            "title": "Chairman, Oncology Sciences",
+            "image_url": "/images/specialists/dr-durgatosh-pandey.webp",
+            "doctorSlug": "dr-durgatosh-pandey"
+          },
+          {
+            "name": "Dr. Sangram Keshari Sahoo",
+            "title": "Director & Head, Surgical Oncology",
+            "image_url": "/images/specialists/dr-sangram-keshari-sahoo.webp",
+            "doctorSlug": "dr-sangram-keshari-sahoo"
+          },
+          {
+            "name": "Dr. Vibhor Sharma",
+            "title": "Associate Director & Head, Medical Oncology / Bone Marrow Transplant (Unit-II)",
+            "image_url": "/images/specialists/dr-vibhor-sharma.webp",
+            "doctorSlug": "dr-vibhor-sharma"
+          }
+        ],
+        "department": "Oncology"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "3a727ef0-99d0-431a-a3d7-404996e0938d",
+    "slug": "ck-birla-hospital",
+    "name": "CK Birla Hospital",
+    "city": "Gurgaon",
+    "description": "Part of the CK Birla Group. Gurgaon facility opened 2017 (~70+ beds; ~78,000 sq ft). NABH accredited. Care model modelled on UK NHS nursing protocols and NICE guidelines; notable for women's & child health and North India's only water-birthing facility.",
+    "image": "/images/hospitals/ck-birla-hospital.webp",
+    "accreditations": [
+      "NABH"
+    ],
+    "address": "Block J, Nirvana Central Road, Mayfield Garden, Sector 51, Gurugram, Haryana 122018",
+    "establishedYear": 2017,
+    "bedCount": 75,
+    "icuBeds": null,
+    "departments": [
+      "Mother & Child / Obstetrics & Gynaecology",
+      "Neonatology",
+      "Orthopaedics & Joint Replacement",
+      "Surgical Sciences/Oncology",
+      "Internal & Family Medicine",
+      "Critical Care",
+      "IVF/Fertility"
+    ],
+    "hospitalType": "Multi-specialty (strong women & child)",
+    "ownership": "CK Birla Group",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Ramkinkar Jha",
+            "title": "Chief/Head, Orthopaedics",
+            "image_url": "/images/specialists/dr-ramkinkar-jha.webp",
+            "doctorSlug": "dr-ramkinkar-jha"
+          },
+          {
+            "name": "Dr. Debashish Chanda",
+            "title": "Senior Joint-Replacement Consultant",
+            "image_url": "/images/specialists/dr-debashish-chanda.webp",
+            "doctorSlug": "dr-debashish-chanda"
+          }
+        ],
+        "department": "Orthopaedics & Joint Replacement"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Rohan Khandelwal",
+            "title": "Principal Consultant & Head, The Breast Centre / Surgical Oncology",
+            "image_url": "/images/specialists/dr-rohan-khandelwal.webp",
+            "doctorSlug": "dr-rohan-khandelwal"
+          },
+          {
+            "name": "Dr. Mayank Madan",
+            "title": "Senior Consultant, GI & Bariatric Surgery",
+            "image_url": "/images/specialists/dr-mayank-madan.webp",
+            "doctorSlug": "dr-mayank-madan"
+          }
+        ],
+        "department": "Surgical Sciences / Oncology"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "8386fca8-f521-426c-8c60-ceab64990200",
+    "slug": "delhi-heart-and-lung-institute",
+    "name": "Delhi Heart and Lung Institute",
+    "city": "Delhi",
+    "description": "Super-speciality tertiary cardiac & pulmonary hospital, a unit of Apex Heart Care Pvt. Ltd. ~100 beds. Founded by Padma Shri Prof. (Dr.) K.K. Sethi and Dr. G.K. Mani. NABH and NABL accredited; rated among Delhi's top hospitals.",
+    "image": "/images/hospitals/delhi-heart-and-lung-institute.webp",
+    "accreditations": [],
+    "address": "3-MM II, Type 4, Block B, Panchkuian Road, near RK Ashram Marg Metro, Mandir Marg, New Delhi 110055",
+    "establishedYear": 2003,
+    "bedCount": null,
+    "icuBeds": null,
+    "departments": [
+      "Cardiology & Interventional Cardiology",
+      "Cardiac Surgery",
+      "Pulmonology/Respiratory Medicine",
+      "Critical Care"
+    ],
+    "hospitalType": "Specialty (Cardiac & Pulmonary) hospital",
+    "ownership": "Delhi Heart & Lung Institute",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Kamal K. Sethi (Padma Shri)",
+            "title": "Chairman & Managing Director; Head of Cardiology (Interventional Cardiology & Electrophysiology)",
+            "image_url": "/images/specialists/dr-kamal-k-sethi.webp",
+            "doctorSlug": "dr-kamal-k-sethi"
+          },
+          {
+            "name": "Dr. (Col) Anil Dhall",
+            "title": "Director, Cardiology",
+            "image_url": "/images/specialists/dr-anil-dhall.webp",
+            "doctorSlug": "dr-anil-dhall"
+          }
+        ],
+        "department": "Cardiology & Interventional Cardiology"
+      },
+      {
+        "note": "Historically also associated with Dr. Sandeep Singh and Dr. G.K. Mani as senior cardiac surgeons.",
+        "heads": [
+          {
+            "name": "Dr. Sanjeev Malhotra",
+            "title": "Head, Cardiothoracic & Vascular Surgery (CTVS)",
+            "image_url": "/images/doctors/dr-sanjeev-malhotra.webp",
+            "doctorSlug": "dr-sanjeev-malhotra"
+          }
+        ],
+        "department": "Cardiac Surgery"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Manoj K. Goel",
+            "title": "Head, Pulmonology, Critical Care & Sleep Medicine",
+            "image_url": "/images/doctors/dr-manoj-kumar-goel.webp",
+            "doctorSlug": "dr-manoj-kumar-goel"
+          }
+        ],
+        "department": "Pulmonology / Respiratory Medicine"
+      },
+      {
+        "note": "Combined with Pulmonology under the same head.",
+        "heads": [],
+        "department": "Critical Care"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2fa916fb-2d90-4f8c-b2bc-b5b22e84b1cb",
+    "slug": "fortis-escorts-hospital-faridabad",
+    "name": "Fortis Escorts Hospital, Faridabad",
+    "city": "Faridabad",
+    "description": "Commenced 1982; 40+ year legacy. ~210-260 bed multi-speciality hospital, part of Fortis Healthcare. First hospital in Faridabad to earn NABH accreditation. Provides primary and tertiary care across specialities.",
+    "image": "/images/hospitals/fortis-escorts-hospital-faridabad.webp",
+    "accreditations": [
+      "NABH"
+    ],
+    "address": "Neelam Bata Road, opp. Neelam Cinema, AC Nagar, New Industrial Township, Faridabad, Haryana 121001",
+    "establishedYear": 1982,
+    "bedCount": 210,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Neurosciences/Neurosurgery",
+      "Orthopaedics",
+      "Urology",
+      "Renal Sciences",
+      "Organ Transplant",
+      "Gastro Sciences",
+      "Pulmonology",
+      "Critical Care",
+      "Paediatrics",
+      "IVF"
+    ],
+    "hospitalType": "Multi-specialty / Tertiary care",
+    "ownership": "Fortis Healthcare",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Sanjay Kumar",
+            "title": "Director, Cardiology",
+            "image_url": "/images/specialists/dr-sanjay-kumar.webp",
+            "doctorSlug": "dr-sanjay-kumar"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Kamal Verma",
+            "title": "Director, Neurosurgery",
+            "image_url": "/images/specialists/dr-kamal-verma.webp",
+            "doctorSlug": "dr-kamal-verma"
+          },
+          {
+            "name": "Dr. Vinit Banga",
+            "title": "Director & HOD, Neurology",
+            "image_url": "/images/specialists/dr-vinit-banga.webp",
+            "doctorSlug": "dr-vinit-banga"
+          }
+        ],
+        "department": "Neurosciences / Neurosurgery"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Ashutosh Shrivastav",
+            "title": "Director, Orthopaedics & Joint Replacement",
+            "image_url": "/images/specialists/dr-ashutosh-shrivastav.webp",
+            "doctorSlug": "dr-ashutosh-shrivastav"
+          },
+          {
+            "name": "Dr. K.D. Soni",
+            "title": "Additional Director, Orthopaedics",
+            "image_url": "/images/specialists/dr-k-d-soni.webp",
+            "doctorSlug": "dr-k-d-soni"
+          },
+          {
+            "name": "Dr. Harish Ghoota",
+            "title": "Additional Director, Orthopaedics",
+            "image_url": "/images/specialists/dr-harish-ghoota.webp",
+            "doctorSlug": "dr-harish-ghoota"
+          }
+        ],
+        "department": "Orthopaedics"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Anup Gulati",
+            "title": "Director, Urology, Andrology & Renal Transplant",
+            "image_url": "/images/specialists/dr-anup-gulati.webp",
+            "doctorSlug": "dr-anup-gulati"
+          }
+        ],
+        "department": "Urology"
+      },
+      {
+        "note": "No standalone named nephrology HOD is prominently listed; renal transplant runs jointly with Urology under Dr. Anup Gulati.",
+        "heads": [
+          {
+            "name": "Dr. Tejendra Singh Chauhan",
+            "title": "Senior Nephrology Consultant",
+            "image_url": "/images/specialists/dr-tejendra-singh-chauhan.webp",
+            "doctorSlug": "dr-tejendra-singh-chauhan"
+          }
+        ],
+        "department": "Renal Sciences / Nephrology"
+      },
+      {
+        "heads": [],
+        "department": "Organ Transplant"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "ec5cc2a9-2846-4ed1-8095-6ba562d08f31",
+    "slug": "fortis-hospital-manesar",
+    "name": "Fortis Hospital, Manesar",
+    "city": "Gurgaon",
+    "description": "Part of Fortis Healthcare. 350 beds incl. 95 ICU beds, 9 OTs, 2 Cath Labs. 20-30+ specialities. Offers cardiology, neurosciences, renal sciences, oncology, orthopaedics, gastroenterology, bariatrics/GI surgery, gynaecology, neonatology, paediatrics, haematology, internal medicine.",
+    "image": "/images/hospitals/fortis-hospital-manesar.webp",
+    "accreditations": [],
+    "address": "Plot No. 2, Sector 5, IMT Manesar, Gurugram, Haryana 122052",
+    "establishedYear": 2013,
+    "bedCount": 350,
+    "icuBeds": 95,
+    "departments": [
+      "Nephrology",
+      "Cardiology",
+      "Oncology",
+      "Orthopaedics",
+      "Gastroenterology",
+      "Neurology",
+      "General Surgery",
+      "Critical Care"
+    ],
+    "hospitalType": "Multi-super-specialty",
+    "ownership": "Fortis Healthcare",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Rohit Lamba",
+            "title": "Senior Orthopaedics Lead, Orthopaedics & Joint Replacement",
+            "image_url": "/images/doctors/dr-rohit-lamba.webp",
+            "doctorSlug": "dr-rohit-lamba"
+          }
+        ],
+        "department": "Orthopaedics"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Rinkesh Kumar Bansal",
+            "title": "Gastroenterology & Hepatobiliary Sciences",
+            "image_url": "/images/doctors/dr-rinkesh-kumar-bansal.webp",
+            "doctorSlug": "dr-rinkesh-kumar-bansal"
+          }
+        ],
+        "department": "Gastroenterology"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "66e22246-b162-4de3-92b9-90cb755ce28f",
+    "slug": "fortis-hospital-shalimar-bagh",
+    "name": "Fortis Hospital, Shalimar Bagh",
+    "city": "Delhi",
+    "description": "Multi-super-speciality hospital, ~262-375 beds over 7.34 acres, a flagship Fortis facility. India's first hospital registered under the Green Building Rating System (3-star, BEE). NABH/NABL; multiple JCI accreditations.",
+    "image": "/images/hospitals/fortis-hospital-shalimar-bagh.webp",
+    "accreditations": [
+      "NABH"
+    ],
+    "address": "A Block, Shaheed Udham Singh Marg, Poorbi Shalimar Bagh, Shalimar Bagh, New Delhi 110088",
+    "establishedYear": 2010,
+    "bedCount": 262,
+    "icuBeds": 80,
+    "departments": [
+      "Neurosciences",
+      "Oncology",
+      "Orthopaedics",
+      "Cardiac Sciences",
+      "Obstetrics & Gynaecology",
+      "Kidney Transplant",
+      "Nephrology",
+      "Urology",
+      "Neonatology (Level-III NICU)"
+    ],
+    "hospitalType": "Multi-super-specialty",
+    "ownership": "Fortis Healthcare",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Jaideep Bansal",
+            "title": "Director & HOD, Neurology",
+            "image_url": "/images/specialists/dr-jaideep-bansal.webp",
+            "doctorSlug": "dr-jaideep-bansal"
+          }
+        ],
+        "department": "Neurosciences"
+      },
+      {
+        "note": "A distinct medical-oncology HOD isn’t clearly named — confirm directly with the hospital.",
+        "heads": [
+          {
+            "name": "Dr. Pradeep Kumar Jain",
+            "title": "Principal Director & HOD, Lap GI, GI Onco, Bariatric & MIS Surgery",
+            "image_url": "/images/specialists/dr-pradeep-kumar-jain.webp",
+            "doctorSlug": "dr-pradeep-kumar-jain"
+          }
+        ],
+        "department": "Oncology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Amite Pankaj Aggarwal",
+            "title": "Director & HOD, Orthopaedics",
+            "image_url": "/images/specialists/dr-amite-pankaj-aggarwal.webp",
+            "doctorSlug": "dr-amite-pankaj-aggarwal"
+          }
+        ],
+        "department": "Orthopaedics"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Nityanand Tripathi",
+            "title": "Principal Director & HOD, Cardiology & Electrophysiology",
+            "image_url": "/images/specialists/dr-nityanand-tripathi.webp",
+            "doctorSlug": "dr-nityanand-tripathi"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Deepak Kalra",
+            "title": "Director, Nephrology (leads kidney transplant medical side)",
+            "image_url": "/images/specialists/dr-deepak-kalra.webp",
+            "doctorSlug": "dr-deepak-kalra"
+          }
+        ],
+        "department": "Kidney Transplant / Nephrology"
+      },
+      {
+        "note": "A separate neonatology HOD isn’t named publicly; sits under Paediatrics.",
+        "heads": [
+          {
+            "name": "Dr. Arvind Kumar",
+            "title": "Director & HOD, Paediatrics",
+            "image_url": "/images/doctors/dr-arvind-kumar.webp",
+            "doctorSlug": "dr-arvind-kumar"
+          }
+        ],
+        "department": "Neonatology (Level-III NICU)"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "912ac359-026e-4257-8477-0bf4aff69b23",
+    "slug": "fortis-hospital-vasant-kunj",
+    "name": "Fortis Hospital, Vasant Kunj",
+    "city": "Delhi",
+    "description": "Multi-super-speciality tertiary hospital, ~160-180 beds, 40+ specialities; NABH, NABL, Nursing Excellence certified. Centre of Excellence for Minimal Access & Bariatric Surgery. Has treated 2M+ patients.",
+    "image": "/images/hospitals/fortis-hospital-vasant-kunj.webp",
+    "accreditations": [
+      "NABH"
+    ],
+    "address": "Aruna Asaf Ali Marg, Pocket 1, Sector B, Vasant Kunj, New Delhi 110070",
+    "establishedYear": 2006,
+    "bedCount": 160,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Neurosciences",
+      "Orthopaedics",
+      "Oncology",
+      "Gastroenterology",
+      "Nephrology & Urology",
+      "Liver Transplant",
+      "Critical Care"
+    ],
+    "hospitalType": "Multi-specialty / Tertiary care",
+    "ownership": "Fortis Healthcare",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Tapan Ghose",
+            "title": "Senior Director & HOD, Cardiology",
+            "image_url": "/images/specialists/dr-tapan-ghose.webp",
+            "doctorSlug": "dr-tapan-ghose"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "note": "Confirm the exact Vasant Kunj neurology HOD with the hospital if you need one single name.",
+        "heads": [
+          {
+            "name": "Dr. Rana Patir",
+            "title": "Senior Neurosurgery Director (also Chairman of Neurosurgery at FMRI; oversees Fortis neuro)",
+            "image_url": "/images/doctors/dr-rana-patir.webp",
+            "doctorSlug": "dr-rana-patir"
+          },
+          {
+            "name": "Dr. Madhuri Behari",
+            "title": "Senior Neurology Consultant",
+            "image_url": "/images/specialists/dr-madhuri-behari.webp",
+            "doctorSlug": "dr-madhuri-behari"
+          }
+        ],
+        "department": "Neurosciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Manoj Miglani",
+            "title": "Principal Director, Orthopaedics",
+            "image_url": "/images/specialists/dr-manoj-miglani.webp",
+            "doctorSlug": "dr-manoj-miglani"
+          }
+        ],
+        "department": "Orthopaedics"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "d386c166-929d-48a2-a954-92c4745633d2",
+    "slug": "ibs-institute-of-brain-and-spine",
+    "name": "IBS Institute of Brain and Spine",
+    "city": "Delhi",
+    "description": "Super-speciality hospital dedicated to neurosciences and spine, 20+ specialisations, NABH accredited. Known for minimally invasive spine surgery, stroke care, epilepsy surgery, endoscopic brain surgery, and neuro-rehabilitation; uses robotic neuro-navigation and 3D surgical planning.",
+    "image": "/images/hospitals/ibs-institute-of-brain-and-spine.webp",
+    "accreditations": [],
+    "address": "Nehru Nagar / Lajpat Nagar area, New Delhi",
+    "establishedYear": 2011,
+    "bedCount": null,
+    "icuBeds": null,
+    "departments": [
+      "Neurosurgery",
+      "Neurology",
+      "Spine Surgery",
+      "Joint Replacement",
+      "Orthopaedics",
+      "Bariatric",
+      "Gynae/IVF",
+      "Paediatrics",
+      "Gastroenterology",
+      "Pulmonology"
+    ],
+    "hospitalType": "Specialty (Neurosciences) hospital",
+    "ownership": "IBS Hospitals",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Sachin Kandhari",
+            "title": "Director & Senior Neurosurgeon (a founding clinical lead of IBS)",
+            "image_url": "/images/specialists/dr-sachin-kandhari.webp",
+            "doctorSlug": "dr-sachin-kandhari"
+          }
+        ],
+        "department": "Neurosurgery"
+      },
+      {
+        "note": "No single named \"HOD\" is clearly published; confirm directly with the hospital.",
+        "heads": [
+          {
+            "name": "Dr. Sanjay Kumar Chaudhary",
+            "title": "Senior Consultant, Neurology",
+            "image_url": "/images/specialists/dr-sanjay-kumar-chaudhary.webp",
+            "doctorSlug": "dr-sanjay-kumar-chaudhary"
+          }
+        ],
+        "department": "Neurology"
+      },
+      {
+        "note": "Handled by the neurosurgery/spine team.",
+        "heads": [],
+        "department": "Spine Surgery"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Pankaj Bajaj",
+            "title": "HOD, Orthopaedics & Joint Replacement",
+            "image_url": "/images/specialists/dr-pankaj-bajaj.webp",
+            "doctorSlug": "dr-pankaj-bajaj"
+          }
+        ],
+        "department": "Joint Replacement"
+      },
+      {
+        "heads": [],
+        "department": "Orthopaedics"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Amit Sehgal",
+            "title": "Senior Consultant, General & Bariatric Surgery",
+            "image_url": "/images/specialists/dr-amit-sehgal.webp",
+            "doctorSlug": "dr-amit-sehgal"
+          }
+        ],
+        "department": "Bariatric Surgery"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "92052dff-8d68-4dd8-84f2-6e9bf0eabd67",
+    "slug": "indian-spinal-injuries-centre",
+    "name": "Indian Spinal Injuries Centre",
+    "city": "Delhi",
+    "description": "World-class multi-speciality centre specialising in spinal injuries, neurology, orthopaedics and rehabilitation. 185+ beds incl. ICU/HDU; robotic-assisted physiotherapy. NABH and NABL accredited; research & training institute affiliated with universities. Named Best Spine Surgery Hospital in India (Times of India, 2020).",
+    "image": "/images/hospitals/indian-spinal-injuries-centre.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "Vasant Kunj Marg, opp. Vasant Valley School, IAA Colony, Sector C, Vasant Kunj, New Delhi 110070",
+    "establishedYear": 1997,
+    "bedCount": 145,
+    "icuBeds": null,
+    "departments": [
+      "Spine Surgery",
+      "Orthopaedics",
+      "Neurosurgery/Neurology",
+      "Rheumatology",
+      "Rehabilitation",
+      "Urology",
+      "Plastic Surgery"
+    ],
+    "hospitalType": "Specialty (Spine/Orthopaedics/Neuro) & Rehab",
+    "ownership": "ISIC (founder Major H.P.S. Ahluwalia); Italy/San Raffaele collaboration",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "note": "ISIC's long-time Chief of Spine Services & Medical Director, Dr. H.S. Chhabra, has moved to Sri Balaji Action Medical Institute — the department is currently led jointly by its senior spine surgeons; recommend confirming the current single designated head directly with the hospital.",
+        "heads": [
+          {
+            "name": "Dr. Vikas Tandon",
+            "title": "Director, Spine Services",
+            "image_url": "/images/specialists/dr-vikas-tandon.webp",
+            "doctorSlug": "dr-vikas-tandon"
+          },
+          {
+            "name": "Dr. Bibhudendu Mohapatra",
+            "title": "Director, Spine Services",
+            "image_url": "/images/specialists/dr-bibhudendu-mohapatra.webp",
+            "doctorSlug": "dr-bibhudendu-mohapatra"
+          },
+          {
+            "name": "Dr. Ankur Nanda",
+            "title": "Head, Spine Fellowship Program",
+            "image_url": "/images/specialists/dr-ankur-nanda.webp",
+            "doctorSlug": "dr-ankur-nanda"
+          }
+        ],
+        "department": "Spine Surgery"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Pradeep Sharma",
+            "title": "Senior Consultant & Chief, Joint Replacement",
+            "image_url": "/images/specialists/dr-pradeep-sharma-isic.webp",
+            "doctorSlug": "dr-pradeep-sharma-isic"
+          }
+        ],
+        "department": "Orthopaedics"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "4e52030f-c218-43cb-bba4-70957ef82c0d",
+    "slug": "institute-of-liver-and-biliary-sciences",
+    "name": "Institute of Liver and Biliary Sciences",
+    "city": "Delhi",
+    "description": "Government autonomous mono-super-speciality hospital for liver and biliary diseases, established by the Govt of NCT of Delhi; founding director Dr. Shiv Kumar Sarin. ~155 beds; 24x7 emergency. Also a teaching and research institute.",
+    "image": "/images/hospitals/institute-of-liver-and-biliary-sciences.webp",
+    "accreditations": [],
+    "address": "D-1, Vasant Kunj, South West Delhi, New Delhi 110070",
+    "establishedYear": 2009,
+    "bedCount": 155,
+    "icuBeds": 74,
+    "departments": [
+      "Hepatology",
+      "Liver Transplant",
+      "Pancreatic & Biliary Diseases",
+      "GI/Hepato-oncology",
+      "Urology",
+      "Critical Care"
+    ],
+    "hospitalType": "Mono-super-specialty (Liver & Biliary) / Teaching",
+    "ownership": "Government of NCT of Delhi (autonomous institute; Deemed University)",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Shiv Kumar Sarin",
+            "title": "Director, ILBS; Senior Professor & Head, Hepatology",
+            "image_url": "/images/specialists/dr-shiv-kumar-sarin.webp",
+            "doctorSlug": "dr-shiv-kumar-sarin"
+          }
+        ],
+        "department": "Hepatology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Viniyendra Pamecha",
+            "title": "Professor & Head, HPB Surgery & Liver Transplantation",
+            "image_url": "/images/specialists/dr-viniyendra-pamecha.webp",
+            "doctorSlug": "dr-viniyendra-pamecha"
+          }
+        ],
+        "department": "HPB Surgery & Liver Transplantation"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Abhiyutthan Singh Jadaon",
+            "title": "Renal Transplant & Urology",
+            "image_url": "/images/specialists/dr-abhiyutthan-singh-jadaon.webp",
+            "doctorSlug": "dr-abhiyutthan-singh-jadaon"
+          }
+        ],
+        "department": "Renal Transplant & Urology"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "aead77fb-b45e-4e08-b49e-287bc8125fe7",
+    "slug": "marengo-asia-hospitals-faridabad",
+    "name": "Marengo Asia Hospitals, Faridabad",
+    "city": "Faridabad",
+    "description": "Established 2007 by the QRG Group as QRG Health City; rebranded Marengo Asia Hospitals. ~450-600 bed multi-super-speciality hospital with a Critical Care Medicine unit. NABH and NABL accredited. 12 Centres of Excellence.",
+    "image": "/images/hospitals/marengo-asia-hospitals-faridabad.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "Plot No. 1, HUDA Staff Colony, Sector 16, Faridabad, Haryana 121002",
+    "establishedYear": 2007,
+    "bedCount": 450,
+    "icuBeds": 100,
+    "departments": [
+      "Cardiac Sciences",
+      "Orthopaedics",
+      "Nephrology",
+      "Critical Care",
+      "Neurosciences",
+      "Gastroenterology",
+      "Minimally Invasive Surgery",
+      "Gynaecology",
+      "Bariatric",
+      "IVF"
+    ],
+    "hospitalType": "Multi-super-specialty",
+    "ownership": "Marengo Asia Healthcare (formerly QRG Group)",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Gajinder Kumar Goyal",
+            "title": "Senior Consultant, Cardiology",
+            "image_url": "/images/specialists/dr-gajinder-kumar-goyal.webp",
+            "doctorSlug": "dr-gajinder-kumar-goyal"
+          },
+          {
+            "name": "Dr. Rakesh Rai Sapra",
+            "title": "Senior Consultant, Cardiac Surgery",
+            "image_url": "/images/specialists/dr-rakesh-rai-sapra.webp",
+            "doctorSlug": "dr-rakesh-rai-sapra"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Anurag Aggarwal",
+            "title": "Senior Consultant, Orthopaedics & Joint Replacement",
+            "image_url": "/images/specialists/dr-anurag-aggarwal.webp",
+            "doctorSlug": "dr-anurag-aggarwal"
+          }
+        ],
+        "department": "Orthopaedics & Joint Replacement"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Shri Ram Kabra",
+            "title": "Director, Nephrology",
+            "image_url": "/images/specialists/dr-shri-ram-kabra.webp",
+            "doctorSlug": "dr-shri-ram-kabra"
+          }
+        ],
+        "department": "Nephrology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Kunal Bahrani",
+            "title": "HOD, Neurology",
+            "image_url": "/images/specialists/dr-kunal-bahrani.webp",
+            "doctorSlug": "dr-kunal-bahrani"
+          }
+        ],
+        "department": "Neurosciences"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "9fa0cca0-16bb-4af8-b88c-d5383f792c8f",
+    "slug": "marengo-asia-hospitals-gurgaon",
+    "name": "Marengo Asia Hospitals, Gurgaon",
+    "city": "Gurgaon",
+    "description": "Established 1995 as W Pratiksha Hospital, flagship of the Pratiksha Group (founder/chairman Dr. Pramod Kumar Sharma, an IVF pioneer); rebranded Marengo Asia Hospitals. ~250-bed multi-speciality hospital, 30+ years of operation. NABH accredited. Notable IVF programme (5,500+ reported successes).",
+    "image": "/images/hospitals/marengo-asia-hospitals-gurgaon.webp",
+    "accreditations": [
+      "NABH"
+    ],
+    "address": "Golf Course Extension Road, Sushant Lok Phase II, Sector 56, Gurugram, Haryana 122011",
+    "establishedYear": 1995,
+    "bedCount": 250,
+    "icuBeds": null,
+    "departments": [
+      "IVF & Fertility",
+      "Orthopaedics & Joint Replacement",
+      "Critical Care Medicine",
+      "Neurosciences",
+      "Cardiology",
+      "Neonatology"
+    ],
+    "hospitalType": "Multi-specialty",
+    "ownership": "Marengo Asia Healthcare (Samara Capital/QRG/Godrej-backed); formerly Pratiksha Group (Dr. Pramod Kumar Sharma)",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Hemant Sharma",
+            "title": "Chairman/Director & Head, Trauma & Orthopaedics",
+            "image_url": "/images/doctors/dr-hemant-sharma.webp",
+            "doctorSlug": "dr-hemant-sharma"
+          },
+          {
+            "name": "Dr. Rajesh K. Verma",
+            "title": "Director, Orthopaedics",
+            "image_url": "/images/specialists/dr-rajesh-k-verma.webp",
+            "doctorSlug": "dr-rajesh-k-verma"
+          }
+        ],
+        "department": "Orthopaedics & Trauma"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Praveen Gupta",
+            "title": "Chairman & Principal Director, Neurology",
+            "image_url": "/images/specialists/dr-praveen-gupta.webp",
+            "doctorSlug": "dr-praveen-gupta"
+          }
+        ],
+        "department": "Neurology"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. (Brig.) Sameer Kumar",
+            "title": "Clinical Director & HOD, Cardiothoracic Surgery",
+            "image_url": "/images/specialists/dr-brig-sameer-kumar.webp",
+            "doctorSlug": "dr-brig-sameer-kumar"
+          },
+          {
+            "name": "Dr. Yogendra Singh Rajput",
+            "title": "Senior Consultant, Interventional Cardiology",
+            "image_url": "/images/specialists/dr-yogendra-singh-rajput.webp",
+            "doctorSlug": "dr-yogendra-singh-rajput"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "2afa15cc-809b-498c-981c-126d5bc494bb",
+    "slug": "max-smart-super-speciality-saket",
+    "name": "Max Smart Super Speciality Hospital, Saket",
+    "city": "Delhi",
+    "description": "A unit of Gujarmal Modi Hospital & Research Centre for Medical Sciences (BK Modi). 250-bed tertiary care hospital; 12 modular OTs (2 for robotics), ~50-72 critical care beds, 19-bed dialysis unit. NABH and ISO accredited. Asia's first (world's third) BrainSUITE.",
+    "image": "/images/hospitals/max-smart-super-speciality-saket.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "Mandir Marg, Press Enclave Road, Saket, New Delhi 110017",
+    "establishedYear": 2013,
+    "bedCount": 250,
+    "icuBeds": 170,
+    "departments": [
+      "Cardiac Sciences",
+      "Orthopaedics",
+      "Urology & Kidney Transplant",
+      "Neurology & Neurosurgery",
+      "Paediatrics",
+      "Obstetrics & Gynaecology",
+      "Oncology"
+    ],
+    "hospitalType": "Super-specialty / Tertiary care",
+    "ownership": "Max Healthcare (unit of Gujarmal Modi Hospital & Research Centre)",
+    "timings": null,
+    "departmentHeads": [
+      {
+        "heads": [
+          {
+            "name": "Dr. Viveka Kumar",
+            "title": "Principal Director, Interventional Cardiology",
+            "image_url": "/images/specialists/dr-viveka-kumar.webp",
+            "doctorSlug": "dr-viveka-kumar"
+          },
+          {
+            "name": "Dr. Rajneesh Malhotra",
+            "title": "Chairman, Cardiothoracic & Vascular Surgery",
+            "image_url": "/images/doctors/dr-rajneesh-malhotra.webp",
+            "doctorSlug": "dr-rajneesh-malhotra"
+          },
+          {
+            "name": "Dr. Arvind Kumar Goyal",
+            "title": "Director & HOD, Cardiothoracic & Vascular Surgery",
+            "image_url": "/images/specialists/dr-arvind-kumar-goyal.webp",
+            "doctorSlug": "dr-arvind-kumar-goyal"
+          },
+          {
+            "name": "Dr. Sameer Shrivastava",
+            "title": "Senior Consultant, Cardiology",
+            "image_url": "/images/specialists/dr-sameer-shrivastava.webp",
+            "doctorSlug": "dr-sameer-shrivastava"
+          }
+        ],
+        "department": "Cardiac Sciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Anant Kumar",
+            "title": "Chairman, Urology, Renal Transplant & Robotics",
+            "image_url": "/images/doctors/dr-anant-kumar.webp",
+            "doctorSlug": "dr-anant-kumar"
+          },
+          {
+            "name": "Dr. Anil Kumar Gulia",
+            "title": "Senior Consultant, Urology",
+            "image_url": "/images/specialists/dr-anil-kumar-gulia.webp",
+            "doctorSlug": "dr-anil-kumar-gulia"
+          },
+          {
+            "name": "Dr. Ruchir Maheshwari",
+            "title": "Senior Consultant, Urology",
+            "image_url": "/images/specialists/dr-ruchir-maheshwari.webp",
+            "doctorSlug": "dr-ruchir-maheshwari"
+          }
+        ],
+        "department": "Urology & Renal Transplant"
+      },
+      {
+        "heads": [
+          {
+            "name": "Prof. (Col.) Dr. Bipin Walia",
+            "title": "Vice Chairman & Head, Neurosurgery",
+            "image_url": "/images/specialists/dr-bipin-walia.webp",
+            "doctorSlug": "dr-bipin-walia"
+          },
+          {
+            "name": "Dr. (Col.) Joy Dev Mukherji",
+            "title": "Senior Consultant, Neurology",
+            "image_url": "/images/specialists/dr-joy-dev-mukherji.webp",
+            "doctorSlug": "dr-joy-dev-mukherji"
+          }
+        ],
+        "department": "Neurosciences"
+      },
+      {
+        "heads": [
+          {
+            "name": "Dr. Devavrat Arya",
+            "title": "Senior Consultant, Medical Oncology",
+            "image_url": "/images/specialists/dr-devavrat-arya.webp",
+            "doctorSlug": "dr-devavrat-arya"
+          },
+          {
+            "name": "Dr. Rayaz Ahmed",
+            "title": "Senior Consultant, Haematology-Oncology & BMT",
+            "image_url": "/images/specialists/dr-rayaz-ahmed.webp",
+            "doctorSlug": "dr-rayaz-ahmed"
+          }
+        ],
+        "department": "Oncology & Haematology"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "id": "dfc000b6-784c-4e5f-ba56-1fd0f4903b1d",
+    "slug": "max-super-speciality-gurgaon",
+    "name": "Max Super Speciality Hospital, Gurgaon",
+    "city": "Gurgaon",
+    "description": "Part of Max Healthcare. ~104-bed facility; has treated 5 lakh+ patients across 36 clinical specialities. NABH and NABL (Max Lab) accredited. Institute of Minimal Access, Metabolic & Bariatric Surgery is a Centre of Excellence.",
+    "image": "/images/hospitals/max-super-speciality-gurgaon.webp",
+    "accreditations": [
+      "NABH",
+      "NABL",
+      "AACI",
+      "QAI"
+    ],
+    "address": "B Block, Sushant Lok 1, MF Husain Marg, near HUDA City Centre, Sector 43, Gurugram, Haryana 122001",
+    "establishedYear": 2007,
+    "bedCount": 100,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Oncology",
+      "Orthopaedics",
+      "Neurosciences",
+      "Nephrology",
+      "IVF",
+      "Bariatric Surgery",
+      "Internal Medicine"
+    ],
+    "hospitalType": "Super-specialty (quaternary care)",
+    "ownership": "Max Healthcare Institute Ltd",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "c126e49c-0ac9-4252-a827-8a8dbf32d3a6",
+    "slug": "max-super-speciality-panchsheel-park",
+    "name": "Max Super Speciality Hospital, Panchsheel Park",
+    "city": "Delhi",
+    "description": "Max Multi Speciality Centre focused on women's health, infertility and day-care services. Houses Max Institute of Reproductive Medicine & Assisted Conception (IVF), Women's Breast Clinic, Pregnancy & Endocrine Disorders clinic, and Gynaecological Cancer Screening.",
+    "image": "/images/hospitals/max-super-speciality-panchsheel-park.webp",
+    "accreditations": [],
+    "address": "N-110, Panchsheel Park, New Delhi 110017",
+    "establishedYear": null,
+    "bedCount": null,
+    "icuBeds": null,
+    "departments": [
+      "OPD & day-care specialties",
+      "Diagnostics",
+      "Minor procedures"
+    ],
+    "hospitalType": "Multi-specialty centre (secondary/tertiary)",
+    "ownership": "Max Healthcare",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "23441192-9352-4587-926b-d96efbef564d",
+    "slug": "max-super-speciality-patparganj",
+    "name": "Max Super Speciality Hospital, Patparganj",
+    "city": "Delhi",
+    "description": "A unit of Balaji Medical & Diagnostic Research Centre, managed by Max Healthcare; East Delhi's first multi-speciality tertiary centre. ~400-402 beds incl. 116 ICU + 14 HDU, 11 modular OTs, 30+ specialities. NABH, NABL, AACI, ISO 9001, HIMSS Stage 6. Asia's first (world's third) intraoperative MRI (Brain Suite). Busy liver transplant centre.",
+    "image": "/images/hospitals/max-super-speciality-patparganj.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "108A, IP Extension, Patparganj, New Delhi 110092",
+    "establishedYear": 2005,
+    "bedCount": 147,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Oncology",
+      "Neurosciences",
+      "Orthopaedics",
+      "Nephrology & Transplant",
+      "Gastroenterology",
+      "Critical Care"
+    ],
+    "hospitalType": "Super-specialty / Tertiary care",
+    "ownership": "Max Healthcare (partner facility)",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "bad915d4-b0c1-4fbb-b977-574733860ea6",
+    "slug": "max-super-speciality-sector-128",
+    "name": "Max Super Speciality Hospital, Sector 128",
+    "city": "Noida",
+    "description": "Formerly Jaypee Hospital (opened 2014), acquired and rebranded by Max Healthcare. 500+ bed tertiary facility on a ~72,000 sq m campus, planned expansion to 1,200 beds. NABH/NABL. Da Vinci Xi robotic surgery, TrueBeam STx Linac, 3.0T MRI, 128-slice CT, PET-CT.",
+    "image": "/images/hospitals/max-super-speciality-sector-128.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "Jaypee Hospital Road, Goberdhanpur, Sector 128, Noida, Uttar Pradesh 201304",
+    "establishedYear": 2014,
+    "bedCount": 500,
+    "icuBeds": null,
+    "departments": [
+      "Oncology",
+      "Cardiac Sciences",
+      "Neurosciences",
+      "Orthopaedics",
+      "Nephrology & Transplant",
+      "Gastroenterology",
+      "Critical Care"
+    ],
+    "hospitalType": "Multi-super-specialty / Tertiary care",
+    "ownership": "Max Healthcare (formerly Jaypee Group)",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "5944dfbe-9381-429c-a59f-7d871f905b59",
+    "slug": "max-super-speciality-shalimar-bagh",
+    "name": "Max Super Speciality Hospital, Shalimar Bagh",
+    "city": "Delhi",
+    "description": "~420-445 bed super-speciality hospital, 37+ clinical specialities; treated 4 lakh+ patients. NABH and NABL accredited; India's first global Green OT certification. MRI 1.5T, Discovery IQ PET-CT, 16-slice CT.",
+    "image": "/images/hospitals/max-super-speciality-shalimar-bagh.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "FC-50, Max Wali Road, C & D Block, Shalimar Bagh, New Delhi 110088",
+    "establishedYear": 2011,
+    "bedCount": 300,
+    "icuBeds": null,
+    "departments": [
+      "Cardiac Sciences",
+      "Oncology",
+      "Neurosciences",
+      "Orthopaedics",
+      "Nephrology",
+      "Gastroenterology",
+      "Mother & Child"
+    ],
+    "hospitalType": "Super-specialty / Tertiary care",
+    "ownership": "Max Healthcare",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "6124013c-3233-4d9c-81b9-0d7f30157a98",
+    "slug": "metro-hospital-faridabad",
+    "name": "Metro Hospital, Faridabad",
+    "city": "Faridabad",
+    "description": "Part of the Metro Group of Hospitals (founded 1997 by cardiologist Dr. Purshotam Lal). ~300-400 bed multi-speciality hospital with 72 ICU beds; Cardiac, Medical, Surgical, CTVS and Neonatal ICUs. NABH and NABL accredited. North India's only TrueBeam Linac with HyperArc (per hospital).",
+    "image": "/images/hospitals/metro-hospital-faridabad.webp",
+    "accreditations": [],
+    "address": "Sector 16A, Faridabad, Haryana 121002",
+    "establishedYear": 2002,
+    "bedCount": 400,
+    "icuBeds": 72,
+    "departments": [
+      "Cardiology & CTVS",
+      "Kidney Transplant",
+      "BMT/Haematology-Oncology",
+      "Neurosciences",
+      "Gastroenterology & HPB",
+      "Orthopaedics",
+      "Gynae/IVF",
+      "Radiology"
+    ],
+    "hospitalType": "Multi-specialty (cardiac-led)",
+    "ownership": "Metro Group of Hospitals (founder Dr. Purshotam Lal)",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "fc5eba76-9ccc-41cb-a354-948b96ae0630",
+    "slug": "national-heart-institute",
+    "name": "National Heart Institute",
+    "city": "Delhi",
+    "description": "India's first dedicated cardiac care institute; clinical & research wing of the All India Heart Foundation (AIHF). Founded by Dr. S. Padmavati (inspired by Dr. Paul Dudley White), inaugurated by PM Indira Gandhi. NABH and NABL accredited. Empanelled with CGHS, PM-JAY, ECHS, ESI.",
+    "image": "/images/hospitals/national-heart-institute.webp",
+    "accreditations": [],
+    "address": "49-50, Community Centre, East of Kailash, New Delhi 110065",
+    "establishedYear": 1981,
+    "bedCount": null,
+    "icuBeds": null,
+    "departments": [
+      "Cardiology & Interventional Cardiology",
+      "Cardiac Surgery/CABG",
+      "Electrophysiology",
+      "Angiography/Angioplasty"
+    ],
+    "hospitalType": "Specialty (Cardiac) super-specialty hospital",
+    "ownership": "All India Heart Foundation (founder Dr. S. Padmavati)",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "769e74eb-dea5-484e-b25c-59a337e40f68",
+    "slug": "primus-super-speciality-hospital",
+    "name": "Primus Super Speciality Hospital",
+    "city": "Delhi",
+    "description": "Multi-speciality hospital in the diplomatic enclave, ~130+ operational beds with ICU/CCU/HDU, 7 OTs. NABH and NABL accredited. Known for orthopaedics, neurology and joint replacement; serves diplomats and international patients.",
+    "image": "/images/hospitals/primus-super-speciality-hospital.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "2, Chandragupta Marg, opp. Russian Embassy, Chanakyapuri, New Delhi 110021",
+    "establishedYear": null,
+    "bedCount": 130,
+    "icuBeds": 18,
+    "departments": [
+      "Orthopaedics & Joint Replacement",
+      "Spine Surgery",
+      "Neurosciences",
+      "IVF & Reproductive Medicine",
+      "ENT & Cochlear Implants",
+      "General & Minimal Access Surgery",
+      "Cardiology",
+      "Gastroenterology"
+    ],
+    "hospitalType": "Super-specialty / Multi-specialty",
+    "ownership": "Primus Hospital",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "a3fde6bc-e947-4740-a80d-36a01a171a86",
+    "slug": "sarvodaya-hospital",
+    "name": "Sarvodaya Hospital",
+    "city": "Faridabad",
+    "description": "Flagship unit of the Sarvodaya Healthcare group. 450-500 bed super-speciality hospital, ~109 ICU beds, 12 modular OTs, ~4.25 acres. NABH/NABL. Motto 'Sarve Santu Niramaya'. Known for cancer care, robotic joint replacement, ENT & cochlear implants (India's youngest cochlear implant at 5 months).",
+    "image": "/images/hospitals/sarvodaya-hospital.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "YMCA Road, Sector 8, near Escorts Mujesar Metro Station, Faridabad, Haryana 121006",
+    "establishedYear": null,
+    "bedCount": 450,
+    "icuBeds": 65,
+    "departments": [
+      "Cancer Care (incl. Radiation & Nuclear Medicine)",
+      "Cardiology & CTVS",
+      "Neurosciences",
+      "Urology & Nephrology",
+      "Orthopaedics/Robotic Joint Replacement",
+      "ENT/Cochlear",
+      "Gastroenterology"
+    ],
+    "hospitalType": "Super-specialty / Multi-specialty",
+    "ownership": "Sarvodaya Healthcare (flagship, Sector 8)",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "8c0fd99b-4d38-4e1c-9a5d-711aec14fb33",
+    "slug": "shalby-sanar-international-hospital",
+    "name": "Shalby Sanar International Hospital",
+    "city": "Gurgaon",
+    "description": "Opened 2018 as Sanar International Hospitals (founder Mr. Naresh Kapoor); later joined the Shalby Group (Chairman Dr. Vikram Shah), rebranded Shalby Sanar. 150-bed multi-speciality tertiary hospital; 35 ICU beds, 14 HEPA-filtered BMT rooms, 4 modular transplant OTs. NABH accredited; reportedly first Gurugram hospital with AACI accreditation (2024).",
+    "image": "/images/hospitals/shalby-sanar-international-hospital.webp",
+    "accreditations": [
+      "NABH",
+      "AACI"
+    ],
+    "address": "Golf Course Road, Parsvnath Exotica, DLF Phase 5, Sector 53, Gurugram, Haryana 122002",
+    "establishedYear": 2018,
+    "bedCount": 150,
+    "icuBeds": 35,
+    "departments": [
+      "Oncology",
+      "Cardiac Sciences",
+      "Blood & Marrow Transplant",
+      "Kidney & Liver Transplant",
+      "Bone & Joint",
+      "Neurosciences",
+      "Nephrology",
+      "Gastroenterology"
+    ],
+    "hospitalType": "Multi-specialty / Tertiary care",
+    "ownership": "Shalby Group (formerly Sanar International; founder Mr. Naresh Kapoor)",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "43f0f86d-87d1-48e1-8506-f35488637fba",
+    "slug": "ssb-heart-and-multispecialty-hospital",
+    "name": "SSB Heart and Multispecialty Hospital",
+    "city": "Faridabad",
+    "description": "Established 2007 as QRG Central Hospital; renamed after takeover by cardiologist Dr. Shyam Sunder (S.S.) Bansal. Multi-speciality hospital known primarily for cardiac care. First in Faridabad to introduce Cardiac MRI.",
+    "image": "/images/hospitals/ssb-heart-and-multispecialty-hospital.webp",
+    "accreditations": [],
+    "address": "Plot No. 69, NH-19, near Neelam Flyover, Sector 20A, New Industrial Township, Faridabad, Haryana 121001",
+    "establishedYear": 2007,
+    "bedCount": 300,
+    "icuBeds": null,
+    "departments": [
+      "Cardiology & CTVS",
+      "Neurology",
+      "Orthopaedics",
+      "Gastroenterology",
+      "Oncology",
+      "Nephrology",
+      "Urology",
+      "Paediatrics"
+    ],
+    "hospitalType": "Multi-specialty (cardiac-focused)",
+    "ownership": "Acquired & renamed by cardiologist Dr. S.S. Bansal (originally QRG Group)",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "c7f91dd7-5c2e-4f54-81e6-332ee22b14f0",
+    "slug": "venkateshwar-hospital",
+    "name": "Venkateshwar Hospital",
+    "city": "Delhi",
+    "description": "Multi-super-speciality hospital of the Venkateshwara Group. 325 beds incl. 100 critical-care beds, 10 modular OTs, 32-34 specialities. NABH and NABL accredited. 3T MRI, 256-slice CT, PET-CT, robotic surgery. Best Hospital for Patient Safety in Delhi (India Today 2021).",
+    "image": "/images/hospitals/venkateshwar-hospital.webp",
+    "accreditations": [
+      "NABH"
+    ],
+    "address": "Sector 12 Road, Sector 18A, Dwarka, New Delhi 110075",
+    "establishedYear": 2016,
+    "bedCount": 325,
+    "icuBeds": 100,
+    "departments": [
+      "Cardio-Thoracic & Vascular Surgery",
+      "Medical Oncology & BMT",
+      "Neurosurgery",
+      "Orthopaedics & Joint Replacement",
+      "Gastroenterology & Liver Transplant",
+      "Nephrology/Urology & Kidney Transplant",
+      "Pulmonology"
+    ],
+    "hospitalType": "Multi-specialty / Tertiary care",
+    "ownership": "Venkateshwara Group",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "d1b831ba-c08e-444f-afc2-b66e354513ce",
+    "slug": "vimhans-nayati-super-specialty-hospital",
+    "name": "Vimhans Nayati Super Specialty Hospital",
+    "city": "Delhi",
+    "description": "~100+ bed super-speciality hospital over ~4 acres in south Delhi; 5 modular OTs, 36 ICU beds; 50+ specialist doctors. NABH accredited. (VIMHANS itself, the mental-health institute, dates to 1987; the Nayati super-speciality hospital opened 2016.)",
+    "image": "/images/hospitals/vimhans-nayati-super-specialty-hospital.webp",
+    "accreditations": [
+      "NABH"
+    ],
+    "address": "1, Institutional Area, Nehru Nagar, Lajpat Nagar, New Delhi 110065",
+    "establishedYear": 2016,
+    "bedCount": null,
+    "icuBeds": null,
+    "departments": [
+      "Neurosciences",
+      "Psychiatry/Mental Health",
+      "Orthopaedics",
+      "Oncology",
+      "Cardiac Sciences",
+      "Critical Care"
+    ],
+    "hospitalType": "Multi-super-specialty (neuro/mental health heritage)",
+    "ownership": "Nayati Healthcare (VIMHANS legacy)",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  },
+  {
+    "id": "dc580e8a-a64b-4e57-be22-60a44c756a1a",
+    "slug": "yashoda-hospital-research-centre",
+    "name": "Yashoda Hospital & Research Centre, Ghaziabad",
+    "city": "Noida",
+    "description": "Multi-speciality hospital of the Yashoda Healthcare (Yashoda Group) chain, in operation since 1990. 30+ years of service; group is an 800+ bed chain across Ghaziabad/Delhi NCR. WSO diamond-category certified stroke centre.",
+    "image": "/images/hospitals/yashoda-hospital-research-centre.webp",
+    "accreditations": [
+      "NABH",
+      "NABL"
+    ],
+    "address": "IIIrd M, Motilal Nehru Nagar Marg, near Nehru Stadium, Nehru Nagar, Ghaziabad, Uttar Pradesh 201001",
+    "establishedYear": 1990,
+    "bedCount": 300,
+    "icuBeds": null,
+    "departments": [
+      "Cancer",
+      "Cardiology/Heart Centre",
+      "BMT",
+      "Gastroenterology & Liver",
+      "Renal Sciences & Kidney Transplant",
+      "Neurosciences",
+      "Orthopaedics",
+      "Neonatology & Paediatrics",
+      "IVF",
+      "Robotics"
+    ],
+    "hospitalType": "Multi-specialty / Tertiary care",
+    "ownership": "Yashoda Hospital & Research Centre",
+    "timings": null,
+    "departmentHeads": [],
+    "isFeatured": false
+  }
+]

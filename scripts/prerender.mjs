@@ -3,8 +3,13 @@
 // an empty <div id="root"></div> shell. Runs after `vite build`.
 import { chromium } from 'playwright-core';
 import { preview } from 'vite';
-import { writeFile } from 'node:fs/promises';
+import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
+
+// One page per doctor (/doctor/:slug) and hospital (/hospital/:slug) profile,
+// from the generated database.
+const doctors = JSON.parse(await readFile(path.resolve('src/data/db/doctors.json'), 'utf-8'));
+const hospitals = JSON.parse(await readFile(path.resolve('src/data/db/hospitals.json'), 'utf-8'));
 
 // Vercel's build container has no root/apt access, so the regular desktop
 // Chromium build (downloaded by plain `playwright`) fails to launch there —
@@ -64,6 +69,9 @@ const routes = [
   '/privacy-policy',
   '/term-condition',
   '/error-404',
+  '/our-doctors',
+  ...doctors.map(d => `/doctor/${d.slug}`),
+  ...hospitals.map(h => `/hospital/${h.slug}`),
 ];
 
 async function run() {
@@ -99,6 +107,7 @@ async function run() {
         ? path.resolve('dist/index.html')
         : path.resolve('dist' + route + '.html');
 
+      await mkdir(path.dirname(outPath), { recursive: true });
       await writeFile(outPath, html, 'utf-8');
       ok++;
       console.log(`✓ ${route}`);

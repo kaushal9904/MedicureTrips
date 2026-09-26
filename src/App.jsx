@@ -6,7 +6,7 @@ import Preloader from './components/Preloader'
 import ScrollToTop from './components/ScrollToTop'
 import WhatsAppButton from './components/WhatsAppButton'
 import useSiteAnimations from './hooks/useSiteAnimations'
-import routeMeta, { defaultMeta } from './routeMeta'
+import { getRouteMeta } from './routeMeta'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import Services from './pages/Services'
@@ -14,6 +14,8 @@ import ServiceDetails from './pages/ServiceDetails'
 import Doctors from './pages/Doctors'
 import OurDoctors from './pages/OurDoctors'
 import DoctorDetails from './pages/DoctorDetails'
+import DoctorProfile from './pages/DoctorProfile'
+import HospitalProfile from './pages/HospitalProfile'
 import ContactUs from './pages/ContactUs'
 import Blog from './pages/Blog'
 import BlogSidebar from './pages/BlogSidebar'
@@ -53,7 +55,7 @@ function App() {
   useSiteAnimations([location.pathname])
 
   useEffect(() => {
-    const meta = routeMeta[location.pathname] || defaultMeta
+    const meta = getRouteMeta(location.pathname)
     document.title = meta.title
     let descTag = document.querySelector('meta[name="description"]')
     if (!descTag) {
@@ -77,6 +79,8 @@ function App() {
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/our-doctors" element={<OurDoctors />} />
         <Route path="/doctor-details" element={<DoctorDetails />} />
+        <Route path="/doctor/:slug" element={<DoctorProfile />} />
+        <Route path="/hospital/:slug" element={<HospitalProfile />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog-sidebar" element={<BlogSidebar />} />

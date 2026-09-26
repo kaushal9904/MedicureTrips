@@ -1,3 +1,5 @@
+import { getDoctorBySlug, getHospitalBySlug } from './data/db';
+
 const SITE = 'Medicure Trip';
 const DEFAULT_DESC = "Medicure Trip offers top medical treatments and tour packages in India for international patients, with a trusted network of top hospitals and expert doctors.";
 
@@ -40,5 +42,34 @@ const routeMeta = {
 };
 
 export const defaultMeta = { title: `Page Not Found | ${SITE}`, description: DEFAULT_DESC };
+
+export function getRouteMeta(pathname) {
+  const doctorMatch = pathname.match(/^\/doctor\/([^/]+)$/);
+  if (doctorMatch) {
+    const doctor = getDoctorBySlug(doctorMatch[1]);
+    if (doctor) {
+      const role = [doctor.designation, doctor.hospitalName].filter(Boolean).join(', ');
+      return {
+        title: `${doctor.name}${doctor.specialty ? ` – ${doctor.specialty}` : ''} | ${SITE}`,
+        description: doctor.bio
+          ? doctor.bio.slice(0, 157).replace(/\s+\S*$/, '') + '…'
+          : `${doctor.name}${role ? `, ${role}` : ''}. Book a consultation through ${SITE}.`,
+      };
+    }
+  }
+  const hospitalMatch = pathname.match(/^\/hospital\/([^/]+)$/);
+  if (hospitalMatch) {
+    const hospital = getHospitalBySlug(hospitalMatch[1]);
+    if (hospital) {
+      return {
+        title: `${hospital.name}${hospital.city ? `, ${hospital.city}` : ''} | ${SITE}`,
+        description: hospital.description
+          ? hospital.description.slice(0, 157).replace(/\s+\S*$/, '') + '…'
+          : `${hospital.name} — a ${SITE} partner hospital. Get a free treatment quote.`,
+      };
+    }
+  }
+  return routeMeta[pathname] || defaultMeta;
+}
 
 export default routeMeta;
