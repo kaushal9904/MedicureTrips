@@ -277,3 +277,78 @@ body {
   font-size: 14px;
   line-height: 1.4;
 }
+
+/* Home: treatment options grid (clean card layout) */
+.cs_treatment_grid_card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e6edf3;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 10px rgba(15, 40, 70, 0.06);
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+.cs_treatment_grid_card:hover {
+  box-shadow: 0 10px 28px rgba(15, 40, 70, 0.12);
+  transform: translateY(-3px);
+}
+.cs_treatment_grid_img {
+  height: 190px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+.cs_treatment_grid_body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 16px;
+}
+.cs_treatment_grid_header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.cs_treatment_grid_icon {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #eef4fa;
+}
+.cs_treatment_grid_icon img { width: 22px; height: 22px; }
+.cs_treatment_grid_title { font-size: 18px; font-weight: 600; margin: 0; }
+.cs_treatment_grid_title a { color: inherit; }
+.cs_treatment_grid_desc { font-size: 14px; color: #5b6b7b; margin-bottom: 12px; }
+.cs_treatment_grid_features {
+  list-style: none;
+  padding: 10px 12px;
+  margin: 0 0 16px;
+  background: #f3f7fb;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.cs_treatment_grid_features li { display: flex; gap: 8px; align-items: center; padding: 3px 0; }
+.cs_treatment_grid_features i { color: #0e7c86; font-size: 12px; }
+.cs_treatment_grid_btn {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #0e7c86;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.cs_treatment_grid_btn:hover { background: #4fd8e8; color: #0b2a3a; }
+.cs_treatment_grid_icon i { color: #0e7c86; font-size: 18px; }

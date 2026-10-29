@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useWeb3Form } from "../hooks/useWeb3Form";
 import { costEstimates, formatUSD, formatRange } from "../data/costEstimates";
+import { services as allServices } from "../data/services";
 
 /**
  * ─────────────────────────────────────────────────────────────
@@ -147,52 +148,17 @@ const Home = () => {
     "Cancer",
   ];
 
-  const services = [
-    {
-      title: "Cardiology",
-      icon: "/assets/img/icons/cardiology.svg",
-      img: ASSETS.cardiologyImg,
-      desc: "Heart care that combines expertise, technology, and heartfelt compassion.",
-      features: [
-        "Partner cardiac centers in Delhi NCR",
-        "Bypass, angioplasty & valve care",
-        "Pre & post-op coordination",
-      ],
-    },
-    {
-      title: "Neuro Surgery",
-      icon: "/assets/img/icons/neurology.svg",
-      img: ASSETS.neurologyImg,
-      desc: "Advanced neurosurgical interventions for optimal brain and spinal health.",
-      features: [
-        "Brain & spinal surgery",
-        "Advanced neuro-imaging",
-        "Recovery & rehab support",
-      ],
-    },
-    {
-      title: "Orthopedic",
-      icon: "/assets/img/icons/orthopedics.svg",
-      img: ASSETS.orthopedicsImg,
-      desc: "Orthopedic excellence, restoring mobility and enhancing musculoskeletal health.",
-      features: [
-        "Joint replacement surgery",
-        "Sports & trauma injuries",
-        "Minimally invasive procedures",
-      ],
-    },
-    {
-      title: "Cancer",
-      icon: "/assets/img/icons/oncology.svg",
-      img: ASSETS.oncologyImg,
-      desc: "Holistic cancer care with advanced treatments and compassionate support.",
-      features: [
-        "Leading oncology centers",
-        "Chemotherapy & immunotherapy",
-        "Compassionate patient support",
-      ],
-    },
-  ];
+  const serviceIcons = {
+    cardiology: "/assets/img/icons/cardiology.svg",
+    "neuro-surgery": "/assets/img/icons/neurology.svg",
+    orthopedic: "/assets/img/icons/orthopedics.svg",
+    cancer: "/assets/img/icons/oncology.svg",
+  };
+  const services = allServices.map((s) => ({
+    ...s,
+    icon: serviceIcons[s.slug],
+    features: s.whyChoose.slice(0, 3),
+  }));
 
   const team = [
     {
@@ -903,56 +869,46 @@ const Home = () => {
               Top-Notch Treatment Options for <br /> International Patients.
             </h2>
           </div>
-          <div className="cs_sticky_section">
-            {services.map((service, i) => (
-              <div
-                key={i}
-                className="cs_service_card_1 cs_radius_20 cs_sticky_card"
-              >
-                <div className="cs_service_content cs_white_bg cs_radius_15">
-                  <div className="cs_service_header">
-                    <div className="cs_service_icon cs_center cs_radius_10">
-                      <img src={service.icon} alt={service.title} />
-                    </div>
-                    <h3 className="cs_service_title cs_fs_24 cs_medium mb-0">
-                      <Link
-                        to={`/service-details?slug=${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                        aria-label={`Go to ${service.title} details page`}
-                      >
-                        {service.title}
-                      </Link>
-                    </h3>
-                  </div>
-                  <p className="cs_service_desc">{service.desc}</p>
-                  <ul className="cs_service_features cs_mp_0">
-                    {service.features.map((feat, j) => (
-                      <li key={j}>
-                        <img
-                          src="/assets/img/icons/check-double.svg"
-                          alt="Check icon"
-                        />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div
-                  className="cs_service_img cs_bg_filed cs_radius_20"
-                  style={{ backgroundImage: `url('${service.img}')` }}
-                >
-                  <Link
-                    to={`/service-details?slug=${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                    aria-label={`Go to ${service.title} details page`}
-                    className="cs_service_btn cs_accent_bg cs_white_color cs_radius_50"
-                  >
-                    <img
-                      src="/assets/img/icons/arrow-right.svg"
-                      alt="Right arrow"
+          <div className="row cs_gap_y_24">
+            {services.map((service, i) => {
+              const href = `/service-details?slug=${service.slug}`;
+              return (
+                <div key={i} className="col-xl-4 col-md-6">
+                  <div className="cs_treatment_grid_card">
+                    <div
+                      className="cs_treatment_grid_img"
+                      style={{ backgroundImage: `url('${service.img}')` }}
                     />
-                  </Link>
+                    <div className="cs_treatment_grid_body">
+                      <div className="cs_treatment_grid_header">
+                        <span className="cs_treatment_grid_icon">
+                          {service.icon ? (
+                            <img src={service.icon} alt={service.title} />
+                          ) : (
+                            <i className="fa-solid fa-stethoscope"></i>
+                          )}
+                        </span>
+                        <h3 className="cs_treatment_grid_title">
+                          <Link to={href}>{service.title}</Link>
+                        </h3>
+                      </div>
+                      <p className="cs_treatment_grid_desc">{service.desc}</p>
+                      <ul className="cs_treatment_grid_features">
+                        {service.features.map((feat, j) => (
+                          <li key={j}>
+                            <i className="fa-solid fa-check"></i>
+                            <span>{feat}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <Link to={href} className="cs_treatment_grid_btn">
+                        View Treatment <i className="fa-solid fa-arrow-right"></i>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
           <div className="text-center cs_mt_40">
             <Link
