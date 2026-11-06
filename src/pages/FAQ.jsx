@@ -31,7 +31,7 @@ const faqs = [
     id: 4,
     category: 'appointments',
     question: 'How do I schedule an appointment?',
-    answer: 'You can schedule an appointment by calling our appointment line at 9958192249, using our online booking form on the website, or by visiting our outpatient department in person. Online booking is available 24/7 and you will receive a confirmation via email and SMS.',
+    answer: 'You can schedule an appointment by calling our appointment line at +91 83839 73346, using our online booking form on the website, or by visiting our outpatient department in person. Online booking is available 24/7 and you will receive a confirmation via email and SMS.',
   },
   {
     id: 5,

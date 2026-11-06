@@ -162,7 +162,7 @@ const PrivacyPolicy = () => {
 
                 <div className="cs_privacy_contact cs_accent_bg_light cs_radius_10 cs_p_24">
                   <h4 className="cs_fs_18 cs_semibold cs_mb_8">Questions About This Policy?</h4>
-                  <p className="cs_fs_16 mb-0">Contact our Data Protection Officer at <a href="mailto:shivammehra20244@gmail.com" className="cs_accent_color cs_semibold">shivammehra20244@gmail.com</a> or call <a href="tel:9958192249" className="cs_accent_color cs_semibold">9958192249</a>.</p>
+                  <p className="cs_fs_16 mb-0">Contact our Data Protection Officer at <a href="mailto:shivammehra20244@gmail.com" className="cs_accent_color cs_semibold">shivammehra20244@gmail.com</a> or call <a href="tel:+918383973346" className="cs_accent_color cs_semibold">+91 83839 73346</a>.</p>
                 </div>
               </div>
             </div>

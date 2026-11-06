@@ -121,7 +121,7 @@ const ServiceDetails = () => {
                   <ul className="cs_visiting_hours cs_mp_0">
                     <li><span>Mon–Sun:</span><span>Working All Day</span></li>
                   </ul>
-                  <p className="cs_helpline mb-0">Enquiry Helpline: <a href="tel:9958192249">9958192249</a></p>
+                  <p className="cs_helpline mb-0">Enquiry Helpline: <a href="tel:+918383973346">+91 83839 73346</a></p>
                 </div>
                 <div className="cs_sidebar_widget cs_gray2_bg cs_radius_20">
                   <h3 className="cs_widget_title cs_fs_20 cs_semibold cs_mb_22">Enquire Now</h3>

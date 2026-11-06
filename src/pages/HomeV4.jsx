@@ -120,7 +120,7 @@ const HomeV4 = () => {
             <li><Link to="/contact-us" onClick={() => setSidebarOpen(false)}><i className="fa-solid fa-phone"></i> Contact Us</Link></li>
           </ul>
           <div className="cs_side_header_contact cs_mt_24">
-            <p className="cs_fs_14"><i className="fa-solid fa-phone cs_accent_color"></i> 9958192249</p>
+            <p className="cs_fs_14"><i className="fa-solid fa-phone cs_accent_color"></i> +91 83839 73346</p>
             <p className="cs_fs_14"><i className="fa-solid fa-envelope cs_accent_color"></i> shivammehra20244@gmail.com</p>
           </div>
         </div>

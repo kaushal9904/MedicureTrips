@@ -99,7 +99,7 @@ export default function Header({ isShop }) {
                 </li>
                 <li className="cs_contact_item cs_fs_14 cs_white_color">
                   <span className="cs_contact_text">{t('topbar.callUs')}
-                    <a href="tel:9958192249" aria-label="Call us">9958192249</a>
+                    <a href="tel:+918383973346" aria-label="Call us">+91 83839 73346</a>
                   </span>
                 </li>
               </ul>
@@ -181,9 +181,9 @@ export default function Header({ isShop }) {
                 <button type="button" aria-label="Search" className="cs_search_btn" onClick={() => setSearchOpen(true)}>
                   <img src="/assets/img/icons/search.svg" alt="Search icon" />
                 </button>
-                <a href="tel:9958192249" aria-label="Emergency call" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
+                <a href="tel:+918383973346" aria-label="Emergency call" className="cs_btn_style_2 cs_primary_color cs_semibold cs_radius_5">
                   <img src="/assets/img/icons/phone2.svg" alt="Phone icon" />
-                  <span>9958192249</span>
+                  <span>+91 83839 73346</span>
                 </a>
                 <Link to="/appointment" aria-label="Book an appointment" className="cs_btn_style_1 cs_accent_bg cs_white_color cs_semibold cs_radius_5">
                   <img src="/assets/img/icons/calendar.svg" alt="Calendar icon" />

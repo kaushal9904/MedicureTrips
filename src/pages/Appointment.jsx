@@ -59,7 +59,7 @@ const Appointment = () => {
                     <img src="/images/Appointment Hallway 803x540.jpeg" alt="Hospital hallway" />
                     <div className="cs_appointment_help_cta cs_fs_20 cs_semibold cs_white_color">
                       <span>Need help? Call us:</span>
-                      <a href="tel:9958192249" aria-label="Call us to 9958192249">9958192249</a>
+                      <a href="tel:+918383973346" aria-label="Call us to +91 83839 73346">+91 83839 73346</a>
                     </div>
                   </div>
                 </div>

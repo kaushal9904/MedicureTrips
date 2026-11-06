@@ -75,7 +75,7 @@ const Location = () => {
                   </div>
                   <div>
                     <h4 className="cs_fs_18 cs_semibold cs_mb_4">Phone</h4>
-                    <a href="tel:9958192249" className="mb-0">9958192249</a>
+                    <a href="tel:+918383973346" className="mb-0">+91 83839 73346</a>
                   </div>
                 </div>
                 <div className="cs_location_contact_item">

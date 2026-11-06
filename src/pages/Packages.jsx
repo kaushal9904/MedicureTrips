@@ -134,7 +134,7 @@ const Packages = () => {
                   </div>
                   <h3 className="cs_feature_title cs_fs_24 cs_medium mb-0">Call Us</h3>
                 </div>
-                <a href="tel:9958192249">9958192249</a>
+                <a href="tel:+918383973346">+91 83839 73346</a>
               </div>
             </div>
             <div className="col-md-4">

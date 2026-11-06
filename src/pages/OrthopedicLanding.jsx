@@ -4,9 +4,9 @@ import { useWeb3Form } from '../hooks/useWeb3Form';
 import { costEstimates, formatUSD, formatRange } from '../data/costEstimates';
 import './OrthopedicLanding.css';
 
-const WHATSAPP_NUMBER = '919958192249';
-const PHONE_TEL = '9958192249';
-const PHONE_DISPLAY = '+91 99581 92249';
+const WHATSAPP_NUMBER = '918383973346';
+const PHONE_TEL = '+918383973346';
+const PHONE_DISPLAY = '+91 83839 73346';
 
 const ASSETS = {
   heroBg: '/images/Orthopedics-service 1321x523.jpg',

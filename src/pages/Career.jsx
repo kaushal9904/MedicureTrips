@@ -391,7 +391,7 @@ const Career = () => {
           <div className="row align-items-center">
             <div className="col-lg-8">
               <h3 className="cs_cta_title">Have Questions?</h3>
-              <p className="cs_cta_text">Contact our HR team at <a href="mailto:shivammehra20244@gmail.com">shivammehra20244@gmail.com</a> or call us at <a href="tel:+18001234567">+1 800 123 4567</a></p>
+              <p className="cs_cta_text">Contact our HR team at <a href="mailto:shivammehra20244@gmail.com">shivammehra20244@gmail.com</a> or call us at <a href="tel:+918383973346">+91 83839 73346</a></p>
             </div>
             <div className="col-lg-4 text-lg-end">
               <Link to="/contact-us" className="cs_btn cs_style_1 cs_accent_bg">

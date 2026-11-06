@@ -90,7 +90,7 @@ export default function Footer() {
                   <li>
                     <img src="/assets/img/icons/phone.svg" alt="Phone" className="cs_contact_icon" />
                     <div>
-                      <a href="tel:9958192249" aria-label="Make phone call" className="cs_fs_20 cs_bold cs_white_color cs_mb_6">9958192249</a>
+                      <a href="tel:+918383973346" aria-label="Make phone call" className="cs_fs_20 cs_bold cs_white_color cs_mb_6">+91 83839 73346</a>
                       <p className="mb-0">{t('footer.callSub')}</p>
                     </div>
                   </li>
